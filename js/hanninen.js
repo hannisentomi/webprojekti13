@@ -1,5 +1,5 @@
 function asetaKysymykset(){
-    document.getElementById("ensimmainen").innerHTML = " asdf "
+alert("aha ei toimi vielä ;) ");
 }
 
 function tehtavaYksi(){
