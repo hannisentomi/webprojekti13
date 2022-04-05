@@ -2,3 +2,20 @@
 p{
     color: gold;
 }
+.header {
+    text-align: center;
+    background-color: lightgreen;
+
+}
+
+.footer{
+    text-align: left;
+    padding-right: 1em;
+    margin-right: 4px;
+}
+.container-fluid-3{
+    text-align: center;
+}
+body{
+    background-color: lightseagreen;
+}
