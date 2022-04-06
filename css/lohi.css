@@ -1,0 +1,13 @@
+.header {
+    text-align: center;
+    background-color: lightgreen;
+}
+
+h1 {
+    text-align: center;
+}
+.footer{
+    text-align: left;
+    margin-left: auto;
+    background-color: lightgreen;
+}
