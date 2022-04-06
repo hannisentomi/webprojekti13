@@ -4,15 +4,22 @@
 
 h1 {
     text-align: center;
+   
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
 }
 #sidebar{
-    width: 180px;
-    height:100%;
-    background-color: rgba(131, 131, 129, 0.707);
+    max-width: 200px;
+    height:auto;
+    background-color: rgba(72, 127, 69, 0.878)
 
 }
 #sidebar ul li{
-    color: black;
+  
     padding: 15px 10 px;
     border-bottom: 1px solid black;
     list-style: none;
