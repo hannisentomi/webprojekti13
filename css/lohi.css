@@ -1,10 +1,22 @@
-.header {
-    text-align: center;
+.navbar{
     background-color: lightgreen;
 }
 
 h1 {
     text-align: center;
+}
+#sidebar{
+    width: 180px;
+    height:100%;
+    background-color: rgba(131, 131, 129, 0.707);
+
+}
+#sidebar ul li{
+    color: black;
+    padding: 15px 10 px;
+    border-bottom: 1px solid black;
+    list-style: none;
+
 }
 .footer{
     text-align: left;
