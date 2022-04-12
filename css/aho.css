@@ -18,10 +18,11 @@ body{
     
     overflow: hidden;
     font-size: 25px;
-    background-image: url('/images/aho_images/suomenlippu.jpg');
+    background-image: url('/webprojekti13/images/aho_images/lippu.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: auto;
+    background-color: #b8c6db;
 }
 
 .history-container{
@@ -29,6 +30,7 @@ body{
     width: 600px;
     border-radius: 6px;
     overflow: hidden;
+    background-color: #fff;
 }
 
 h2, h4 {
