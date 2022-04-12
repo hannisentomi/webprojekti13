@@ -6,24 +6,7 @@ h1 {
     text-align: center;
    
 }
-
-.wrapper {
-    display: flex;
-    width: 100%;
-    align-items: stretch;
-}
-#sidebar{
-    max-width: 200px;
-    height:auto;
-    background-color: rgba(72, 127, 69, 0.878)
-
-}
-#sidebar ul li{
-  
-    padding: 15px 10 px;
-    border-bottom: 1px solid black;
-    list-style: none;
-
+.sidebar{
 }
 .footer{
     text-align: left;
