@@ -1,0 +1,52 @@
+
+#history-container{
+    box-sizing: border-box;
+}
+
+.visa-header{
+    
+    padding: 4rem;
+    
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+    
+    overflow: hidden;
+    font-size: 25px;
+    background-image: url('/webprojekti13/images/aho_images/lippu.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+    background-color: #b8c6db;
+}
+
+.history-container{
+    
+    width: 600px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+h2, h4 {
+    color: burlywood;
+}
+
+button{
+    background-color: yellow;
+    color: rgb(211, 14, 14);
+    border: none;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-family: inherit;
+    padding: 1.3rem;
+}
+
+

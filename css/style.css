@@ -2,3 +2,34 @@
 p{
     color: gold;
 }
+.header {
+    text-align: center;
+    background-color: lightgreen;
+
+}
+
+footer{
+    text-align: left;
+    margin-right: 4px;
+    background-color: white;
+}
+
+footer td {
+	text-align: left;
+	padding-right: 20px;
+}
+
+.container-fluid-3{
+    text-align: center;
+}
+body{
+    background-color: lightseagreen;
+}
+
+.hanninen{
+    /*background-image: url(/images/hanninen_images/qrcode.png) ;*/
+    background-size: cover;
+}
+a {
+    text-align: center;
+}
