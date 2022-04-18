@@ -5,6 +5,14 @@ p{
 .header {
     text-align: center;
     background-color: lightgreen;
+    margin: auto;
+    padding: 5px;
+	border-width: 1px;
+	border: black;
+	border-style: solid;
+	border-radius: 5px;
+    margin-top: 5px;
+
 
 }
 
