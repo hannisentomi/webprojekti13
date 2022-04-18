@@ -4,8 +4,11 @@ p{
 .header {
     text-align: center;
     background-color: lightgreen;
-
 }
+.header .h1 {
+        text-align: left ;
+    }
+
 
 footer{
     text-align: left;
