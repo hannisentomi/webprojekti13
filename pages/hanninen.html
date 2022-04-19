@@ -1,18 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hännisen testi</title>
-</head>
-<body>
-    <h1>Matematiikan testi 2-Luokkalaiselle</h1>
-    <p>Vastaa alla oleviin tehtäviin.</p>
-    <p>arvo kysymykset alta</p>
-    <button onclick="asetaKysymykset()">Arvo kysymykset</button>
-    
-
-</body>
-<script src="/js/hanninen.js"></script>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Team 7</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+      <script src="https://kit.fontawesome.com/b386a1392e.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="/css/hanninen.css">
+   </head>
+   <body>
+      <!--Sidebar-->
+      <div class="container-fluid">
+         <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-success">
+               <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-5 text-white min-vh-100">
+                  <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none" >
+                  <span  class="fs-1 d-none d-sm-inline" id="koti2"> Etusivu </span> <i id="koti" class="fa-solid fa-house-chimney fa-beat-fade"></i>
+                  </a>
+                  <div class="sivu">
+                     <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-left align-items-sm-start" id="menu">
+                        <li class="nav-item">
+                        </li>
+                        <li >
+                           <br>
+                        <li>
+                           <a href="/pages/lohi.html" class="nav-link px-0"> <span class="d-none d-sm-inline">Luontovisa</span> <i class="fa-solid fa-crow"></i> </a>
+                        </li>
+                        <li>
+                           <a href="/pages/Vuorenmaa.html" class="nav-link px-0"> <span class="d-none d-sm-inline ">Matikkaa</span> <i class=><i class="fa-solid fa-hand-holding-heart"></i></i> </a>
+                        </li>
+                        <li>
+                           <a href="/pages/hukkanen.html" class="nav-link px-0"> <span class="d-none d-sm-inline">Maantietoa</span> <i class="fa-solid fa-earth-americas"></i> </a>
+                        </li>
+                        <li>
+                           <a href="/pages/kemppainen.html" class="nav-link px-0"> <span class="d-none d-sm-inline">Muistipeli</span> <i class="fa-solid fa-puzzle-piece"></i>   </a>
+                        </li>
+                        <li>
+                           <a href="/pages/ahoetusivu.html" class="nav-link px-0" > <span class="d-none d-sm-inline">Historiavisa</span> <i class="fa-brands fa-fort-awesome"></i> </a>
+                        </li>
+                        <li>
+                           <a href="/pages/hanninen.html" class="nav-link px-0" id="hannisensivu" > <span class="d-none d-sm-inline">Matikkavisa</span> <i class="fa-solid fa-calculator"></i>  </a>
+                        </li>
+                        <li>
+                           <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Tietoa meistä </span><i class="fa-solid fa-people-group"></i> </a>
+                        </li>
+                        </li>
+                     </ul>
+                  </div>
+                  <hr>
+               </div>
+              
+            </div>
+             
+            <div class="col py-12">
+               <div class="header">
+                  <h1>Visailuja vintiöille</h1>
+                  <!--Carousel Wrapper-->
+                  <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+                     <!--Indicators-->
+                     <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-2" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-2" data-slide-to="2"></li>
+                     </ol>
+                     <!--/.Indicators-->
+                     <!--Slides-->
+                     <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                           <div class="view">
+                              <img class="d-block w-100" src="/images/vuorenmaa_images/elefantti.png" width="100" height="100"  alt="First slide">
+                              <div class="mask rgba-black-light"></div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <!--Mask color-->
+                           <div class="view">
+                              <img class="d-block w-100" src="kuvat/laptop1.png" alt="Second slide">
+                              <div class="mask rgba-black-strong"></div>
+                           </div>
+                        </div>
+                        <div class="carousel-item">
+                           <!--Mask color-->
+                           <div class="view">
+                              <img class="d-block w-100" src="kuvat/laptop2.png" alt="Third slide">
+                              <div class="mask rgba-black-slight"></div>
+                           </div>
+                        </div>
+                     </div>
+                     
+                     <!--Controls-->
+                     <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Next</span>
+                     </a>
+                    
+                  </div>
+                 
+               </div>
+               <div class="container" >
+                   <div class="row gx-5 gy-5">
+                       <div id="kolumni" class="col-12">
+                           <p>Tervetuloa visailemaan sivuillemme!!!! Tällä sivustolla voit testata taitosi eri oppiaineissa.</p>
+                       </div>
+                       <div class=" col-md-4 col-sm-6 col-xs-12">
+                           <img src="/images/Lohi_images/ahma.jpg">
+                       </div>
+                       <div class=" col-md-4 col-sm-6 col-xs-12">
+                        <img src="/images/Lohi_images/ahma.jpg">
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <img src="/images/Lohi_images/ahma.jpg">
+                    </div>
+                    <div class=" col-md-4 col-sm-6 col-xs-12">
+                    
+                        <img src="/images/Lohi_images/ahma.jpg">
+                        </div>
+                        <div class=" col-md-4 col-sm-6 col-xs-12">
+                            <img src="/images/Lohi_images/ahma.jpg">
+                       </div>
+                       <div class=" col-md-4 col-sm-6 col-xs-12">
+                        <img src="/images/Lohi_images/ahma.jpg">
+                    </div>
+                    </div>
+                   </div>
+                   <footer >
+                   <div class="footer">
+                    <p id="fuuteri">terve</p>
+                    </div>
+                
+                </footer>
+               </div>
+            </div>
+         </div>
+      
+      
+   </body>
 </html>

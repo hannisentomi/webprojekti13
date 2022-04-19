@@ -1,0 +1,143 @@
+
+p{
+    color: #000;
+}
+.header {
+    text-align: left;
+    background-color: #77d169;
+    margin: auto;
+    padding: 1px;
+	border-width: 1px;
+	border: black;
+	border-style: solid;
+	border-radius: 5px;
+    margin-top: 5px;
+    height: 12rem;
+
+}
+
+div img{
+	float: left;
+    max-height: 200px;
+    max-width: 200px;
+  
+}
+
+.footer{
+    text-align: left;
+    background-color: #77d169;
+    border-width: 1px;
+	border: black;
+	border-style: solid;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 100%;
+    bottom: 0;
+   
+    position: fixed;
+  
+}
+
+.container-fluid-3{
+    text-align: center;
+    
+}
+
+
+.hanninen{
+    /*background-image: url(/images/hanninen_images/qrcode.png) ;*/
+    background-size: cover;
+}
+
+.sivu{
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: left;
+    line-height: 200%; 
+}
+
+
+
+
+body{
+    background-color: #8FFFA2 ;
+    
+}
+
+a {
+    text-align: center;
+    
+}
+
+/* Media puhelin **/
+@media only screen and (max-width: 575px){
+    .sivu{
+        font-size: 1.5em;
+        
+    }
+    #carousel-example-2 {
+        display: none;
+    }
+    
+}
+@media screen and (max-width:1200px) {
+    #koti{
+        font-size: 1em;
+    }
+    
+}
+
+
+@media only screen and (min-width: 992px) {
+    .sivu{
+        font-size: 1.5em ;
+    }
+    #kolumni{
+        font-size: 1.5em;
+    }
+    
+
+}
+li span {
+    color:black;
+    
+}
+li i {
+    color: bisque;
+
+}
+
+
+div i {
+    color: bisque;
+    
+}
+
+#koti{
+    color: black;
+    font-weight: bold;
+    font-size: 200%;
+    
+}
+
+#koti2{
+    color: bisque;
+    font-weight: bold;
+    font-size: 250%;
+    padding-right: 1rem;
+}
+
+a :hover{
+    color: cyan;
+    
+}
+#kolumni{
+    padding-top: 2%;
+    padding-bottom: 4%;
+    
+}
+.container2{
+    position: absolute; bottom: 0%;  right: 40%;
+    
+}
+
