@@ -34,7 +34,7 @@ function asetaKysymykset() {
 
             let oikeaVastaus = getRndInteger(1, 3);
             if (oikeaVastaus == 1) {
-                tehtava1Vastaus = "¤a";
+                tehtava1Vastaus = "a";
                 document.getElementById("vastaus1a").value = "correct";
                 document.getElementById("vastaus1a").innerHTML = Number(ekaNumero) + Number(tokaNumero);
                 document.getElementById("vastaus1b").innerHTML = getRndInteger(1, 30);
