@@ -1,15 +1,53 @@
-.navbar{
-    background-color: lightgreen;
+.header {
+    text-align: left;
+    background-color: rgb(48, 102, 48);
+    margin: auto;
+    padding: 1px;
+    border-width: 1px;
+    border: black;
+    border-style: solid;
+    border-radius: 5px;
+    margin-top: 5px;
+    height: 8rem;
+
+}
+
+p {
+    text-align: center;
+    color: #000;
+}
+
+body {
+    background-color: #eee;
+}
+
+.nav {
+    background-color: rgb(48, 102, 48);
+
+}
+
+.nav-link:hover {
+    background-color: rgb(233, 180, 189);
+}
+
+.nav-link .fa {
+    transition: all 1s
+}
+
+.nav-link:hover .fa {
+    transform: rotate(360deg)
+}
+
+.nav .p {
+    color: #000;
 }
 
 h1 {
     text-align: center;
-   
 }
-.sidebar{
-}
-.footer{
+
+.footer {
     text-align: left;
     margin-left: auto;
-    background-color: lightgreen;
+    background-color: rgb(48, 102, 48)
 }
