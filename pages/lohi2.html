@@ -2,106 +2,222 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <script src="https://kit.fontawesome.com/b386a1392e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" href="/css/lohi.css">
     <title>Luontovisa</title>
 </head>
 
 <body>
-     <!--Sidebar-->
-  <div class="container-fluid">
-    <div class="row flex-nowrap">
-      <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-success">
-        <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-5 text-white min-vh-100">
-          <a href="/index.html"
-            class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-            <span class="fs-1 d-none d-sm-inline" id="koti2"> Etusivu </span> <i id="koti"
-              class="fa-solid fa-house-chimney fa-beat-fade"></i>
-          </a>
-          <div class="sivu">
-            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-left align-items-sm-start" id="menu">
-              <li class="nav-item">
-              </li>
-              <li>
-                <br>
-                <li>
-                    <a href="lohi1.html" class="nav-link px-0"> <span
-                            class="d-none d-sm-inline">HELPPO</span> <i class="fa-solid fa-1"></i></a>
-                </li>
-                <li>
-                    <a href="lohi2.html" class="nav-link px-0"> <span
-                            class="d-none d-sm-inline ">KESKITASO</span> <i class=><i
-                                class="fa-solid fa-2"></i></a>
-                </li>
-                <li>
-                    <a href="lohi3.html" class="nav-link px-0"> <span
-                            class="d-none d-sm-inline">VAIKEA</span> <i class="fa-solid fa-3"></i> </a>
-          </div>
+    <!--Sidebar-->
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-success">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-5 text-white min-vh-100">
+                    <a href="/index.html"
+                        class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-1 d-none d-sm-inline" id="koti2"> Etusivu </span> <i id="koti"
+                            class="fa-solid fa-house-chimney fa-beat-fade"></i>
+                    </a>
+                    <div class="sidebar">
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-left align-items-sm-start"
+                            id="menu">
+                            <li class="nav-item">
+                            </li>
+                            <li>
+                                <br>
+                            <li>
+                                <a href="lohi1.html" class="nav-link px-0"> <span
+                                        class="d-none d-sm-inline">HELPPO</span> <i class="fa-solid fa-1"></i></a>
+                            </li>
+                            <li>
+                                <a href="lohi2.html" class="nav-link px-0"> <span
+                                        class="d-none d-sm-inline ">KESKITASO</span> <i class=><i
+                                            class="fa-solid fa-2"></i></a>
+                            </li>
+                            <li>
+                                <a href="lohi3.html" class="nav-link px-0"> <span
+                                        class="d-none d-sm-inline">VAIKEA</span> <i class="fa-solid fa-3"></i> </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="header">
+
+
+                <h1>LUONTOVISA</h1>
+                <p>Keskitaso</p>
+            </nav>
+
+            <div class="container6">
+                <div class="row">
+                    <div class="col-md">
+                        <h3>1. Mikä herkullinen marja?</h3>
+                        <img src="/images/lohi_images/karhunvatukka.jpg">
+                    </div>
+                    <div class="col-md">
+
+                        <div>
+                            <input type="radio" id="mesimarja" name="drone" value="mesimarja" checked>
+                            <label for="mesimarja">mesimarja</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="karhunvatukka" name="drone" value="karhunvatukka">
+                            <label for="karhunvatukka">karhunvatukka</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="lillukka" name="drone" value="lillukka">
+                            <label for="lillukka">lillukka</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="mustavadelma " name="drone" value="mustavadelma ">
+                            <label for="mustavadelma ">mustavadelma </label>
+                        </div>
+
+                    </div>
+                    <div class="col-md"><button class="button button1">Tarkista vastaus</button></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <h3>2. Mikä on kuvan puu?</h3>
+                    <img src="/images/Lohi_images/leppä.jpg">
+                </div>
+                <div class="col-md">
+
+                    <div>
+                        <input type="radio" id="tammi" name="drone" value="tammi" checked>
+                        <label for="tammi">tammi</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="paju" name="drone" value="paju">
+                        <label for="paju">paju</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="leppä" name="drone" value="leppä">
+                        <label for="leppä">leppä</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="haapa" name="drone" value="haapa">
+                        <label for="haapa">haapa</label>
+                    </div>
+
+                </div>
+                <div class="col-md"><button class="button button1">Tarkista vastaus</button></div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md">
+                    <h3>3. Tunnistatko sinä tätä?</h3>
+                    <img src="/images/Lohi_images/korvasieni.jpg">
+                </div>
+                <div class="col-md">
+                    <div>
+                        <div>
+                            <input type="radio" id="limanuljaska" name="drone" value="limanuljaska" checked>
+                            <label for="limanuljaska">limanuljaska</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="hitutötterö" name="drone" value="hitutötterö">
+                            <label for="hitutötterö">hitutötterö</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="korvasieni " name="drone" value="korvasieni ">
+                            <label for="korvasieni ">korvasieni </label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="typäskääpä" name="drone" value="merilokki">
+                            <label for="typäskääpä">typäskääpä</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="outorisakas " name="drone" value="outorisakas ">
+                            <label for="outorisakas ">outorisakas </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md"><button class="button button1">Tarkista vastaus</button></div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <h3>4. Mikä lintu on kuvassa?</h3>
+                    <img src="/images/Lohi_images/meriharakka.jpg">
+                </div>
+                <div class="col-md">
+                    <div>
+                        <div>
+                            <input type="radio" id="räyskä" name="drone" value="räyskä" checked>
+                            <label for="räyskä">räyskä</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="mustaselkälokki" name="drone" value="mustaselkälokki">
+                            <label for="mustaselkälokki">mustaselkälokki</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="merilokki" name="drone" value="merilokki">
+                            <label for="merilokki">merilokki</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="meriharakka " name="drone" value="meriharakka ">
+                            <label for="meriharakka ">meriharakka </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md"><button class="button button1">Tarkista vastaus</button></div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md">
+                    <h3>5. Tunnistatko kuvan käärmeen?</h3>
+                    <img src="/images/lohi_images/rantakäärme.jpg">
+                </div>
+                <div class="col-md">
+
+                    <div>
+                        <input type="radio" id="kangaskäärme" name="drone" value="kangaskäärme" checked>
+                        <label for="kangaskäärme">kangaskäärme</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="rantakäärme" name="drone" value="rantakäärme">
+                        <label for="rantakäärme">rantakäärme</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="kyy" name="drone" value="kyy">
+                        <label for="kyy">kyy</label>
+                    </div>
+
+                </div>
+                <div class="col-md"><button class="button button1">Tarkista vastaus</button></div>
+            </div>
         </div>
-      </div>
-    <nav class="header">
-       
-        
-            <h1>LUONTOVISA</h1>
-            <p>Keskitaso</p>
-    </nav>
- 
 
-        <h3>1. Mikä herkullinen marja?</h3>
-        <img src="/images/lohi_images/karhunvatukka.jpg">
-        <ol>
-            <li>mesimarja</li>
-            <li>karhunvatukka</li>
-            <li>lillukka</li>
-            <li>mustavadelma</li>
-        </ol>
-
-        <h3>2. Mikä kuvan puu?</h3>
-        <img src="/images/Lohi_images/leppä.jpg">
-        <ol>
-            <li>tammi</li>
-            <li>paju</li>
-            <li>leppä</li>
-            <li>haapa</li>
-        </ol>
-
-        <h3>3. Tunnistatko sinä tätä?</h3>
-        <img src="/images/Lohi_images/korvasieni.jpg">
-        <ol>
-            <li>limanuljaska</li>
-            <li>hitutötterö</li>
-            <li>typäskääpä</li>
-            <li>korvasieni</li>
-            <li>outorisakas</li>
-        </ol>
-
-        <h3>4. Mikä lintu on kuvassa?</h3>
-        <img src="/images/Lohi_images/meriharakka.jpg">
-        <ol>
-            <li>merilokki</li>
-            <li>mustaselkälokki</li>
-            <li>meriharakka</li>
-            <li>räyskä</li>
-        </ol>
-        <h3>5. Tunnistatko kuvan käärmeen?</h3>
-        <img src="/images/lohi_images/rantakäärme.jpg">
-        <ol>
-            <li>kyy</li>
-            <li>rantakäärme</li>
-            <li>kangaskäärme</li>
-        </ol>
         <div class="footer">
             <p>Minna Lohi</p>
             <p>OAMK</p>
         </div>
-
-        
+    </div>
+    </div>
 </body>
 
 </html>
