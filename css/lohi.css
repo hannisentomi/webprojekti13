@@ -1,5 +1,5 @@
 .header {
-    text-align: left;
+   
     background-color: rgb(48, 102, 48);
     margin: auto;
     padding: 1px;
@@ -57,7 +57,9 @@ h1 {
     background-color: lightgrey;
 
 }
-
+.container-fluid .girl{
+    float: right;
+}
 .button1:hover {
     background-color: #4CAF50;
     color: white;
@@ -73,3 +75,9 @@ h1 {
     background-color: #008CBA;
     color: white;
 }
+.girl {
+    position: absolute;
+    top: 30px;
+    right: 75px;
+    height: 100px;
+    width: 200px;}
