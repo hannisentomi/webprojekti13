@@ -12,6 +12,10 @@
 
 }
 
+.sidebar {
+    background-color: rgb(48, 102, 48) !important
+}
+
 p {
     text-align: center;
     color: #000;
@@ -19,12 +23,9 @@ p {
 
 body {
     background-color: #eee;
-}
-
-.nav {
-    background-color: rgb(48, 102, 48);
 
 }
+
 
 .nav-link:hover {
     background-color: rgb(233, 180, 189);
@@ -50,4 +51,25 @@ h1 {
     text-align: left;
     margin-left: auto;
     background-color: rgb(48, 102, 48)
+}
+
+.container-fluid {
+    background-color: lightgrey;
+
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.button2 {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
 }
