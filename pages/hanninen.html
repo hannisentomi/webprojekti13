@@ -10,9 +10,10 @@
       <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
       <script src="https://kit.fontawesome.com/b386a1392e.js" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-      <link rel="stylesheet" href="/css/hanninen.css">
+      <link rel="stylesheet" href="/css/hanninen.css" >
    </head>
    <body>
+      <script src="/js/hanninen.js" defer></script>
       <!--Sidebar-->
       <div class="container-fluid">
          <div class="row flex-nowrap">
@@ -107,28 +108,60 @@
                </div>
                <div class="container" >
                    <div class="row gx-5 gy-5">
-                       <div id="kolumni" class="col-12">
+                       <div id="kolumni" class="col-12" onload="asetaKysymykset()">
                            <p>Tervetuloa visailemaan sivuillemme!!!! Tällä sivustolla voit testata taitosi eri oppiaineissa.</p>
+                           <button onclick="asetaKysymykset()">Aseta Kysymykset</button>
+
                        </div>
                        <div class=" col-md-4 col-sm-6 col-xs-12">
-                           <img src="/images/Lohi_images/ahma.jpg">
+                          <h4>paljonko on <span id="teht1EnsimmainenOsa"></span> + <span id="teht1ToinenOsa"></span></h4>
+                          <input type="radio" name="teht1" id="teht1a" > <label for="teht1a" id="vastaus1a">A 15</label>
+                          <input type="radio" name="teht1" id="teht1b" > <label for="teht1b" id="vastaus1b">A 15</label>
+                          <input type="radio" name="teht1" id="teht1c" > <label for="teht1c" id="vastaus1c">A 15</label>
+                          
+
+                           
                        </div>
                        <div class=" col-md-4 col-sm-6 col-xs-12">
-                        <img src="/images/Lohi_images/ahma.jpg">
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <img src="/images/Lohi_images/ahma.jpg">
-                    </div>
-                    <div class=" col-md-4 col-sm-6 col-xs-12">
-                    
-                        <img src="/images/Lohi_images/ahma.jpg">
-                        </div>
-                        <div class=" col-md-4 col-sm-6 col-xs-12">
-                            <img src="/images/Lohi_images/ahma.jpg">
-                       </div>
-                       <div class=" col-md-4 col-sm-6 col-xs-12">
-                        <img src="/images/Lohi_images/ahma.jpg">
-                    </div>
+                        <h4>paljonko on <span id="teht2EnsimmainenOsa"></span> - <span id="teht2ToinenOsa"></span></h4>
+                        <input type="radio" name="teht1" id="teht1a" > <label for="teht1a" id="vastaus2a">A 15</label>
+                        <input type="radio" name="teht1" id="teht1b" > <label for="teht1b" id="vastaus2b">A 15</label>
+                        <input type="radio" name="teht1" id="teht1c" > <label for="teht1c" id="vastaus2c">A 15</label>
+
+                         
+                     </div>
+                     <div class=" col-md-4 col-sm-6 col-xs-12">
+                        <h4>paljonko on <span id="teht3EnsimmainenOsa"></span> * <span id="teht3ToinenOsa"></span></h4>
+                        <input type="radio" name="teht1" id="teht1a" > <label for="teht1a" id="vastaus3a">A 15</label>
+                        <input type="radio" name="teht1" id="teht1b" > <label for="teht1b" id="vastaus3b">A 15</label>
+                        <input type="radio" name="teht1" id="teht1c" > <label for="teht1c" id="vastaus3c">A 15</label>
+
+                         
+                     </div>
+                     <div class=" col-md-4 col-sm-6 col-xs-12">
+                        <h4>paljonko on <span id="teht4EnsimmainenOsa"></span> / <span id="teht4ToinenOsa"></span></h4>
+                        <input type="radio" name="teht1" id="teht1a" > <label for="teht1a" id="vastaus4a">A 15</label>
+                        <input type="radio" name="teht1" id="teht1b" > <label for="teht1b" id="vastaus4b">A 15</label>
+                        <input type="radio" name="teht1" id="teht1c" > <label for="teht1c" id="vastaus4c">A 15</label>
+
+                         
+                     </div>
+                     <div class=" col-md-4 col-sm-6 col-xs-12">
+                        <h4>paljonko on <span id="teht5EnsimmainenOsa"></span> + <span id="teht5ToinenOsa"></span></h4>
+                        <input type="radio" name="teht1" id="teht1a" > <label for="teht1a" id="vastaus5a">A 15</label>
+                        <input type="radio" name="teht1" id="teht1b" > <label for="teht1b" id="vastaus5b">A 15</label>
+                        <input type="radio" name="teht1" id="teht1c" > <label for="teht1c" id="vastaus5c">A 15</label>
+
+                         
+                     </div>
+                     <div class=" col-md-4 col-sm-6 col-xs-12">
+                        <h4>paljonko on <span id="teht6EnsimmainenOsa"></span> - <span id="teht6ToinenOsa"></span></h4>
+                        <input type="radio" name="teht1" id="teht1a" > <label for="teht1a" id="vastaus6a">A 15</label>
+                        <input type="radio" name="teht1" id="teht1b" > <label for="teht1b" id="vastaus6b">A 15</label>
+                        <input type="radio" name="teht1" id="teht1c" > <label for="teht1c" id="vastaus6c">A 15</label>
+
+                         
+                     </div>
                     </div>
                    </div>
                    <footer >
