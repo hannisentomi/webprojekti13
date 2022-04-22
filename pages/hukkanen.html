@@ -4,7 +4,7 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Team 7</title>
+      <title>Visailuja</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
       <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
       <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
@@ -110,72 +110,78 @@
                        <div id="kolumni" class="col-12">
                            <p>Testaa maantiedon tietämyksesi täällä! Alla on viisi kysymystä, joihin sinun tule vastata kaikkiin oikein päästäksesi visailun kunnialla läpi.</p>
                        </div>
-                       <div>
+                     
+                        <div class=" col-md-4 col-sm-6 col-xs-12">
                        <p><h5>1.	Mikä on Norjan pääkaupunki ? </h5>
-                             <input type="radio" name="kaupunki" value="1" checked
+                             <input type="radio" name="kaupunki"  checked
                                    onclick="kaupunki(1)" id="vaihtoehto_a1">
                             <label for="vaihtoehto_a">A) Oslo</label><br>
-                            <input type="radio" name="kaupunki" value="2" checked
+                            <input type="radio" name="kaupunki"  checked
                                    onclick="kaupunki(2)" id="vaihtoehto_b1">
                             <label for="vaihtoehto_b">B) Tallinna</label><br>
-                            <input type="radio" name="kaupunki" value="3" checked
+                            <input type="radio" name="kaupunki"  checked
                                    onclick="kaupunki(3)" id="vaihtoehto_c1">
                             <label for="vaihtoehto_c">C) Kööpenhamina</label><br><br>
                             <button type="button" onclick="kaupunkivastaus()">Katso oikea vastaus</button>
                             <p id="result1"></p> <br><br> </div>
-                        <div>
+
+
+                            <div class=" col-md-4 col-sm-6 col-xs-12">
                             <p><h5>2.   Minkä maan lippu on kuvassa?</h5></p> 
                             <img src="/images/hukkanen_images/lippu.png"><br>
-                            <input type="radio" name="lippu" value="1" checked
+                            <input type="radio" name="lippu"  checked
                                    onclick="lippu(1)" id="vaihtoehto_a2">
                             <label for="vaihtoehto_a">A) Ruotsi</label><br>
-                            <input type="radio" name="lippu" value="2" checked
+                            <input type="radio" name="lippu"  checked
                                    onclick="lippu(2)" id="vaihtoehto_b2">
                             <label for="vaihtoehto_b">B) Monaco</label><br>
-                            <input type="radio" name="lippu" value="3" checked
+                            <input type="radio" name="lippu" checked
                                    onclick="lippu(3)" id="vaihtoehto_c2">
                             <label for="vaihtoehto_c">C) Vatikaanivaltio</label><br><br>
                             <button type="button" onclick="lippuvastaus()">Katso oikea vastaus</button>
                             <p id="result2"></p> <br><br> </div>
-                            <div>
+
+
+
+                           <div class=" col-md-4 col-sm-6 col-xs-12">
                                 <p><h5>3.  Missä Euroopan kaupungissa on kuvassa näkyvä nähtävyys?</h5></p>
                                 <img src="/images/hukkanen_images/sagrada.jpg"><br>
-                                <input type="radio" name="sagrada" value="1" checked
+                                <input type="radio" name="sagrada" checked
                                 onclick="sagrada(1)" id="vaihtoehto_a3">
                          <label for="vaihtoehto_a">A) Pariisi</label><br>
-                         <input type="radio" name="sagrada" value="2" checked
+                         <input type="radio" name="sagrada"  checked
                                 onclick="sagrada(2)" id="vaihtoehto_b3">
                          <label for="vaihtoehto_b">B) Barcelona</label><br>
-                         <input type="radio" name="sagrada" value="3" checked
+                         <input type="radio" name="sagrada"  checked
                                 onclick="sagrada(3)" id="vaihtoehto_c3">
                          <label for="vaihtoehto_c">C) Praha</label><br><br>
                          <button type="button" onclick="nahtavyysvastaus()">Katso oikea vastaus</button>
                          <p id="result3"></p> <br><br> </div>
-                            </div>
-                            <div>
+                            
+                         <div class=" col-md-4 col-sm-6 col-xs-12">
                                 <p><h5>4. Mitä rahayksikköä käytetään Iso-Britanniassa?</h5></p> 
-                                <input type="radio" name="raha" value="1" checked
+                                <input type="radio" name="raha" checked
                                 onclick="raha(1)" id="vaihtoehto_a4">
                          <label for="vaihtoehto_a">A) punta</label><br>
-                         <input type="radio" name="raha" value="2" checked
+                         <input type="radio" name="raha"  checked
                                 onclick="raha(2)" id="vaihtoehto_b4">
                          <label for="vaihtoehto_b">B) euro</label><br>
-                         <input type="radio" name="raha" value="3" checked
+                         <input type="radio" name="raha"  checked
                                 onclick="raha(3)" id="vaihtoehto_c4">
                          <label for="vaihtoehto_c">C) dollari</label><br><br>
                          <button type="button" onclick="rahavastaus()">Katso oikea vastaus</button>
                          <p id="result4"></p> <br><br> </div>
                             </div>
-                        </div>
-                        <div>
+                        
+                            <div class=" col-md-4 col-sm-6 col-xs-12">
                             <p><h5>5.   Minkä maan pääkaupunki on Riika?</h5></p> 
-                            <input type="radio" name="capital" value="1" checked
+                            <input type="radio" name="capital"  checked
                             onclick="capital(1)" id="vaihtoehto_a5">
                      <label for="vaihtoehto_a">A) punta</label><br>
-                     <input type="radio" name="capital" value="2" checked
+                     <input type="radio" name="capital"  checked
                             onclick="capital(2)" id="vaihtoehto_b5">
                      <label for="vaihtoehto_b">B) euro</label><br>
-                     <input type="radio" name="capital" value="3" checked
+                     <input type="radio" name="capital"  checked
                             onclick="capital(3)" id="vaihtoehto_c5">
                      <label for="vaihtoehto_c">C) dollari</label><br><br>
                      <button type="button" onclick="capitalvastaus()">Katso oikea vastaus</button>
