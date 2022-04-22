@@ -165,6 +165,9 @@ function asetaKysymykset() {
 }
 
 function tarkista() {
+
+    
+
     pisteet = 0;
     if (tehtava1AnnettuVastaus == tehtava1Vastaus) {
         pisteet++
@@ -184,7 +187,38 @@ function tarkista() {
     if (tehtava6AnnettuVastaus == tehtava6Vastaus) {
         pisteet++
     }
-    document.getElementById("pisteet").innerHTML = pisteet;
+    document.getElementById("pisteet").innerHTML = "Olet saanut " + pisteet + " pistettä :)";
+
+    
+    let img = document.createElement("img");
+
+    if(pisteet == 6){
+        document.getElementById("pisteet").innerHTML = "Sait täydet pisteet! Hyvää työtä :)";
+        let img = document.createElement("img");
+        img.src = '../images/hanninen_images/6.gif'
+        document.getElementById("pisteet").appendChild(img);
+
+    }
+    if(pisteet == 1){
+        img.src = '../images/hanninen_images/1.gif'
+        document.getElementById("pisteet").appendChild(img);
+    }
+    if(pisteet == 2){
+        img.src = '../images/hanninen_images/2.gif'
+        document.getElementById("pisteet").appendChild(img);
+    }
+    if(pisteet == 3){
+        img.src = '../images/hanninen_images/3.gif'
+        document.getElementById("pisteet").appendChild(img);
+    }
+    if(pisteet == 4){
+        img.src = '../images/hanninen_images/4.gif'
+        document.getElementById("pisteet").appendChild(img);
+    }
+    if(pisteet == 5){
+        img.src = '../images/hanninen_images/5.gif'
+        document.getElementById("pisteet").appendChild(img);
+    }
 }
 
 function asetaVastaus(tehtävä, vastaus) {
