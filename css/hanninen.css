@@ -33,7 +33,7 @@ div img{
     margin-top: 30px;
     width: 100%;
     bottom: 0;
-   
+   max-width: 50%;
     position: fixed;
   
 }
@@ -133,7 +133,6 @@ a :hover{
 }
 #kolumni{
     padding-top: 2%;
-    padding-bottom: 4%;
     
 }
 .container2{
@@ -141,3 +140,7 @@ a :hover{
     
 }
 
+#pisteet{
+    font-size: x-large;
+    font-weight: bold;
+}

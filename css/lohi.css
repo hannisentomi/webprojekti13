@@ -1,5 +1,5 @@
 .header {
-   
+
     background-color: rgb(48, 102, 48);
     margin: auto;
     padding: 1px;
@@ -12,8 +12,12 @@
 
 }
 
-.sidebar {
-    background-color: rgb(48, 102, 48) !important
+.sivu {
+    font: black;
+    font-size: 1.5em;
+    text-align: left;
+    line-height: 200%;
+
 }
 
 p {
@@ -21,45 +25,52 @@ p {
     color: #000;
 }
 
-body {
-    background-color: #eee;
+li span {
+    color: black;
 
 }
 
-
-.nav-link:hover {
-    background-color: rgb(233, 180, 189);
+li i {
+    color: whitesmoke;
 }
 
-.nav-link .fa {
-    transition: all 1s
-}
-
-.nav-link:hover .fa {
-    transform: rotate(360deg)
-}
-
-.nav .p {
-    color: #000;
+a :hover {
+    color: rgba(220, 0, 0, 1);
 }
 
 h1 {
     text-align: center;
 }
 
-.footer {
+.footer{
     text-align: left;
-    margin-left: auto;
-    background-color: rgb(48, 102, 48)
+    background-color:rgb(48, 102, 48);
+    border-width: 1px;
+	border: black;
+	border-style: solid;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 100%;
+    bottom: 0;
+   
+    position: fixed;
+  
 }
+
 
 .container-fluid {
     background-color: lightgrey;
 
 }
+
+.button1 {
+    border-radius: 5px;
+}
+
 .button1:hover {
     background-color: #4CAF50;
     color: white;
+
 }
 
 .button2 {
@@ -72,36 +83,42 @@ h1 {
     background-color: #008CBA;
     color: white;
 }
+
 .girl {
-    position: absolute;
+    margin-top: 5px;
+    margin-left:30px ;
     top: 30px;
     right: 75px;
     height: 100px;
-    width: 200px;}
-    .styled {
-        border: 0;
-        line-height: 2.5;
-        padding: 0 20px;
-        font-size: 1rem;
-        text-align: center;
-        color: #fff;
-        text-shadow: 1px 1px 1px #000;
-        border-radius: 10px;
-        background-color: rgba(220, 0, 0, 1);
-        background-image: linear-gradient(to top left,
-                                          rgba(0, 0, 0, .2),
-                                          rgba(0, 0, 0, .2) 30%,
-                                          rgba(0, 0, 0, 0));
-        box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-                    inset -2px -2px 3px rgba(0, 0, 0, .6);
-    }
-    
-    .styled:hover {
-        background-color: #4CAF50;
-    }
-    
-    .styled:active {
-        box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-                    inset 2px 2px 3px rgba(0, 0, 0, .6);
-    }
-    
+    width: 200px;
+}
+
+.styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+            rgba(0, 0, 0, .2),
+            rgba(0, 0, 0, .2) 30%,
+            rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+        inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: #4CAF50;
+}
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+.col-sm-4{
+    margin-top: 60px
+}
