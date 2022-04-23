@@ -12,11 +12,12 @@ p{
 	border-style: solid;
 	border-radius: 5px;
     margin-top: 5px;
-    height: 12rem;
+    height: 225px;
+    width: 1300px;
 
 }
 
-div img{
+div img #kuvat{
 	float: left;
     max-height: 200px;
     max-width: 200px;
