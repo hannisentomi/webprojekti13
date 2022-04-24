@@ -45,9 +45,10 @@ div img #kuvat{
 }
 
 
-.hanninen{
-    /*background-image: url(/images/hanninen_images/qrcode.png) ;*/
+.hannisenkuvalinkki{
+    background-image: url('matikka.jpg') ;
     background-size: cover;
+
 }
 
 .sivu{
