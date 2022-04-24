@@ -1,4 +1,4 @@
-
+let correct = 0;
 
 
 function kaupunkivastaus() {
