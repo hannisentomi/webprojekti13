@@ -14,6 +14,10 @@ p{
     margin-top: 5px;
     height: 12rem;
 
+   
+
+
+
 }
 
 div img{
@@ -141,4 +145,13 @@ a :hover{
     
 }
 
+.napit {
+    text-align: center;
+    
+}
+.napit .button{
+    display: flex;
+    flex-direction: column;
+    
+}
 
