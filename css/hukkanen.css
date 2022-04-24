@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 p{
     color: #000;
 }
@@ -14,6 +18,36 @@ p{
     height: 12rem;
 
 }
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10p 2px;
+}
+.btn-grid {
+    display: grid;
+    grid-template-columns:  repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+.btn {
+    background-color: rgb(87, 185, 111);
+    border: 1px solid;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+}
+.btn:hover {
+    border-color: black;
+}
+.answer btn {
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+
 
 div img{
 	float: left;
@@ -43,11 +77,6 @@ div img{
 }
 
 
-.hanninen{
-    /*background-image: url(/images/hanninen_images/qrcode.png) ;*/
-    background-size: cover;
-}
-
 .sivu{
     font-weight: bold;
     font-size: 1.5em;
@@ -60,6 +89,7 @@ div img{
 
 body{
     background-color: #8FFFA2 ;
+    
     
 }
 
