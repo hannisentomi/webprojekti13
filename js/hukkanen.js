@@ -1,69 +1,68 @@
-let correct = 0;
+/* Aino Hukkanen TIK22KM */
+
+var correct = 0;
 
 
 function kaupunkivastaus() {
-    
-let kysymys1 = document.getElementById("1").value;
-let correct = 0;
 
-if (kysymys1 == "Oslo") {
+    
+    if (document.getElementById("1a").checked) {
         correct++;
-        document.getElementById("result1").innerHTML = "Vastauksesi on oikein, onneksi olkoon! Sinulla on nyt ansaittuna " + correct + " pistettä.";
         
-} else 
-        document.getElementById("result1").innerHTML = "Vastauksesi on väärin. Norjan pääkaupunki on Oslo. "
+        document.getElementById("result1").innerHTML = "Vastauksesi on oikein, onneksi olkoon! Norjan pääkaupunki on tosiaankin Oslo. Sinulla on nyt ansaittuna " + correct + " pistettä.";
+
+    } else
+        document.getElementById("result1").innerHTML = "Vastauksesi on väärin. Norjan pääkaupunki on Oslo. Sinulla on nyt  " + correct + " pistettä."
+       
+        return;
 }
 function rahayksikkovastaus() {
-        let kysymys2 = document.getElementById("textbox").value;
-        let correct = 0;
+    let kysymys2 = document.getElementById("textbox").value;
+    
 
-        if (kysymys2 !== "punta") {
-                document.getElementById("result2").innerHTML = "Vastauksesi on väärin. Iso-Britannian rahayksikkö on punta.";
-                
-        } else
+    if (kysymys2 == "punta" || kysymys2 == "Punta" || kysymys2 == "£") {
         correct++;
-        document.getElementById("result2").innerHTML = "Vastauksesi on oikein, onneksi olkoon! Sinulla on nyt ansaittuna " + correct + " pistettä.";
-        
+        document.getElementById("result2").innerHTML = "Vastauksesi on oikein, onneksi olkoon! Punta on Iso-Britannian rahayksikkö. Sinulla on nyt ansaittuna " + correct + " pistettä.";
+
+    } else
+        document.getElementById("result2").innerHTML = "Vastauksesi on väärin. Iso-Britannian rahayksikkö on punta. Sinulla on nyt  " + correct + " pistettä."
+    return;
 }
 
 function lippuvastaus() {
-        let kysymys3 = document.getElementById("3").value;
-        let correct = 0;
+    
 
-        if (kysymys3 == "Vatikaanivaltio") {
-                correct++;
-                document.getElementById("result3").innerHTML = "Vastauksesi on oikein, onneksi olkoon! Sinulla on nyt ansaittuna " + correct + " pistettä.";
-                
-        } else
-        document.getElementById("result3").innerHTML = "Vastauksesi on väärin. Kuvassa näkyvä lippu on Vatikaanivaltion lippu."
-        
+    if (document.getElementById("3c").checked) {
+        correct++;
+        document.getElementById("result3").innerHTML = "Vastauksesi on oikein, onneksi olkoon! Kuvassa näkyvä lippu on Vatikaanivaltion lippu.  Sinulla on nyt ansaittuna " + correct + " pistettä.";
+
+    } else
+        document.getElementById("result3").innerHTML = "Vastauksesi on väärin. Kuvassa näkyvä lippu on Vatikaanivaltion lippu. Sinulla on nyt  " + correct + " pistettä."
+
 }
 
 function nahtavyysvastaus() {
-        let kysymys4 = document.getElementById("4").value;
-        let correct = 0;
+    
 
-        if (kysymys4 == "Barcelona") {
-                correct++;
-                document.getElementById("result4").innerHTML = "Vastauksesi on oikein, onneksi olkoon! Sinulla on nyt ansaittuna " + correct + " pistettä.";
-                
-        } else
-        document.getElementById("result4").innerHTML = "Vastauksesi on väärin. Kuvassa näkyvä nähtävyys on Espanjan Barcelonassa sijaitseva Sagrada Familia."
-        
+    if (document.getElementById("4b").checked) {
+        correct++;
+        document.getElementById("result4").innerHTML = "Vastauksesi on oikein, onneksi olkoon! Kuvassa näkyvä nähtävyys on Sagrada Familia, joka sijaitsee Barcelonassa. Sinulla on nyt ansaittuna " + correct + " pistettä.";
+
+    } else
+        document.getElementById("result4").innerHTML = "Vastauksesi on väärin. Kuvassa näkyvä nähtävyys on Espanjan Barcelonassa sijaitseva Sagrada Familia. Sinulla on nyt  " + correct + " pistettä."
+
 }
 function riikavastaus() {
-        let kysymys5 = document.getElementById("5").value;
-        let correct = 0;
+    
 
-        if (kysymys5 == "Latvia") {
-                correct++;
-                document.getElementById("result5").innerHTML = "Vastauksesi on oikein, onneksi olkoon! Sinulla on nyt ansaittuna " + correct + " pistettä.";
-                
-        } else
-        document.getElementById("result5").innerHTML = "Vastauksesi on väärin. Riika on Latvian pääkaupunki"
-        
+    if (document.getElementById("5a").checked) {
+        correct++;
+        document.getElementById("result5").innerHTML = "Vastauksesi on oikein, onneksi olkoon! Latvian pääkaupunki on Riika. Sinulla on nyt ansaittuna " + correct + " pistettä.";
+
+    } else
+        document.getElementById("result5").innerHTML = "Vastauksesi on väärin. Riika on Latvian pääkaupunki. Sinulla on nyt  " + correct + " pistettä."
+
 }
-
 
 
 
