@@ -46,6 +46,7 @@ margin-right: 600px;
         float: right;
         margin-right: 600px;
         
+        
         }
     
         .quiz-header4 img {
@@ -53,6 +54,7 @@ margin-right: 600px;
             max-height: 250px;
             float: right;
             margin-right: 600px;
+            background-color: #f8fbf7;
             }
             .quiz-header5 img {
                 max-width: 250px;
@@ -64,6 +66,9 @@ margin-right: 600px;
     .quiz-header1, .quiz-header2, .quiz-header3, .quiz-header4, .quiz-header5 {
     margin-bottom: 30px;
     padding: 10px;
+    font-size:medium;
+    font-weight: bold;
+    
     }
 
 
@@ -110,7 +115,8 @@ div img #kuvat{
 
 
 body{
-    background-color: #eff5f0 ;
+    background-color: #8FFFA2 ;
+    
     
 }
 
