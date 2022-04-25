@@ -1,17 +1,18 @@
+/* Minna Lohi TIK22KM */
+
 const btn = document.querySelector('#btn');
 const radioButtons = document.querySelectorAll('input[name="lintu"]');
 btn.addEventListener("click", () => {
     let selectedLintu;
+    let oikeavastaus;
     for (const radioButton of radioButtons) {
+        
         if (radioButton.checked) {
             selectedLintu = radioButton.value;
-            // show the output:
-            if (radioButton.value = "talitiainen");
-            output.innerText = selectedLintu ? `AI-VAN OI-KEIN. TIE-SITKÖ, ET-TÄ TA-LI-TI-AI-SEL-LA VOI OL-LA JO-PA KYM-ME-NEN POI-KAS-TA. ` : `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
-         
-        }
-        else;
-        output.innerText = selectedLintu ? `klööööölkj. ` : `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
+            output.innerText = selectedLintu ? `HUPS, KU-VAN LIN-TU EI O-LE ${selectedLintu}. TÄMÄ ON TALITIAINEN`: `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
+           return;
+                    }
+        
     }
 });
 
