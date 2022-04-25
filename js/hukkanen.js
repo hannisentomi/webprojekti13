@@ -1,10 +1,6 @@
 function kaupunkivastaus() {
 
-    let vastaus1 = document.getElementById("1a").value;
-    let vastaus2 = document.getElementById("1b").value;
-    let vastaus3 = document.getElementById("1c").value;
-    let vastaus4 = document.getElementById("1d").value;
-    
+    let kysymys1 = document.getElementsByName("kaupunki").value;
     let correct = 0;
 
     if (kysymys1 == "Oslo") {
