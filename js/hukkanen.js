@@ -8,10 +8,12 @@ function kaupunkivastaus() {
     
     if (document.getElementById("1a").checked) {
         correct++;
+        
         document.getElementById("result1").innerHTML = "Vastauksesi on oikein, onneksi olkoon! Norjan pääkaupunki on tosiaankin Oslo. Sinulla on nyt ansaittuna " + correct + " pistettä.";
 
     } else
         document.getElementById("result1").innerHTML = "Vastauksesi on väärin. Norjan pääkaupunki on Oslo. Sinulla on nyt  " + correct + " pistettä."
+       
         return;
 }
 function rahayksikkovastaus() {
@@ -55,7 +57,7 @@ function riikavastaus() {
 
     if (document.getElementById("5a").checked) {
         correct++;
-        document.getElementById("result5").innerHTML = "Vastauksesi on oikein, onneksi olkoon! Latvian pääkaunkin on Riika. Sinulla on nyt ansaittuna " + correct + " pistettä.";
+        document.getElementById("result5").innerHTML = "Vastauksesi on oikein, onneksi olkoon! Latvian pääkaupunki on Riika. Sinulla on nyt ansaittuna " + correct + " pistettä.";
 
     } else
         document.getElementById("result5").innerHTML = "Vastauksesi on väärin. Riika on Latvian pääkaupunki. Sinulla on nyt  " + correct + " pistettä."
