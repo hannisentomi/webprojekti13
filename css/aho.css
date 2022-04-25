@@ -1,52 +1,192 @@
 
-#history-container{
-    box-sizing: border-box;
+p{
+    color: #000;
+}
+.header {
+    color: #000000;
+    text-align: left;
+    background-color: #f8fbf7;
+    margin: auto;
+    padding: 1px;
+	border-width: 1px;
+	border: black;
+	border-style: solid;
+	border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    height: 200px;
+    width: 1280px;
+    background-image: url(/images/aho_images/linna.jpg);
+    background-size:contain;
+
 }
 
-.visa-header{
+
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.quiz-header1 img {
+max-width: 250px;
+max-height: 250px;
+float: right;
+margin-right: 600px;
+}
+
+.quiz-header2 img {
+    max-width: 250px;
+    max-height: 250px;
+    float: right;
+    margin-right: 600px;
+    }
+    .quiz-header3 img {
+        max-width: 250px;
+        max-height: 250px;
+        float: right;
+        margin-right: 600px;
+        
+        }
     
-    padding: 4rem;
+        .quiz-header4 img {
+            max-width: 250px;
+            max-height: 250px;
+            float: right;
+            margin-right: 600px;
+            }
+            .quiz-header5 img {
+                max-width: 250px;
+                max-height: 250px;
+                float: right;
+                margin-right: 600px;
+                }
+
+    .quiz-header1, .quiz-header2, .quiz-header3, .quiz-header4, .quiz-header5 {
+    margin-bottom: 30px;
+    padding: 10px;
+    }
+
+
+
+
+div img #kuvat{
+	float: right;
+    max-height: 200px;
+    max-width: 200px;
+  
+}
+
+.footer{
+    text-align: left;
+    background-color: #77d169;
+    border-width: 1px;
+	border: black;
+	border-style: solid;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 100%;
+    bottom: 0;
+   
+    position: fixed;
+  
+}
+
+.container-fluid-3{
+    text-align: center;
     
 }
+
+
+
+
+.sivu{
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: left;
+    line-height: 200%; 
+}
+
+
+
 
 body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    height: 100vh;
+    background-color: #eff5f0 ;
     
-    overflow: hidden;
-    font-size: 25px;
-    background-image: url('/webprojekti13/images/aho_images/lippu.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: auto;
-    background-color: #b8c6db;
 }
 
-.history-container{
+a {
+    text-align: center;
     
-    width: 600px;
-    border-radius: 6px;
-    overflow: hidden;
-    background-color: #fff;
 }
 
-h2, h4 {
-    color: burlywood;
+/* Media puhelin **/
+@media only screen and (max-width: 575px){
+    .sivu{
+        font-size: 1.5em;
+        
+    }
+    #carousel-example-2 {
+        display: none;
+    }
+    
+}
+@media screen and (max-width:1200px) {
+    #koti{
+        font-size: 1em;
+    }
+    
 }
 
-button{
-    background-color: yellow;
-    color: rgb(211, 14, 14);
-    border: none;
-    display: block;
-    width: 100%;
-    cursor: pointer;
-    font-size: 1.1rem;
-    font-family: inherit;
-    padding: 1.3rem;
+
+@media only screen and (min-width: 992px) {
+    .sivu{
+        font-size: 1.5em ;
+    }
+    #kolumni{
+        font-size: 1.5em;
+    }
+    
+
+}
+li span {
+    color:black;
+    
+}
+li i {
+    color: bisque;
+
 }
 
 
+div i {
+    color: bisque;
+    
+}
+
+#koti{
+    color: black;
+    font-weight: bold;
+    font-size: 200%;
+    
+}
+
+#koti2{
+    color: bisque;
+    font-weight: bold;
+    font-size: 250%;
+    padding-right: 1rem;
+}
+
+a :hover{
+    color: cyan;
+    
+}
+#kolumni{
+    padding-top: 2%;
+    padding-bottom: 4%;
+    
+}
+.container2{
+    position: absolute; bottom: 0%;  right: 40%;
+    
+}
