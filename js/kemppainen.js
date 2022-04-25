@@ -46,3 +46,6 @@ window.onload = function() {
 
     }
 }
+function refresh(){
+    window.location.reload();
+}
