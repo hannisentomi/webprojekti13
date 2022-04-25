@@ -1,5 +1,6 @@
 var t = [];
 var avatut = [];
+//Photo credits to pixabay.com // https://pixabay.com/service/license/
 
 function korttiPainallus(kohde) {
     console.log(kohde.style.backgroundImage);
@@ -45,4 +46,7 @@ window.onload = function() {
 
 
     }
+}
+function refresh(){
+    window.location.reload();
 }
