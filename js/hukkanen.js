@@ -1,32 +1,38 @@
+/* Aino Hukkanen TIK22KM */
+
+var correct = 0;
+
+
 function kaupunkivastaus() {
 
     let kysymys1 = document.getElementsByName("kaupunki").value;
-    let correct = 0;
+    let vastaus1 = document.getElementById("1a").value;
+    
 
-    if (kysymys1 == "Oslo") {
+    if (kysymys1 == vastaus1) {
         correct++;
         document.getElementById("result1").innerHTML = "Vastauksesi on oikein, onneksi olkoon! Norjan pääkaupunki on tosiaankin Oslo. Sinulla on nyt ansaittuna " + correct + " pistettä.";
 
     } else
         document.getElementById("result1").innerHTML = "Vastauksesi on väärin. Norjan pääkaupunki on Oslo. "
+        return;
 }
 function rahayksikkovastaus() {
     let kysymys2 = document.getElementById("textbox").value;
-    let correct = 0;
+    
 
     if (kysymys2 == "punta") {
         correct++;
         document.getElementById("result2").innerHTML = "Vastauksesi on oikein, onneksi olkoon! Punta on Iso-Britannian rahayksikkö. Sinulla on nyt ansaittuna " + correct + " pistettä.";
 
     } else
-
         document.getElementById("result2").innerHTML = "Vastauksesi on väärin. Iso-Britannian rahayksikkö on punta."
-
+    return;
 }
 
 function lippuvastaus() {
     let kysymys3 = document.getElementById("3").value;
-    let correct = 0;
+    
 
     if (kysymys3 == "Vatikaanivaltio") {
         correct++;
@@ -39,7 +45,7 @@ function lippuvastaus() {
 
 function nahtavyysvastaus() {
     let kysymys4 = document.getElementById("4").value;
-    let correct = 0;
+    
 
     if (kysymys4 == "Barcelona") {
         correct++;
@@ -51,7 +57,7 @@ function nahtavyysvastaus() {
 }
 function riikavastaus() {
     let kysymys5 = document.getElementById("5").value;
-    let correct = 0;
+    
 
     if (kysymys5 == "Latvia") {
         correct++;
