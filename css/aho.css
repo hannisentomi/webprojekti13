@@ -1,6 +1,8 @@
 
 p{
     color: #000;
+    float: right;
+    margin-right: 100px;
 }
 .header {
     color: #000000;

@@ -90,19 +90,19 @@
               <img src="/images/aho_images/lippu.jpg">
               <ul>
                 <li>
-                  <input type="radio" name="answera" id="a1" class="answer">
+                  <input type="radio" name="answer" id="a1" class="answer">
                   <label for="a" id="a_text">30.4.1890</label>
                 </li>
                 <li>
-                  <input type="radio" name="answerb" id="b1" class="answer">
+                  <input type="radio" name="answer" id="b1" class="answer">
                   <label for="b" id="b_text">6.12.1917</label>
                 </li>
                 <li>
-                  <input type="radio" name="answerc" id="c1" class="answer">
+                  <input type="radio" name="answer" id="c1" class="answer">
                   <label for="c" id="c_text">1.5.1799</label>
                 </li>
                 <li>
-                  <input type="radio" name="answerd" id="d1" class="answer">
+                  <input type="radio" name="answer" id="d1" class="answer">
                   <label for="d" id="d_text">6.12.1952</label>
                 </li>
               </ul>
@@ -115,23 +115,24 @@
                 <img src="/images/aho_images/akvedukti.jpg">
                 <ul>
                   <li>
-                    <input type="radio" name="answer" id="a" class="answer">
+                    <input type="radio" name="answer" id="a2" class="answer">
                     <label for="a" id="a_text">Suomalaiset</label>
                   </li>
                   <li>
-                    <input type="radio" name="answer" id="b" class="answer">
+                    <input type="radio" name="answer" id="b2" class="answer">
                     <label for="b" id="b_text">Ranskalaiset</label>
                   </li>
                   <li>
-                    <input type="radio" name="answer" id="c" class="answer">
+                    <input type="radio" name="answer" id="c2" class="answer">
                     <label for="c" id="c_text">Roomalaiset</label>
                   </li>
                   <li>
-                    <input type="radio" name="answer" id="d" class="answer">
+                    <input type="radio" name="answer" id="d2" class="answer">
                     <label for="d" id="d_text">Saksalaiset</label>
                   </li>
                 </ul>
-                <button id="submit">Vastaa</button>
+                <button onclick="vastaus()" id="submit">Vastaa</button>
+                <p id="demo1"></p>
               </div>
               <div class="quiz-container" id="quiz">
                 <div class="quiz-header3">
@@ -139,23 +140,24 @@
                   <img src="/images/aho_images/pahkina.jpg">
                   <ul>
                     <li>
-                      <input type="radio" name="answer" id="a" class="answer">
+                      <input type="radio" name="answer" id="a3" class="answer">
                       <label for="a" id="a_text">12.8.1323</label>
                     </li>
                     <li>
-                      <input type="radio" name="answer" id="b" class="answer">
+                      <input type="radio" name="answer" id="b3" class="answer">
                       <label for="b" id="b_text">8.3.1259</label>
                     </li>
                     <li>
-                      <input type="radio" name="answer" id="c" class="answer">
+                      <input type="radio" name="answer" id="c3" class="answer">
                       <label for="c" id="c_text">4.5.1678</label>
                     </li>
                     <li>
-                      <input type="radio" name="answer" id="d" class="answer">
+                      <input type="radio" name="answer" id="d3" class="answer">
                       <label for="d" id="d_text">2.1.1499</label>
                     </li>
                   </ul>
-                  <button id="submit">Vastaa</button>
+                  <button onclick="vastaus1()" id="submit">Vastaa</button>
+                  <p id="demo2"></p>
                 </div>
                 <div class="quiz-container" id="quiz">
                   <div class="quiz-header4">
@@ -163,23 +165,24 @@
                     <img src="/images/aho_images/colosseum.jpg">
                     <ul>
                       <li>
-                        <input type="radio" name="answer" id="a" class="answer">
+                        <input type="radio" name="answer" id="a4" class="answer">
                         <label for="a" id="a_tkst">Gladiaattorinäytöksistä</label>
                       </li>
                       <li>
-                        <input type="radio" name="answer" id="b" class="answer">
+                        <input type="radio" name="answer" id="b4" class="answer">
                         <label for="b" id="b_text">Taidenäyttelyistä</label>
                       </li>
                       <li>
-                        <input type="radio" name="answer" id="c" class="answer">
+                        <input type="radio" name="answer" id="c4" class="answer">
                         <label for="c" id="c_text">Urheilutapahtumista</label>
                       </li>
                       <li>
-                        <input type="radio" name="answer" id="d" class="answer">
+                        <input type="radio" name="answer" id="d4" class="answer">
                         <label for="d" id="d_text">Kylpylöistä</label>
                       </li>
                     </ul>
-                    <button id="submit">Vastaa</button>
+                    <button onclick="vastaus2()" id="submit">Vastaa</button>
+                  <p id="demo3"></p>
                   </div>
                   <div class="quiz-container" id="quiz">
                     <div class="quiz-header5">
@@ -187,23 +190,24 @@
                       <img src="/images/aho_images/ateena.jpg">
                       <ul>
                         <li>
-                          <input type="radio" name="answer" id="a" class="answer">
+                          <input type="radio" name="answer" id="a5" class="answer">
                           <label for="a" id="a_text">Rooma</label>
                         </li>
                         <li>
-                          <input type="radio" name="answer" id="b" class="answer">
+                          <input type="radio" name="answer" id="b5" class="answer">
                           <label for="b" id="b_text">Tukholma</label>
                         </li>
                         <li>
-                          <input type="radio" name="answer" id="c" class="answer">
+                          <input type="radio" name="answer" id="c5" class="answer">
                           <label for="c" id="c_text">Ateena</label>
                         </li>
                         <li>
-                          <input type="radio" name="answer" id="d" class="answer">
+                          <input type="radio" name="answer" id="d5" class="answer">
                           <label for="d" id="d_text">New York</label>
                         </li>
                       </ul>
-                      <button id="submit">Vastaa</button>
+                      <button onclick="vastaus3()" id="submit">Vastaa</button>
+                      <p id="demo4"></p>
                     </div>
                   </div>
                 </div>
