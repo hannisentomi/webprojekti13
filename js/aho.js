@@ -2,11 +2,11 @@ function vastaus1() {
 	let oikein = document.getElementById('b1').checked;
 	if (oikein) {
 		document.getElementById('demo1').innerHTML =
-			'oikein meni';
+			'Hienoa! Oikein meni. Suomi täyttää vuonna 2022 106 vuotta. ';
 
 	} else {
 		document.getElementById('demo1').innerHTML =
-			'Väärin meni';
+			'Voi että väärin meni. Suomi sai itsenäisyytensä 6.12.1917. ';
 
 
 	}
@@ -21,10 +21,10 @@ function vastaus2() {
 	let oikein = document.getElementById('c2').checked;
 	if (oikein) {
 		document.getElementById('demo2').innerHTML =
-			'oikein meni';
+			'Aivan oikein! Kaikkiaan vesijohtoja oli valtakunnassa noin 500 kilometriä. ';
 	} else {
 		document.getElementById('demo2').innerHTML =
-			'Väärin meni';
+			'Voi että väärin meni. Oikea vastaus on Roomalaiset';
 	}
 	document.getElementById("a2").disabled = true;
 	document.getElementById("b2").disabled = true;
@@ -36,7 +36,7 @@ function vastaus3() {
 	let oikein = document.getElementById('a3').checked;
 	if (oikein) {
 		document.getElementById('demo3').innerHTML =
-			'oikein meni';
+		'Oikein meni! Rauhanopimus sai nimensä solmimispaikastaan, Pähkinälinnan linnoituksesta,joka sijaitsee Laatokan Pähkinäsaaressa';
 	} else {
 		document.getElementById('demo3').innerHTML =
 			'Väärin meni';
