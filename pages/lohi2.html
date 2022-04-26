@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Minna Lohi">
+    <title>Visailuja</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -9,8 +14,10 @@
     <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
     <script src="https://kit.fontawesome.com/b386a1392e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/lohi.css">
 </head>
 
@@ -18,50 +25,59 @@
     <script src="../js/lohi.js" defer></script>
     <!--Sidebar-->
     <div class="container-fluid">
-      <div class="row flex-nowrap">
-        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-success">
-          <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-5 text-white min-vh-100">
-            <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-              <span class="fs-1 d-none d-sm-inline" id="koti2"> Etusivu </span> <i id="koti"
-                class="fa-solid fa-house-chimney fa-beat-fade"></i>
-            </a>
-            <div class="sivu">
-              <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-left align-items-sm-start" id="menu">
-                <li class="nav-item">
-                </li>
-                <li>
-                  <a href="lohi.html" class="nav-link px-0"> <span class="d-none d-sm-inline">Luontovisa</span> <i
-                      class="fa-solid fa-crow"></i> </a>
-                </li>
-                <li>
-                  <a href="Vuorenmaa.html" class="nav-link px-0"> <span class="d-none d-sm-inline ">Matikkaa</span> <i
-                      class=><i class="fa-solid fa-hand-holding-heart"></i></i> </a>
-                </li>
-                <li>
-                  <a href="hukkanen.html" class="nav-link px-0"> <span class="d-none d-sm-inline">Maantietoa</span> <i
-                      class="fa-solid fa-earth-americas"></i> </a>
-                </li>
-                <li>
-                  <a href="kemppainen.html" class="nav-link px-0"> <span class="d-none d-sm-inline">Muistipeli</span> <i
-                      class="fa-solid fa-puzzle-piece"></i> </a>
-                </li>
-                <li>
-                  <a href="ahoetusivu.html" class="nav-link px-0"> <span class="d-none d-sm-inline">Historiavisa</span> <i
-                      class="fa-brands fa-fort-awesome"></i> </a>
-                </li>
-                <li>
-                  <a href="hanninen.html" class="nav-link px-0" id="hannisensivu"> <span
-                      class="d-none d-sm-inline">Matikkavisa</span> <i class="fa-solid fa-calculator"></i> </a>
-                </li>
-                <li>
-                  <a href="tietoa_meistä.html" class="nav-link px-0"> <span class="d-none d-sm-inline">Tietoa
-                      meistä </span><i class="fa-solid fa-people-group"></i> </a>
-                </li>
-              </ul>
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-success">
+                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-5 text-white min-vh-100">
+                    <a href="/"
+                        class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                        <span class="fs-1 d-none d-sm-inline" id="koti2"> Etusivu </span> <i id="koti"
+                            class="fa-solid fa-house-chimney fa-beat-fade"></i>
+                    </a>
+                    <div class="sivu">
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-left align-items-sm-start"
+                            id="menu">
+                            <li class="nav-item">
+                            </li>
+                            <li>
+                                <a href="lohi.html" class="nav-link px-0"> <span
+                                        class="d-none d-sm-inline">Luontovisa</span> <i class="fa-solid fa-crow"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Vuorenmaa.html" class="nav-link px-0"> <span
+                                        class="d-none d-sm-inline ">Matikkaa</span> <i class=><i
+                                            class="fa-solid fa-hand-holding-heart"></i></i> </a>
+                            </li>
+                            <li>
+                                <a href="hukkanen.html" class="nav-link px-0"> <span
+                                        class="d-none d-sm-inline">Maantietoa</span> <i
+                                        class="fa-solid fa-earth-americas"></i> </a>
+                            </li>
+                            <li>
+                                <a href="kemppainen.html" class="nav-link px-0"> <span
+                                        class="d-none d-sm-inline">Muistipeli</span> <i
+                                        class="fa-solid fa-puzzle-piece"></i> </a>
+                            </li>
+                            <li>
+                                <a href="ahoetusivu.html" class="nav-link px-0"> <span
+                                        class="d-none d-sm-inline">Historiavisa</span> <i
+                                        class="fa-brands fa-fort-awesome"></i> </a>
+                            </li>
+                            <li>
+                                <a href="hanninen.html" class="nav-link px-0" id="hannisensivu"> <span
+                                        class="d-none d-sm-inline">Matikkavisa</span> <i
+                                        class="fa-solid fa-calculator"></i> </a>
+                            </li>
+                            <li>
+                                <a href="tietoa_meistä.html" class="nav-link px-0"> <span
+                                        class="d-none d-sm-inline">Tietoa
+                                        meistä </span><i class="fa-solid fa-people-group"></i> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-            <div class="col py-12">
+            <div class="col">
                 <div class="header">
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
@@ -75,152 +91,179 @@
                         </ul>
                     </div>
                     <h1>LUONTOVISA</h1>
-                    <p>3-4 lk</p>
+                    <p>3-4 LK</p>
                 </div>
-           
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <h3>1. Mikä herkullinen marja ?</h3>
-                        <img src="../images/lohi_images/karhunvatukka.jpg">
-                    </div>
-                    <div class="col-sm-4">
-                        <div>
-                            <input type="radio" id="mesimarja" name="drone" value="mesimarja">
-                            <label for="mesimarja">mesimarja</label>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-py-12">
+                            <h3>1. Mikä herkullinen marja ?</h3>
+                            <br>
+                            <!-- Image: Pixabay.com -->
+                            <img src="../images/lohi_images/karhunvatukka.jpg">
                         </div>
-                        <div>
-                            <input type="radio" id="karhunvatukka" name="drone" value="karhunvatukka">
-                            <label for="karhunvatukka">karhunvatukka</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="lillukka" name="drone" value="lillukka">
-                            <label for="lillukka">lillukka</label>
-                        </div>
-                        <div>
-                            <input type="radio" id="mustavadelma " name="drone" value="mustavadelma ">
-                            <label for="mustavadelma ">mustavadelma </label>
-                        </div>
-                        <br>
-                        <div>
-                            <button type="button" class="btn btn-danger">Tarkista vastaus</button>
+                        <div class="col">
+                            <div>
+                                <input type="radio" id="mesimarja" name="marja" value="mesimarja">
+                                <label for="mesimarja">mesimarja</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="karhunvatukka" name="marja" value="karhunvatukka">
+                                <label for="karhunvatukka">karhunvatukka</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="lillukka" name="marja" value="lillukka">
+                                <label for="lillukka">lillukka</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="mustavadelma" name="marja" value="mustavadelma ">
+                                <label for="mustavadelma ">mustavadelma </label>
+                            </div>
+                            <br>
+                            <div>
+                                <button onclick="function6()" id="marja">Tarkista vastaus</button>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col">
                             <h3>2. Mikä on kuvan puu ?</h3>
+                            <br>
+                            <!-- Image: Pixabay.com -->
                             <img src="../images/Lohi_images/leppä.jpg">
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col">
                             <div>
-                                <input type="radio" id="tammi" name="drone" value="tammi">
+                                <input type="radio" id="tammi" name="puu" value="tammi">
                                 <label for="tammi">tammi</label>
                             </div>
                             <div>
-                                <input type="radio" id="paju" name="drone" value="paju">
+                                <input type="radio" id="paju" name="puu" value="paju">
                                 <label for="paju">paju</label>
                             </div>
                             <div>
-                                <input type="radio" id="leppä" name="drone" value="leppä">
+                                <input type="radio" id="leppä" name="puu" value="leppä">
                                 <label for="leppä">leppä</label>
                             </div>
                             <div>
-                                <input type="radio" id="haapa" name="drone" value="haapa">
+                                <input type="radio" id="haapa" name="puu" value="haapa">
                                 <label for="haapa">haapa</label>
                             </div>
                             <br>
-                            <button type="button" class="btn btn-danger">Tarkista vastaus</button>
+                            <div>
+                                <button onclick="function7()" id="puu">Tarkista vastaus</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <h3>3. Tunnistatko sinä tätä?</h3>
-                            <img src="../images/Lohi_images/korvasieni.jpg">
-                        </div>
-                        <div class="col-sm-4">
-                            <div>
-                                <input type="radio" id="limanuljaska" name="drone" value="limanuljaska">
-                                <label for="limanuljaska">limanuljaska</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="hitutötterö" name="drone" value="hitutötterö">
-                                <label for="hitutötterö">hitutötterö</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="korvasieni " name="drone" value="korvasieni ">
-                                <label for="korvasieni ">korvasieni </label>
-                            </div>
-                            <div>
-                                <input type="radio" id="typäskääpä" name="drone" value="merilokki">
-                                <label for="typäskääpä">typäskääpä</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="outorisakas " name="drone" value="outorisakas ">
-                                <label for="outorisakas ">outorisakas </label>
-                            </div><br>
-
-                            <button type="button" class="btn btn-danger">Tarkista vastaus</button>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <h3>4. Mikä lintu on kuvassa?</h3>
-                                <img src="../images/Lohi_images/meriharakka.jpg">
-                            </div>
-                            <div class="col-sm-4">
-                                <div>
-                                    <div>
-                                        <input type="radio" id="räyskä" name="drone" value="räyskä">
-                                        <label for="räyskä">räyskä</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" id="mustaselkälokki" name="drone" value="mustaselkälokki">
-                                        <label for="mustaselkälokki">mustaselkälokki</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" id="merilokki" name="drone" value="merilokki">
-                                        <label for="merilokki">merilokki</label>
-                                    </div>
-                                    <div>
-                                        <input type="radio" id="meriharakka " name="drone" value="meriharakka ">
-                                        <label for="meriharakka ">meriharakka </label>
-                                    </div>
+                        <div>
+                            <div class="row">
+                                <div class="col">
+                                    <h3>3. Tunnistatko sinä tätä?</h3>
                                     <br>
-                                    <button type="button" class="btn btn-danger">Tarkista vastaus</button>
+                                    <!-- Image: Pixabay.com -->
+                                    <img src="../images/Lohi_images/korvasieni.jpg">
+                                </div>
+                                <div class="col">
+                                    <div>
+                                        <input type="radio" id="limanuljaska" name="sieni" value="limanuljaska">
+                                        <label for="limanuljaska">limanuljaska</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="hitutötterö" name="sieni" value="hitutötterö">
+                                        <label for="hitutötterö">hitutötterö</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="korvasieni" name="sieni" value="korvasieni">
+                                        <label for="korvasieni">korvasieni </label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="typäskääpä" name="sieni" value="merilokki">
+                                        <label for="typäskääpä">typäskääpä</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="outorisakas" name="sieni" value="outorisakas">
+                                        <label for="outorisakas">outorisakas </label>
+                                    </div><br>
+                                    <div>
+                                        <button onclick="function8()" id="sieni">Tarkista vastaus</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-4">
+                                <div class="col">
+                                    <h3>4. Mikä lintu on kuvassa?</h3>
+                                    <br>
+                                    <!-- Image: Pixabay.com -->
+                                    <img src="../images/Lohi_images/meriharakka.jpg">
+                                </div>
+                                <div class="col">
+                                    <div>
+                                        <div>
+                                            <input type="radio" id="räyskä" name="lintu1" value="räyskä">
+                                            <label for="räyskä">räyskä</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="mustaselkälokki" name="lintu1"
+                                                value="mustaselkälokki">
+                                            <label for="mustaselkälokki">mustaselkälokki</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="merilokki" name="lintu1" value="merilokki">
+                                            <label for="merilokki">merilokki</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="meriharakka" name="lintu1" value="meriharakka">
+                                            <label for="meriharakka">meriharakka </label>
+                                        </div>
+                                        <br>
+                                        <div>
+                                            <button onclick="function9()" id="lintu1">Tarkista vastaus</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
                                     <h3>5. Tunnistatko kuvan käärmeen?</h3>
+                                    <br>
                                     <img src="../images/lohi_images/rantakäärme.jpg">
                                 </div>
-                                <div class="col-sm-4">
+                                <div class="col">
                                     <div>
-                                        <input type="radio" id="kangaskäärme" name="drone" value="kangaskäärme" >
+                                        <input type="radio" id="kangaskäärme" name="käärme" value="kangaskäärme">
                                         <label for="kangaskäärme">kangaskäärme</label>
                                     </div>
                                     <div>
-                                        <input type="radio" id="rantakäärme" name="drone" value="rantakäärme">
+                                        <input type="radio" id="rantakäärme" name="käärme" value="rantakäärme">
                                         <label for="rantakäärme">rantakäärme</label>
                                     </div>
                                     <div>
-                                        <input type="radio" id="kyy" name="drone" value="kyy">
+                                        <input type="radio" id="kyy" name="käärme" value="käärme">
                                         <label for="kyy">kyy</label>
                                     </div>
                                     <br>
-                                    <button type="button" class="btn btn-danger">Tarkista vastaus</button>
+                                    <div>
+                                        <button onclick="function10()" id="käärme">Tarkista vastaus</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <footer>
-                            <div class="footer">
-                                <p id="fuuteri">terve</p>
-                            </div>
-                        </footer>
                     </div>
+                    <footer>
+                        <div class="footer">
+                            <p id="fuuteri">Minna Lohi</p>
+                            <p>OAMK</p>
+                        </div>
+                    </footer>
                 </div>
             </div>
-        </div>
-    </div>
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>

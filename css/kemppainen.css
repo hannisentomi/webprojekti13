@@ -2,7 +2,7 @@
 p{
     color: #000;
 }
-.header {
+/*.header {
     text-align: left;
     background-color: #77d169;
     margin: auto;
@@ -14,9 +14,9 @@ p{
     margin-top: 5px;
     height: 12rem;
 
-}
+}*/
 
-div img{
+div img #kuvat{
 	float: left;
     max-height: 200px;
     max-width: 200px;
@@ -151,9 +151,30 @@ a :hover{
     background-size: 200px 200px;
     background-repeat: no-repeat;
 }
+input[type=button]{
+
+    margin-top: 1%;
+    background-color:yellow;
+    border: none;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 300%;
+    transition-duration: 0.4s;
+    padding: 10px;
+    margin-top: 40px;
+    border-radius: 20px;
+    
+}
+#secondbutton:hover{
+    background-color:bisque;
+    color: #000;
+    border-radius: 20px;
+}
 
 /* Media puhelin **/
-@media only screen and (max-width: 575px){
+
+@media  screen and (max-width: 575px){
     .sivu{
         font-size: 1.5em;
         
@@ -163,8 +184,8 @@ a :hover{
     }
     .kortti{
         display: inline-block;
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         background-color: white;
         cursor: pointer;
         transform: scale(1);
@@ -172,11 +193,31 @@ a :hover{
     }
     .hidden{
         /*background-image:url(../images/kemppainen_images/kymysys.jpg); */
-        z-index: 3;
-        background-size: 100x 100px;
+        background-size: 120px 120px;
         background-repeat: no-repeat;
     }
+    input[type=button]{
+
+        margin-top: 1px;
+        background-color:	#ffff00 ;
+        border: none;
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 15px;
+        transition-duration: 0.4s;
+        padding: none;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        border-radius: 20px;
+}
+.ikonit{
+    font-size: 30px;
+}
     
+}
+#koti2:hover{
+    color: cyan;
 }
 @media screen and (max-width:1120px) and (min-width:992px) {
     #koti{
@@ -189,7 +230,8 @@ a :hover{
 }
 
 
-@media only screen and (max-width: 992px) {
+
+@media  screen and (max-width: 992px) {
     .sivu{
         font-size: 1.5em ;
     }
@@ -197,10 +239,82 @@ a :hover{
         font-size: 1.5em;
     }   
     .kortti{
-        height: 60px;
-        width: 60px;
+        height: 70px;
+        width: 70px;
     }
       .hidden{
       background-size: 60px 60px;
     }
+}
+@media screen and  (min-width:2100px ) {
+
+    .sivu {
+		font-size: 1.5em;
+	}
+
+	#kolumni {
+		font-size: 1.5em;
+	}
+    li span{
+        font-size: 1.5em;
+        padding-right: 1em;
+        padding-left: 1em;
+        
+    }
+    #koti2{
+        padding: 40px;
+        
+        
+    }
+    .kortti{
+        width: 250px;
+        height: 250px;
+    }
+    .hidden{
+        background-size: 250px 250px;
+      }
+}
+@media screen and (max-width:2000px) and (min-width:1200px){
+    .sivu {
+		font-size: 1em;
+	}
+
+	#kolumni {
+		font-size: 1em;
+	}
+    li span{
+        font-size: 2em;
+        
+        padding-left: 0.5em;
+        
+    }
+    #koti2{
+        padding: 10px;
+        
+        
+    }
+    .kortti{
+        width: 175px;
+        height: 175px;
+    }
+    .hidden{
+        background-size: 175px 175px;
+      }
+      input[type=button]{
+
+        margin-top: 1px;
+        background-color:	#ffff00 ;
+        border: none;
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 25px;
+        transition-duration: 0.4s;
+        padding: none;
+        margin-top: 20px;
+        border-radius: 20px;
+}
+.ikonit{
+    font-size: 30px;
+}
 }
