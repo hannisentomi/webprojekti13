@@ -1,3 +1,4 @@
+//Tomi Hänninen Tik22km
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -166,8 +167,13 @@ function asetaKysymykset() {
 
 function tarkista() {
 
+    let img = document.createElement("img");
     
-
+    if(tehtava1Vastaus == ""){
+        document.getElementById("pisteet").innerHTML = "Et ole asettanut vielä kysymyksiä. Asetin ne puolestasi :)"
+        asetaKysymykset();
+        
+    }
     pisteet = 0;
     if (tehtava1AnnettuVastaus == tehtava1Vastaus) {
         pisteet++
@@ -188,11 +194,10 @@ function tarkista() {
     document.getElementById("pisteet").innerHTML = "Olet saanut " + pisteet + " pistettä :)";
 
     
-    let img = document.createElement("img");
+  
 
-    if(pisteet == 5){
+    if(pisteet == 5 ){
         document.getElementById("pisteet").innerHTML = "Sait täydet pisteet! Hyvää työtä :)";
-        let img = document.createElement("img");
         img.src = '../images/hanninen_images/6.gif'
         document.getElementById("pisteet").appendChild(img);
 
