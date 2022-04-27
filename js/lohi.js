@@ -1,29 +1,28 @@
 /* Minna Lohi TIK22KM */
 
-
-
 var score = 0;
 var score2 = 0;
 
-const btn = document.querySelector('#btn');
-const radioButtons = document.querySelectorAll('input[name="lintu"]');
-btn.addEventListener("click", () => {
-    let selectedLintu;
-    for (const radioButton of radioButtons) {
-        if (radioButton.checked) {
-            selectedLintu = radioButton.value;
-            break;
-        }
-    }
-    output.innerText = selectedLintu ? `HUPS, KU-VAN LIN-TU EI O-LE ${selectedLintu}. TÄMÄ ON TALITIAINEN.` : `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
+$(document).ready(function(){
 
+$('input[type=radio][name="lintu"]').change (function(){
+   if (this.value == 4) {
+    output.innerText =`KYL-LÄ, LIN-TU ON TALITIAINEN. TIE-SIT-KÖ, ET-TÄ TA-LI-TI-AI-SEl-LA VOI OL-LA JO-PA KYM-ME-NEN POI-KAS-TA`;
+   }else if(this.value == 1|2|3){
+
+    output.innerText =`HUPS, KU-VAN LIN-TU ON TALITIAINEN.`;
+   }
+else
+output.innerText = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
     var inputs = document.getElementsByName('lintu');
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
     }
 });
 
-var btn2 = document.querySelector('#btn2');
+});
+
+var btn2 = document.querySelector('#output2');
 const radioButtons2 = document.querySelectorAll('input[name="kala"]');
 btn2.addEventListener("click", () => {
     let selectedKala;
@@ -106,13 +105,9 @@ function function6() {
         score2++;
         document.getElementById("marja").innerHTML = "Hyvin meni! Karhunvatukka on herkullinen ja mehukas marja, joka soveltuu ihanteellisesti  terveellisiin juomiin ja smoothieihin, sekä sellaisenaan nautittavaksi jogurtin kera tai jälkiruuissa. Voit syödä karhunvatukoita myös salaateissa ja muissa kylmissä resepteissä." + "Voit lukea lisää karhunvatukan terveydhyödyistä täältä:"; //" https://askelterveyteen.com/7-syyta-syoda-karhunvatukoita/"
 
-    } else if (rd1.checked == true)
+    } else if (rd1.checked == true|rd3.checked == true|rd4.checked == true)
         document.getElementById("marja").innerHTML = "Voi ei, vastasit väärin, kuvan marja on karhunvatukka.";
-    else if (rd3.checked == true)
-        document.getElementById("marja").innerHTML = "Voi ei, vastasit väärin,kuvan marja on karhunvatukka.";
-    else if (rd4.checked == true)
-        document.getElementById("marja").innerHTML = "Voi ei, vastasit väärin, kuvan marja on karhunvatukka.";
-
+   
     var inputs = document.getElementsByName("marja");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -129,13 +124,9 @@ function function7() {
         score2++;
         document.getElementById("puu").innerHTML = "Aivan oikein. Tiesitkö, että leppä sopii erityisen hyvin jatkuvalämmitteisen saunan ja savusaunan lämmitykseen sekä helloihin ja avotakkoihin."; //"https://savonvoima.fi/miksi-koivua-pidetaan-parhaana-polttopuuna/"
 
-    } else if (rd5.checked == true)
+    } else if (rd5.checked == true| rd6.checked == true|rd8.checked == true)
         document.getElementById("puu").innerHTML = "Nyt ei mennyt ihan putkeen, kuvan puu on leppä.";
-    else if (rd6.checked == true)
-        document.getElementById("puu").innerHTML = "Nyt ei mennyt ihan putkeen, kuvan puu on leppä.";
-    else if (rd8.checked == true)
-        document.getElementById("puu").innerHTML = "Nyt ei mennyt ihan putkeen, kuvan puu on leppä.";
-
+    
     var inputs = document.getElementsByName("puu");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -154,13 +145,7 @@ function function8() {
         document.getElementById("sieni").innerHTML = "Vastauksesi on oikein. Korvasieni on helppo tuntea,sillä keväällä ei juuri muita sieniä kasva. Se viihtyy parhaiten hiekkamaalla, vanhoilla hakkuualueilla. Ruskea muhkura voi olla ensin vaikea havaita, mutta kun silmä tottuu, niin kas niitähän on joka paikassa! Tämä raakana myrkyllinen ruokasieni pitää esikäsitellä huolellisesti. " +
             "Suuret korvasienet vastaavat kooltaan lapsen aivoja, ja useamman sienen rypäs voi ylittää aikuisen ihmisen aivojen koon.Korvasieni on alkukesän aarre. Sen satokausi kestää vain muutaman viikon, joten herkku on poimittava oikeaan aikaan. Satokausi riippuu kevään lämpötilasta, pohjoisessa korvasieniä saatetaan kerätä vielä heinäkuussakin. Nyrkkisääntönä on, että korvasieniä kannattaa lähteä etsimään, kun hiirenkorvat ilmestyvät koivuihin."; //"https://yle.fi/aihe/artikkeli/2019/04/26/myrkky-vai-herkku-korvasieni-jakaa-mielipiteet"
 
-    } else if (rd9.checked == true)
-        document.getElementById("sieni").innerHTML = "Väärin meni, kuvan sieni on korvasieni.";
-    else if (rd10.checked == true)
-        document.getElementById("sieni").innerHTML = "Väärin meni, kuvan sieni on korvasieni.";
-    else if (rd12.checked == true)
-        document.getElementById("sieni").innerHTML = "Väärin meni, kuvan sieni on korvasieni.";
-    else if (rd13.checked == true)
+    } else if (rd9.checked == true|rd10.checked == true|rd12.checked == true|rd13.checked == true)
         document.getElementById("sieni").innerHTML = "Väärin meni, kuvan sieni on korvasieni.";
 
     var inputs = document.getElementsByName('sieni');
@@ -181,13 +166,9 @@ function function9() {
             "Meriharakka pesii merensaariston kallioisilla ja somerikkoisilla, puuttomilla luodoilla, muutamin paikoin sisämaassakin teollisuuslaitosten avomailla ja puutavarakentillä. Pääravintona ovat simpukat, joita emot tuovat poikasille avattuaan niiden kuoren (muilla kahlaajilla untuvikot syövät pikkuötököitä ilman emojen apua). Rannikkoseuduilla meriharakat etsivät matoja ja kotiloita myös avarilta nurmikoilta." +
             "Meriharakka on yleinen koko merialueella, sisämaassa pesivänä hyvin harvinainen mutta keväällä säännöllinen läpimuuttaja Jäämeren äärelle. Linnut lähtevät heinä-syyskuussa Länsi-Euroopan rannikoille ja palaavat valtaosin huhtikuussa. " ;// " https://yle.fi/aihe/artikkeli/2017/05/16/rantojen-ja-kosteikkojen-kahlaajia-meriharakka"
 
-    } else if (rd14.checked == true)
+    } else if (rd14.checked == true|rd15.checked == true|rd16.checked == true)
         document.getElementById("lintu1").innerHTML = "Nyt ei mennyt ihan putkeen, kuvassa on meriharakka.";
-    else if (rd15.checked == true)
-        document.getElementById("lintu1").innerHTML = "Nyt ei mennyt ihan putkeen, kuvassa on meriharakka.";
-    else if (rd16.checked == true)
-        document.getElementById("lintu1").innerHTML = "Nyt ei mennyt ihan putkeen, kuvassa on meriharakka.";
-
+   
     var inputs = document.getElementsByName('lintu1');
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -204,9 +185,7 @@ function function10() {
         score2++;
         document.getElementById("käärme").innerHTML = "Vastauksesi on oikein. Nimensä mukaisesti rantakäärme viihtyy vesien äärellä. Se on varsin hyvä uimari, joka pystyy sukeltamaan jopa puoli tuntia kerrallaan. Päiväaktiivinen rantakäärme on ihmiselle vaaraton. ";// + "https://www.apu.fi/artikkelit/vaaraton-rantakaarme-on-todellinen-hyotykaarme-nain-erotat-sen-kyysta"
 
-    } else if (rd18.checked == true)
-        document.getElementById("käärme").innerHTML = "Nyt ei mennyt ihan putkeen, kuvassa makoilee rantakäärme.";
-    else if (rd20.checked == true)
+    } else if (rd18.checked == true|rd20.checked == true)
         document.getElementById("käärme").innerHTML = "Nyt ei mennyt ihan putkeen, kuvassa makoilee rantakäärme.";
 
     var inputs = document.getElementsByName('käärme');
@@ -370,7 +349,7 @@ function function15() {
         return;
     } else {
         document.getElementById("error5").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
-    } {
+    
         document.getElementById("Tuloksesi luontovisasta 5-6 lk sait:" + score + "/5 pistettä. Kärppä tarvitsee saalista vuorokaudessa 40 -70 grammaa eli noin 2-4 myyrää. Hyvinä myyrävuosina kärppä tappaa enemmän myyriä kuin itse jaksaa syödä, näin ollen kärppä on tärkeä saalislajin runsauden säätelijä.  Huonompina myyrävuosina kärppä käyttää ravinnokseen myös liskoja, sammakoita, linnunmunia ja -poikasia, hyönteisiä ja jopa marjoja.");
 
     }
