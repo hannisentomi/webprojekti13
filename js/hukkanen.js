@@ -126,7 +126,7 @@ function riikavastaus() {
     } else {
         document.getElementById("result5").innerHTML = "Sinun täytyy valita joku vaihtoehdoista."
     }
-var totalscore = ["Et saanut yhtään pistettä tai pöllöä. Joudut kertaamaan paljon maantietoa", "Sait yhden pisteen ja pöllön. Se on ihan hyvä tulos, mutta sinun kannattaisi vielä kerrata maantietoa.", "Sait kaksi pistettä ja kaksi pöllä. Se on ihan hyvä tulos, mutta sinun kannattaisi vielä kerrata maantietoa.", "Sait kolme pistettä ja kolme pöllöä. Hienoa työtä! Jotain asioita kuitenkin kannattaa vielä kerrata.", "Sait neljä pistettä ja pöllöä, mahtava saldo!", "Sait kaikki kysymykset oikein ja täydet pisteet sekä kaikki viisi pöllöä! Taidat olla haka maantiedossa"];
+var totalscore = ["Voi itku, et saanut yhtään pistettä tai pöllöä. Joudut kertaamaan vielä maantietoa.", "Sait yhden pisteen ja pöllön. Se on ihan hyvä tulos, mutta sinun kannattaisi vielä kerrata maantietoa.", "Sait kaksi pistettä ja kaksi pöllöä. Se on ihan hyvä tulos, mutta sinun kannattaisi vielä kerrata maantietoa.", "Sait kolme pistettä ja kolme pöllöä. Hienoa työtä! Jotain asioita kuitenkin kannattaa vielä kerrata.", "Sait neljä pistettä ja pöllöä, mahtava saldo!", "Sait kaikki kysymykset oikein, täydet pisteet sekä kaikki viisi pöllöä! Taidat olla haka maantiedossa."];
 
     if (correct == 0) {
 
