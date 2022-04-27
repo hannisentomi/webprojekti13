@@ -51,10 +51,10 @@ function vastaus4() {
 	let oikein = document.getElementById('a4').checked;
 	if (oikein) {
 		document.getElementById('demo4').innerHTML =
-			'Oikea vastaus! ';
+			'Oikea vastaus! Colosseum oli Rooman merkittävin gladiaattorinäytäntöjen tapahtumapaikka';
 	} else {
 		document.getElementById('demo4').innerHTML =
-			'Väärin meni';
+			'Väärin meni. Oikea vastaus on Gladiaattorinäytöksistä';
 	}
 	document.getElementById("a4").disabled = true;
 	document.getElementById("b4").disabled = true;
