@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Minna Lohi">
-    <title>Visailuja</title>
+    <title>Luontovisa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -44,9 +44,9 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="Vuorenmaa.html" class="nav-link px-0"> <span
-                                        class="d-none d-sm-inline ">Matikkaa</span> <i class=><i
-                                            class="fa-solid fa-hand-holding-heart"></i></i> </a>
+                                <a href="./pages/Vuorenmaa.html" class="nav-link px-0"> <span
+                                        class="d-none d-sm-inline ">Matikkaa</span> <i
+                                        class="fa-solid fa-plus-minus täsmä"></i> </a>
                             </li>
                             <li>
                                 <a href="hukkanen.html" class="nav-link px-0"> <span
@@ -73,7 +73,6 @@
                                         class="d-none d-sm-inline">Tietoa meistä </span><i
                                         class="fa-solid fa-people-group"></i> </a>
                             </li>
-                            </li>
                         </ul>
                     </div>
                 </div>
@@ -95,148 +94,169 @@
                     <p>5-6 LK</p>
                 </div>
                 <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <h3>1. Mikä on tämä kaunis luonnonkukka ?</h3>
-                            <br</div> <!-- Image: Pixabay.com -->
-                            <img src="../images/Lohi_images/kissankello.jpg">
-                        </div>
-                        <br>
-                        <div class="col">
-                            <br>
-                            <div>
-                                <input type="radio" id="Kissankello" name="kukka" value="Kissankello">
-                                <label for="Kissankello">kissankello</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="Harakankello" name="kukka" value="Harakankello">
-                                <label for="Harakankello">harakankello</label>
-                            </div>
-                              <div>
-                                <input type="radio" id="Kurjenkello" name="kukka" value="Kurjenkello">
-                                <label for="Kurjenkello">kurjenkello</label>
+                    <div class="guestion">
+                        <div class="row">
+                            <div class="col">
+                                <h3>1. Mikä on tämä kaunis luonnonkukka ?</h3>
+                                <br><!-- Image: Pixabay.com -->
+                                <img src="../images/lohi_images/kissankello.jpg">
                             </div>
                             <br>
-                            <div>
-                                <button type="button" onclick="function11()">Tarkista vastaus</button>
-                            </div>
-                            <br>
-                            <h3 id="kukka" style="color:green"> </h3>
-                            <h4 id="error" style="color:red"> </h4>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="col">
-                            <h3>2. Tunnistatko kuvan lokin ?</h3>
-                            <br>
-                             <!-- Image: Pixabay.com -->
-                            <img src="../images/Lohi_images/harmaalokki.jpg">
-                        </div>
-                        <div class="col">
-                            <div>
-                                <input type="radio" id="kalalokki" name="drone" value="kalalokki">
-                                <label for="kalalokki">kalalokki</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="harmaalokki" name="drone" value="harmaalokki">
-                                <label for="harmaalokki">harmaalokki</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="merilokki" name="drone" value="merilokki">
-                                <label for="merilokki">merilokki</label>
-                            </div>
-                            <br>
-                            <button type="button" onclick="function12()">Tarkista vastaus</button>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="col">
-                            <h3>3. Tunnistatko kuvan parvikalan ?</h3>
-                            <br>
-                             <!-- Image: Pixabay.com -->
-                            <img src="../images/Lohi_images/muikku.jpg">
-                        </div>
-                        <div class="col">
-                            <div>
-                                <input type="radio" id="muikku" name="drone" value="muikku">
-                                <label for="muikku">muikku</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="silakka" name="drone" value="silakka">
-                                <label for="silakka">silakka</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="salakka" name="drone" value="salakka">
-                                <label for="salakka">salakka</label>
-                            </div>
-                            <div>
-                                <input type="radio" id="kiiski" name="drone" value="kiiski">
-                                <label for="kiiski">kiiski</label>
-                            </div>
-                            <br>
-                            <button type="button" onclick="function13()">Tarkista vastaus</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <h3>4. Tunnistatko tämän perhosen ?</h3>
-                            <br>
-                             <!-- Image: Pixabay.com -->
-                            <img src="../images/Lohi_images/neitoperhonen.jpg">
-                        </div>
-                        <br>
-                        <div class="col">
-                            <div>
+                            <div class="col">
+                                <br>
                                 <div>
-                                    <input type="radio" id="herukkaperhonen" name="drone" value="herukkaperhonen"
-                                        checked>
-                                    <label for="herukkaperhonen">herukkaperhonen</label>
+                                    <input type="radio" id="Kissankello" name="kukka" value="Kissankello">
+                                    <label for="Kissankello">kissankello</label>
                                 </div>
                                 <div>
-                                    <input type="radio" id="ohdakeperhonen" name="drone" value="ohdakeperhonen">
-                                    <label for="ohdakeperhonen">ohdakeperhonen</label>
+                                    <input type="radio" id="Harakankello" name="kukka" value="Harakankello">
+                                    <label for="Harakankello">harakankello</label>
                                 </div>
                                 <div>
-                                    <input type="radio" id="amiraaliperhonen" name="drone" value="merilokki">
-                                    <label for="merilokki">amiraaliperhonen</label>
-                                </div>
-                                <div>
-                                    <input type="radio" id="neitoperhonen " name="drone" value="neitoperhonen ">
-                                    <label for="neitoperhonen ">neitoperhonen </label>
+                                    <input type="radio" id="Kurjenkello" name="kukka" value="Kurjenkello">
+                                    <label for="Kurjenkello">kurjenkello</label>
                                 </div>
                                 <br>
-                                <button type="button" onclick="function14()">Tarkista vastaus</button>
+                                <div class="col">
+                                    <button type="button" id="button" onclick="function11()">Tarkista vastaus</button>
+                                </div>
+                                <br>
+                                <h3 id="kukka" style="color:green"> </h3>
+                                <h4 id="error" style="color:red"> </h4>
                             </div>
                         </div>
                     </div>
                     <br>
-                    <div class="row">
-                        <div class="col">
-                            <h3>5. Tunnistatko kuvan eläimen ?</h3>
-                            <br>
-                             <!-- Image: Pixabay.com -->
-                            <img src="../images/lohi_images/kärppä.jpg">
-                        </div>
-                        <div class="col">
-                            <div>
-                                <input type="radio" id="lumikko" name="drone" value="lumikko">
-                                <label for="lumikko">lumikko</label>
+                    <div class="guestion">
+                        <div class="row">
+                            <div class="col">
+                                <h3>2. Tunnistatko kuvan lokin ?</h3>
+                                <br>
+                                <!-- Image: Pixabay.com -->
+                                <img src="../images/lohi_images/harmaalokki.jpg">
                             </div>
-                            <div>
-                                <input type="radio" id="näätä" name="drone" value="näätä">
-                                <label for="näätä">näätä</label>
+                            <div class="col">
+                                <div>
+                                    <input type="radio" id="Kalalokki" name="lintu1" value="Kalalokki">
+                                    <label for="Kalalokki">kalalokki</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="Harmaalokki" name="lintu1" value="Harmaalokki">
+                                    <label for="Harmaalokki">harmaalokki</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="Merilokki" name="lintu1" value="Merilokki">
+                                    <label for="Merilokki">merilokki</label>
+                                </div>
+                                <br>
+                                <button type="button" id="button" onclick="function12()">Tarkista vastaus</button>
+                                <br>
+                                <p id="lintu1"> </p>
+                                <br>
+                                <p id="error2"></p>
                             </div>
-                            <div>
-                                <input type="radio" id="kärppä" name="drone" value="kärppä">
-                                <label for="kärppä">kärppä</label>
-                            </div>
-                            <br>
-                            <button type="button" onclick="function15()">Tarkista vastaus</button>
                         </div>
                     </div>
-                </div> 
+                    <br>
+                    <div class="guestion">
+                        <div class="row">
+                            <div class="col-md-6-sm-12">
+
+                                <h3>3. Tunnistatko kuvan parvikalan ?</h3>
+                                <br>
+                                <!-- Image: Pixabay.com -->
+                                <img src="../images/lohi_images/muikku.jpg">
+                            </div>
+                            <div class="col">
+                                <div>
+                                    <input type="radio" id="Muikku" name="kala2" value="Muikku">
+                                    <label for="Muikku">muikku</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="Silakka" name="kala2" value="Silakka">
+                                    <label for="Silakka">silakka</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="Salakka" name="kala2" value="Salakka">
+                                    <label for="Salakka">salakka</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="Kiiski" name="kala2" value="Kiiski">
+                                    <label for="kiiski">kiiski</label>
+                                </div>
+                                <br>
+                                <button type="button" onclick="function13()">Tarkista vastaus</button>
+                                <br>
+                                <h3 id="kala2" style="color:green"> </h3>
+                                <h4 id="error3" style="color:red"> </h4>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="guestion">
+                        <div class="row">
+                            <div class="col">
+                                <h3>4. Tunnistatko tämän perhosen ?</h3>
+                                <br>
+                                <!-- Image: Pixabay.com -->
+                                <img src="../images/lohi_images/neitoperhonen.jpg">
+                            </div>
+                            <br>
+                            <div class="col">
+                                <div>
+                                    <div>
+                                        <input type="radio" id="herukkaperhonen" name="perhonen"
+                                            value="herukkaperhonen">
+                                        <label for="herukkaperhonen">herukkaperhonen</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="ohdakeperhonen" name="perhonen" value="ohdakeperhonen">
+                                        <label for="ohdakeperhonen">ohdakeperhonen</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="amiraaliperhonen" name="perhonen" value="merilokki">
+                                        <label for="merilokki">amiraaliperhonen</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="neitoperhonen" name="perhonen" value="neitoperhonen ">
+                                        <label for="neitoperhonen ">neitoperhonen </label>
+                                    </div>
+                                    <br>
+                                    <button type="button" id="button" onclick="function14()">Tarkista
+                                        vastaus</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="guestion">
+                        <div class="row">
+                            <div class="col">
+                                <h3>5. Tunnistatko kuvan eläimen ?</h3>
+                                <br>
+                                <!-- Image: Pixabay.com -->
+                                <img src="../images/lohi_images/kärppä.jpg">
+                            </div>
+                            <div class="col">
+                                <div>
+                                    <input type="radio" id="Lumikko" name="kärppä" value="Lumikko">
+                                    <label for="lumikko">lumikko</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="Näätä" name="kärppä" value="Näätä">
+                                    <label for="näätä">näätä</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="Kärppä" name="kärppä" value="Kärppä">
+                                    <label for="Kärppä">kärppä</label>
+                                </div>
+                                <br>
+                                <button type="button" id="button" onclick="function15()">Tarkista vastaus</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                     <footer>
                         <div class="footer">
                             <p id="fuuteri">Minna Lohi</p>
@@ -245,16 +265,17 @@
                     </footer>
                 </div>
             </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
