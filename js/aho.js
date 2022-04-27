@@ -39,7 +39,7 @@ function vastaus3() {
 		'Oikein meni! Rauhanopimus sai nimensä solmimispaikastaan, Pähkinälinnan linnoituksesta,joka sijaitsee Laatokan Pähkinäsaaressa';
 	} else {
 		document.getElementById('demo3').innerHTML =
-			'Väärin meni';
+			'Väärin meni. Oikea vastaus on 12.8.1323';
 	}
 	document.getElementById("a3").disabled = true;
 	document.getElementById("b3").disabled = true;
@@ -51,7 +51,7 @@ function vastaus4() {
 	let oikein = document.getElementById('a4').checked;
 	if (oikein) {
 		document.getElementById('demo4').innerHTML =
-			'oikein meni';
+			'Oikea vastaus! ';
 	} else {
 		document.getElementById('demo4').innerHTML =
 			'Väärin meni';
@@ -66,10 +66,10 @@ function vastaus5() {
 	let oikein = document.getElementById('c5').checked;
 	if (oikein) {
 		document.getElementById('demo5').innerHTML =
-			'oikein meni';
+			'Oikea vastaus! Antiikin Ateenaa on pidetty länsimaisen kulttuurin kehtona';
 	} else {
 		document.getElementById('demo5').innerHTML =
-			'Väärin meni';
+			'Väärin meni. Oikea vastaus on Ateena';
 	}
 	document.getElementById("a5").disabled = true;
 	document.getElementById("b5").disabled = true;
