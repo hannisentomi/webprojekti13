@@ -13,27 +13,32 @@ function kaupunkivastaus() {
         document.getElementById("result1").innerHTML = "Vastauksesi on oikein, onneksi olkoon! Norjan pääkaupunki on tosiaankin Oslo. Sinulla on nyt ansaittuna " + correct + " pistettä.";
         img.src = "../images/hukkanen_images/owl-dab.png"
         document.getElementById("owl1").appendChild(img);
+        document.getElementById("answer1").disabled = true;
 
     } else if (document.getElementById("1b").checked) {
         document.getElementById("result1").innerHTML = "Vastauksesi on väärin. Norjan pääkaupunki on Oslo. Sinulla on nyt  " + correct + " pistettä."
         img.src = "../images/hukkanen_images/sad.png"
         document.getElementById("owl1").appendChild(img);
+        document.getElementById("answer1").disabled = true;
 
     } else if (document.getElementById("1c").checked) {
             document.getElementById("result1").innerHTML = "Vastauksesi on väärin. Norjan pääkaupunki on Oslo. Sinulla on nyt  " + correct + " pistettä."
             img.src = "../images/hukkanen_images/sad.png"
             document.getElementById("owl1").appendChild(img);
+            document.getElementById("answer1").disabled = true;
     }
     else if (document.getElementById("1d").checked) {
         document.getElementById("result1").innerHTML = "Vastauksesi on väärin. Norjan pääkaupunki on Oslo. Sinulla on nyt  " + correct + " pistettä."
         img.src = "../images/hukkanen_images/sad.png"
         document.getElementById("owl1").appendChild(img);
+        document.getElementById("answer1").disabled = true;
     } else {
         document.getElementById("result1").innerHTML = "Sinun täytyy valita joku vaihtoehdoista."
     }
     document.getElementById("1b").disabled = true;
     document.getElementById("1c").disabled = true;
     document.getElementById("1d").disabled = true;
+    
     }
 
 
@@ -56,6 +61,7 @@ function rahayksikkovastaus() {
         document.getElementById("owl2").appendChild(img);
     }
     document.getElementById("textbox").disabled = true;
+    document.getElementById("answer2").disabled = true;
    
 }
 
@@ -85,6 +91,7 @@ function lippuvastaus() {
     document.getElementById("3a").disabled = true;
     document.getElementById("3b").disabled = true;
     document.getElementById("3d").disabled = true;
+    document.getElementById("answer3").disabled = true;
 }
 
 function nahtavyysvastaus() {
@@ -113,6 +120,7 @@ function nahtavyysvastaus() {
     document.getElementById("4a").disabled = true;
     document.getElementById("4c").disabled = true;
     document.getElementById("4d").disabled = true;
+    document.getElementById("answer4").disabled = true;
 }
 function riikavastaus() {
     let img = document.createElement("img");
@@ -140,8 +148,9 @@ function riikavastaus() {
     document.getElementById("5b").disabled = true;
     document.getElementById("5c").disabled = true;
     document.getElementById("5d").disabled = true;
+    document.getElementById("answer5").disabled = true;
 
-var totalscore = ["Voi itku, et saanut yhtään pistettä tai pöllöä. Joudut kertaamaan vielä maantietoa.", "Sait yhden pisteen ja pöllön. Se on ihan hyvä tulos, mutta sinun kannattaisi vielä kerrata maantietoa.", "Sait kaksi pistettä ja kaksi pöllöä. Se on ihan hyvä tulos, mutta sinun kannattaisi vielä kerrata maantietoa.", "Sait kolme pistettä ja kolme pöllöä. Hienoa työtä! Jotain asioita kuitenkin kannattaa vielä kerrata.", "Sait neljä pistettä ja pöllöä, mahtava saldo!", "Sait kaikki kysymykset oikein, täydet pisteet sekä kaikki viisi pöllöä! Taidat olla haka maantiedossa."];
+var totalscore = ["Voi itku, et saanut yhtään pistettä tai pöllöä. Joudut kertaamaan vielä maantietoa.", "Sait yhden pisteen ja pöllön. Se on ihan hyvä tulos, mutta sinun kannattaisi vielä kerrata maantietoa.", "Sait kaksi pistettä ja kaksi pöllöä. Se on ihan hyvä tulos, mutta sinun kannattaisi vielä kerrata maantietoa.", "Sait kolme pistettä ja kolme pöllöä. Hienoa työtä! Jotain asioita kuitenkin kannattaa vielä kerrata.", "Sait neljä pistettä ja pöllöä, mahtava saldo! Olet hyvä maantiedossa, jatka samaan malliin!", "Sait kaikki kysymykset oikein, täydet pisteet sekä kaikki viisi pöllöä! Taidat olla haka maantiedossa. Jatka samaan malliin!"];
 
     if (correct == 0) {
 
