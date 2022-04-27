@@ -65,7 +65,7 @@ div img{
     width: 100%;
     bottom: 0;
    
-    position: fixed;
+    
   
 }
 
@@ -166,5 +166,10 @@ a :hover{
 .container2{
     position: absolute; bottom: 0%;  right: 40%;
     
+}
+#owl {
+    display: none;
+    float: right;
+
 }
 
