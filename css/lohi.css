@@ -146,7 +146,7 @@ h1 {
     background-color: whitesmoke;
 }
 
-img{
+.img{
     border-radius: 5px;
     border-color: black solid 2px;
 }
@@ -165,4 +165,7 @@ img{
 }
 #koti2:hover{
     color: red;
+}
+.aloitus-box {
+    text-align: center;
 }

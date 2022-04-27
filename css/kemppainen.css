@@ -239,14 +239,28 @@ input[type=button]{
         font-size: 1.5em;
     }   
     .kortti{
-        height: 70px;
-        width: 70px;
+        height: 60px;
+        width: 60px;
     }
       .hidden{
       background-size: 60px 60px;
     }
+    input[type=button]{
+
+        margin-top: 1px;
+        background-color:	#ffff00 ;
+        border: none;
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 25px;
+        transition-duration: 0.4s;
+        padding: none;
+        margin-top: 20px;
+        border-radius: 20px;
 }
-@media screen and  (min-width:2100px ) {
+}
+@media screen and  (min-width:1900px ) {
 
     .sivu {
 		font-size: 1.5em;
@@ -256,49 +270,21 @@ input[type=button]{
 		font-size: 1.5em;
 	}
     li span{
-        font-size: 1.5em;
-        padding-right: 1em;
+        font-size: 1.1em;
         padding-left: 1em;
         
     }
     #koti2{
-        padding: 40px;
+        padding: 20px;
         
         
     }
     .kortti{
-        width: 250px;
-        height: 250px;
+        width: 190px;
+        height: 190px;
     }
     .hidden{
-        background-size: 250px 250px;
-      }
-}
-@media screen and (max-width:2000px) and (min-width:1200px){
-    .sivu {
-		font-size: 1em;
-	}
-
-	#kolumni {
-		font-size: 1em;
-	}
-    li span{
-        font-size: 2em;
-        
-        padding-left: 0.5em;
-        
-    }
-    #koti2{
-        padding: 10px;
-        
-        
-    }
-    .kortti{
-        width: 175px;
-        height: 175px;
-    }
-    .hidden{
-        background-size: 175px 175px;
+        background-size: 190px 190px;
       }
       input[type=button]{
 
@@ -314,7 +300,75 @@ input[type=button]{
         margin-top: 20px;
         border-radius: 20px;
 }
+}
+@media screen and (max-width:1800px) and (min-width:1200px){
+    .sivu {
+		font-size: 1em;
+	}
+
+	#kolumni {
+		font-size: 1em;
+	}
+    li span{
+        font-size: 1em;
+        
+        padding-left: 0.5em;
+        
+    }
+    #koti2{
+        padding: 10px;
+        
+        
+    }
+    .kortti{
+        width: 115px;
+        height: 115px;
+    }
+    .hidden{
+        background-size: 115px 115px;
+      }
+      input[type=button]{
+
+        margin-top: 1px;
+        background-color:	#ffff00 ;
+        border: none;
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 20px;
+        transition-duration: 0.4s;
+        padding: none;
+        margin-top: 10px;
+        border-radius: 20px;
+}
 .ikonit{
-    font-size: 30px;
+    font-size: 20px;
+}
+#koti{
+    display: none;
+}
+}
+@media screen and (min-width:993px) and (max-width:1190px){
+
+    .kortti{
+        width: 115px;
+        height: 115px;
+    }
+    .hidden{
+        background-size: 115px 115px;
+}
+input[type=button]{
+
+    margin-top: 1px;
+    background-color:	#ffff00 ;
+    border: none;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    padding: none;
+    margin-top: 10px;
+    border-radius: 20px;
 }
 }
