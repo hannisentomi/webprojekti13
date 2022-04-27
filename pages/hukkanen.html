@@ -109,43 +109,46 @@
                  
                </div>
                <div class="container" >
-                
-                       <div id="kolumni" class="col-12">
+               <div id="kolumni" class="col-12">
                            <p>Testaa maantiedon tietämyksesi täällä! Alla on viisi kysymystä, joihin sinun tule vastata kaikkiin oikein päästäksesi visailun kunnialla läpi.
-                              Pisteiden lisäksi keräät pöllöjä. Tavoitteena on saada tietenkin kaikki viisi pöllöä. Tsemppiä visailuun!
+                              Pisteiden lisäksi keräät pöllöjä. Tavoitteena on saada tietenkin kaikki viisi pöllöä - vääristä vastauksista saat ainoastaan surullisia kaloja.
+                              Tsemppiä visailuun!
                            </p>
                        </div>
+              
 
 
                        <div class="container">
                           <div id="question-container1" class="hide">
-                             <div id="kysymys1"><h4>1. Mikä on Norjan pääkaupunki?</h4></div>
-                             <div id="vastaus1" class="btn-grid">
+                             <h4>1. Mikä on Norjan pääkaupunki?</h4>
+                             <div id="vastaus1">
                               <input type="checkbox" id="1a" name="kaupunki" value="Oslo">Oslo<br>
                               <input type="checkbox" id="1b" name="kaupunki" value="Tallinna">Tallinna<br>
                               <input type="checkbox" id="1c" name="kaupunki" value="Kööpenhamina">Kööpenhamina<br>
                               <input type="checkbox" id="1d" name="kaupunki" value="Tukholma">Tukholma<br>
-                             </div>
-      
+                              </div>
+                          
                           </div>
                           <div class="controls">
                              <button id="answer1" class= "answer1-btn btn" onclick="kaupunkivastaus()">Oikea vastaus</button>
+                             <p id="owl1"></p>
                              <p id="result1"></p> <br><br>
                              
-             
-                          </div>
+                           
+                        </div>
                        </div>
 
                        <div class="container">
                         <div id="question-container2" class="hide">
                            <p><h4>2. Mitä rahayksikköä käytetään Iso-Britanniassa?</h4></p>
-                           <div id="vastaus2" class="btn-grid">
+                           <div id="vastaus2"">
                               <input id="textbox" type ="text" name ="kysymys2">
                         </div>
                         
                         </div>
                         <div class="controls">
                            <button id="answer2" class= "answer1-btn btn" onclick="rahayksikkovastaus()">Oikea vastaus</button>
+                           <p id="owl2"></p>
                            <p id="result2"></p> <br><br>
                         </div>
                      </div>
@@ -155,7 +158,7 @@
                            <div id="kysymys3"><h4>3. Minkä maan lippu on kuvassa?</h4>
                            <img src="../images/hukkanen_images/lippu.png"><br></div> <!-- Kuva: Pixabay.com -->
                            
-                           <div id="vastaus3" class="btn-grid">
+                           <div id="vastaus3">
                             <input type="checkbox" id="3a" name="lippu" value="Ruotsi">Ruotsi<br>
                             <input type="checkbox" id="3b" name="lippu" value="Monaco">Monaco<br>
                             <input type="checkbox" id="3c" name="lippu" value="Vatikaanivaltio">Vatikaanivaltio<br>
@@ -165,6 +168,7 @@
                         </div>
                         <div class="controls">
                            <button id="answer2" class= "answer1-btn btn" onclick="lippuvastaus()">Oikea vastaus</button>
+                           <p id="owl3"></p>
                            <p id="result3"></p> <br><br>
                            </div>
                      </div>
@@ -172,9 +176,9 @@
                      <div class="container">
                         <div id="question-container4" class="hide">
                            <div id="kysymys4"><h4>4. Missä Euroopan kaupungissa on kuvassa näkyvä nähtävyys?</h4>
-                              
+                              <img src="../images/hukkanen_images/sagrada.jpg"><br></div> <!-- Kuva: Pixabay.com -->
                            
-                           <div id="vastaus3" class="btn-grid">
+                           <div id="vastaus4">
                             <input type="checkbox" id="4a" name="nahtavyys" value="Pariisi">Pariisi<br>
                             <input type="checkbox" id="4b" name="nahtavyys" value="Barcelona">Barcelona<br>
                             <input type="checkbox" id="4c" name="nahtavyys" value="Praha">Praha<br>
@@ -184,6 +188,7 @@
                         </div>
                         <div class="controls">
                            <button id="answer2" class= "answer1-btn btn" onclick="nahtavyysvastaus()">Oikea vastaus</button>
+                           <p id="owl4"></p>
                            <p id="result4"></p> <br><br>
                            </div>
                      </div>
@@ -191,7 +196,7 @@
                         <div id="question-container" class="hide">
                            <div id="kysymys5"><h4>5. Minkä maan pääkaupunki on Riika?</h4></div>
                            
-                           <div id="vastaus5" class="btn-grid">
+                           <div id="vastaus5">
                             <input type="checkbox" id="5a" name="nahtavyys" value="Latvia">Latvia<br>
                             <input type="checkbox" id="5b" name="nahtavyys" value="Liettua">Liettua<br>
                             <input type="checkbox" id="5c" name="nahtavyys" value="Viro">Viro<br>
@@ -201,6 +206,7 @@
                         </div>
                         <div class="controls">
                            <button id="answer2" class= "answer1-btn btn" onclick="riikavastaus()">Oikea vastaus</button>
+                           <p id="owl5"></p>
                            <p id="result5"></p> <br><br><br>
                            <p id="finalscore"></p>
                            </div>
