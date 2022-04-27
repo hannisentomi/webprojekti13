@@ -101,4 +101,4 @@ function riikavastaus() {
         document.getElementById("result5").innerHTML = "Sinun täytyy valita joku vaihtoehdoista."
     }
 
-
+}
