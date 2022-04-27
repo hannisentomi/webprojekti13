@@ -31,6 +31,9 @@ function kaupunkivastaus() {
     } else {
         document.getElementById("result1").innerHTML = "Sinun täytyy valita joku vaihtoehdoista."
     }
+    document.getElementById("1b").disabled = true;
+    document.getElementById("1c").disabled = true;
+    document.getElementById("1d").disabled = true;
     }
 
 
@@ -52,6 +55,8 @@ function rahayksikkovastaus() {
         img.src = "../images/hukkanen_images/sad.png"
         document.getElementById("owl2").appendChild(img);
     }
+    document.getElementById("textbox").disabled = true;
+   
 }
 
 function lippuvastaus() {
@@ -77,6 +82,9 @@ function lippuvastaus() {
     } else {
         document.getElementById("result3").innerHTML = "Sinun täytyy valita joku vaihtoehdoista."
     }
+    document.getElementById("3a").disabled = true;
+    document.getElementById("3b").disabled = true;
+    document.getElementById("3d").disabled = true;
 }
 
 function nahtavyysvastaus() {
@@ -102,6 +110,9 @@ function nahtavyysvastaus() {
     } else {
         document.getElementById("result4").innerHTML = "Sinun täytyy valita joku vaihtoehdoista."
     }
+    document.getElementById("4a").disabled = true;
+    document.getElementById("4c").disabled = true;
+    document.getElementById("4d").disabled = true;
 }
 function riikavastaus() {
     let img = document.createElement("img");
@@ -126,6 +137,10 @@ function riikavastaus() {
     } else {
         document.getElementById("result5").innerHTML = "Sinun täytyy valita joku vaihtoehdoista."
     }
+    document.getElementById("5b").disabled = true;
+    document.getElementById("5c").disabled = true;
+    document.getElementById("5d").disabled = true;
+
 var totalscore = ["Voi itku, et saanut yhtään pistettä tai pöllöä. Joudut kertaamaan vielä maantietoa.", "Sait yhden pisteen ja pöllön. Se on ihan hyvä tulos, mutta sinun kannattaisi vielä kerrata maantietoa.", "Sait kaksi pistettä ja kaksi pöllöä. Se on ihan hyvä tulos, mutta sinun kannattaisi vielä kerrata maantietoa.", "Sait kolme pistettä ja kolme pöllöä. Hienoa työtä! Jotain asioita kuitenkin kannattaa vielä kerrata.", "Sait neljä pistettä ja pöllöä, mahtava saldo!", "Sait kaikki kysymykset oikein, täydet pisteet sekä kaikki viisi pöllöä! Taidat olla haka maantiedossa."];
 
     if (correct == 0) {
