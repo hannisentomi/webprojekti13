@@ -1,4 +1,7 @@
 /* Minna Lohi TIK22KM */
+var score2= 0;
+
+var score = 0;
 
 const btn = document.querySelector('#btn');
 const radioButtons = document.querySelectorAll('input[name="lintu"]');
@@ -68,14 +71,17 @@ btn5.addEventListener("click", () => {
     output5.innerText = selectedKukka ? `VÄÄ-RIN ME-NI. KU-VAS-SSA EI O-LE ${selectedKukka}. ` + "KU-VAN KUK-KA ON VAL-KO-VUOK-KO." : `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
 });
 
+
 function function6() {
     let rd1 = document.getElementById("mesimarja");
     let rd2 = document.getElementById("karhunvatukka");
     let rd3 = document.getElementById("lillukka");
     let rd4 = document.getElementById("mustavadelma");
 
-    if (rd2.checked == true)
+    if (rd2.checked == true){
+    score2++;
         document.getElementById("marja").innerHTML = "Hyvin meni! Karhunvatukka on herkullinen ja mehukas marja, joka soveltuu ihanteellisesti  terveellisiin juomiin ja smoothieihin, sekä sellaisenaan nautittavaksi jogurtin kera tai jälkiruuissa. Voit syödä karhunvatukoita myös salaateissa ja muissa kylmissä resepteissä." + "Voit lukea lisää karhunvatukan terveydhyödyistä täältä:" + " https://askelterveyteen.com/7-syyta-syoda-karhunvatukoita/";
+    }
     else if (rd1.checked == true)
         document.getElementById("marja").innerHTML = "Voi ei, vastasit väärin, kuvan marja on karhunvatukka";
     else if (rd3.checked == true)
@@ -90,8 +96,10 @@ function function7() {
     let rd7 = document.getElementById("leppä");
     let rd8 = document.getElementById("haapa");
 
-    if (rd7.checked == true)
+    if (rd7.checked == true){
+    score2++;
         document.getElementById("puu").innerHTML = "Aivan oikein. Tiesitkö, että leppä sopii erityisen hyvin jatkuvalämmitteisen saunan ja savusaunan lämmitykseen sekä helloihin ja avotakkoihin." + "https://savonvoima.fi/miksi-koivua-pidetaan-parhaana-polttopuuna/";
+    }
     else if (rd5.checked == true)
         document.getElementById("puu").innerHTML = "Nyt ei mennyt ihan putkeen, kuvan puu on leppä.";
     else if (rd6.checked == true)
@@ -107,9 +115,11 @@ function function8() {
     let rd12 = document.getElementById("typäskääpä");
     let rd13 = document.getElementById("outorisakas");
 
-    if (rd11.checked == true)
+    if (rd11.checked == true){
+    score2++;
         document.getElementById("sieni").innerHTML = "Vastauksesi on oikein. Korvasieni on helppo tuntea,sillä keväällä ei juuri muita sieniä kasva. Se viihtyy parhaiten hiekkamaalla, vanhoilla hakkuualueilla. Ruskea muhkura voi olla ensin vaikea havaita, mutta kun silmä tottuu, niin kas niitähän on joka paikassa! Tämä raakana myrkyllinen ruokasieni pitää esikäsitellä huolellisesti. " +
             "Suuret korvasienet vastaavat kooltaan lapsen aivoja, ja useamman sienen rypäs voi ylittää aikuisen ihmisen aivojen koon.Korvasieni on alkukesän aarre. Sen satokausi kestää vain muutaman viikon, joten herkku on poimittava oikeaan aikaan. Satokausi riippuu kevään lämpötilasta, pohjoisessa korvasieniä saatetaan kerätä vielä heinäkuussakin. Nyrkkisääntönä on, että korvasieniä kannattaa lähteä etsimään, kun hiirenkorvat ilmestyvät koivuihin." + "https://yle.fi/aihe/artikkeli/2019/04/26/myrkky-vai-herkku-korvasieni-jakaa-mielipiteet";
+    }
     else if (rd9.checked == true)
         document.getElementById("sieni").innerHTML = "Väärin meni, kuvan sieni on korvasieni";
     else if (rd10.checked == true)
@@ -126,10 +136,12 @@ function function9() {
     let rd16 = document.getElementById("merilokki");
     let rd17 = document.getElementById("meriharakka");
 
-    if (rd17.checked == true)
+    if (rd17.checked == true){
+    score2++;
         document.getElementById("lintu1").innerHTML = "Vastauksesi on oikein. Meriharakka on melkein variksen kokoinen, tanakka kahlaajalintu, jonka pää ja selkäpuoli ovat mustat, vatsa valkoinen. Räikeänpunaiset nokka ja jalat näkyvät kauas. Ääni on kimeä ja kiihkeä”pii, biik” ja ”ko-biik ko-biik…" +
             "Meriharakka pesii merensaariston kallioisilla ja somerikkoisilla, puuttomilla luodoilla, muutamin paikoin sisämaassakin teollisuuslaitosten avomailla ja puutavarakentillä. Pääravintona ovat simpukat, joita emot tuovat poikasille avattuaan niiden kuoren (muilla kahlaajilla untuvikot syövät pikkuötököitä ilman emojen apua). Rannikkoseuduilla meriharakat etsivät matoja ja kotiloita myös avarilta nurmikoilta." +
             "Meriharakka on yleinen koko merialueella, sisämaassa pesivänä hyvin harvinainen mutta keväällä säännöllinen läpimuuttaja Jäämeren äärelle. Linnut lähtevät heinä-syyskuussa Länsi-Euroopan rannikoille ja palaavat valtaosin huhtikuussa. " + " https://yle.fi/aihe/artikkeli/2017/05/16/rantojen-ja-kosteikkojen-kahlaajia-meriharakka";
+    }
     else if (rd14.checked == true)
         document.getElementById("lintu1").innerHTML = "Nyt ei mennyt ihan putkeen, kuvassa on meriharakka.";
     else if (rd15.checked == true)
@@ -144,16 +156,18 @@ function function10() {
     let rd20 = document.getElementById("kyy");
 
 
-    if (rd19.checked == true)
+    if (rd19.checked == true){
+    score2++;
         document.getElementById("käärme").innerHTML = "Vastauksesi on oikein. Nimensä mukaisesti rantakäärme viihtyy vesien äärellä. Se on varsin hyvä uimari, joka pystyy sukeltamaan jopa puoli tuntia kerrallaan. Päiväaktiivinen rantakäärme on ihmiselle vaaraton. " + "https://www.apu.fi/artikkelit/vaaraton-rantakaarme-on-todellinen-hyotykaarme-nain-erotat-sen-kyysta";
+    }
     else if (rd18.checked == true)
         document.getElementById("käärme").innerHTML = "Nyt ei mennyt ihan putkeen, kuvassa makoilee rantakäärme.";
     else if (rd20.checked == true)
         document.getElementById("käärme").innerHTML = "Nyt ei mennyt ihan putkeen, kuvassa makoilee rantakäärme.";
 
+        document.getElementById("Tuloksesi luontovisasta 5-6 lk sait:" + score + "/5 pistettä.");
 }
 
-var score = 0;
 
 function function11() {
 
@@ -161,20 +175,20 @@ function function11() {
         score++;
 
         document.getElementById("kukka").innerHTML = document.getElementById("Kissankello").value +
-            " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";
+            " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/ 5 pistettä. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";
         return;
 
     } else if (document.getElementById('Harakankello').checked) {
 
         document.getElementById("error").innerHTML = document.getElementById("Harakankello").value +
-            " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";
+            " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/ 5 pistettä. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";
             " ei ole oikea vastaus.  Kuvassa on kissankello.Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";
         return;
 
     } else if (document.getElementById('Kurjenkello').checked) {
 
         document.getElementById("error").innerHTML = document.getElementById("Kurjenkello").value +
-            " ei ole oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Kuvassa on kissankello. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";
+            " ei ole oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/ 5 pistettä. Kuvassa on kissankello. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";
         return;
 
     } else {
@@ -191,7 +205,7 @@ function function12() {
         score++;
 
         document.getElementById("lintu1").innerHTML = document.getElementById("Harmaalokki").value +
-            " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/5 pistettä.";
+            " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Harmaalokilla on neljä ikäluokkaa ja useita pukuja. Toisesta talvesta lähtien sillä on harmaa selkä. Jalat ovat vaaleanpunaiset (vanha lintu) tai ruskeanharmaat (nuori lintu). Nokka on vaaleakärkisesti keltainen ja alanokan kulmassa on punainen täplä (vanha lintu), tai nokka on punertavatyvisesti tumma (nuori lintu). Silmän värikalvo (iiris) on vaaleankeltainen (vanha lintu) tai tummanruskea-vaaleankeltainen (nuori lintu). Alanokan kulman punainen täplä kehittyy kolmantena talvena.";
         return;
 
     } else if (document.getElementById("Kalalokki").checked) {
@@ -246,7 +260,7 @@ function function14() {
     if (document.getElementById('Harmaalokki').checked) {
         score++;
         document.getElementById("lintu1").innerHTML = document.getElementById("Harmaalokki").value +
-            " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Harmaalokilla on neljä ikäluokkaa ja useita pukuja. Toisesta talvesta lähtien sillä on harmaa selkä. Jalat ovat vaaleanpunaiset (vanha lintu) tai ruskeanharmaat (nuori lintu). Nokka on vaaleakärkisesti keltainen ja alanokan kulmassa on punainen täplä (vanha lintu), tai nokka on punertavatyvisesti tumma (nuori lintu). Silmän värikalvo (iiris) on vaaleankeltainen (vanha lintu) tai tummanruskea-vaaleankeltainen (nuori lintu). Alanokan kulman punainen täplä kehittyy kolmantena talvena.";
+            " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. ";
         return;
 
     } else if (document.getElementById("Kalalokki").checked) {

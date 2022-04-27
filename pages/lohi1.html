@@ -26,13 +26,11 @@
     <!--Sidebar-->
     <div class="container-fluid">
         <div class="row flex-nowrap">
-            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-success">
-                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-5 text-white min-vh-100">
-                    <a href="/"
-                        class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                        <span class="fs-1 d-none d-sm-inline" id="koti2"> Etusivu </span> <i id="koti"
-                            class="fa-solid fa-house-chimney fa-beat-fade"></i>
-                    </a>
+           <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-success">
+              <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-5 text-white min-vh-100">
+                 <a href="../index.html" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none" ><span  class="fs-1 d-none d-sm-inline" id="koti2"> Etusivu </span> <i id="koti" class="fa-solid fa-house-chimney fa-beat-fade"></i>
+                 </a>
+                 <div class="sivu">
                     <div class="sivu">
                         <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-left align-items-sm-start"
                             id="menu">
@@ -97,7 +95,7 @@
                     <div class="guestion">
                         <div class="aloitus-box">
                             <h5>KYSYMYKSIÄ:<span class="total-guestion"> 5</span></h5>
-                          <p>TUNNISTA KUVAN LUONTOKAPPALEET</p>
+                            <p>TUNNISTA KUVAN LUONTOKAPPALEET</p>
                         </div>
                     </div>
                     <br>
@@ -257,58 +255,58 @@
                     </div>
                     <br>
                     <div class="guestion">
-                    <div class="row">
-                        <div class="col">
-                            <h3>5/5 MI-KÄ KUK-KA ?</h3>
-                            <br>
-                            <!-- Image: Pixabay.com -->
-                            <img src="../images/lohi_images/valkovuokko.jpg" class="rounded float-start" alt="pi">
-                        </div>
-                        <div class="col">
-                            <div>
-                                <input type="radio" id="metsätähti" name="kukka" value="MET-SÄ-TÄHTI">
-                                <label for="metsätähti">MET-SÄ-TÄHTI</label>
+                        <div class="row">
+                            <div class="col">
+                                <h3>5/5 MI-KÄ KUK-KA ?</h3>
+                                <br>
+                                <!-- Image: Pixabay.com -->
+                                <img src="../images/lohi_images/valkovuokko.jpg" class="rounded float-start" alt="pi">
                             </div>
-                            <div>
-                                <input type="radio" id="valkovuokko" name="kukka" value="VAL-KO-VUOK-KO">
-                                <label for="valkovuokko">VAL-KO-VUOK-KO</label>
+                            <div class="col">
+                                <div>
+                                    <input type="radio" id="metsätähti" name="kukka" value="MET-SÄ-TÄHTI">
+                                    <label for="metsätähti">MET-SÄ-TÄHTI</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="valkovuokko" name="kukka" value="VAL-KO-VUOK-KO">
+                                    <label for="valkovuokko">VAL-KO-VUOK-KO</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="lumikello" name="kukka" value="LU-MI-KEL-LO">
+                                    <label for="lumikello">LU-MI-KEL-LO</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="kevätesikko" name="kukka" value="KE-VÄT-E-SIK-KO ">
+                                    <label for="kevätesikko">KE-VÄT-E-SIK-KO </label>
+                                </div>
                             </div>
-                            <div>
-                                <input type="radio" id="lumikello" name="kukka" value="LU-MI-KEL-LO">
-                                <label for="lumikello">LU-MI-KEL-LO</label>
+                            <div class="col">
+                                <p id="kasvi"></p>
+                                <p>
+                                    <button id="btn5">Tarkista vastaus</button>
+                                </p>
+                                <p id="output5"></p>
                             </div>
-                            <div>
-                                <input type="radio" id="kevätesikko" name="kukka" value="KE-VÄT-E-SIK-KO ">
-                                <label for="kevätesikko">KE-VÄT-E-SIK-KO </label>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <p id="kasvi"></p>
-                            <p>
-                                <button id="btn5">Tarkista vastaus</button>
-                            </p>
-                            <p id="output5"></p>
                         </div>
                     </div>
+                    <footer>
+                        <div class="footer">
+                            <p id="fuuteri">Minna Lohi</p>
+                            <p>OAMK</p>
+                        </div>
+                    </footer>
                 </div>
-                <footer>
-                    <div class="footer">
-                        <p id="fuuteri">Minna Lohi</p>
-                        <p>OAMK</p>
-                    </div>
-                </footer>
             </div>
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+            </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+            </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+            </script>
 </body>
 
 </html>
