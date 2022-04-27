@@ -55,17 +55,17 @@ btn4.addEventListener("click", () => {
 });
 
 const btn5 = document.querySelector('#btn5');
-const radioButtons5 = document.querySelectorAll('input[name="kasvi"]');
+const radioButtons5 = document.querySelectorAll('input[name="kukka"]');
 btn5.addEventListener("click", () => {
-    let selectedKasvi;
+    let selectedKukka;
     for (const radioButton of radioButtons5) {
         if (radioButton.checked) {
-            selectedKasvi = radioButton.value;
+            selectedKukka = radioButton.value;
             break;
 
         }
     }
-    output5.innerText = selectedKasvi ? `VÄÄ-RIN ME-NI. KU-VAS-SSA EI O-LE ${selectedKasvi}. ` + "KU-VAN KUK-KA ON VAL-KO-VUOK-KO." : `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
+    output5.innerText = selectedKukka ? `VÄÄ-RIN ME-NI. KU-VAS-SSA EI O-LE ${selectedKukka}. ` + "KU-VAN KUK-KA ON VAL-KO-VUOK-KO." : `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
 });
 
 function function6() {
@@ -95,7 +95,7 @@ function function7() {
     else if (rd5.checked == true)
         document.getElementById("puu").innerHTML = "Nyt ei mennyt ihan putkeen, kuvan puu on leppä.";
     else if (rd6.checked == true)
-        document.getElementById("puu").innerHTML = "Nyt ei mennyt ihan putkeen, kuvan puu on leppä";
+        document.getElementById("puu").innerHTML = "Nyt ei mennyt ihan putkeen, kuvan puu on leppä.";
     else if (rd8.checked == true)
         document.getElementById("puu").innerHTML = "Nyt ei mennyt ihan putkeen, kuvassa makoilee rantakäärme.";
 }
@@ -109,7 +109,7 @@ function function8() {
 
     if (rd11.checked == true)
         document.getElementById("sieni").innerHTML = "Vastauksesi on oikein. Korvasieni on helppo tuntea,sillä keväällä ei juuri muita sieniä kasva. Se viihtyy parhaiten hiekkamaalla, vanhoilla hakkuualueilla. Ruskea muhkura voi olla ensin vaikea havaita, mutta kun silmä tottuu, niin kas niitähän on joka paikassa! Tämä raakana myrkyllinen ruokasieni pitää esikäsitellä huolellisesti. " +
-        "Suuret korvasienet vastaavat kooltaan lapsen aivoja, ja useamman sienen rypäs voi ylittää aikuisen ihmisen aivojen koon.Korvasieni on alkukesän aarre. Sen satokausi kestää vain muutaman viikon, joten herkku on poimittava oikeaan aikaan. Satokausi riippuu kevään lämpötilasta, pohjoisessa korvasieniä saatetaan kerätä vielä heinäkuussakin. Nyrkkisääntönä on, että korvasieniä kannattaa lähteä etsimään, kun hiirenkorvat ilmestyvät koivuihin." + "https://yle.fi/aihe/artikkeli/2019/04/26/myrkky-vai-herkku-korvasieni-jakaa-mielipiteet";
+            "Suuret korvasienet vastaavat kooltaan lapsen aivoja, ja useamman sienen rypäs voi ylittää aikuisen ihmisen aivojen koon.Korvasieni on alkukesän aarre. Sen satokausi kestää vain muutaman viikon, joten herkku on poimittava oikeaan aikaan. Satokausi riippuu kevään lämpötilasta, pohjoisessa korvasieniä saatetaan kerätä vielä heinäkuussakin. Nyrkkisääntönä on, että korvasieniä kannattaa lähteä etsimään, kun hiirenkorvat ilmestyvät koivuihin." + "https://yle.fi/aihe/artikkeli/2019/04/26/myrkky-vai-herkku-korvasieni-jakaa-mielipiteet";
     else if (rd9.checked == true)
         document.getElementById("sieni").innerHTML = "Väärin meni, kuvan sieni on korvasieni";
     else if (rd10.checked == true)
@@ -128,8 +128,8 @@ function function9() {
 
     if (rd17.checked == true)
         document.getElementById("lintu1").innerHTML = "Vastauksesi on oikein. Meriharakka on melkein variksen kokoinen, tanakka kahlaajalintu, jonka pää ja selkäpuoli ovat mustat, vatsa valkoinen. Räikeänpunaiset nokka ja jalat näkyvät kauas. Ääni on kimeä ja kiihkeä”pii, biik” ja ”ko-biik ko-biik…" +
-        "Meriharakka pesii merensaariston kallioisilla ja somerikkoisilla, puuttomilla luodoilla, muutamin paikoin sisämaassakin teollisuuslaitosten avomailla ja puutavarakentillä. Pääravintona ovat simpukat, joita emot tuovat poikasille avattuaan niiden kuoren (muilla kahlaajilla untuvikot syövät pikkuötököitä ilman emojen apua). Rannikkoseuduilla meriharakat etsivät matoja ja kotiloita myös avarilta nurmikoilta." +
-        "Meriharakka on yleinen koko merialueella, sisämaassa pesivänä hyvin harvinainen mutta keväällä säännöllinen läpimuuttaja Jäämeren äärelle. Linnut lähtevät heinä-syyskuussa Länsi-Euroopan rannikoille ja palaavat valtaosin huhtikuussa. " + " https://yle.fi/aihe/artikkeli/2017/05/16/rantojen-ja-kosteikkojen-kahlaajia-meriharakka";
+            "Meriharakka pesii merensaariston kallioisilla ja somerikkoisilla, puuttomilla luodoilla, muutamin paikoin sisämaassakin teollisuuslaitosten avomailla ja puutavarakentillä. Pääravintona ovat simpukat, joita emot tuovat poikasille avattuaan niiden kuoren (muilla kahlaajilla untuvikot syövät pikkuötököitä ilman emojen apua). Rannikkoseuduilla meriharakat etsivät matoja ja kotiloita myös avarilta nurmikoilta." +
+            "Meriharakka on yleinen koko merialueella, sisämaassa pesivänä hyvin harvinainen mutta keväällä säännöllinen läpimuuttaja Jäämeren äärelle. Linnut lähtevät heinä-syyskuussa Länsi-Euroopan rannikoille ja palaavat valtaosin huhtikuussa. " + " https://yle.fi/aihe/artikkeli/2017/05/16/rantojen-ja-kosteikkojen-kahlaajia-meriharakka";
     else if (rd14.checked == true)
         document.getElementById("lintu1").innerHTML = "Nyt ei mennyt ihan putkeen, kuvassa on meriharakka.";
     else if (rd15.checked == true)
@@ -153,72 +153,70 @@ function function10() {
 
 }
 
-/*else
-    document.getElementById("marja").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto";*/
-
-/*function function11(){
-let getSelectedValue = document.querySelector( 'input[name="kukka"]:checked');
-if(getSelectedValue != null) {
-    document.getElementById("kukka").innerHTML = "Vastaus on aivan oikein.Tämä kasvi on todellakin " + getSelectedValue.value +".";
-    return;
-
-}*/
 var score = 0;
 
 function function11() {
 
     if (document.getElementById('Kissankello').checked) {
-        score++
+        score++;
+
         document.getElementById("kukka").innerHTML = document.getElementById("Kissankello").value +
-            " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/5 pistettä.";
+            " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";
         return;
+
     } else if (document.getElementById('Harakankello').checked) {
 
         document.getElementById("error").innerHTML = document.getElementById("Harakankello").value +
-            " ei ole oikea vastaus. Kuvassa on kissankello.";
+            " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";
+            " ei ole oikea vastaus.  Kuvassa on kissankello.Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";
         return;
+
     } else if (document.getElementById('Kurjenkello').checked) {
 
         document.getElementById("error").innerHTML = document.getElementById("Kurjenkello").value +
-            " ei ole oikea vastaus. Kuvassa on kissankello.";
+            " ei ole oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Kuvassa on kissankello. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";
         return;
+
     } else {
         document.getElementById("error").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
-    } {
-        document.getElementById("Tuloksesi luontovisasta 5-6 lk sait:" + score + "/5 pistettä.");
-
     }
+      
+
 }
+
 
 function function12() {
 
     if (document.getElementById('Harmaalokki').checked) {
-        score++
+        score++;
+
         document.getElementById("lintu1").innerHTML = document.getElementById("Harmaalokki").value +
             " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/5 pistettä.";
         return;
+
     } else if (document.getElementById("Kalalokki").checked) {
-        score++
+      
+
         document.getElementById("error2").innerHTML = document.getElementById("Kalalokki").value +
             " ei ole oikea vastaus. Tämä lintu on harmaalokki.";
         return;
+
     } else if (document.getElementById("Merilokki").checked) {
         score++
+
         document.getElementById("error2").innerHTML = document.getElementById("Merilokki").value +
             " ei ole oikea vastaus. Tämä lintu on harmaalokki.";
         return;
+        
     } else {
-        document.getElementById("error2").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
-    } {
-        document.getElementById("Tuloksesi luontovisasta 5-6 lk sait:" + score + "/5 pistettä.");
-
+       
     }
 }
 
 function function13() {
 
     if (document.getElementById('Muikku').checked) {
-        score++
+        score++;
         document.getElementById("kala2").innerHTML = document.getElementById("Muikku").value +
             " on oikea vastaus.  Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Vesien lämmettyä heinäkuussa, alkaa muikku kerääntyä kohti syvänteitä ja muodostaa siellä suuria parvia. Tyynenä kesäiltana voi muikkuparven löytää katseella, kun seuraa niiden pintakäyntejä. Päivisin parvia voi etsiä kaikuluotaimella. Myös kirkuva lokkiparvi paljastaa pinnan lähellä uivat parvet. Syvissä järvissä muikut liikkuvat päivisin välivedessä heti harppauskerroksen alla, jonne verkot voi ripustaa pitkillä kohoon kiinnitetyillä tapseilla. Illalla verkot lasketaan pinnan lähelle lyhyillä tapsikohoilla, sillä silloin muikut nousevat aivan pintaan syömään planktonia. Verkot on hyvä nostaa ylös heti aamuvarhaisella. Lokit heräävät aamulla ja ne voivat hakea muikut verkosta jopa metrin syvyydestä.";
         return;
@@ -246,7 +244,7 @@ function function13() {
 function function14() {
 
     if (document.getElementById('Harmaalokki').checked) {
-        score++
+        score++;
         document.getElementById("lintu1").innerHTML = document.getElementById("Harmaalokki").value +
             " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Harmaalokilla on neljä ikäluokkaa ja useita pukuja. Toisesta talvesta lähtien sillä on harmaa selkä. Jalat ovat vaaleanpunaiset (vanha lintu) tai ruskeanharmaat (nuori lintu). Nokka on vaaleakärkisesti keltainen ja alanokan kulmassa on punainen täplä (vanha lintu), tai nokka on punertavatyvisesti tumma (nuori lintu). Silmän värikalvo (iiris) on vaaleankeltainen (vanha lintu) tai tummanruskea-vaaleankeltainen (nuori lintu). Alanokan kulman punainen täplä kehittyy kolmantena talvena.";
         return;
@@ -274,7 +272,7 @@ function function14() {
 function function15() {
     let score = 0;
     if (document.getElementById('Harmaalokki').checked) {
-        score++
+        score++;
         document.getElementById("lintu1").innerHTML = document.getElementById("Harmaalokki").value +
             " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/5 pistettä.";
         return;
@@ -295,3 +293,4 @@ function function15() {
 
     }
 }
+document.getElementById("Tuloksesi luontovisasta 5-6 lk sait:" + score + "/5 pistettä.");
