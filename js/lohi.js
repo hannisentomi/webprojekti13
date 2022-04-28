@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 $('input[type=radio][name="lintu"]').change (function(){
    if (this.value == 4) {
-    output.innerText =`KYL-LÄ, LIN-TU ON TALITIAINEN. TIE-SIT-KÖ, ET-TÄ TA-LI-TI-AI-SEl-LA VOI OL-LA JO-PA KYM-ME-NEN POI-KAS-TA`;
+    output.innerText =`KYL-LÄ, LIN-TU ON TA-LI-TI-A-NEN. TIE-SIT-KÖ, ET-TÄ TA-LI-TI-AI-SEl-LA VOI OL-LA JO-PA KYM-ME-NEN POI-KAS-TA`;
    }else if(this.value == 1|2|3){
 
     output.innerText =`HUPS, KU-VAN LIN-TU ON TALITIAINEN.`;

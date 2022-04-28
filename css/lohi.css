@@ -21,7 +21,7 @@
     text-align: left;
     line-height: 200%;
     position: fixed;
-   padding-top: 40px;
+    padding-top: 40px;
 
 }
 
@@ -47,28 +47,29 @@ h1 {
     text-align: center;
 }
 
-.footer{
+.footer {
     text-align: left;
     background-color: rgb(48, 102, 48);
     border-width: 1px;
-	border: black;
-	border-style: solid;
+    border: black;
+    border-style: solid;
     border-radius: 5px;
     margin-top: 30px;
 
-  
+
 }
+
 .container-fluid {
     background-color: lightgrey;
-  
+
 }
 
 .girl {
-    margin-left:35px;
-    margin-bottom:50px;   
+    margin-left: 35px;
+    margin-bottom: 50px;
 }
 
-.styled{
+.styled {
     border: 0;
     line-height: 2.5;
     padding: 0 20px;
@@ -97,7 +98,16 @@ h1 {
         inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
-#output,#output2,#output3,#output4, #output5,#marja, #puu, #sieni, #lintu1, #käärme{
+#output,
+#output2,
+#output3,
+#output4,
+#output5,
+#marja,
+#puu,
+#sieni,
+#lintu1,
+#käärme {
     border: 0;
     line-height: 2.5;
     padding: 0 20px;
@@ -116,14 +126,26 @@ h1 {
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
         inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
-#output:hover,#output2:hover,#output3:hover,#output4:hover, #output5:hover, #marja:hover, #puu:hover, #sieni:hover, #lintu1:hover, #käärme:hover{
+
+#output:hover,
+#output2:hover,
+#output3:hover,
+#output4:hover,
+#output5:hover,
+#marja:hover,
+#puu:hover,
+#sieni:hover,
+#lintu1:hover,
+#käärme:hover {
     background-color: #4CAF50;
 }
-#button{
+
+#button {
     background-color: #4CAF50;
     border-radius: 5px;
 }
-.guestion{
+
+.guestion {
     border-style: double;
     border-color: black;
     border-radius: 5px;
@@ -133,26 +155,29 @@ h1 {
     background-color: whitesmoke;
 }
 
-.img{
+.img {
     border-radius: 5px;
     border-color: black solid 2px;
 }
+
 #koti {
-	color: black;
+    color: black;
     position: fixed;
 
 }
 
 #koti2 {
-	color: black;
-	padding-right: 1rem;
+    color: black;
+    padding-right: 1rem;
     position: fixed;
- 
-    
+
+
 }
-#koti2:hover{
+
+#koti2:hover {
     color: red;
 }
+
 .aloitus-box {
     text-align: center;
 }
