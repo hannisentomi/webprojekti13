@@ -1,99 +1,123 @@
 /* Minna Lohi TIK22KM */
 
 var score = 0;
+var score1 = 0;
 var score2 = 0;
 
-$(document).ready(function(){
+$(document).ready(function () {
 
-$('input[type=radio][name="lintu"]').change (function(){
-   if (this.value == 4) {
-    output.innerText =`KYL-LÄ, LIN-TU ON TA-LI-TI-A-NEN. TIE-SIT-KÖ, ET-TÄ TA-LI-TI-AI-SEl-LA VOI OL-LA JO-PA KYM-ME-NEN POI-KAS-TA`;
-   }else if(this.value == 1|2|3){
+    $('input[type=radio][name="lintu"]').change(function () {
+        if (this.value == 4) {
+            score1++;
+            output.innerText = `KYL-LÄ! TÄ-MÄ LIN-TU ON TA-LI-TI-AI-NEN. TIE-SIT-KÖ, ET-TÄ TA-LI-TI-AI-SEl-LA VOI OL-LA JO-PA KYM-ME-NEN POI-KAS-TA.`;//https://www.tunturisusi.com/tiaiset/
+            return;
+        } else if (this.value == 1 | 2 | 3) {
 
-    output.innerText =`HUPS, KU-VAN LIN-TU ON TALITIAINEN.`;
-   }
-else
-output.innerText = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
-    var inputs = document.getElementsByName('lintu');
-    for (var i = 0, len = inputs.length; i < len; i++) {
-        inputs[i].disabled = true;
-    }
-});
-
-});
-
-var btn2 = document.querySelector('#output2');
-const radioButtons2 = document.querySelectorAll('input[name="kala"]');
-btn2.addEventListener("click", () => {
-    let selectedKala;
-    for (const radioButton of radioButtons2) {
-        if (radioButton.checked) {
-            selectedKala = radioButton.value;
-            break;
+            output.innerText = `HUPS, KU-VAN LIN-TU ON TALITIAINEN.`;
+            return;
         }
-    }
-
-    output2.innerText = selectedKala ? `HUPS, KU-VAN KA-LA EI O-LE ${selectedKala}.` : `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
-
-    var inputs = document.getElementsByName('kala');
-    for (var i = 0, len = inputs.length; i < len; i++) {
-        inputs[i].disabled = true;
-    }
-});
-
-const btn3 = document.querySelector('#btn3');
-const radioButtons3 = document.querySelectorAll('input[name="perhonen"]');
-btn3.addEventListener("click", () => {
-    let selectedPerhonen;
-    for (const radioButton of radioButtons3) {
-        if (radioButton.checked) {
-            selectedPerhonen = radioButton.value;
-            break;
+        else if (this.value < 1) {
+            output.innerText = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
+            return;
         }
-    }
-    output3.innerText = selectedPerhonen ? `OOPS, TÄ-MÄ EI O-LE ${selectedPerhonen}. ` + "KU-VAN PER-HO-NEN ON NOK-KOS-PER-HO-NEN." : `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
-    var inputs = document.getElementsByName('perhonen');
-    for (var i = 0, len = inputs.length; i < len; i++) {
-        inputs[i].disabled = true;
-    }
-});
-
-const btn4 = document.querySelector('#btn4');
-const radioButtons4 = document.querySelectorAll('input[name="eläin"]');
-btn4.addEventListener("click", () => {
-    let selectedEläin;
-    for (const radioButton of radioButtons4) {
-        if (radioButton.checked) {
-            selectedEläin = radioButton.value;
-            break;
-
+        //http://jsfiddle.net/davidThomas/rHfus/
+        var inputs = document.getElementsByName('lintu');
+        for (var i = 0, len = inputs.length; i < len; i++) {
+            inputs[i].disabled = true;
         }
-    }
-    output4.innerText = selectedEläin ? `VOI EI, TÄ-MÄ E-LÄ-IN EI O-LE ${selectedEläin}. ` + "KU-VAS-SA ON AH-MA." : `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
-    var inputs = document.getElementsByName('eläin');
-    for (var i = 0, len = inputs.length; i < len; i++) {
-        inputs[i].disabled = true;
-    }
+    });
+
 });
 
-const btn5 = document.querySelector('#btn5');
-const radioButtons5 = document.querySelectorAll('input[name="kukka"]');
-btn5.addEventListener("click", () => {
-    let selectedKukka;
-    for (const radioButton of radioButtons5) {
-        if (radioButton.checked) {
-            selectedKukka = radioButton.value;
-            break;
+$(document).ready(function () {
 
+    $('input[type=radio][name="kala"]').change(function () {
+        if (this.value == 3) {
+            score1++;
+            output2.innerText = `OI-KEIN. TIE-SIT-KÖ, ET-TÄ HAU-EL-LA VOI OL-LA SEIT-SE-MÄN-SA-TAA HAM-MAS-TA.`;//https://www.jarviwiki.fi/wiki/Hauki
+        } else if (this.value == 1 | 2 | 4 | 5) {
+
+            output2.innerText = `HUPS, KU-VAN KA-LA ON HAU-KI.`;
         }
-    }
-    output5.innerText = selectedKukka ? `VÄÄ-RIN ME-NI. KU-VAS-SSA EI O-LE ${selectedKukka}. ` + "KU-VAN KUK-KA ON VAL-KO-VUOK-KO." : `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
-    var inputs = document.getElementsByName('kukka');
-    for (var i = 0, len = inputs.length; i < len; i++) {
-        inputs[i].disabled = true;
-    }
+        else (this.value < 0)
+        output2.innerText = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
+
+        //http://jsfiddle.net/davidThomas/rHfus/
+        var inputs = document.getElementsByName('kala');
+        for (var i = 0, len = inputs.length; i < len; i++) {
+            inputs[i].disabled = true;
+        }
+    });
+
 });
 
+$(document).ready(function () {
+
+    $('input[type=radio][name="perhonen"]').change(function () {
+        if (this.value == 1) {
+            score1++;
+            output3.innerText = `OI-KEIN. SEN TOU-KAT SYÖ-VÄT VAIN NOK-KO-SEN-LEH-TI-Ä.`;//https://www.google.com/search?rlz=1C1VDKB_fiFI978FI978&q=Mit%C3%A4+nokkosperhonen+sy%C3%B6&sa=X&ved=2ahUKEwjYuZm3jrf3AhVBxIsKHcArDdQQ1QJ6BAhHEAE&biw=1536&bih=754&dpr=1.25
+        } else if (this.value == 2 | 3 | 4) {
+
+            output3.innerText = `HUPS, KU-VAS-SA ON NOK-KOS-PER-HO-NEN.`;
+        }
+        else (this.value < 0)
+        output2.innerText = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
+
+        //http://jsfiddle.net/davidThomas/rHfus/
+        var inputs = document.getElementsByName('perhonen');
+        for (var i = 0, len = inputs.length; i < len; i++) {
+            inputs[i].disabled = true;
+        }
+    });
+
+});
+
+
+
+$(document).ready(function () {
+
+    $('input[type=radio][name="eläin"]').change(function () {
+        if (this.value == 1) {
+            score1++;
+            output4.innerText = `OI-KEIN. AH-MA ON SAA-NUT NI-MEN-SÄ RUO-KAI-LU-TA-VAS-TAAN.`;//https://www.suurpedot.fi/lajit/ahma.html
+        } else if (this.value == 2 | 3 | 4 | 5) {
+
+            output4.innerText = `EI I-HAN OI-KEIN, KU-VAS-SA ON AH-MA.`;
+        }
+        else (this.value < 0)
+        output2.innerText = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
+
+        //http://jsfiddle.net/davidThomas/rHfus/
+        var inputs = document.getElementsByName('eläin');
+        for (var i = 0, len = inputs.length; i < len; i++) {
+            inputs[i].disabled = true;
+        }
+    });
+
+});
+
+$(document).ready(function () {
+
+    $('input[type=radio][name="kukka"]').change(function () {
+        if (this.value == 2) {
+            score1++;
+            output5.innerText = `OI-KEIN. TIE-SIT-KÖ, ET-TÄ VAL-KO-VUOK-KO-JA EI SAA POI-MI-A MYYN-TIIN.`;//https://yle.fi/uutiset/3-6090738
+        } else if (this.value == 1 | 3 | 4) {
+
+            output5.innerText = `VÄÄ-RIN ME-NI, KU-VAS-SA ON VAL-KO-VUOK-KO.`;
+        }
+        else (this.value < 1)
+        output2.innerText = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
+
+        //http://jsfiddle.net/davidThomas/rHfus/
+        var inputs = document.getElementsByName('kukka');
+        for (var i = 0, len = inputs.length; i < len; i++) {
+            inputs[i].disabled = true;
+        }
+    });
+
+});
 
 function function6() {
     let rd1 = document.getElementById("mesimarja");
@@ -105,9 +129,9 @@ function function6() {
         score2++;
         document.getElementById("marja").innerHTML = "Hyvin meni! Karhunvatukka on herkullinen ja mehukas marja, joka soveltuu ihanteellisesti  terveellisiin juomiin ja smoothieihin, sekä sellaisenaan nautittavaksi jogurtin kera tai jälkiruuissa. Voit syödä karhunvatukoita myös salaateissa ja muissa kylmissä resepteissä." + "Voit lukea lisää karhunvatukan terveydhyödyistä täältä:"; //" https://askelterveyteen.com/7-syyta-syoda-karhunvatukoita/"
 
-    } else if (rd1.checked == true|rd3.checked == true|rd4.checked == true)
+    } else if (rd1.checked == true | rd3.checked == true | rd4.checked == true)
         document.getElementById("marja").innerHTML = "Voi ei, vastasit väärin, kuvan marja on karhunvatukka.";
-   
+
     var inputs = document.getElementsByName("marja");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -124,9 +148,9 @@ function function7() {
         score2++;
         document.getElementById("puu").innerHTML = "Aivan oikein. Tiesitkö, että leppä sopii erityisen hyvin jatkuvalämmitteisen saunan ja savusaunan lämmitykseen sekä helloihin ja avotakkoihin."; //"https://savonvoima.fi/miksi-koivua-pidetaan-parhaana-polttopuuna/"
 
-    } else if (rd5.checked == true| rd6.checked == true|rd8.checked == true)
+    } else if (rd5.checked == true | rd6.checked == true | rd8.checked == true)
         document.getElementById("puu").innerHTML = "Nyt ei mennyt ihan putkeen, kuvan puu on leppä.";
-    
+
     var inputs = document.getElementsByName("puu");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -145,7 +169,7 @@ function function8() {
         document.getElementById("sieni").innerHTML = "Vastauksesi on oikein. Korvasieni on helppo tuntea,sillä keväällä ei juuri muita sieniä kasva. Se viihtyy parhaiten hiekkamaalla, vanhoilla hakkuualueilla. Ruskea muhkura voi olla ensin vaikea havaita, mutta kun silmä tottuu, niin kas niitähän on joka paikassa! Tämä raakana myrkyllinen ruokasieni pitää esikäsitellä huolellisesti. " +
             "Suuret korvasienet vastaavat kooltaan lapsen aivoja, ja useamman sienen rypäs voi ylittää aikuisen ihmisen aivojen koon.Korvasieni on alkukesän aarre. Sen satokausi kestää vain muutaman viikon, joten herkku on poimittava oikeaan aikaan. Satokausi riippuu kevään lämpötilasta, pohjoisessa korvasieniä saatetaan kerätä vielä heinäkuussakin. Nyrkkisääntönä on, että korvasieniä kannattaa lähteä etsimään, kun hiirenkorvat ilmestyvät koivuihin."; //"https://yle.fi/aihe/artikkeli/2019/04/26/myrkky-vai-herkku-korvasieni-jakaa-mielipiteet"
 
-    } else if (rd9.checked == true|rd10.checked == true|rd12.checked == true|rd13.checked == true)
+    } else if (rd9.checked == true | rd10.checked == true | rd12.checked == true | rd13.checked == true)
         document.getElementById("sieni").innerHTML = "Väärin meni, kuvan sieni on korvasieni.";
 
     var inputs = document.getElementsByName('sieni');
@@ -164,11 +188,11 @@ function function9() {
         score2++;
         document.getElementById("lintu1").innerHTML = "Vastauksesi on oikein. Meriharakka on melkein variksen kokoinen, tanakka kahlaajalintu, jonka pää ja selkäpuoli ovat mustat, vatsa valkoinen. Räikeänpunaiset nokka ja jalat näkyvät kauas. Ääni on kimeä ja kiihkeä”pii, biik” ja ”ko-biik ko-biik…" +
             "Meriharakka pesii merensaariston kallioisilla ja somerikkoisilla, puuttomilla luodoilla, muutamin paikoin sisämaassakin teollisuuslaitosten avomailla ja puutavarakentillä. Pääravintona ovat simpukat, joita emot tuovat poikasille avattuaan niiden kuoren (muilla kahlaajilla untuvikot syövät pikkuötököitä ilman emojen apua). Rannikkoseuduilla meriharakat etsivät matoja ja kotiloita myös avarilta nurmikoilta." +
-            "Meriharakka on yleinen koko merialueella, sisämaassa pesivänä hyvin harvinainen mutta keväällä säännöllinen läpimuuttaja Jäämeren äärelle. Linnut lähtevät heinä-syyskuussa Länsi-Euroopan rannikoille ja palaavat valtaosin huhtikuussa. " ;// " https://yle.fi/aihe/artikkeli/2017/05/16/rantojen-ja-kosteikkojen-kahlaajia-meriharakka"
+            "Meriharakka on yleinen koko merialueella, sisämaassa pesivänä hyvin harvinainen mutta keväällä säännöllinen läpimuuttaja Jäämeren äärelle. Linnut lähtevät heinä-syyskuussa Länsi-Euroopan rannikoille ja palaavat valtaosin huhtikuussa. ";// " https://yle.fi/aihe/artikkeli/2017/05/16/rantojen-ja-kosteikkojen-kahlaajia-meriharakka"
 
-    } else if (rd14.checked == true|rd15.checked == true|rd16.checked == true)
+    } else if (rd14.checked == true | rd15.checked == true | rd16.checked == true)
         document.getElementById("lintu1").innerHTML = "Nyt ei mennyt ihan putkeen, kuvassa on meriharakka.";
-   
+
     var inputs = document.getElementsByName('lintu1');
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -185,7 +209,7 @@ function function10() {
         score2++;
         document.getElementById("käärme").innerHTML = "Vastauksesi on oikein. Nimensä mukaisesti rantakäärme viihtyy vesien äärellä. Se on varsin hyvä uimari, joka pystyy sukeltamaan jopa puoli tuntia kerrallaan. Päiväaktiivinen rantakäärme on ihmiselle vaaraton. ";// + "https://www.apu.fi/artikkelit/vaaraton-rantakaarme-on-todellinen-hyotykaarme-nain-erotat-sen-kyysta"
 
-    } else if (rd18.checked == true|rd20.checked == true)
+    } else if (rd18.checked == true | rd20.checked == true)
         document.getElementById("käärme").innerHTML = "Nyt ei mennyt ihan putkeen, kuvassa makoilee rantakäärme.";
 
     var inputs = document.getElementsByName('käärme');
@@ -269,21 +293,10 @@ function function13() {
         document.getElementById("kala2").innerHTML = document.getElementById("Muikku").value +
             " on oikea vastaus.  Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Vesien lämmettyä heinäkuussa, alkaa muikku kerääntyä kohti syvänteitä ja muodostaa siellä suuria parvia. Tyynenä kesäiltana voi muikkuparven löytää katseella, kun seuraa niiden pintakäyntejä. Päivisin parvia voi etsiä kaikuluotaimella. Myös kirkuva lokkiparvi paljastaa pinnan lähellä uivat parvet. Syvissä järvissä muikut liikkuvat päivisin välivedessä heti harppauskerroksen alla, jonne verkot voi ripustaa pitkillä kohoon kiinnitetyillä tapseilla. Illalla verkot lasketaan pinnan lähelle lyhyillä tapsikohoilla, sillä silloin muikut nousevat aivan pintaan syömään planktonia. Verkot on hyvä nostaa ylös heti aamuvarhaisella. Lokit heräävät aamulla ja ne voivat hakea muikut verkosta jopa metrin syvyydestä.";
         return;
-    } else if (document.getElementById("Silakka").checked) {
+    } else if (document.getElementById("Silakka", "Salakka", "Kiiski",).checked) {
 
         document.getElementById("error3").innerHTML = document.getElementById("Silakka").value +
-            " ei ole oikea vastaus. Tämä kala on muikku. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Vesien lämmettyä heinäkuussa, alkaa muikku kerääntyä kohti syvänteitä ja muodostaa siellä suuria parvia. Tyynenä kesäiltana voi muikkuparven löytää katseella, kun seuraa niiden pintakäyntejä. Päivisin parvia voi etsiä kaikuluotaimella. Myös kirkuva lokkiparvi paljastaa pinnan lähellä uivat parvet. Syvissä järvissä muikut liikkuvat päivisin välivedessä heti harppauskerroksen alla, jonne verkot voi ripustaa pitkillä kohoon kiinnitetyillä tapseilla. Illalla verkot lasketaan pinnan lähelle lyhyillä tapsikohoilla, sillä silloin muikut nousevat aivan pintaan syömään planktonia. Verkot on hyvä nostaa ylös heti aamuvarhaisella. Lokit heräävät aamulla ja ne voivat hakea muikut verkosta jopa metrin syvyydestä.";
-        return;
-    } else if (document.getElementById("Salakka").checked) {
-
-        document.getElementById("error3").innerHTML = document.getElementById("Salakka").value +
-            " ei ole oikea vastaus. Tämä kala on muikku.  Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Vesien lämmettyä heinäkuussa, alkaa muikku kerääntyä kohti syvänteitä ja muodostaa siellä suuria parvia. Tyynenä kesäiltana voi muikkuparven löytää katseella, kun seuraa niiden pintakäyntejä. Päivisin parvia voi etsiä kaikuluotaimella. Myös kirkuva lokkiparvi paljastaa pinnan lähellä uivat parvet. Syvissä järvissä muikut liikkuvat päivisin välivedessä heti harppauskerroksen alla, jonne verkot voi ripustaa pitkillä kohoon kiinnitetyillä tapseilla. Illalla verkot lasketaan pinnan lähelle lyhyillä tapsikohoilla, sillä silloin muikut nousevat aivan pintaan syömään planktonia. Verkot on hyvä nostaa ylös heti aamuvarhaisella. Lokit heräävät aamulla ja ne voivat hakea muikut verkosta jopa metrin syvyydestä.";
-        return;
-
-    } else if (document.getElementById("Kiiski").checked) {
-
-        document.getElementById("error3").innerHTML = document.getElementById("Kiiski").value +
-            " ei ole oikea vastaus. Tämä kala on muikku.  Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Vesien lämmettyä heinäkuussa, alkaa muikku kerääntyä kohti syvänteitä ja muodostaa siellä suuria parvia. Tyynenä kesäiltana voi muikkuparven löytää katseella, kun seuraa niiden pintakäyntejä. Päivisin parvia voi etsiä kaikuluotaimella. Myös kirkuva lokkiparvi paljastaa pinnan lähellä uivat parvet. Syvissä järvissä muikut liikkuvat päivisin välivedessä heti harppauskerroksen alla, jonne verkot voi ripustaa pitkillä kohoon kiinnitetyillä tapseilla. Illalla verkot lasketaan pinnan lähelle lyhyillä tapsikohoilla, sillä silloin muikut nousevat aivan pintaan syömään planktonia. Verkot on hyvä nostaa ylös heti aamuvarhaisella. Lokit heräävät aamulla ja ne voivat hakea muikut verkosta jopa metrin syvyydestä.";
+            " ei ole oikea vastaus. Tämä kala on muikku. Sinulla on  nyt luontovisasta " + score + "/5 pistettä.";
         return;
     } else {
         document.getElementById("error3").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
@@ -299,24 +312,24 @@ function function14() {
     if (document.getElementById("Neitoperhonen").checked) {
         score++;
         document.getElementById("perhonen").innerHTML = document.getElementById("Neitoperhonen").value +
-            " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. " +""+"Aiemmin Suomessa melko harvinaisena tavattavasta neitoperhosesta on viime vuosina tullut yksi yleisimmistä ja varmasti helpoiten tunnistettavista päiväperhoslajeistamme, etenkin maamme eteläosissa. Yleisesti tavattavana päiväperhoslajina pohjoisraja kulkee suunnilleen Vaasa-Kuopio-linjalla, mutta paikoin Lapissakin neitoperhosta voi tavata. Lajin parhaat ja varmimmat tuntomerkit ovat etu- ja takasiipien yläpuolen suuret silmätäplät.";//https://luontoportti.com/t/822/neitoperhonen
+            " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. " + "" + "Aiemmin Suomessa melko harvinaisena tavattavasta neitoperhosesta on viime vuosina tullut yksi yleisimmistä ja varmasti helpoiten tunnistettavista päiväperhoslajeistamme, etenkin maamme eteläosissa. Yleisesti tavattavana päiväperhoslajina pohjoisraja kulkee suunnilleen Vaasa-Kuopio-linjalla, mutta paikoin Lapissakin neitoperhosta voi tavata. Lajin parhaat ja varmimmat tuntomerkit ovat etu- ja takasiipien yläpuolen suuret silmätäplät.";//https://luontoportti.com/t/822/neitoperhonen
         return;
 
     } else if (document.getElementById("Ohdakeperhonen").checked) {
 
         document.getElementById("error4").innerHTML = document.getElementById("Ohdakeperhonen").value +
-            " ei ole oikea vastaus. Tämä on neitoperhonen.Sinulla on  nyt luontovisasta " + score + "/5 pistettä. " +""+"Aiemmin Suomessa melko harvinaisena tavattavasta neitoperhosesta on viime vuosina tullut yksi yleisimmistä ja varmasti helpoiten tunnistettavista päiväperhoslajeistamme, etenkin maamme eteläosissa. Yleisesti tavattavana päiväperhoslajina pohjoisraja kulkee suunnilleen Vaasa-Kuopio-linjalla, mutta paikoin Lapissakin neitoperhosta voi tavata. Lajin parhaat ja varmimmat tuntomerkit ovat etu- ja takasiipien yläpuolen suuret silmätäplät.";
+            " ei ole oikea vastaus. Tämä on neitoperhonen.Sinulla on  nyt luontovisasta " + score + "/5 pistettä. " + "" + "Aiemmin Suomessa melko harvinaisena tavattavasta neitoperhosesta on viime vuosina tullut yksi yleisimmistä ja varmasti helpoiten tunnistettavista päiväperhoslajeistamme, etenkin maamme eteläosissa. Yleisesti tavattavana päiväperhoslajina pohjoisraja kulkee suunnilleen Vaasa-Kuopio-linjalla, mutta paikoin Lapissakin neitoperhosta voi tavata. Lajin parhaat ja varmimmat tuntomerkit ovat etu- ja takasiipien yläpuolen suuret silmätäplät.";
         return;
 
     } else if (document.getElementById("Amiraaliperhonen").checked) {
 
         document.getElementById("error4").innerHTML = document.getElementById("Amiraaliperhonen").value +
-            " ei ole oikea vastaus. Luontovisan pistetilanne on nyt " + score + "/5 pistettä. " +""+"Aiemmin Suomessa melko harvinaisena tavattavasta neitoperhosesta on viime vuosina tullut yksi yleisimmistä ja varmasti helpoiten tunnistettavista päiväperhoslajeistamme, etenkin maamme eteläosissa. Yleisesti tavattavana päiväperhoslajina pohjoisraja kulkee suunnilleen Vaasa-Kuopio-linjalla, mutta paikoin Lapissakin neitoperhosta voi tavata. Lajin parhaat ja varmimmat tuntomerkit ovat etu- ja takasiipien yläpuolen suuret silmätäplät.";
+            " ei ole oikea vastaus. Luontovisan pistetilanne on nyt " + score + "/5 pistettä. " + "" + "Aiemmin Suomessa melko harvinaisena tavattavasta neitoperhosesta on viime vuosina tullut yksi yleisimmistä ja varmasti helpoiten tunnistettavista päiväperhoslajeistamme, etenkin maamme eteläosissa. Yleisesti tavattavana päiväperhoslajina pohjoisraja kulkee suunnilleen Vaasa-Kuopio-linjalla, mutta paikoin Lapissakin neitoperhosta voi tavata. Lajin parhaat ja varmimmat tuntomerkit ovat etu- ja takasiipien yläpuolen suuret silmätäplät.";
         return;
     } else if (document.getElementById("Herukkaperhonen").checked) {
 
         document.getElementById("error4").innerHTML = document.getElementById("Herukkaperhonen").value +
-            " ei ole oikea vastaus. Luontovisan pistetilanne on nyt " + score + "/5 pistettä. " +""+"Aiemmin Suomessa melko harvinaisena tavattavasta neitoperhosesta on viime vuosina tullut yksi yleisimmistä ja varmasti helpoiten tunnistettavista päiväperhoslajeistamme, etenkin maamme eteläosissa. Yleisesti tavattavana päiväperhoslajina pohjoisraja kulkee suunnilleen Vaasa-Kuopio-linjalla, mutta paikoin Lapissakin neitoperhosta voi tavata. Lajin parhaat ja varmimmat tuntomerkit ovat etu- ja takasiipien yläpuolen suuret silmätäplät.";
+            " ei ole oikea vastaus. Luontovisan pistetilanne on nyt " + score + "/5 pistettä. " + "" + "Aiemmin Suomessa melko harvinaisena tavattavasta neitoperhosesta on viime vuosina tullut yksi yleisimmistä ja varmasti helpoiten tunnistettavista päiväperhoslajeistamme, etenkin maamme eteläosissa. Yleisesti tavattavana päiväperhoslajina pohjoisraja kulkee suunnilleen Vaasa-Kuopio-linjalla, mutta paikoin Lapissakin neitoperhosta voi tavata. Lajin parhaat ja varmimmat tuntomerkit ovat etu- ja takasiipien yläpuolen suuret silmätäplät.";
         return;
 
     } else {
@@ -330,7 +343,7 @@ function function14() {
 }
 
 function function15() {
-    
+
     if (document.getElementById("Kärppä").checked) {
         score++;
         document.getElementById("Kärppä").innerHTML = document.getElementById("Kärppä").value +
@@ -340,16 +353,16 @@ function function15() {
     } else if (document.getElementById("Lumikko").checked) {
 
         document.getElementById("error5").innerHTML = document.getElementById("Lumikko").value +
-            " ei ole oikea vastaus. Oikea vastaus on kärppä. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Kärppä tarvitsee saalista vuorokaudessa 40 -70 grammaa eli noin 2-4 myyrää. Hyvinä myyrävuosina kärppä tappaa enemmän myyriä kuin itse jaksaa syödä, näin ollen kärppä on tärkeä saalislajin runsauden säätelijä.  Huonompina myyrävuosina kärppä käyttää ravinnokseen myös liskoja, sammakoita, linnunmunia ja -poikasia, hyönteisiä ja jopa marjoja."; 
+            " ei ole oikea vastaus. Oikea vastaus on kärppä. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Kärppä tarvitsee saalista vuorokaudessa 40 -70 grammaa eli noin 2-4 myyrää. Hyvinä myyrävuosina kärppä tappaa enemmän myyriä kuin itse jaksaa syödä, näin ollen kärppä on tärkeä saalislajin runsauden säätelijä.  Huonompina myyrävuosina kärppä käyttää ravinnokseen myös liskoja, sammakoita, linnunmunia ja -poikasia, hyönteisiä ja jopa marjoja.";
         return;
     } else if (document.getElementById("Näätä").checked) {
 
         document.getElementById("error5").innerHTML = document.getElementById("Näätä").value +
-        " ei ole oikea vastaus. Oikea vastaus on kärppä. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Kärppä tarvitsee saalista vuorokaudessa 40 -70 grammaa eli noin 2-4 myyrää. Hyvinä myyrävuosina kärppä tappaa enemmän myyriä kuin itse jaksaa syödä, näin ollen kärppä on tärkeä saalislajin runsauden säätelijä.  Huonompina myyrävuosina kärppä käyttää ravinnokseen myös liskoja, sammakoita, linnunmunia ja -poikasia, hyönteisiä ja jopa marjoja.";
+            " ei ole oikea vastaus. Oikea vastaus on kärppä. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Kärppä tarvitsee saalista vuorokaudessa 40 -70 grammaa eli noin 2-4 myyrää. Hyvinä myyrävuosina kärppä tappaa enemmän myyriä kuin itse jaksaa syödä, näin ollen kärppä on tärkeä saalislajin runsauden säätelijä.  Huonompina myyrävuosina kärppä käyttää ravinnokseen myös liskoja, sammakoita, linnunmunia ja -poikasia, hyönteisiä ja jopa marjoja.";
         return;
     } else {
         document.getElementById("error5").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
-    
+
         document.getElementById("Tuloksesi luontovisasta 5-6 lk sait:" + score + "/5 pistettä. Kärppä tarvitsee saalista vuorokaudessa 40 -70 grammaa eli noin 2-4 myyrää. Hyvinä myyrävuosina kärppä tappaa enemmän myyriä kuin itse jaksaa syödä, näin ollen kärppä on tärkeä saalislajin runsauden säätelijä.  Huonompina myyrävuosina kärppä käyttää ravinnokseen myös liskoja, sammakoita, linnunmunia ja -poikasia, hyönteisiä ja jopa marjoja.");
 
     }
