@@ -131,6 +131,9 @@ function function6() {
 
     } else if (rd1.checked == true | rd3.checked == true | rd4.checked == true)
         document.getElementById("marja").innerHTML = "Voi ei, vastasit väärin, kuvan marja on karhunvatukka.";
+    else {
+        document.getElementById("marja").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
+    }
 
     var inputs = document.getElementsByName("marja");
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -150,6 +153,9 @@ function function7() {
 
     } else if (rd5.checked == true | rd6.checked == true | rd8.checked == true)
         document.getElementById("puu").innerHTML = "Nyt ei mennyt ihan putkeen, kuvan puu on leppä.";
+    else {
+        document.getElementById("puu").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
+    }
 
     var inputs = document.getElementsByName("puu");
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -171,7 +177,9 @@ function function8() {
 
     } else if (rd9.checked == true | rd10.checked == true | rd12.checked == true | rd13.checked == true)
         document.getElementById("sieni").innerHTML = "Väärin meni, kuvan sieni on korvasieni.";
-
+    else {
+        document.getElementById("sieni").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
+    }
     var inputs = document.getElementsByName('sieni');
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -192,6 +200,10 @@ function function9() {
 
     } else if (rd14.checked == true | rd15.checked == true | rd16.checked == true)
         document.getElementById("lintu1").innerHTML = "Nyt ei mennyt ihan putkeen, kuvassa on meriharakka.";
+    else {
+        document.getElementById("lintu1").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
+
+    }
 
     var inputs = document.getElementsByName('lintu1');
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -211,6 +223,9 @@ function function10() {
 
     } else if (rd18.checked == true | rd20.checked == true)
         document.getElementById("käärme").innerHTML = "Nyt ei mennyt ihan putkeen, kuvassa makoilee rantakäärme.";
+    else {
+        document.getElementById("käärme").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
+    }
 
     var inputs = document.getElementsByName('käärme');
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -219,27 +234,25 @@ function function10() {
 
 }
 
-
 function function11() {
 
     if (document.getElementById('Kissankello').checked) {
         score++;
 
-        document.getElementById("kukka").innerHTML = document.getElementById("Kissankello").value +
-            " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/ 5 pistettä. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";//https://luontoportti.com/t/56/kissankello
+        document.getElementById("kukka").innerHTML =
+            " Aivan oikein. Sinulla on  nyt luontovisasta " + score + "/ 5 pistettä. Kuvassa on kissankello. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";//https://luontoportti.com/t/56/kissankello
         return;
 
     } else if (document.getElementById('Harakankello').checked) {
 
-        document.getElementById("error").innerHTML = document.getElementById("Harakankello").value +
-            " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/ 5 pistettä. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";
-        " ei ole oikea vastaus. ";
+        document.getElementById("error").innerHTML =
+            " Väärin meni! Sinulla on  nyt luontovisasta " + score + "/ 5 pistettä. Kuvassa on kissankello. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";//https://luontoportti.com/t/56/kissank
         return;
 
     } else if (document.getElementById('Kurjenkello').checked) {
 
-        document.getElementById("error").innerHTML = document.getElementById("Kurjenkello").value +
-            " ei ole oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/ 5 pistettä. Kuvassa on kissankello. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";
+        document.getElementById("error").innerHTML =
+            " Ei mennyt ihan oikein. Sinulla on  nyt luontovisasta " + score + "/ 5 pistettä. Kuvassa on kissankello. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";
         return;
 
     } else {
