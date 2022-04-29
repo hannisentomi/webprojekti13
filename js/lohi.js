@@ -4,120 +4,148 @@ var score = 0;
 var score1 = 0;
 var score2 = 0;
 
-$(document).ready(function () {
+function function1() {
+    let rd21 = document.getElementById("1");
+    let rd22 = document.getElementById("2");
+    let rd23 = document.getElementById("3");
+    let rd24 = document.getElementById("4");
 
-    $('input[type=radio][name="lintu"]').change(function () {
-        if (this.value == 4) {
-            score1++;
-            output.innerText = `KYL-LÄ! TÄ-MÄ LIN-TU ON TA-LI-TI-AI-NEN. TIE-SIT-KÖ, ET-TÄ TA-LI-TI-AI-SEl-LA VOI OL-LA JO-PA KYM-ME-NEN POI-KAS-TA.`;//https://www.tunturisusi.com/tiaiset/
-            return;
-        } else if (this.value == 1 | 2 | 3) {
+    if (rd24.checked == true) {
+        score++;
+        document.getElementById("lintu").innerHTML = `KYL-LÄ! TÄ-MÄ LIN-TU ON TA-LI-TI-AI-NEN. TIE-SIT-KÖ, ET-TÄ TA-LI-TI-AI-SEl-LA VOI OL-LA JO-PA KYM-ME-NEN POI-KAS-TA.`;//https://www.tunturisusi.com/tiaiset
 
-            output.innerText = `HUPS, KU-VAN LIN-TU ON TALITIAINEN.`;
-            return;
-        }
-        else if (this.value < 1) {
-            output.innerText = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
-            return;
-        }
-        //http://jsfiddle.net/davidThomas/rHfus/
-        var inputs = document.getElementsByName('lintu');
-        for (var i = 0, len = inputs.length; i < len; i++) {
-            inputs[i].disabled = true;
-        }
-    });
+    } else if (rd21.checked == true | rd22.checked == true || rd23.checked == true) {
+        document.getElementById("lintu").innerHTML = `HUPS, VÄÄ-RIN ME-NI. KU-VAN LIN-TU ON TA-LI-TI-AI-NEN.`;
+    }
+    else {
+        document.getElementById("lintu").innerHTML = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
+        return;
 
-});
+    }
+    document.getElementById("tulos").innerHTML = "PIS-TE-TI-LAN-NE: " + score + " / 5";
 
-$(document).ready(function () {
+    //http://jsfiddle.net/davidThomas/rHfus/
+    var inputs = document.getElementsByName("lintu");
+    for (var i = 0, len = inputs.length; i < len; i++) {
+        inputs[i].disabled = true;
+    }
 
-    $('input[type=radio][name="kala"]').change(function () {
-        if (this.value == 3) {
-            score1++;
-            output2.innerText = `OI-KEIN. TIE-SIT-KÖ, ET-TÄ HAU-EL-LA VOI OL-LA SEIT-SE-MÄN-SA-TAA HAM-MAS-TA.`;//https://www.jarviwiki.fi/wiki/Hauki
-        } else if (this.value == 1 | 2 | 4 | 5) {
+}
 
-            output2.innerText = `HUPS, KU-VAN KA-LA ON HAU-KI.`;
-        }
-        else (this.value < 0)
-        output2.innerText = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
+function function2() {
+    let rd25 = document.getElementById("5");
+    let rd26 = document.getElementById("6");
+    let rd27 = document.getElementById("7");
+    let rd28 = document.getElementById("8");
+    let rd29 = document.getElementById("9");
 
-        //http://jsfiddle.net/davidThomas/rHfus/
-        var inputs = document.getElementsByName('kala');
-        for (var i = 0, len = inputs.length; i < len; i++) {
-            inputs[i].disabled = true;
-        }
-    });
+    if (rd27.checked == true) {
+        score++;
+        document.getElementById("kala").innerHTML = `OI-KEIN! TIE-SIT-KÖ, ET-TÄ HAU-EL-LA VOI OL-LA SEIT-SE-MÄN-SA-TAA HAM-MAS-TA.`;//https://www.jarviwiki.fi/wiki/Hauki;
 
-});
+    } else if (rd25.checked == true | rd26.checked == true | rd28.checked == true | rd29.checked == true) {
+        document.getElementById("kala").innerHTML = "EI AI-VAN. KU-VAS-SA ON HAU-KI."
 
-$(document).ready(function () {
+    }
+    else {
+        document.getElementById("kala").innerHTML = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
+        return;
 
-    $('input[type=radio][name="perhonen"]').change(function () {
-        if (this.value == 1) {
-            score1++;
-            output3.innerText = `OI-KEIN. SEN TOU-KAT SYÖ-VÄT VAIN NOK-KO-SEN-LEH-TI-Ä.`;//https://www.google.com/search?rlz=1C1VDKB_fiFI978FI978&q=Mit%C3%A4+nokkosperhonen+sy%C3%B6&sa=X&ved=2ahUKEwjYuZm3jrf3AhVBxIsKHcArDdQQ1QJ6BAhHEAE&biw=1536&bih=754&dpr=1.25
-        } else if (this.value == 2 | 3 | 4) {
+    }
+    document.getElementById("tulos2").innerHTML = "PIS-TE-TI-LAN-NE: " + score + " / 5";
 
-            output3.innerText = `HUPS, KU-VAS-SA ON NOK-KOS-PER-HO-NEN.`;
-        }
-        else (this.value < 0)
-        output2.innerText = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
+    //http://jsfiddle.net/davidThomas/rHfus/
+    var inputs = document.getElementsByName("kala");
+    for (var i = 0, len = inputs.length; i < len; i++) {
+        inputs[i].disabled = true;
+    }
 
-        //http://jsfiddle.net/davidThomas/rHfus/
-        var inputs = document.getElementsByName('perhonen');
-        for (var i = 0, len = inputs.length; i < len; i++) {
-            inputs[i].disabled = true;
-        }
-    });
+}
 
-});
+function function3() {
+    let rd30 = document.getElementById("10");
+    let rd31 = document.getElementById("11");
+    let rd32 = document.getElementById("12");
+    let rd33 = document.getElementById("13");
 
 
+    if (rd30.checked == true) {
+        score++;
+        document.getElementById("perhonen").innerHTML = `OI-KEIN. SEN TOU-KAT SYÖ-VÄT VAIN NOK-KO-SEN-LEH-TI-Ä.`;//https://www.google.com/search?rlz=1C1VDKB_fiFI978FI978&q=Mit%C3%A4+nokkosperhonen+sy%C3%B6&sa=X&ved=2ahUKEwjYuZm3jrf3AhVBxIsKHcArDdQQ1QJ6BAhHEAE&biw=1536&bih=754&dpr=1.25
+    } else if (rd31.checked == true | rd32.checked == true | rd33.checked == true) {
+        document.getElementById("perhonen").innerHTML = `HUPS, KU-VAS-SA ON NOK-KOS-PER-HO-NEN.`;
+    }
+    else {
+        document.getElementById("perhonen").innerHTML = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
+        return;
+    }
+    document.getElementById("tulos3").innerHTML = "PIS-TE-TI-LAN-NE: " + score + " / 5";
 
-$(document).ready(function () {
+    //http://jsfiddle.net/davidThomas/rHfus/
+    var inputs = document.getElementsByName("perhonen");
+    for (var i = 0, len = inputs.length; i < len; i++) {
+        inputs[i].disabled = true;
+    }
 
-    $('input[type=radio][name="eläin"]').change(function () {
-        if (this.value == 1) {
-            score1++;
-            output4.innerText = `OI-KEIN. AH-MA ON SAA-NUT NI-MEN-SÄ RUO-KAI-LU-TA-VAS-TAAN.`;//https://www.suurpedot.fi/lajit/ahma.html
-        } else if (this.value == 2 | 3 | 4 | 5) {
+}
 
-            output4.innerText = `EI I-HAN OI-KEIN, KU-VAS-SA ON AH-MA.`;
-        }
-        else (this.value < 0)
-        output2.innerText = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
+function function4() {
+    let rd34 = document.getElementById("15");
+    let rd35 = document.getElementById("16");
+    let rd36 = document.getElementById("17");
+    let rd37 = document.getElementById("18");
+    let rd38 = document.getElementById("19");
 
-        //http://jsfiddle.net/davidThomas/rHfus/
-        var inputs = document.getElementsByName('eläin');
-        for (var i = 0, len = inputs.length; i < len; i++) {
-            inputs[i].disabled = true;
-        }
-    });
 
-});
+    if (rd35.checked == true) {
+        score++;
+        document.getElementById("eläin").innerHTML = `OI-KEIN. AH-MA ON SAA-NUT NI-MEN-SÄ RUO-KAI-LU-TA-VAS-TAAN.`;//https://www.suurpedot.fi/lajit/ahma.html
 
-$(document).ready(function () {
+    } else if (rd34.checked == true | rd36.checked == true | rd37.checked == true | rd38.checked == true) {
+        document.getElementById("eläin").innerHTML = `HUPS, KU-VAS-SA ON NOK-KOS-PER-HO-NEN.`;
+    }
+    else {
+        document.getElementById("eläin").innerHTML = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
+        return;
+    }
+    document.getElementById("tulos4").innerHTML = "PIS-TE-TI-LAN-NE: " + score + " / 5";
 
-    $('input[type=radio][name="kukka"]').change(function () {
-        if (this.value == 2) {
-            score1++;
-            output5.innerText = `OI-KEIN. TIE-SIT-KÖ, ET-TÄ VAL-KO-VUOK-KO-JA EI SAA POI-MI-A MYYN-TIIN.`;//https://yle.fi/uutiset/3-6090738
-        } else if (this.value == 1 | 3 | 4) {
+    //http://jsfiddle.net/davidThomas/rHfus/
+    var inputs = document.getElementsByName("eläin");
+    for (var i = 0, len = inputs.length; i < len; i++) {
+        inputs[i].disabled = true;
+    }
 
-            output5.innerText = `VÄÄ-RIN ME-NI, KU-VAS-SA ON VAL-KO-VUOK-KO.`;
-        }
-        else (this.value < 1)
-        output2.innerText = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
+}
 
-        //http://jsfiddle.net/davidThomas/rHfus/
-        var inputs = document.getElementsByName('kukka');
-        for (var i = 0, len = inputs.length; i < len; i++) {
-            inputs[i].disabled = true;
-        }
-    });
+function function5() {
+    let rd39 = document.getElementById("20");
+    let rd40 = document.getElementById("21");
+    let rd41 = document.getElementById("22");
+    let rd42 = document.getElementById("23");
 
-});
+
+
+    if (rd40.checked == true) {
+        score++;
+        document.getElementById("kasvi").innerHTML = `OI-KEIN. TIE-SIT-KÖ, ET-TÄ VAL-KO-VUOK-KO-JA EI SAA POI-MI-A MYYN-TIIN.`;//https://yle.fi/uutiset/3-6090738
+
+    } else if (rd39.checked == true | rd41.checked == true | rd42.checked == true | rd43.checked == true) {
+        document.getElementById("kasvi").innerHTML = `VÄÄ-RIN ME-NI, KU-VAS-SA ON VAL-KO-VUOK-KO.`;
+    }
+    else {
+        document.getElementById("kasvi").innerHTML = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
+        return;
+    }
+    document.getElementById("tulos5").innerHTML = "PIS-TE-TI-LAN-NE: " + score + " / 5";
+
+    //http://jsfiddle.net/davidThomas/rHfus/
+    var inputs = document.getElementsByName("kasvi");
+    for (var i = 0, len = inputs.length; i < len; i++) {
+        inputs[i].disabled = true;
+    }
+
+}
 
 function function6() {
     let rd1 = document.getElementById("mesimarja");
@@ -133,7 +161,9 @@ function function6() {
         document.getElementById("marja").innerHTML = "Voi ei, vastasit väärin, kuvan marja on karhunvatukka.";
     else {
         document.getElementById("marja").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
+        return;
     }
+    document.getElementById("tulos6").innerHTML = "Pistetilanne: " + score2 + " / 5";
 
     var inputs = document.getElementsByName("marja");
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -154,8 +184,11 @@ function function7() {
     } else if (rd5.checked == true | rd6.checked == true | rd8.checked == true)
         document.getElementById("puu").innerHTML = "Nyt ei mennyt ihan putkeen, kuvan puu on leppä.";
     else {
-        document.getElementById("puu").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
+        document.getElementById("tulos").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
+        return;
     }
+
+    document.getElementById("tulos7").innerHTML = "Pistetilanne: " + score2 + " / 5";
 
     var inputs = document.getElementsByName("puu");
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -179,7 +212,11 @@ function function8() {
         document.getElementById("sieni").innerHTML = "Väärin meni, kuvan sieni on korvasieni.";
     else {
         document.getElementById("sieni").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
+        return;
     }
+
+    document.getElementById("tulos8").innerHTML = "Pistetilanne: " + score2 + " / 5";
+
     var inputs = document.getElementsByName('sieni');
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -200,10 +237,12 @@ function function9() {
 
     } else if (rd14.checked == true | rd15.checked == true | rd16.checked == true)
         document.getElementById("lintu1").innerHTML = "Nyt ei mennyt ihan putkeen, kuvassa on meriharakka.";
+
     else {
         document.getElementById("lintu1").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
-
+        return;
     }
+    document.getElementById("tulos9").innerHTML = "Pistetilanne: " + score2 + " / 5";
 
     var inputs = document.getElementsByName('lintu1');
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -225,13 +264,16 @@ function function10() {
         document.getElementById("käärme").innerHTML = "Nyt ei mennyt ihan putkeen, kuvassa makoilee rantakäärme.";
     else {
         document.getElementById("käärme").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
+        return;
     }
+
+    document.getElementById("tulos10").innerHTML = "Pistetilanne: " + score2 + " / 5";
 
     var inputs = document.getElementsByName('käärme');
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
     }
-
+    //Sinulla on  nyt luontovisasta " + score + "/ 5 pistettä.
 }
 
 function function11() {
@@ -240,26 +282,29 @@ function function11() {
         score++;
 
         document.getElementById("kukka").innerHTML =
-            " Aivan oikein. Sinulla on  nyt luontovisasta " + score + "/ 5 pistettä. Kuvassa on kissankello. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";//https://luontoportti.com/t/56/kissankello
-        return;
+            " Aivan oikein.  Kuvassa on kissankello. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";//https://luontoportti.com/t/56/kissankello
+
 
     } else if (document.getElementById('Harakankello').checked) {
 
         document.getElementById("error").innerHTML =
-            " Väärin meni! Sinulla on  nyt luontovisasta " + score + "/ 5 pistettä. Kuvassa on kissankello. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";//https://luontoportti.com/t/56/kissank
-        return;
+            " Väärin meni! Kuvassa on kissankello. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";//https://luontoportti.com/t/56/kissank
+
 
     } else if (document.getElementById('Kurjenkello').checked) {
 
         document.getElementById("error").innerHTML =
-            " Ei mennyt ihan oikein. Sinulla on  nyt luontovisasta " + score + "/ 5 pistettä. Kuvassa on kissankello. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";
-        return;
+            " Ei mennyt ihan oikein. Kuvassa on kissankello. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";
+
 
     } else {
         document.getElementById("error").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
-    }
+        return;
 
-    var inputs = document.getElementsByName('käärme');
+    }
+    document.getElementById("tulos11").innerHTML = "Pistetilanne:  " + score1 + " / 5";
+
+    var inputs = document.getElementsByName('kukka');
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
     }
@@ -271,27 +316,28 @@ function function12() {
     if (document.getElementById('Harmaalokki').checked) {
         score++;
 
-        document.getElementById("lintu1").innerHTML = document.getElementById("Harmaalokki").value +
-            " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Harmaalokilla on neljä ikäluokkaa ja useita pukuja. Toisesta talvesta lähtien sillä on harmaa selkä. Jalat ovat vaaleanpunaiset (vanha lintu) tai ruskeanharmaat (nuori lintu). Nokka on vaaleakärkisesti keltainen ja alanokan kulmassa on punainen täplä (vanha lintu), tai nokka on punertavatyvisesti tumma (nuori lintu). Silmän värikalvo (iiris) on vaaleankeltainen (vanha lintu) tai tummanruskea-vaaleankeltainen (nuori lintu). Alanokan kulman punainen täplä kehittyy kolmantena talvena.";//https://luontoportti.com/t/495/harmaalokki
-        return;
+        document.getElementById("lintu1").innerHTML =
+            " on oikea vastaus.  Harmaalokilla on neljä ikäluokkaa ja useita pukuja. Toisesta talvesta lähtien sillä on harmaa selkä. Jalat ovat vaaleanpunaiset (vanha lintu) tai ruskeanharmaat (nuori lintu). Nokka on vaaleakärkisesti keltainen ja alanokan kulmassa on punainen täplä (vanha lintu), tai nokka on punertavatyvisesti tumma (nuori lintu). Silmän värikalvo (iiris) on vaaleankeltainen (vanha lintu) tai tummanruskea-vaaleankeltainen (nuori lintu). Alanokan kulman punainen täplä kehittyy kolmantena talvena.";//https://luontoportti.com/t/495/harmaalokki
+
 
     } else if (document.getElementById("Kalalokki").checked) {
 
 
-        document.getElementById("error2").innerHTML = document.getElementById("Kalalokki").value +
-            " ei ole oikea vastaus. Tämä lintu on harmaalokki. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Harmaalokilla on neljä ikäluokkaa ja useita pukuja. Toisesta talvesta lähtien sillä on harmaa selkä. Jalat ovat vaaleanpunaiset (vanha lintu) tai ruskeanharmaat (nuori lintu). Nokka on vaaleakärkisesti keltainen ja alanokan kulmassa on punainen täplä (vanha lintu), tai nokka on punertavatyvisesti tumma (nuori lintu). Silmän värikalvo (iiris) on vaaleankeltainen (vanha lintu) tai tummanruskea-vaaleankeltainen (nuori lintu). Alanokan kulman punainen täplä kehittyy kolmantena talvena.";
-        return;
+        document.getElementById("error2").innerHTML =
+            " Väärin arvattu! Tämä lintu on harmaalokki. .";
+
+
 
     } else if (document.getElementById("Merilokki").checked) {
 
-        document.getElementById("error2").innerHTML = document.getElementById("Merilokki").value +
-            " ei ole oikea vastaus. Tämä lintu on harmaalokki. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Harmaalokilla on neljä ikäluokkaa ja useita pukuja. Toisesta talvesta lähtien sillä on harmaa selkä. Jalat ovat vaaleanpunaiset (vanha lintu) tai ruskeanharmaat (nuori lintu). Nokka on vaaleakärkisesti keltainen ja alanokan kulmassa on punainen täplä (vanha lintu), tai nokka on punertavatyvisesti tumma (nuori lintu). Silmän värikalvo (iiris) on vaaleankeltainen (vanha lintu) tai tummanruskea-vaaleankeltainen (nuori lintu). Alanokan kulman punainen täplä kehittyy kolmantena talvena.";
+        document.getElementById("error2").innerHTML =
+            " Väärin arvattu! Tämä lintu on harmaalokki.";
+        document.getElementById("error2").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
         return;
 
-
-    } else {
-        document.getElementById("error2").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
     }
+    document.getElementById("tulos12").innerHTML = "Pistetilanne:  " + score1 + " / 5";
+
     var inputs = document.getElementsByName("lintu1");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -303,17 +349,30 @@ function function13() {
 
     if (document.getElementById('Muikku').checked) {
         score++;
-        document.getElementById("kala2").innerHTML = document.getElementById("Muikku").value +
-            " on oikea vastaus.  Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Vesien lämmettyä heinäkuussa, alkaa muikku kerääntyä kohti syvänteitä ja muodostaa siellä suuria parvia. Tyynenä kesäiltana voi muikkuparven löytää katseella, kun seuraa niiden pintakäyntejä. Päivisin parvia voi etsiä kaikuluotaimella. Myös kirkuva lokkiparvi paljastaa pinnan lähellä uivat parvet. Syvissä järvissä muikut liikkuvat päivisin välivedessä heti harppauskerroksen alla, jonne verkot voi ripustaa pitkillä kohoon kiinnitetyillä tapseilla. Illalla verkot lasketaan pinnan lähelle lyhyillä tapsikohoilla, sillä silloin muikut nousevat aivan pintaan syömään planktonia. Verkot on hyvä nostaa ylös heti aamuvarhaisella. Lokit heräävät aamulla ja ne voivat hakea muikut verkosta jopa metrin syvyydestä.";
-        return;
-    } else if (document.getElementById("Silakka", "Salakka", "Kiiski",).checked) {
 
-        document.getElementById("error3").innerHTML = document.getElementById("Silakka").value +
-            " ei ole oikea vastaus. Tämä kala on muikku. Sinulla on  nyt luontovisasta " + score + "/5 pistettä.";
-        return;
+        document.getElementById("kala2").innerHTML =
+            " Muikku on oikea vastaus. Vesien lämmettyä heinäkuussa, alkaa muikku kerääntyä kohti syvänteitä ja muodostaa siellä suuria parvia. Tyynenä kesäiltana voi muikkuparven löytää katseella, kun seuraa niiden pintakäyntejä. Päivisin parvia voi etsiä kaikuluotaimella. Myös kirkuva lokkiparvi paljastaa pinnan lähellä uivat parvet. Syvissä järvissä muikut liikkuvat päivisin välivedessä heti harppauskerroksen alla, jonne verkot voi ripustaa pitkillä kohoon kiinnitetyillä tapseilla. Illalla verkot lasketaan pinnan lähelle lyhyillä tapsikohoilla, sillä silloin muikut nousevat aivan pintaan syömään planktonia. Verkot on hyvä nostaa ylös heti aamuvarhaisella. Lokit heräävät aamulla ja ne voivat hakea muikut verkosta jopa metrin syvyydestä.";
+
+    } else if (document.getElementById("Silakka").checked) {
+
+        document.getElementById("error3").innerHTML =
+            " Väärin arvattu! Tämä kala on muikku. ";
+    } else if (document.getElementById("Salakka").checked) {
+
+        document.getElementById("error3").innerHTML =
+            " Väärin arvattu! Tämä kala on muikku. ";
+    } else if (document.getElementById("Kiiski").checked) {
+
+        document.getElementById("error3").innerHTML =
+            " Väärin arvattu! Tämä kala on muikku. ";
+
     } else {
         document.getElementById("error3").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
+        return;
     }
+
+    document.getElementById("tulos13").innerHTML = "Pistetilanne:  " + score1 + " / 5";
+
     var inputs = document.getElementsByName("kala2");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -324,31 +383,33 @@ function function14() {
 
     if (document.getElementById("Neitoperhonen").checked) {
         score++;
-        document.getElementById("perhonen").innerHTML = document.getElementById("Neitoperhonen").value +
-            " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. " + "" + "Aiemmin Suomessa melko harvinaisena tavattavasta neitoperhosesta on viime vuosina tullut yksi yleisimmistä ja varmasti helpoiten tunnistettavista päiväperhoslajeistamme, etenkin maamme eteläosissa. Yleisesti tavattavana päiväperhoslajina pohjoisraja kulkee suunnilleen Vaasa-Kuopio-linjalla, mutta paikoin Lapissakin neitoperhosta voi tavata. Lajin parhaat ja varmimmat tuntomerkit ovat etu- ja takasiipien yläpuolen suuret silmätäplät.";//https://luontoportti.com/t/822/neitoperhonen
-        return;
+        document.getElementById("perhonen").innerHTML =
+            " Oikein! Aiemmin Suomessa melko harvinaisena tavattavasta neitoperhosesta on viime vuosina tullut yksi yleisimmistä ja varmasti helpoiten tunnistettavista päiväperhoslajeistamme, etenkin maamme eteläosissa. Yleisesti tavattavana päiväperhoslajina pohjoisraja kulkee suunnilleen Vaasa-Kuopio-linjalla, mutta paikoin Lapissakin neitoperhosta voi tavata. Lajin parhaat ja varmimmat tuntomerkit ovat etu- ja takasiipien yläpuolen suuret silmätäplät.";//https://luontoportti.com/t/822/neitoperhonen
+
 
     } else if (document.getElementById("Ohdakeperhonen").checked) {
 
-        document.getElementById("error4").innerHTML = document.getElementById("Ohdakeperhonen").value +
-            " ei ole oikea vastaus. Tämä on neitoperhonen.Sinulla on  nyt luontovisasta " + score + "/5 pistettä. " + "" + "Aiemmin Suomessa melko harvinaisena tavattavasta neitoperhosesta on viime vuosina tullut yksi yleisimmistä ja varmasti helpoiten tunnistettavista päiväperhoslajeistamme, etenkin maamme eteläosissa. Yleisesti tavattavana päiväperhoslajina pohjoisraja kulkee suunnilleen Vaasa-Kuopio-linjalla, mutta paikoin Lapissakin neitoperhosta voi tavata. Lajin parhaat ja varmimmat tuntomerkit ovat etu- ja takasiipien yläpuolen suuret silmätäplät.";
-        return;
+        document.getElementById("error4").innerHTML =
+            " Väärin meni. Kuvassa on neitoperhonen.";
 
     } else if (document.getElementById("Amiraaliperhonen").checked) {
 
-        document.getElementById("error4").innerHTML = document.getElementById("Amiraaliperhonen").value +
-            " ei ole oikea vastaus. Luontovisan pistetilanne on nyt " + score + "/5 pistettä. " + "" + "Aiemmin Suomessa melko harvinaisena tavattavasta neitoperhosesta on viime vuosina tullut yksi yleisimmistä ja varmasti helpoiten tunnistettavista päiväperhoslajeistamme, etenkin maamme eteläosissa. Yleisesti tavattavana päiväperhoslajina pohjoisraja kulkee suunnilleen Vaasa-Kuopio-linjalla, mutta paikoin Lapissakin neitoperhosta voi tavata. Lajin parhaat ja varmimmat tuntomerkit ovat etu- ja takasiipien yläpuolen suuret silmätäplät.";
-        return;
+        document.getElementById("error4").innerHTML =
+            "Väärin meni. Kuvassa on neitoperhonen.";
+
     } else if (document.getElementById("Herukkaperhonen").checked) {
 
-        document.getElementById("error4").innerHTML = document.getElementById("Herukkaperhonen").value +
-            " ei ole oikea vastaus. Luontovisan pistetilanne on nyt " + score + "/5 pistettä. " + "" + "Aiemmin Suomessa melko harvinaisena tavattavasta neitoperhosesta on viime vuosina tullut yksi yleisimmistä ja varmasti helpoiten tunnistettavista päiväperhoslajeistamme, etenkin maamme eteläosissa. Yleisesti tavattavana päiväperhoslajina pohjoisraja kulkee suunnilleen Vaasa-Kuopio-linjalla, mutta paikoin Lapissakin neitoperhosta voi tavata. Lajin parhaat ja varmimmat tuntomerkit ovat etu- ja takasiipien yläpuolen suuret silmätäplät.";
-        return;
+        document.getElementById("error4").innerHTML =
+            "Väärin meni. Kuvassa on neitoperhonen.";
+
 
     } else {
         document.getElementById("error4").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
+        return;
 
     }
+    document.getElementById("tulos14").innerHTML = "Pistetilanne: " + score1 + " / 5";
+
     var inputs = document.getElementsByName("perhonen");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -359,26 +420,26 @@ function function15() {
 
     if (document.getElementById("Kärppä").checked) {
         score++;
-        document.getElementById("Kärppä").innerHTML = document.getElementById("Kärppä").value +
-            " on oikea vastaus. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Kärppä tarvitsee saalista vuorokaudessa 40 -70 grammaa eli noin 2-4 myyrää. Hyvinä myyrävuosina kärppä tappaa enemmän myyriä kuin itse jaksaa syödä, näin ollen kärppä on tärkeä saalislajin runsauden säätelijä.  Huonompina myyrävuosina kärppä käyttää ravinnokseen myös liskoja, sammakoita, linnunmunia ja -poikasia, hyönteisiä ja jopa marjoja.";//https://www.riistakolmiot.fi/animal/karppa-mustela-erminea/
-        return;
+        document.getElementById("Kärppä").innerHTML =
+            " Aivan oikein. Kärppä tarvitsee saalista vuorokaudessa 40 -70 grammaa eli noin 2-4 myyrää. Hyvinä myyrävuosina kärppä tappaa enemmän myyriä kuin itse jaksaa syödä, näin ollen kärppä on tärkeä saalislajin runsauden säätelijä.  Huonompina myyrävuosina kärppä käyttää ravinnokseen myös liskoja, sammakoita, linnunmunia ja -poikasia, hyönteisiä ja jopa marjoja.";//https://www.riistakolmiot.fi/animal/karppa-mustela-erminea/
+
 
     } else if (document.getElementById("Lumikko").checked) {
 
-        document.getElementById("error5").innerHTML = document.getElementById("Lumikko").value +
-            " ei ole oikea vastaus. Oikea vastaus on kärppä. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Kärppä tarvitsee saalista vuorokaudessa 40 -70 grammaa eli noin 2-4 myyrää. Hyvinä myyrävuosina kärppä tappaa enemmän myyriä kuin itse jaksaa syödä, näin ollen kärppä on tärkeä saalislajin runsauden säätelijä.  Huonompina myyrävuosina kärppä käyttää ravinnokseen myös liskoja, sammakoita, linnunmunia ja -poikasia, hyönteisiä ja jopa marjoja.";
-        return;
+        document.getElementById("error5").innerHTML =
+            " Väärin arvattu! Oikea vastaus on kärppä.";
+
     } else if (document.getElementById("Näätä").checked) {
 
-        document.getElementById("error5").innerHTML = document.getElementById("Näätä").value +
-            " ei ole oikea vastaus. Oikea vastaus on kärppä. Sinulla on  nyt luontovisasta " + score + "/5 pistettä. Kärppä tarvitsee saalista vuorokaudessa 40 -70 grammaa eli noin 2-4 myyrää. Hyvinä myyrävuosina kärppä tappaa enemmän myyriä kuin itse jaksaa syödä, näin ollen kärppä on tärkeä saalislajin runsauden säätelijä.  Huonompina myyrävuosina kärppä käyttää ravinnokseen myös liskoja, sammakoita, linnunmunia ja -poikasia, hyönteisiä ja jopa marjoja.";
-        return;
+        document.getElementById("error5").innerHTML =
+            " Väärin arvattu! Oikea vastaus on kärppä. ";
+
     } else {
         document.getElementById("error5").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
-
-        document.getElementById("Tuloksesi luontovisasta 5-6 lk sait:" + score + "/5 pistettä. Kärppä tarvitsee saalista vuorokaudessa 40 -70 grammaa eli noin 2-4 myyrää. Hyvinä myyrävuosina kärppä tappaa enemmän myyriä kuin itse jaksaa syödä, näin ollen kärppä on tärkeä saalislajin runsauden säätelijä.  Huonompina myyrävuosina kärppä käyttää ravinnokseen myös liskoja, sammakoita, linnunmunia ja -poikasia, hyönteisiä ja jopa marjoja.");
+        return;
 
     }
+    document.getElementById("tulos15").innerHTML = "Pistetilanne: " + score1 + " / 5";
     var inputs = document.getElementsByName("Kärppä");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;

@@ -99,11 +99,12 @@ h1 {
         inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
-#output,
-#output2,
-#output3,
-#output4,
-#output5,
+#button,
+#lintu,
+#kala,
+#perhonen,
+#eläin,
+#kasvi,
 #marja,
 #puu,
 #sieni,
@@ -128,22 +129,18 @@ h1 {
         inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
-#output:hover,
-#output2:hover,
+#button:hover,
+#lintu:hover,
+#kala:hover,
 #output3:hover,
-#output4:hover,
-#output5:hover,
+#eläin:hover,
+#kasvi:hover,
 #marja:hover,
 #puu:hover,
 #sieni:hover,
 #lintu1:hover,
 #käärme:hover {
     background-color: #4CAF50;
-}
-
-#button {
-    background-color: #4CAF50;
-    border-radius: 5px;
 }
 
 .guestion {
@@ -170,7 +167,7 @@ h1 {
 #koti2 {
     color: black;
     padding-right: 1rem;
-    position: fixed;
+
 
 
 }
@@ -182,4 +179,3 @@ h1 {
 .aloitus-box {
     text-align: center;
 }
-
