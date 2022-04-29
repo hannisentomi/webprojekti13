@@ -1,177 +1,158 @@
 /* Aino Hukkanen TIK22KM */
 
 *, *::before, *::after {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
-
-p   {
-    color: #000;
-    font-size: medium;
+/* Määritellään muotoilua tekstikentille */
+p {
+	color: #000;
+	font-size: medium;
 }
-
+/* Määritellään muotoilua headerille */
 .header {
-    text-align: left;
-    background-color: #77d169;
-    margin: auto;
-    padding: 1px;
+	text-align: left;
+	background-color: #77d169;
+	margin: auto;
+	padding: 1px;
 	border-width: 1px;
 	border: black;
 	border-style: solid;
 	border-radius: 5px;
-    margin-top: 5px;
-    height: 12rem;
-
+	margin-top: 5px;
+	height: 12rem;
 }
+/* Määritellään muotoilua container */
 .container {
-    width: 900px;
-    max-width: 80%;
-    background-color: #c5edcc;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 10p 2px;
-    
+	width: 900px;
+	max-width: 80%;
+	background-color: #c5edcc;
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: 0 0 10p 2px;
 }
-
-
+/* Määritellään muotoilua vastausbuttoneille */
 .btn {
-    background-color: rgb(87, 185, 111);
-    border: 3px black solid;
-    border-radius: 5px;
-    color: black;
-    outline: none;
+	background-color: rgb(87, 185, 111);
+	border: 3px black solid;
+	border-radius: 5px;
+	color: black;
+	outline: none;
 }
+
 .btn:hover {
-    background-color: bisque;
+	background-color: bisque;
 }
+/* Määritellään muotoilua visan lopputulokselle */
 #finalscore {
-    font-size: large;
-    font-weight: bold;
+	font-size: large;
+	font-weight: bold;
 }
+/* Määritellään sijainti pöllön kuvalle */
 #owl {
-    float: right;
+	float: right;
 }
-
-
-div img{
+/* Määritellään sijainti ja koko kuvalle */
+div img {
 	float: left;
-    max-height: 200px;
-    max-width: 200px;
-  
+	max-height: 200px;
+	max-width: 200px;
 }
-
-.footer{
-    text-align: left;
-    background-color: #77d169;
-    border-width: 1px;
+/* Määritellään muotoilua, taustaväriä footerille */
+.footer {
+	text-align: left;
+	background-color: #77d169;
+	border-width: 1px;
 	border: black;
 	border-style: solid;
-    border-radius: 5px;
-    margin-top: 30px;
-    width: 100%;
-    bottom: 0;
-   
-    
-  
+	border-radius: 5px;
+	margin-top: 30px;
+	width: 100%;
+	bottom: 0;
 }
 
-.container-fluid-3{
-    text-align: center;
-    
+.container-fluid-3 {
+	text-align: center;
 }
 
-
-.sivu{
-    font-weight: bold;
-    font-size: 1.5em;
-    text-align: left;
-    line-height: 200%; 
+.sivu {
+	font-weight: bold;
+	font-size: 1.5em;
+	text-align: left;
+	line-height: 200%;
 }
-
-
-
-
-body{
-    background-color: #8FFFA2 ;
-    
-    
+/* Määritellään taustaväri bodylle */
+body {
+	background-color: #8FFFA2;
 }
-
+/* Määritellään tekstin kohta */
 a {
-    text-align: center;
-    
+	text-align: center;
 }
-
+/* Määritellään responsiivisuus */
 /* Media puhelin **/
-@media only screen and (max-width: 575px){
-    .sivu{
-        font-size: 1.5em;
-        
-    }
-    #carousel-example-2 {
-        display: none;
-    }
-    
-}
-@media screen and (max-width:1200px) {
-    #koti{
-        font-size: 1em;
-    }
-    
+@media only screen and (max-width: 575px) {
+	.sivu {
+		font-size: 1.5em;
+	}
+
+	#carousel-example-2 {
+		display: none;
+	}
 }
 
+@media screen and (max-width:1200px) {
+	#koti {
+		font-size: 1em;
+	}
+}
 
 @media only screen and (min-width: 992px) {
-    .sivu{
-        font-size: 1.5em ;
-    }
-    #kolumni{
-        font-size: 1.5em;
-    }
-    
+	.sivu {
+		font-size: 1.5em;
+	}
 
+	#kolumni {
+		font-size: 1.5em;
+	}
 }
+/* Määritellään listaelementtien sekä sidebarin värejä sekä muotoiluja */
 li span {
-    color:black;
-    
+	color: black;
 }
+
 li i {
-    color: bisque;
-
+	color: bisque;
 }
-
 
 div i {
-    color: bisque;
-    
+	color: bisque;
 }
 
-#koti{
-    color: black;
-    font-weight: bold;
-    font-size: 200%;
-    
+#koti {
+	color: black;
+	font-weight: bold;
+	font-size: 200%;
 }
 
-#koti2{
-    color: bisque;
-    font-weight: bold;
-    font-size: 250%;
-    padding-right: 1rem;
+#koti2 {
+	color: bisque;
+	font-weight: bold;
+	font-size: 250%;
+	padding-right: 1rem;
 }
 
-a :hover{
-    color: cyan;
-    
-}
-#kolumni{
-    padding-top: 2%;
-    padding-bottom: 4%;
-    
-}
-.container2{
-    position: absolute; bottom: 0%;  right: 40%;
-    
+a :hover {
+	color: bisque;
 }
 
+#kolumni {
+	padding-top: 2%;
+	padding-bottom: 4%;
+}
 
+.container2 {
+	position: absolute;
+	bottom: 0%;
+	right: 40%;
+}
 
