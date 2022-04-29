@@ -25,10 +25,11 @@ p   {
 .container {
     width: 900px;
     max-width: 80%;
-    background-color: #DEEFE1;
+    background-color: #c5edcc;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10p 2px;
+    
 }
 
 
