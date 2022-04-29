@@ -12,7 +12,7 @@ function function1() {
 
     if (rd24.checked == true) {
         score++;
-        document.getElementById("lintu").innerHTML = `KYL-LÄ! TÄ-MÄ LIN-TU ON TA-LI-TI-AI-NEN. TIE-SIT-KÖ, ET-TÄ TA-LI-TI-AI-SEl-LA VOI OL-LA JO-PA KYM-ME-NEN POI-KAS-TA.`;//https://www.tunturisusi.com/tiaiset
+        document.getElementById("lintu").innerHTML = `KYL-LÄ! TÄ-MÄ LIN-TU ON TA-LI-TI-AI-NEN. TIE-SIT-KÖ, ET-TÄ TA-LI-TI-AI-SEL-LA VOI OL-LA JO-PA KYM-ME-NEN POI-KAS-TA.`;//https://www.tunturisusi.com/tiaiset
 
     } else if (rd21.checked == true | rd22.checked == true || rd23.checked == true) {
         document.getElementById("lintu").innerHTML = `HUPS, VÄÄ-RIN ME-NI. KU-VAN LIN-TU ON TA-LI-TI-AI-NEN.`;
@@ -23,6 +23,7 @@ function function1() {
 
     }
     document.getElementById("tulos").innerHTML = "PIS-TE-TI-LAN-NE: " + score + " / 5";
+    document.getElementById("lintu").disabled = true;
 
     //http://jsfiddle.net/davidThomas/rHfus/
     var inputs = document.getElementsByName("lintu");
@@ -53,8 +54,8 @@ function function2() {
 
     }
     document.getElementById("tulos2").innerHTML = "PIS-TE-TI-LAN-NE: " + score + " / 5";
+    document.getElementById("kala").disabled = true;
 
-    //http://jsfiddle.net/davidThomas/rHfus/
     var inputs = document.getElementsByName("kala");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -68,10 +69,11 @@ function function3() {
     let rd32 = document.getElementById("12");
     let rd33 = document.getElementById("13");
 
-
     if (rd30.checked == true) {
         score++;
         document.getElementById("perhonen").innerHTML = `OI-KEIN. SEN TOU-KAT SYÖ-VÄT VAIN NOK-KO-SEN-LEH-TI-Ä.`;//https://www.google.com/search?rlz=1C1VDKB_fiFI978FI978&q=Mit%C3%A4+nokkosperhonen+sy%C3%B6&sa=X&ved=2ahUKEwjYuZm3jrf3AhVBxIsKHcArDdQQ1QJ6BAhHEAE&biw=1536&bih=754&dpr=1.25
+
+
     } else if (rd31.checked == true | rd32.checked == true | rd33.checked == true) {
         document.getElementById("perhonen").innerHTML = `HUPS, KU-VAS-SA ON NOK-KOS-PER-HO-NEN.`;
     }
@@ -79,9 +81,11 @@ function function3() {
         document.getElementById("perhonen").innerHTML = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
         return;
     }
-    document.getElementById("tulos3").innerHTML = "PIS-TE-TI-LAN-NE: " + score + " / 5";
 
-    //http://jsfiddle.net/davidThomas/rHfus/
+    document.getElementById("tulos3").innerHTML = "PIS-TE-TI-LAN-NE: " + score + " / 5";
+    document.getElementById("perhonen").disabled = true;
+
+
     var inputs = document.getElementsByName("perhonen");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -102,15 +106,15 @@ function function4() {
         document.getElementById("eläin").innerHTML = `OI-KEIN. AH-MA ON SAA-NUT NI-MEN-SÄ RUO-KAI-LU-TA-VAS-TAAN.`;//https://www.suurpedot.fi/lajit/ahma.html
 
     } else if (rd34.checked == true | rd36.checked == true | rd37.checked == true | rd38.checked == true) {
-        document.getElementById("eläin").innerHTML = `HUPS, KU-VAS-SA ON NOK-KOS-PER-HO-NEN.`;
+        document.getElementById("eläin").innerHTML = `HUPS, KU-VAS-SA ON AH-MA.`;
     }
     else {
         document.getElementById("eläin").innerHTML = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
         return;
     }
     document.getElementById("tulos4").innerHTML = "PIS-TE-TI-LAN-NE: " + score + " / 5";
+    document.getElementById("eläin").disabled = true;
 
-    //http://jsfiddle.net/davidThomas/rHfus/
     var inputs = document.getElementsByName("eläin");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -125,24 +129,25 @@ function function5() {
     let rd42 = document.getElementById("23");
 
 
-
     if (rd40.checked == true) {
         score++;
         document.getElementById("kasvi").innerHTML = `OI-KEIN. TIE-SIT-KÖ, ET-TÄ VAL-KO-VUOK-KO-JA EI SAA POI-MI-A MYYN-TIIN.`;//https://yle.fi/uutiset/3-6090738
 
-    } else if (rd39.checked == true | rd41.checked == true | rd42.checked == true | rd43.checked == true) {
+    } else if (rd39.checked == true | rd41.checked == true | rd42.checked == true) {
         document.getElementById("kasvi").innerHTML = `VÄÄ-RIN ME-NI, KU-VAS-SA ON VAL-KO-VUOK-KO.`;
     }
     else {
         document.getElementById("kasvi").innerHTML = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
         return;
     }
+   
     document.getElementById("tulos5").innerHTML = "PIS-TE-TI-LAN-NE: " + score + " / 5";
+    document.getElementById("kasvi").disabled = true;
 
-    //http://jsfiddle.net/davidThomas/rHfus/
     var inputs = document.getElementsByName("kasvi");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
+
     }
 
 }
@@ -299,7 +304,7 @@ function function11() {
 
     } else {
         document.getElementById("error").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
-    return;
+        return;
 
     }
     document.getElementById("tulos11").innerHTML = "Pistetilanne:  " + score1 + " / 5";
@@ -324,7 +329,7 @@ function function12() {
 
 
         document.getElementById("error2").innerHTML =
-            " Väärin arvattu! Tämä lintu on harmaalokki. .";
+            " Väärin arvattu! Tämä lintu on harmaalokki.";
 
 
 
@@ -333,8 +338,8 @@ function function12() {
         document.getElementById("error2").innerHTML =
             " Väärin arvattu! Tämä lintu on harmaalokki.";
 
-  } else {
-        document.getElementById("error").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
+    } else {
+        document.getElementById("error2").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
         return;
     }
     document.getElementById("tulos12").innerHTML = "Pistetilanne:  " + score1 + " / 5";
@@ -384,7 +389,8 @@ function function14() {
 
     if (document.getElementById("Neitoperhonen").checked) {
         score1++;
-        document.getElementById("perhonen").innerHTML =
+
+        document.getElementById("perhonen1").innerHTML =
             " Oikein! Aiemmin Suomessa melko harvinaisena tavattavasta neitoperhosesta on viime vuosina tullut yksi yleisimmistä ja varmasti helpoiten tunnistettavista päiväperhoslajeistamme, etenkin maamme eteläosissa. Yleisesti tavattavana päiväperhoslajina pohjoisraja kulkee suunnilleen Vaasa-Kuopio-linjalla, mutta paikoin Lapissakin neitoperhosta voi tavata. Lajin parhaat ja varmimmat tuntomerkit ovat etu- ja takasiipien yläpuolen suuret silmätäplät.";//https://luontoportti.com/t/822/neitoperhonen
 
 
@@ -411,7 +417,7 @@ function function14() {
     }
     document.getElementById("tulos14").innerHTML = "Pistetilanne: " + score1 + " / 5";
 
-    var inputs = document.getElementsByName("perhonen");
+    var inputs = document.getElementsByName("perhonen1");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
     }
@@ -419,12 +425,12 @@ function function14() {
 
 function function15() {
 
-document.getElementById("error5").value= "";
+    document.getElementById("error5").value = "";
 
     if (document.getElementById("Kärppä").checked) {
         score1++;
-       
-        document.getElementById("eläin").innerHTML = " Aivan oikein. Kärppä tarvitsee saalista vuorokaudessa 40 -70 grammaa eli noin 2-4 myyrää. Hyvinä myyrävuosina kärppä tappaa enemmän myyriä kuin itse jaksaa syödä, näin ollen kärppä on tärkeä saalislajin runsauden säätelijä.  Huonompina myyrävuosina kärppä käyttää ravinnokseen myös liskoja, sammakoita, linnunmunia ja -poikasia, hyönteisiä ja jopa marjoja.";//https://www.riistakolmiot.fi/animal/karppa-mustela-erminea/
+
+        document.getElementById("eläin1").innerHTML = " Aivan oikein. Kärppä tarvitsee saalista vuorokaudessa 40 -70 grammaa eli noin 2-4 myyrää. Hyvinä myyrävuosina kärppä tappaa enemmän myyriä kuin itse jaksaa syödä, näin ollen kärppä on tärkeä saalislajin runsauden säätelijä.  Huonompina myyrävuosina kärppä käyttää ravinnokseen myös liskoja, sammakoita, linnunmunia ja -poikasia, hyönteisiä ja jopa marjoja.";//https://www.riistakolmiot.fi/animal/karppa-mustela-erminea/
 
 
     } else if (document.getElementById("Lumikko").checked) {

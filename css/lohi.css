@@ -98,17 +98,17 @@ h1 {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
         inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
-
+#kukka,
 #button,
 #lintu,
 #kala,
-#perhonen1,
-#eläin1,
+#perhonen,
+#eläin,
 #kasvi,
 #marja,
 #puu,
 #sieni,
-#lintu2,
+#lintu1,
 #käärme {
     border: 0;
     line-height: 2.5;
@@ -128,17 +128,17 @@ h1 {
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
         inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
-
+#kukka:hover,
 #button:hover,
 #lintu:hover,
 #kala:hover,
-#perhonen1:hover,
 #eläin1:hover,
+#perhonen:hover,
 #kasvi:hover,
 #marja:hover,
 #puu:hover,
 #sieni:hover,
-#lintu2:hover,
+#lintu1:hover,
 #käärme:hover {
     background-color: #4CAF50;
 }
