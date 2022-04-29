@@ -299,7 +299,7 @@ function function11() {
 
     } else {
         document.getElementById("error").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
-        return;
+    return;
 
     }
     document.getElementById("tulos11").innerHTML = "Pistetilanne:  " + score1 + " / 5";
@@ -317,7 +317,7 @@ function function12() {
         score++;
 
         document.getElementById("lintu1").innerHTML =
-            " on oikea vastaus.  Harmaalokilla on neljä ikäluokkaa ja useita pukuja. Toisesta talvesta lähtien sillä on harmaa selkä. Jalat ovat vaaleanpunaiset (vanha lintu) tai ruskeanharmaat (nuori lintu). Nokka on vaaleakärkisesti keltainen ja alanokan kulmassa on punainen täplä (vanha lintu), tai nokka on punertavatyvisesti tumma (nuori lintu). Silmän värikalvo (iiris) on vaaleankeltainen (vanha lintu) tai tummanruskea-vaaleankeltainen (nuori lintu). Alanokan kulman punainen täplä kehittyy kolmantena talvena.";//https://luontoportti.com/t/495/harmaalokki
+            " Täsmälleen oikea vastaus.  Harmaalokilla on neljä ikäluokkaa ja useita pukuja. Toisesta talvesta lähtien sillä on harmaa selkä. Jalat ovat vaaleanpunaiset (vanha lintu) tai ruskeanharmaat (nuori lintu). Nokka on vaaleakärkisesti keltainen ja alanokan kulmassa on punainen täplä (vanha lintu), tai nokka on punertavatyvisesti tumma (nuori lintu). Silmän värikalvo (iiris) on vaaleankeltainen (vanha lintu) tai tummanruskea-vaaleankeltainen (nuori lintu). Alanokan kulman punainen täplä kehittyy kolmantena talvena.";//https://luontoportti.com/t/495/harmaalokki
 
 
     } else if (document.getElementById("Kalalokki").checked) {
@@ -332,9 +332,10 @@ function function12() {
 
         document.getElementById("error2").innerHTML =
             " Väärin arvattu! Tämä lintu on harmaalokki.";
-        document.getElementById("error2").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
-        return;
 
+  } else {
+        document.getElementById("error").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
+        return;
     }
     document.getElementById("tulos12").innerHTML = "Pistetilanne:  " + score1 + " / 5";
 
@@ -418,10 +419,12 @@ function function14() {
 
 function function15() {
 
+document.getElementById("error5").value= "";
+
     if (document.getElementById("Kärppä").checked) {
         score++;
-        document.getElementById("Kärppä").innerHTML =
-            " Aivan oikein. Kärppä tarvitsee saalista vuorokaudessa 40 -70 grammaa eli noin 2-4 myyrää. Hyvinä myyrävuosina kärppä tappaa enemmän myyriä kuin itse jaksaa syödä, näin ollen kärppä on tärkeä saalislajin runsauden säätelijä.  Huonompina myyrävuosina kärppä käyttää ravinnokseen myös liskoja, sammakoita, linnunmunia ja -poikasia, hyönteisiä ja jopa marjoja.";//https://www.riistakolmiot.fi/animal/karppa-mustela-erminea/
+       
+        document.getElementById("eläin").innerHTML = " Aivan oikein. Kärppä tarvitsee saalista vuorokaudessa 40 -70 grammaa eli noin 2-4 myyrää. Hyvinä myyrävuosina kärppä tappaa enemmän myyriä kuin itse jaksaa syödä, näin ollen kärppä on tärkeä saalislajin runsauden säätelijä.  Huonompina myyrävuosina kärppä käyttää ravinnokseen myös liskoja, sammakoita, linnunmunia ja -poikasia, hyönteisiä ja jopa marjoja.";//https://www.riistakolmiot.fi/animal/karppa-mustela-erminea/
 
 
     } else if (document.getElementById("Lumikko").checked) {
@@ -440,6 +443,7 @@ function function15() {
 
     }
     document.getElementById("tulos15").innerHTML = "Pistetilanne: " + score1 + " / 5";
+
     var inputs = document.getElementsByName("Kärppä");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;

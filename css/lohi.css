@@ -102,13 +102,13 @@ h1 {
 #button,
 #lintu,
 #kala,
-#perhonen,
-#eläin,
+#perhonen1,
+#eläin1,
 #kasvi,
 #marja,
 #puu,
 #sieni,
-#lintu1,
+#lintu2,
 #käärme {
     border: 0;
     line-height: 2.5;
@@ -132,13 +132,13 @@ h1 {
 #button:hover,
 #lintu:hover,
 #kala:hover,
-#output3:hover,
-#eläin:hover,
+#perhonen1:hover,
+#eläin1:hover,
 #kasvi:hover,
 #marja:hover,
 #puu:hover,
 #sieni:hover,
-#lintu1:hover,
+#lintu2:hover,
 #käärme:hover {
     background-color: #4CAF50;
 }
