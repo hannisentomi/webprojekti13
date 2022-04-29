@@ -288,13 +288,13 @@ function function11() {
     } else if (document.getElementById('Harakankello').checked) {
 
         document.getElementById("error").innerHTML =
-            " Väärin meni! Kuvassa on kissankello. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";//https://luontoportti.com/t/56/kissank
+            " Väärin meni! Kuvassa on kissankello. ";//https://luontoportti.com/t/56/kissank
 
 
     } else if (document.getElementById('Kurjenkello').checked) {
 
         document.getElementById("error").innerHTML =
-            " Ei mennyt ihan oikein. Kuvassa on kissankello. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";
+            " Ei mennyt ihan oikein. Kuvassa on kissankello. ";
 
 
     } else {
