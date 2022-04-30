@@ -182,6 +182,76 @@ h1 {
 .aloitus-box {
     text-align: center;
 }
+
+#onnittelut1,
+#onnittelut2,
+#onnittelut3,
+#onnittelut4,
+#onnittelut5,
+#onnittelut6,
+#onnittelut7,
+#onnittelut8,
+#onnittelut9,
+#onnittelut10,
+#onnittelut11,
+#onnittelut12,
+#onnittelut13,
+#onnittelut14,
+#onnittelut15 { 
+    /* säädetään alueelle koko ja varmistetaan, että mahdollinen liian
+    suuri sisältö piilotetaan ylimenevältä osalta */
+      max-width: 100%;
+      min-height: 100px;
+      max-height: 80px;
+      overflow: hidden;
+    }
+    #onnittelut1,
+    #onnittelut2,
+    #onnittelut3,
+    #onnittelut4,
+    #onnittelut5,
+    #onnittelut6,
+    #onnittelut7,
+    #onnittelut8,
+    #onnittelut9,
+    #onnittelut10,
+    #onnittelut11,
+    #onnittelut12,
+    #onnittelut13,
+    #onnittelut14,
+    #onnittelut15 {
+       margin: 0;
+       padding: 0;
+       /* määritellään animaation kestoksi 4s, animointia suoritetaan loputtomasti ja 
+          eestaas */
+       animation-duration: 5s;
+       animation-iteration-count: infinite;
+       animation-direction: alternate;
+       /* animaatiossa käytetyn keyframes-lohkon nimi */
+       animation-name: move;
+    
+    }
+    /* aloitetaan toisen lohkon animointi 1 sekunnin (1000 millisekuntia) myöhemmin */
+    .toinen {
+      animation-delay: 1000ms;
+    }
+    
+    @keyframes move {
+     /* mistä animoidaan */
+      from {
+        font-size: 1em;
+        color: black;
+      }
+      50% {
+        color: green;
+      }
+     /* mihin animoidaan */
+      to {
+        font-size: 5em;
+        color: red;
+      }
+    }
+    
 @media screen and (min-width:575px) and (max-width:990px){
 	#carousel-example-2 {
 		display: none;

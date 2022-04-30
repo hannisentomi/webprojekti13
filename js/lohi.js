@@ -31,6 +31,11 @@ function function1() {
     document.getElementById("lintu").disabled = true;
     document.getElementById("left").innerHTML = "KY-SY-MYK-SI-Ä JÄL-JEL-LÄ: " + left + " / 5";
 
+
+    if (left == 0) {
+        document.getElementById("onnittelut1").innerHTML = " Tulos = " + score + " pistettä.";
+    }
+
     var inputs = document.getElementsByName("lintu");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -63,6 +68,10 @@ function function2() {
     document.getElementById("kala").disabled = true;
     document.getElementById("left2").innerHTML = "KY-SY-MYK-SI-Ä JÄL-JEL-LÄ: " + left + " / 5";
 
+    if (left == 0) {
+        document.getElementById("onnittelut2").innerHTML = " Tulos = " + score + " pistettä.";
+    }
+
     var inputs = document.getElementsByName("kala");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -94,6 +103,10 @@ function function3() {
     document.getElementById("tulos3").innerHTML = "PIS-TE-TI-LAN-NE: " + score + " / 5";
     document.getElementById("perhonen").disabled = true;
     document.getElementById("left3").innerHTML = "KY-SY-MYK-SI-Ä JÄL-JEL-LÄ: " + left + " / 5";
+
+    if (left == 0) {
+        document.getElementById("onnittelut3").innerHTML = " Tulos = " + score + " pistettä.";
+    }
 
 
     var inputs = document.getElementsByName("perhonen");
@@ -128,6 +141,10 @@ function function4() {
     document.getElementById("eläin").disabled = true;
     document.getElementById("left4").innerHTML = "KY-SY-MYK-SI-Ä JÄL-JEL-LÄ: " + left + " / 5";
 
+    if (left == 0) {
+        document.getElementById("onnittelut4").innerHTML = " Tulos = " + score + " pistettä.";
+    }
+
     var inputs = document.getElementsByName("eläin");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -159,6 +176,10 @@ function function5() {
     document.getElementById("tulos5").innerHTML = "PIS-TE-TI-LAN-NE: " + score + " / 5";
     document.getElementById("kasvi").disabled = true;
     document.getElementById("left5").innerHTML = "KY-SY-MYK-SI-Ä JÄL-JEL-LÄ: " + left + " / 5";
+
+    if (left == 0) {
+        document.getElementById("onnittelut5").innerHTML = " Tulos = " + score + " pistettä.";
+    }
 
     var inputs = document.getElementsByName("kasvi");
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -192,6 +213,10 @@ function function6() {
     document.getElementById("marja").disabled = true;
     document.getElementById("left6").innerHTML = "Kysymyksiä jäljellä: " + left1 + " / 5";
 
+    if (left1 == 0) {
+        document.getElementById("onnittelut6").innerHTML = " Tulos = " + score2 + " pistettä.";
+    }
+
     var inputs = document.getElementsByName("marja");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -221,6 +246,10 @@ function function7() {
     document.getElementById("tulos7").innerHTML = "Pistetilanne: " + score2 + " / 5";
     document.getElementById("puu").disabled = true;
     document.getElementById("left7").innerHTML = "Kysymyksiä jäljellä: " + left1 + " / 5";
+
+    if (left1 == 0) {
+        document.getElementById("onnittelut7").innerHTML = " Tulos = " + score2 + " pistettä.";
+    }
 
     var inputs = document.getElementsByName("puu");
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -254,6 +283,10 @@ function function8() {
     document.getElementById("sieni").disabled = true;
     document.getElementById("left8").innerHTML = "Kysymyksiä jäljellä: " + left1 + " / 5";
 
+    if (left1 == 0) {
+        document.getElementById("onnittelut8").innerHTML = " Tulos = " + score2 + " pistettä.";
+    }
+
     var inputs = document.getElementsByName('sieni');
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -284,6 +317,10 @@ function function9() {
     document.getElementById("lintu1").disabled = true;
     document.getElementById("left9").innerHTML = "Kysymyksiä jäljellä: " + left1 + " / 5";
 
+    if (left1 == 0) {
+        document.getElementById("onnittelut9").innerHTML = " Tulos = " + score2 + " pistettä.";
+    }
+
     var inputs = document.getElementsByName('lintu1');
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -310,19 +347,25 @@ function function10() {
         return;
     }
 
+
     document.getElementById("tulos10").innerHTML = "Pistetilanne: " + score2 + " / 5";
     document.getElementById("käärme").disabled = true;
     document.getElementById("left10").innerHTML = "Kysymyksiä jäljellä: " + left1 + " / 5";
 
+    if (left1 == 0) {
+        document.getElementById("onnittelut10").innerHTML = " Tulos = " + score2 + " pistettä.";
+    }
+
+
+    if (left1 == 0) {
+        document.getElementById("onnittelut10").innerHTML = " Tulos = " + score2 + " pistettä.";
+    }
     var inputs = document.getElementsByName('käärme');
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
     }
-    // if (left==0)
-    // document.getElementById("left10").innerHTML = "Kysymyksiä jäljellä: " + left1 + " / 5";
 
 }
-
 function function11() {
 
     if (document.getElementById('Kissankello').checked) {
@@ -350,6 +393,10 @@ function function11() {
     document.getElementById("tulos11").innerHTML = "Pistetilanne:  " + score1 + " / 5";
     document.getElementById("kukka3").disabled = true;
     document.getElementById("left11").innerHTML = "Kysymyksiä jäljellä: " + left2 + " / 5";
+
+    if (left2 == 0) {
+        document.getElementById("onnittelut11").innerHTML = " Tulos = " + score1 + " pistettä.";
+    }
 
     var inputs = document.getElementsByName('kukka');
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -385,6 +432,10 @@ function function12() {
     document.getElementById("tulos12").innerHTML = "Pistetilanne:  " + score1 + " / 5";
     document.getElementById("lintu3").disabled = true;
     document.getElementById("left12").innerHTML = "Kysymyksiä jäljellä: " + left2 + " / 5";
+
+    if (left2 == 0) {
+        document.getElementById("onnittelut12").innerHTML = " Tulos = " + score1 + " pistettä.";
+    }
 
     var inputs = document.getElementsByName("lintu1");
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -424,6 +475,10 @@ function function13() {
     document.getElementById("kala2").disabled = true;
     document.getElementById("left13").innerHTML = "Kysymyksiä jäljellä: " + left2 + " / 5";
 
+    if (left2 == 0) {
+        document.getElementById("onnittelut13").innerHTML = " Tulos = " + score1 + " pistettä.";
+    }
+
     var inputs = document.getElementsByName("kala2");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -461,6 +516,10 @@ function function14() {
     document.getElementById("perhonen1").disabled = true;
     document.getElementById("left14").innerHTML = "Kysymyksiä jäljellä: " + left2 + " / 5";
 
+    if (left2 == 0) {
+        document.getElementById("onnittelut14").innerHTML = " Tulos = " + score1 + " pistettä.";
+    }
+
     var inputs = document.getElementsByName("perhonen1");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -492,6 +551,10 @@ function function15() {
     document.getElementById("tulos15").innerHTML = "Pistetilanne: " + score1 + " / 5";
     document.getElementById("Kärppä").disabled = true;
     document.getElementById("left15").innerHTML = "Kysymyksiä jäljellä: " + left2 + " / 5";
+
+    if (left2 == 0) {
+        document.getElementById("onnittelut15").innerHTML = " Tulos = " + score1 + " pistettä.";
+    }
 
     var inputs = document.getElementsByName("Kärppä");
     for (var i = 0, len = inputs.length; i < len; i++) {
