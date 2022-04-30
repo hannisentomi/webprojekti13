@@ -23,6 +23,7 @@
     text-align: left;
     line-height: 200%;
     padding-top: 40px;
+    position:fixed;
 
 }
 
@@ -148,9 +149,9 @@ h1 {
     border-style: double;
     border-color: black;
     border-radius: 5px;
-    padding-inline: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-inline: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: whitesmoke;
 }
 
@@ -161,15 +162,15 @@ h1 {
 
 #koti {
     color: black;
-   
+    font-weight: bold;
+	font-size: 200%;
+  
 
 }
 
 #koti2 {
     color: black;
     padding-right: 1rem;
-
-
 
 }
 
