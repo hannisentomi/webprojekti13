@@ -169,6 +169,7 @@ function function6() {
         return;
     }
     document.getElementById("tulos6").innerHTML = "Pistetilanne: " + score2 + " / 5";
+    document.getElementById("marja").disabled = true;
 
     var inputs = document.getElementsByName("marja");
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -194,6 +195,7 @@ function function7() {
     }
 
     document.getElementById("tulos7").innerHTML = "Pistetilanne: " + score2 + " / 5";
+    document.getElementById("puu").disabled = true;
 
     var inputs = document.getElementsByName("puu");
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -220,7 +222,8 @@ function function8() {
         return;
     }
 
-    document.getElementById("tulos8").innerHTML = "Pistetilanne: " + score2 + " / 5";
+    document.getElementById("tulos8").innerHTML = "Pistetilanne: " + score2 + " / 5"; 
+    document.getElementById("sieni").disabled = true;
 
     var inputs = document.getElementsByName('sieni');
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -273,6 +276,7 @@ function function10() {
     }
 
     document.getElementById("tulos10").innerHTML = "Pistetilanne: " + score2 + " / 5";
+    document.getElementById("käärme").disabled = true;
 
     var inputs = document.getElementsByName('käärme');
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -308,6 +312,7 @@ function function11() {
 
     }
     document.getElementById("tulos11").innerHTML = "Pistetilanne:  " + score1 + " / 5";
+    document.getElementById("kukka").disabled = true;
 
     var inputs = document.getElementsByName('kukka');
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -343,6 +348,7 @@ function function12() {
         return;
     }
     document.getElementById("tulos12").innerHTML = "Pistetilanne:  " + score1 + " / 5";
+    document.getElementById("lintu1").disabled = true;
 
     var inputs = document.getElementsByName("lintu1");
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -378,6 +384,7 @@ function function13() {
     }
 
     document.getElementById("tulos13").innerHTML = "Pistetilanne:  " + score1 + " / 5";
+    document.getElementById("kala2").disabled = true;
 
     var inputs = document.getElementsByName("kala2");
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -416,6 +423,7 @@ function function14() {
 
     }
     document.getElementById("tulos14").innerHTML = "Pistetilanne: " + score1 + " / 5";
+    document.getElementById("perhonen1").disabled = true;
 
     var inputs = document.getElementsByName("perhonen1");
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -425,7 +433,6 @@ function function14() {
 
 function function15() {
 
-    document.getElementById("error5").value = "";
 
     if (document.getElementById("Kärppä").checked) {
         score1++;
@@ -449,6 +456,7 @@ function function15() {
 
     }
     document.getElementById("tulos15").innerHTML = "Pistetilanne: " + score1 + " / 5";
+    document.getElementById("Kärppä").disabled = true;
 
     var inputs = document.getElementsByName("Kärppä");
     for (var i = 0, len = inputs.length; i < len; i++) {
