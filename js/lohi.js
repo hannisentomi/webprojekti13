@@ -532,7 +532,7 @@ function function15() {
     if (document.getElementById("Kärppä").checked) {
         score1++;
         left2--;
-        document.getElementById("eläin1").innerHTML = " Aivan oikein. Kärppä tarvitsee saalista vuorokaudessa 40 -70 grammaa eli noin 2-4 myyrää. Hyvinä myyrävuosina kärppä tappaa enemmän myyriä kuin itse jaksaa syödä, näin ollen kärppä on tärkeä saalislajin runsauden säätelijä.  Huonompina myyrävuosina kärppä käyttää ravinnokseen myös liskoja, sammakoita, linnunmunia ja -poikasia, hyönteisiä ja jopa marjoja.";//https://www.riistakolmiot.fi/animal/karppa-mustela-erminea/
+        document.getElementById("eläin3").innerHTML = " Aivan oikein. Kärppä tarvitsee saalista vuorokaudessa 40 -70 grammaa eli noin 2-4 myyrää. Hyvinä myyrävuosina kärppä tappaa enemmän myyriä kuin itse jaksaa syödä, näin ollen kärppä on tärkeä saalislajin runsauden säätelijä.  Huonompina myyrävuosina kärppä käyttää ravinnokseen myös liskoja, sammakoita, linnunmunia ja -poikasia, hyönteisiä ja jopa marjoja.";//https://www.riistakolmiot.fi/animal/karppa-mustela-erminea/
 
 
     } else if (document.getElementById("Lumikko").checked) {
