@@ -4,7 +4,7 @@ var score = 0;
 var score1 = 0;
 var score2 = 0;
 var left = 5;
-var left1= 5;
+var left1 = 5;
 var left2 = 5;
 
 function function1() {
@@ -30,7 +30,12 @@ function function1() {
     document.getElementById("tulos").innerHTML = "PIS-TE-TI-LAN-NE: " + score + " / 5";
     document.getElementById("lintu").disabled = true;
     document.getElementById("left").innerHTML = "KY-SY-MYK-SI-Ä JÄL-JEL-LÄ: " + left + " / 5";
-  
+
+
+    if (left == 0) {
+        document.getElementById("onnittelut1").innerHTML = " Tulos = " + score + " pistettä.";
+    }
+
     var inputs = document.getElementsByName("lintu");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -63,6 +68,10 @@ function function2() {
     document.getElementById("kala").disabled = true;
     document.getElementById("left2").innerHTML = "KY-SY-MYK-SI-Ä JÄL-JEL-LÄ: " + left + " / 5";
 
+    if (left == 0) {
+        document.getElementById("onnittelut2").innerHTML = " Tulos = " + score + " pistettä.";
+    }
+
     var inputs = document.getElementsByName("kala");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -94,6 +103,10 @@ function function3() {
     document.getElementById("tulos3").innerHTML = "PIS-TE-TI-LAN-NE: " + score + " / 5";
     document.getElementById("perhonen").disabled = true;
     document.getElementById("left3").innerHTML = "KY-SY-MYK-SI-Ä JÄL-JEL-LÄ: " + left + " / 5";
+
+    if (left == 0) {
+        document.getElementById("onnittelut3").innerHTML = " Tulos = " + score + " pistettä.";
+    }
 
 
     var inputs = document.getElementsByName("perhonen");
@@ -128,6 +141,10 @@ function function4() {
     document.getElementById("eläin").disabled = true;
     document.getElementById("left4").innerHTML = "KY-SY-MYK-SI-Ä JÄL-JEL-LÄ: " + left + " / 5";
 
+    if (left == 0) {
+        document.getElementById("onnittelut4").innerHTML = " Tulos = " + score + " pistettä.";
+    }
+
     var inputs = document.getElementsByName("eläin");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
@@ -155,18 +172,22 @@ function function5() {
         document.getElementById("kasvi").innerHTML = `ET O-LE VIE-LÄ VA-LIN-NUT MI-TÄÄN.`;
         return;
     }
-   
+
     document.getElementById("tulos5").innerHTML = "PIS-TE-TI-LAN-NE: " + score + " / 5";
     document.getElementById("kasvi").disabled = true;
     document.getElementById("left5").innerHTML = "KY-SY-MYK-SI-Ä JÄL-JEL-LÄ: " + left + " / 5";
+
+    if (left == 0) {
+        document.getElementById("onnittelut5").innerHTML = " Tulos = " + score + " pistettä.";
+    }
 
     var inputs = document.getElementsByName("kasvi");
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
 
-    
-   
-}
+
+
+    }
 }
 
 function function6() {
@@ -178,9 +199,9 @@ function function6() {
     if (rd2.checked == true) {
         score2++;
         left1--;
-        document.getElementById("marja").innerHTML = "Hyvin meni! Karhunvatukka on herkullinen ja mehukas marja, joka soveltuu ihanteellisesti  terveellisiin juomiin ja smoothieihin, sekä sellaisenaan nautittavaksi jogurtin kera tai jälkiruuissa. Voit syödä karhunvatukoita myös salaateissa ja muissa kylmissä resepteissä." + "Voit lukea lisää karhunvatukan terveydhyödyistä täältä:"; //" https://askelterveyteen.com/7-syyta-syoda-karhunvatukoita/"
+        document.getElementById("marja").innerHTML = "Hyvin meni! Karhunvatukka on herkullinen ja mehukas marja, joka soveltuu ihanteellisesti  terveellisiin juomiin ja smoothieihin, sekä sellaisenaan nautittavaksi jogurtin kera tai jälkiruuissa. Voit syödä karhunvatukoita myös salaateissa ja muissa kylmissä resepteissä."; //https://askelterveyteen.com/7-syyta-syoda-karhunvatukoita/"
 
-    } else if (rd1.checked == true | rd3.checked == true | rd4.checked == true){
+    } else if (rd1.checked == true | rd3.checked == true | rd4.checked == true) {
         document.getElementById("marja").innerHTML = "Voi ei, vastasit väärin, kuvan marja on karhunvatukka.";
         left1--;
     }
@@ -191,6 +212,10 @@ function function6() {
     document.getElementById("tulos6").innerHTML = "Pistetilanne: " + score2 + " / 5";
     document.getElementById("marja").disabled = true;
     document.getElementById("left6").innerHTML = "Kysymyksiä jäljellä: " + left1 + " / 5";
+
+    if (left1 == 0) {
+        document.getElementById("onnittelut6").innerHTML = " Tulos = " + score2 + " pistettä.";
+    }
 
     var inputs = document.getElementsByName("marja");
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -209,7 +234,7 @@ function function7() {
         left1--;
         document.getElementById("puu").innerHTML = "Aivan oikein. Tiesitkö, että leppä sopii erityisen hyvin jatkuvalämmitteisen saunan ja savusaunan lämmitykseen sekä helloihin ja avotakkoihin."; //"https://savonvoima.fi/miksi-koivua-pidetaan-parhaana-polttopuuna/"
 
-    } else if (rd5.checked == true | rd6.checked == true | rd8.checked == true){
+    } else if (rd5.checked == true | rd6.checked == true | rd8.checked == true) {
         document.getElementById("puu").innerHTML = "Nyt ei mennyt ihan putkeen, kuvan puu on leppä.";
         left1--;
     }
@@ -221,6 +246,10 @@ function function7() {
     document.getElementById("tulos7").innerHTML = "Pistetilanne: " + score2 + " / 5";
     document.getElementById("puu").disabled = true;
     document.getElementById("left7").innerHTML = "Kysymyksiä jäljellä: " + left1 + " / 5";
+
+    if (left1 == 0) {
+        document.getElementById("onnittelut7").innerHTML = " Tulos = " + score2 + " pistettä.";
+    }
 
     var inputs = document.getElementsByName("puu");
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -241,7 +270,7 @@ function function8() {
         document.getElementById("sieni").innerHTML = "Vastauksesi on oikein. Korvasieni on helppo tuntea,sillä keväällä ei juuri muita sieniä kasva. Se viihtyy parhaiten hiekkamaalla, vanhoilla hakkuualueilla. Ruskea muhkura voi olla ensin vaikea havaita, mutta kun silmä tottuu, niin kas niitähän on joka paikassa! Tämä raakana myrkyllinen ruokasieni pitää esikäsitellä huolellisesti. " +
             "Suuret korvasienet vastaavat kooltaan lapsen aivoja, ja useamman sienen rypäs voi ylittää aikuisen ihmisen aivojen koon.Korvasieni on alkukesän aarre. Sen satokausi kestää vain muutaman viikon, joten herkku on poimittava oikeaan aikaan. Satokausi riippuu kevään lämpötilasta, pohjoisessa korvasieniä saatetaan kerätä vielä heinäkuussakin. Nyrkkisääntönä on, että korvasieniä kannattaa lähteä etsimään, kun hiirenkorvat ilmestyvät koivuihin."; //"https://yle.fi/aihe/artikkeli/2019/04/26/myrkky-vai-herkku-korvasieni-jakaa-mielipiteet"
 
-    } else if (rd9.checked == true | rd10.checked == true | rd12.checked == true | rd13.checked == true){
+    } else if (rd9.checked == true | rd10.checked == true | rd12.checked == true | rd13.checked == true) {
         document.getElementById("sieni").innerHTML = "Väärin meni, kuvan sieni on korvasieni.";
         left1--;
     }
@@ -250,9 +279,13 @@ function function8() {
         return;
     }
 
-    document.getElementById("tulos8").innerHTML = "Pistetilanne: " + score2 + " / 5"; 
+    document.getElementById("tulos8").innerHTML = "Pistetilanne: " + score2 + " / 5";
     document.getElementById("sieni").disabled = true;
     document.getElementById("left8").innerHTML = "Kysymyksiä jäljellä: " + left1 + " / 5";
+
+    if (left1 == 0) {
+        document.getElementById("onnittelut8").innerHTML = " Tulos = " + score2 + " pistettä.";
+    }
 
     var inputs = document.getElementsByName('sieni');
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -270,10 +303,9 @@ function function9() {
         score2++;
         left1--;
         document.getElementById("lintu1").innerHTML = "Vastauksesi on oikein. Meriharakka on melkein variksen kokoinen, tanakka kahlaajalintu, jonka pää ja selkäpuoli ovat mustat, vatsa valkoinen. Räikeänpunaiset nokka ja jalat näkyvät kauas. Ääni on kimeä ja kiihkeä”pii, biik” ja ”ko-biik ko-biik…" +
-            "Meriharakka pesii merensaariston kallioisilla ja somerikkoisilla, puuttomilla luodoilla, muutamin paikoin sisämaassakin teollisuuslaitosten avomailla ja puutavarakentillä. Pääravintona ovat simpukat, joita emot tuovat poikasille avattuaan niiden kuoren (muilla kahlaajilla untuvikot syövät pikkuötököitä ilman emojen apua). Rannikkoseuduilla meriharakat etsivät matoja ja kotiloita myös avarilta nurmikoilta." +
             "Meriharakka on yleinen koko merialueella, sisämaassa pesivänä hyvin harvinainen mutta keväällä säännöllinen läpimuuttaja Jäämeren äärelle. Linnut lähtevät heinä-syyskuussa Länsi-Euroopan rannikoille ja palaavat valtaosin huhtikuussa. ";// " https://yle.fi/aihe/artikkeli/2017/05/16/rantojen-ja-kosteikkojen-kahlaajia-meriharakka"
 
-    } else if (rd14.checked == true | rd15.checked == true | rd16.checked == true){
+    } else if (rd14.checked == true | rd15.checked == true | rd16.checked == true) {
         document.getElementById("lintu1").innerHTML = "Nyt ei mennyt ihan putkeen, kuvassa on meriharakka.";
         left1--;
     }
@@ -284,6 +316,10 @@ function function9() {
     document.getElementById("tulos9").innerHTML = "Pistetilanne: " + score2 + " / 5";
     document.getElementById("lintu1").disabled = true;
     document.getElementById("left9").innerHTML = "Kysymyksiä jäljellä: " + left1 + " / 5";
+
+    if (left1 == 0) {
+        document.getElementById("onnittelut9").innerHTML = " Tulos = " + score2 + " pistettä.";
+    }
 
     var inputs = document.getElementsByName('lintu1');
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -302,7 +338,7 @@ function function10() {
         left1--;
         document.getElementById("käärme").innerHTML = "Vastauksesi on oikein. Nimensä mukaisesti rantakäärme viihtyy vesien äärellä. Se on varsin hyvä uimari, joka pystyy sukeltamaan jopa puoli tuntia kerrallaan. Päiväaktiivinen rantakäärme on ihmiselle vaaraton. ";// + "https://www.apu.fi/artikkelit/vaaraton-rantakaarme-on-todellinen-hyotykaarme-nain-erotat-sen-kyysta"
 
-    } else if (rd18.checked == true | rd20.checked == true){
+    } else if (rd18.checked == true | rd20.checked == true) {
         document.getElementById("käärme").innerHTML = "Nyt ei mennyt ihan putkeen, kuvassa makoilee rantakäärme.";
         left1--;
     }
@@ -311,37 +347,43 @@ function function10() {
         return;
     }
 
+
     document.getElementById("tulos10").innerHTML = "Pistetilanne: " + score2 + " / 5";
     document.getElementById("käärme").disabled = true;
     document.getElementById("left10").innerHTML = "Kysymyksiä jäljellä: " + left1 + " / 5";
 
+    if (left1 == 0) {
+        document.getElementById("onnittelut10").innerHTML = " Tulos = " + score2 + " pistettä.";
+    }
+
+
+    if (left1 == 0) {
+        document.getElementById("onnittelut10").innerHTML = " Tulos = " + score2 + " pistettä.";
+    }
     var inputs = document.getElementsByName('käärme');
     for (var i = 0, len = inputs.length; i < len; i++) {
         inputs[i].disabled = true;
     }
-   // if (left==0)
-   // document.getElementById("left10").innerHTML = "Kysymyksiä jäljellä: " + left1 + " / 5";
-   
-}
 
+}
 function function11() {
 
     if (document.getElementById('Kissankello').checked) {
         score1++;
         left2--;
-        document.getElementById("kukka").innerHTML =
+        document.getElementById("kukka3").innerHTML =
             " Aivan oikein.  Kuvassa on kissankello. Rakkaalla lapsella on monta nimeä: sinisissä kellokukissa on nähty milloin minkäkin eläimen kello tai hattu, kissan lisäksi ainakin harakan, koiran, kurjen, lampaan, lehmän, pääskysen, poron ja variksen. Kissankello on lempinimensä ansainnut, paitsi kauneudellaan, myös yleisyydellään ja laajalla levinneisyydellään.";//https://luontoportti.com/t/56/kissankello
 
 
     } else if (document.getElementById('Harakankello').checked) {
         document.getElementById("error").innerHTML =
             " Väärin meni! Kuvassa on kissankello. ";
-            left2--;
+        left2--;
 
     } else if (document.getElementById('Kurjenkello').checked) {
         document.getElementById("error").innerHTML =
             " Ei mennyt ihan oikein. Kuvassa on kissankello. ";
-            left2--;
+        left2--;
 
     } else {
         document.getElementById("error").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
@@ -349,8 +391,12 @@ function function11() {
 
     }
     document.getElementById("tulos11").innerHTML = "Pistetilanne:  " + score1 + " / 5";
-    document.getElementById("kukka").disabled = true;
+    document.getElementById("kukka3").disabled = true;
     document.getElementById("left11").innerHTML = "Kysymyksiä jäljellä: " + left2 + " / 5";
+
+    if (left2 == 0) {
+        document.getElementById("onnittelut11").innerHTML = " Tulos = " + score1 + " pistettä.";
+    }
 
     var inputs = document.getElementsByName('kukka');
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -365,26 +411,31 @@ function function12() {
         score1++;
         left2--;
 
-        document.getElementById("lintu1").innerHTML =
+        document.getElementById("lintu3").innerHTML =
             " Täsmälleen oikea vastaus.  Harmaalokilla on neljä ikäluokkaa ja useita pukuja. Toisesta talvesta lähtien sillä on harmaa selkä. Jalat ovat vaaleanpunaiset (vanha lintu) tai ruskeanharmaat (nuori lintu). Nokka on vaaleakärkisesti keltainen ja alanokan kulmassa on punainen täplä (vanha lintu), tai nokka on punertavatyvisesti tumma (nuori lintu). Silmän värikalvo (iiris) on vaaleankeltainen (vanha lintu) tai tummanruskea-vaaleankeltainen (nuori lintu). Alanokan kulman punainen täplä kehittyy kolmantena talvena.";//https://luontoportti.com/t/495/harmaalokki
 
 
     } else if (document.getElementById("Kalalokki").checked) {
         document.getElementById("error2").innerHTML =
             " Väärin arvattu! Tämä lintu on harmaalokki.";
-            left2--;
+        left2--;
 
     } else if (document.getElementById("Merilokki").checked) {
         document.getElementById("error2").innerHTML =
             " Väärin arvattu! Tämä lintu on harmaalokki.";
-            left2--;
+        left2--;
+
     } else {
         document.getElementById("error2").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
         return;
     }
     document.getElementById("tulos12").innerHTML = "Pistetilanne:  " + score1 + " / 5";
-    document.getElementById("lintu1").disabled = true;
+    document.getElementById("lintu3").disabled = true;
     document.getElementById("left12").innerHTML = "Kysymyksiä jäljellä: " + left2 + " / 5";
+
+    if (left2 == 0) {
+        document.getElementById("onnittelut12").innerHTML = " Tulos = " + score1 + " pistettä.";
+    }
 
     var inputs = document.getElementsByName("lintu1");
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -405,16 +456,16 @@ function function13() {
     } else if (document.getElementById("Silakka").checked) {
         document.getElementById("error3").innerHTML =
             " Väärin arvattu! Tämä kala on muikku. ";
-            left2--;
+        left2--;
 
     } else if (document.getElementById("Salakka").checked) {
         document.getElementById("error3").innerHTML =
             " Väärin arvattu! Tämä kala on muikku. ";
-            left2--;
+        left2--;
     } else if (document.getElementById("Kiiski").checked) {
         document.getElementById("error3").innerHTML =
             " Väärin arvattu! Tämä kala on muikku. ";
-            left2--;
+        left2--;
     } else {
         document.getElementById("error3").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
         return;
@@ -423,6 +474,10 @@ function function13() {
     document.getElementById("tulos13").innerHTML = "Pistetilanne:  " + score1 + " / 5";
     document.getElementById("kala2").disabled = true;
     document.getElementById("left13").innerHTML = "Kysymyksiä jäljellä: " + left2 + " / 5";
+
+    if (left2 == 0) {
+        document.getElementById("onnittelut13").innerHTML = " Tulos = " + score1 + " pistettä.";
+    }
 
     var inputs = document.getElementsByName("kala2");
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -442,15 +497,15 @@ function function14() {
     } else if (document.getElementById("Ohdakeperhonen").checked) {
         document.getElementById("error4").innerHTML =
             " Väärin meni. Kuvassa on neitoperhonen.";
-            left2--;
+        left2--;
     } else if (document.getElementById("Amiraaliperhonen").checked) {
         document.getElementById("error4").innerHTML =
             "Väärin meni. Kuvassa on neitoperhonen.";
-            left2--;
+        left2--;
     } else if (document.getElementById("Herukkaperhonen").checked) {
         document.getElementById("error4").innerHTML =
             "Väärin meni. Kuvassa on neitoperhonen.";
-            left2--;
+        left2--;
 
     } else {
         document.getElementById("error4").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
@@ -460,6 +515,10 @@ function function14() {
     document.getElementById("tulos14").innerHTML = "Pistetilanne: " + score1 + " / 5";
     document.getElementById("perhonen1").disabled = true;
     document.getElementById("left14").innerHTML = "Kysymyksiä jäljellä: " + left2 + " / 5";
+
+    if (left2 == 0) {
+        document.getElementById("onnittelut14").innerHTML = " Tulos = " + score1 + " pistettä.";
+    }
 
     var inputs = document.getElementsByName("perhonen1");
     for (var i = 0, len = inputs.length; i < len; i++) {
@@ -479,11 +538,11 @@ function function15() {
     } else if (document.getElementById("Lumikko").checked) {
         document.getElementById("error5").innerHTML =
             " Väärin arvattu! Oikea vastaus on kärppä.";
-            left2--;
+        left2--;
     } else if (document.getElementById("Näätä").checked) {
         document.getElementById("error5").innerHTML =
             " Väärin arvattu! Oikea vastaus on kärppä. ";
-            left2--;
+        left2--;
     } else {
         document.getElementById("error5").innerHTML = "Ole hyvä ja valitse yksi vaihtoehto.";
         return;
@@ -492,6 +551,10 @@ function function15() {
     document.getElementById("tulos15").innerHTML = "Pistetilanne: " + score1 + " / 5";
     document.getElementById("Kärppä").disabled = true;
     document.getElementById("left15").innerHTML = "Kysymyksiä jäljellä: " + left2 + " / 5";
+
+    if (left2 == 0) {
+        document.getElementById("onnittelut15").innerHTML = " Tulos = " + score1 + " pistettä.";
+    }
 
     var inputs = document.getElementsByName("Kärppä");
     for (var i = 0, len = inputs.length; i < len; i++) {
