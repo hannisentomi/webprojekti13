@@ -13,6 +13,7 @@
     margin-top: 5px;
     height: 8rem;
     margin-bottom: 20px;
+  
 
 }
 
@@ -21,7 +22,6 @@
     font-size: 1.5em;
     text-align: left;
     line-height: 200%;
-    position: fixed;
     padding-top: 40px;
 
 }
@@ -38,6 +38,7 @@ li span {
 
 li i {
     color: whitesmoke;
+    
 }
 
 a :hover {
@@ -160,7 +161,7 @@ h1 {
 
 #koti {
     color: black;
-    position: fixed;
+   
 
 }
 
