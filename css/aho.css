@@ -6,7 +6,7 @@ p{
 .header {
     color: #000000;
     text-align: left;
-    background-color: #f8fbf7;
+    background-color: #198754;
     margin: auto;
     padding: 1px;
 	border-width: 1px;
@@ -20,6 +20,12 @@ p{
     background-image: url(/images/aho_images/linna.jpg);
     background-size:contain;
 
+}
+
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
 }
 
 
