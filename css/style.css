@@ -1,266 +1,195 @@
 img.kuvat-etusivu{
 
-		border: 4px solid green;
-		border-style: outset;
-		border-radius: 20px;
-	}
+	border: 4px solid green;
+	border-style: outset;
+	border-radius: 20px;
+}
 
 
 p {
-	color: #000;
+color: #000;
 }
 
 .header {
-	text-align: left;
-	background-color: grey;
-	margin: auto;
-	padding: 1px;
-	border-width: 1px;
-	border: black;
-	border-style: solid;
-	border-radius: 5px;
-	margin-top: 5px;
-	height: 225px;
-	width: 1300px;
+text-align: left;
+background-color: grey;
+margin: auto;
+padding: 1px;
+border-width: 1px;
+border: black;
+border-style: solid;
+border-radius: 5px;
+margin-top: 5px;
+height: 225px;
+width: 1300px;
 
 }
 
 div img #kuvat {
-	float: left;
-	max-height: 200px;
-	max-width: 200px;
+float: left;
+max-height: 200px;
+max-width: 200px;
 
 }
 
 .footer {
-	text-align: left;
-	background-color: #77d169;
-	border-width: 1px;
-	border: black;
-	border-style: solid;
-	border-radius: 5px;
-	margin-top: 30px;
-	width: 100%;
-	bottom: 0;
+text-align: left;
+background-color: #77d169;
+border-width: 1px;
+border: black;
+border-style: solid;
+border-radius: 5px;
+margin-top: 30px;
+width: 100%;
+bottom: 0;
 
-	position: fixed;
+position: fixed;
 
 }
 
 .container-fluid-3 {
-	text-align: center;
+text-align: center;
 
 }
 
 
 .hannisenkuvalinkki {
-	background-image: url('matikka.jpg');
-	background-size: cover;
+background-image: url('matikka.jpg');
+background-size: cover;
 
 }
 
 .sivu {
-	font-weight: bold;
-	font-size: 1.5em;
-	text-align: left;
-	line-height: 200%;
+font-weight: bold;
+font-size: 1.5em;
+text-align: left;
+line-height: 200%;
 }
 
 
 body {
-	background-color: #c5edcc;
+background-color: #c5edcc;
 
 }
 
 a {
-	text-align: center;
+text-align: center;
 
 }
 
 
 li span {
-	color: black;
+color: black;
 
 
 }
 
 li i {
-	color: bisque;
+color: bisque;
 
 }
 
 
 div i {
-	color: bisque;
+color: bisque;
 
 }
 
 #koti {
-	color: black;
-	font-weight: bold;
-	font-size: 200%;
+color: black;
+font-weight: bold;
+font-size: 200%;
 
 }
 
 #koti2 {
-	color: bisque;
-	font-weight: bold;
-	font-size: 250%;
-	padding-right: 1rem;
-    
+color: bisque;
+font-weight: bold;
+font-size: 250%;
+padding-right: 1rem;
+
 }
 #koti2:hover{
-    color: cyan;
+color: cyan;
 }
 
 a :hover {
-	color: cyan;
+color: cyan;
 
 }
 
 #kolumni {
-	padding-top: 2%;
-	padding-bottom: 4%;
+padding-top: 2%;
+padding-bottom: 4%;
 
 }
 
 .container2 {
-	position: absolute;
-	bottom: 0%;
-	right: 40%;
+position: absolute;
+bottom: 0%;
+right: 40%;
 
 }
 
 @media screen and (min-width:575px) and (max-width:990px){
-	#carousel-example-2 {
-		display: none;
-	}
-	.header{
-		display: none;
-	}
-	
+#carousel-example-2 {
+	display: none;
+}
+.header{
+	display: none;
+}
+
 }
 /* Media puhelin **/
 @media only screen and (max-width: 575px) {
-	.sivu {
-		font-size: 1.5em;
+.sivu {
+	font-size: 1.5em;
 
-	}
+}
 
-	#carousel-example-2 {
-		display: none;
-	}
-	.header{
-		display: none;
-	}
+#carousel-example-2 {
+	display: none;
+}
+.header{
+	display: none;
+}
 }
 
 @media screen and (min-width:1300px) and (max-width:1800px) {
-	#koti {
-		font-size: 1em;
-	}
-	#carousel-example-2 {
-		display: none;
-	}
-	
-	.header{
-		display: none;
-	}
+#koti {
+	font-size: 1em;
+}
+#carousel-example-2 {
+	display: none;
+}
+
+.header{
+	display: none;
+}
 }
 
 
 @media only screen and (min-width: 992px) and (max-width:1300px) {
-	.sivu {
-		font-size: 1.2em;
-	}
+.sivu {
+	font-size: 1.2em;
+}
 
-	#kolumni {
-		font-size: 1em;
-	}
-    li span{
-        font-size: 0.8em;
-        
-        
-        
-    }
-	#koti{
-		font-size: 25px;
-	}
-    #koti2{
-     
-		font-size: 10px;
-        
-        
-    }
-	#carousel-example-2 {
-		display: none;
-	}
+#kolumni {
+	font-size: 1em;
+}
+li span{
+	font-size: 0.8em;
 	
-	.header{
-		display: none;
-	}
-}
-@media screen and (min-width:1900px) {
-    .sivu {
-		font-size: 1em;
-	}
-
-	#kolumni {
-		font-size: 1.5em;
-	}
-    li span{
-        font-size: 25px;
-        
-        padding-left: 0.5em;
-        
-    }
-    #koti2{
-        padding: 10px;
-        
-        
-    }
-	#koti{
-		font-size: 35px;
-	}
-    
-.ikonit{
-    font-size: 20px;
-}
-.täsmä{
-	font-size: 25px;
+	
 	
 }
-
-}
-
-@media screen and (min-width: 1300px) and (max-width:1899) {
-	.sivu {
-		font-size: 1em;
-	}
-
-	#kolumni {
-		font-size: 1.5em;
-	}
-    li span{
-        font-size: 25px;
-        
-        padding-left: 0.5em;
-        
-    }
-    #koti2{
-        padding: 10px;
-        
-        
-    }
-	#koti{
-		font-size: 35px;
-	}
-    
-.ikonit{
-    font-size: 20px;
-}
-.täsmä{
+#koti{
 	font-size: 25px;
+}
+#koti2{
+ 
+	font-size: 10px;
+	
 	
 }
 #carousel-example-2 {
@@ -269,5 +198,76 @@ a :hover {
 
 .header{
 	display: none;
+}
+}
+@media screen and (min-width:1900px) {
+.sivu {
+	font-size: 1em;
+}
+
+#kolumni {
+	font-size: 1.5em;
+}
+li span{
+	font-size: 25px;
+	
+	padding-left: 0.5em;
+	
+}
+#koti2{
+	padding: 10px;
+	
+	
+}
+#koti{
+	font-size: 35px;
+}
+
+.ikonit{
+font-size: 20px;
+}
+.täsmä{
+font-size: 25px;
+
+}
+
+}
+
+@media screen and (min-width: 1300px) and (max-width:1899) {
+.sivu {
+	font-size: 1em;
+}
+
+#kolumni {
+	font-size: 1.5em;
+}
+li span{
+	font-size: 25px;
+	
+	padding-left: 0.5em;
+	
+}
+#koti2{
+	padding: 10px;
+	
+	
+}
+#koti{
+	font-size: 35px;
+}
+
+.ikonit{
+font-size: 20px;
+}
+.täsmä{
+font-size: 25px;
+
+}
+#carousel-example-2 {
+display: none;
+}
+
+.header{
+display: none;
 }
 }

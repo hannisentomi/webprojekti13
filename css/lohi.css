@@ -3,7 +3,7 @@
 
 .header {
 
-    background-color: rgb(48, 102, 48);
+    background-color: green;
     margin: auto;
     padding: 1px;
     border-width: 1px;
@@ -13,20 +13,26 @@
     margin-top: 5px;
     height: 8rem;
     margin-bottom: 20px;
-  
+
 
 }
 
 .sivu {
     font: black;
+    font-size: 1em;
+    text-align: left;
+    line-height: 200%;
+    padding-top: 50px;
+    position: fixed;
+
+}
+.sivu {
+    font-weight: bold;
     font-size: 1.5em;
     text-align: left;
     line-height: 200%;
-    padding-top: 40px;
-    position:fixed;
-
-}
-
+    }
+    
 p {
     text-align: center;
     color: #000;
@@ -39,7 +45,7 @@ li span {
 
 li i {
     color: whitesmoke;
-    
+
 }
 
 a :hover {
@@ -52,18 +58,17 @@ h1 {
 
 .footer {
     text-align: left;
-    background-color: rgb(48, 102, 48);
+    background-color: green;
     border-width: 1px;
     border: black;
     border-style: solid;
     border-radius: 5px;
     margin-top: 30px;
 
-
 }
 
 .container-fluid {
-    background-color: lightgrey;
+    background-color: lightgray;
 
 }
 
@@ -100,6 +105,7 @@ h1 {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
         inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
+
 #kukka,
 #button,
 #lintu,
@@ -130,6 +136,7 @@ h1 {
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
         inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
+
 #kukka:hover,
 #button:hover,
 #lintu:hover,
@@ -161,18 +168,20 @@ h1 {
 }
 
 #koti {
-    color: black;
-    font-weight: bold;
+	color: black;
+	font-weight: bold;
 	font-size: 200%;
   
-
 }
-
 #koti2 {
-    color: black;
-    padding-right: 1rem;
 
+	font-weight: bold;
+	font-size: 250%;
+	padding-right: 1rem;
+      
+  
 }
+
 
 #koti2:hover {
     color: red;
@@ -197,183 +206,134 @@ h1 {
 #onnittelut12,
 #onnittelut13,
 #onnittelut14,
-#onnittelut15 { 
+#onnittelut15 {
     /* säädetään alueelle koko ja varmistetaan, että mahdollinen liian
     suuri sisältö piilotetaan ylimenevältä osalta */
-      max-width: 100%;
-      min-height: 100px;
-      max-height: 80px;
-      overflow: hidden;
-    }
-    #onnittelut1,
-    #onnittelut2,
-    #onnittelut3,
-    #onnittelut4,
-    #onnittelut5,
-    #onnittelut6,
-    #onnittelut7,
-    #onnittelut8,
-    #onnittelut9,
-    #onnittelut10,
-    #onnittelut11,
-    #onnittelut12,
-    #onnittelut13,
-    #onnittelut14,
-    #onnittelut15 {
-       margin: 0;
-       padding: 0;
-       /* määritellään animaation kestoksi 4s, animointia suoritetaan loputtomasti ja 
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 80px;
+    overflow: hidden;
+}
+
+#onnittelut1,
+#onnittelut2,
+#onnittelut3,
+#onnittelut4,
+#onnittelut5,
+#onnittelut6,
+#onnittelut7,
+#onnittelut8,
+#onnittelut9,
+#onnittelut10,
+#onnittelut11,
+#onnittelut12,
+#onnittelut13,
+#onnittelut14,
+#onnittelut15 {
+    margin: 0;
+    padding: 0;
+
+    /* määritellään animaation kestoksi 4s, animointia suoritetaan loputtomasti ja 
           eestaas */
-       animation-duration: 5s;
-       animation-iteration-count: infinite;
-       animation-direction: alternate;
-       /* animaatiossa käytetyn keyframes-lohkon nimi */
-       animation-name: move;
-    
-    }
-    /* aloitetaan toisen lohkon animointi 1 sekunnin (1000 millisekuntia) myöhemmin */
-    .toinen {
-      animation-delay: 1000ms;
-    }
-    
-    @keyframes move {
-     /* mistä animoidaan */
-      from {
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animaatiossa käytetyn keyframes-lohkon nimi */
+    animation-name: move;
+
+}
+
+/* aloitetaan toisen lohkon animointi 1 sekunnin (1000 millisekuntia) myöhemmin */
+.toinen {
+    animation-delay: 1000ms;
+}
+
+@keyframes move {
+
+    /* mistä animoidaan */
+    from {
         font-size: 1em;
         color: black;
-      }
-      50% {
+    }
+
+    50% {
         color: green;
-      }
-     /* mihin animoidaan */
-      to {
+    }
+
+    /* mihin animoidaan */
+    to {
         font-size: 5em;
         color: red;
-      }
     }
-    
+}
+
+@media screen and (min-width:575px) and (max-width:990px) {
+    #carousel-example-2 {
+        display: none;
+    }
+
+
+
+}
+
+
 @media screen and (min-width:575px) and (max-width:990px){
-	#carousel-example-2 {
-		display: none;
-	}
-	.header{
-		display: none;
-	}
-	
+#carousel-example-2 {
+	display: none;
+}
+.header{
+	display: none;
+}
+
 }
 /* Media puhelin **/
 @media only screen and (max-width: 575px) {
-	.sivu {
-		font-size: 1.5em;
+.sivu {
+	font-size: 1.5em;
 
-	}
+}
 
-	#carousel-example-2 {
-		display: none;
-	}
-
+#carousel-example-2 {
+	display: none;
+}
+.header{
+	display: none;
+}
+}
 
 @media screen and (min-width:1300px) and (max-width:1800px) {
-	#koti {
-		font-size: 1em;
-	}
-	#carousel-example-2 {
-		display: none;
-	}
-	
+#koti {
+	font-size: 1em;
+}
+#carousel-example-2 {
+	display: none;
+}
+
+
 }
 
 
 @media only screen and (min-width: 992px) and (max-width:1300px) {
-	.sivu {
-		font-size: 1.2em;
-	}
+.sivu {
+	font-size: 1.2em;
+}
 
-	#kolumni {
-		font-size: 1em;
-	}
-    li span{
-        font-size: 0.8em;
-        
-        
-        
-    }
-	#koti{
-		font-size: 25px;
-	}
-    #koti2{
-     
-		font-size: 10px;
-        
-        
-    }
-	#carousel-example-2 {
-		display: none;
-	}
+#kolumni {
+	font-size: 1em;
+}
+li span{
+	font-size: 0.8em;
 	
-
-}
-@media screen and (min-width:1900px) {
-    .sivu {
-		font-size: 1em;
-	}
-
-	#kolumni {
-		font-size: 1.5em;
-	}
-    li span{
-        font-size: 25px;
-        
-        padding-left: 0.5em;
-        
-    }
-    #koti2{
-        padding: 10px;
-        
-        
-    }
-	#koti{
-		font-size: 35px;
-	}
-    
-.ikonit{
-    font-size: 20px;
-}
-.täsmä{
-	font-size: 25px;
+	
 	
 }
-
-}
-
-@media screen and (min-width: 1300px) and (max-width:1899) {
-	.sivu {
-		font-size: 1em;
-	}
-
-	#kolumni {
-		font-size: 1.5em;
-	}
-    li span{
-        font-size: 25px;
-        
-        padding-left: 0.5em;
-        
-    }
-    #koti2{
-        padding: 10px;
-        
-        
-    }
-	#koti{
-		font-size: 35px;
-	}
-    
-.ikonit{
-    font-size: 20px;
-}
-.täsmä{
+#koti{
 	font-size: 25px;
+}
+#koti2{
+ 
+	font-size: 10px;
+	
 	
 }
 #carousel-example-2 {
@@ -381,5 +341,75 @@ h1 {
 }
 
 
+}
+@media screen and (min-width:1900px) {
+.sivu {
+	font-size: 1em;
+}
+
+#kolumni {
+	font-size: 1.5em;
+}
+li span{
+	font-size: 25px;
+	
+	padding-left: 0.5em;
+	
+}
+#koti2{
+	padding: 10px;
+	
+	
+}
+#koti{
+	font-size: 35px;
+}
+
+.ikonit{
+font-size: 20px;
+}
+.täsmä{
+font-size: 25px;
+
+}
+
+}
+
+@media screen and (min-width: 1300px) and (max-width:1899) {
+.sivu {
+	font-size: 1em;
+}
+
+#kolumni {
+	font-size: 1.5em;
+}
+li span{
+	font-size: 25px;
+	
+	padding-left: 0.5em;
+	
+}
+#koti2{
+	padding: 10px;
+	
+	
+}
+#koti{
+	font-size: 35px;
+}
+
+.ikonit{
+font-size: 20px;
+}
+.täsmä{
+font-size: 25px;
+
+}
+#carousel-example-2 {
+display: none;
+}
+
+.header{
+display: none;
 }
 }
