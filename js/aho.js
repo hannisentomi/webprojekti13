@@ -1,6 +1,4 @@
 let correct = 0;
-let ensimmainenVastattu = false;
-let toinenVastattu = false;
 let left = 5;
 
 
@@ -14,59 +12,48 @@ function vastaus1() {
 		correct++;
 		document.getElementById('demo1').innerHTML =
 			'Hienoa! Oikein meni. Suomi täyttää vuonna 2022 106 -vuotta. Sinulla on nyt kasassa ' + correct + ' pistettä. Vielä ' + left + ' kysymystä jäljellä ';
-			document.getElementById("a1").disabled = true;
-			document.getElementById("b1").disabled = true;
-			document.getElementById("c1").disabled = true;
-			document.getElementById("d1").disabled = true;
-			document.getElementById("submit").disabled = true;
-	} 
-		
-			
-	
-	
-	else if (vaarin1){
+		document.getElementById("a1").disabled = true;
+		document.getElementById("b1").disabled = true;
+		document.getElementById("c1").disabled = true;
+		document.getElementById("d1").disabled = true;
+		document.getElementById("submit").disabled = true;
+	} else if (vaarin1) {
 		left--;
 		document.getElementById('demo1').innerHTML =
 			'Voi että väärin meni. Suomi sai itsenäisyytensä 6.12.1917. Vielä ' + left + ' kysymystä jäljellä ';
-			document.getElementById("a1").disabled = true;
-			document.getElementById("b1").disabled = true;
-			document.getElementById("c1").disabled = true;
-			document.getElementById("d1").disabled = true;
-			document.getElementById("submit").disabled = true;
-	} 
-	
-	else if (vaarin2){
+		document.getElementById("a1").disabled = true;
+		document.getElementById("b1").disabled = true;
+		document.getElementById("c1").disabled = true;
+		document.getElementById("d1").disabled = true;
+		document.getElementById("submit").disabled = true;
+	} else if (vaarin2) {
 		left--;
 		document.getElementById('demo1').innerHTML =
 			'Voi että väärin meni. Suomi sai itsenäisyytensä 6.12.1917. Vielä ' + left + ' kysymystä jäljellä ';
-			document.getElementById("a1").disabled = true;
-			document.getElementById("b1").disabled = true;
-			document.getElementById("c1").disabled = true;
-			document.getElementById("d1").disabled = true;
-			document.getElementById("submit").disabled = true;
-	} 
-
-	else if (vaarin3){
+		document.getElementById("a1").disabled = true;
+		document.getElementById("b1").disabled = true;
+		document.getElementById("c1").disabled = true;
+		document.getElementById("d1").disabled = true;
+		document.getElementById("submit").disabled = true;
+	} else if (vaarin3) {
 		left--;
 		document.getElementById('demo1').innerHTML =
 			'Voi että väärin meni. Suomi sai itsenäisyytensä 6.12.1917. Vielä ' + left + ' kysymystä jäljellä ';
-			document.getElementById("a1").disabled = true;
-			document.getElementById("b1").disabled = true;
-			document.getElementById("c1").disabled = true;
-			document.getElementById("d1").disabled = true;
-			document.getElementById("submit").disabled = true;
-	} 
-
-	else{
+		document.getElementById("a1").disabled = true;
+		document.getElementById("b1").disabled = true;
+		document.getElementById("c1").disabled = true;
+		document.getElementById("d1").disabled = true;
+		document.getElementById("submit").disabled = true;
+	} else {
 		document.getElementById('demo1').innerHTML =
-		'Valitse vastaus ensin';
+			'Valitse vastaus ensin';
 
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 }
 
 function vastaus2() {
@@ -79,45 +66,45 @@ function vastaus2() {
 		correct++;
 		document.getElementById('demo2').innerHTML =
 			'Aivan oikein! Kaikkiaan vesijohtoja oli valtakunnassa noin 500 kilometriä. Sinulla on nyt kasassa ' + correct + ' pistettä. Vielä ' + left + ' kysymystä jäljellä ';
-			document.getElementById("a2").disabled = true;
-			document.getElementById("b2").disabled = true;
-			document.getElementById("c2").disabled = true;
-			document.getElementById("d2").disabled = true;
-			document.getElementById("submit2").disabled = true;
-	} else if(vaarin4) {
+		document.getElementById("a2").disabled = true;
+		document.getElementById("b2").disabled = true;
+		document.getElementById("c2").disabled = true;
+		document.getElementById("d2").disabled = true;
+		document.getElementById("submit2").disabled = true;
+	} else if (vaarin4) {
 		left--;
 		document.getElementById('demo2').innerHTML =
 			'Voi että väärin meni. Oikea vastaus on Roomalaiset. Vielä ' + left + ' kysymystä jäljellä ';
-			document.getElementById("a2").disabled = true;
-			document.getElementById("b2").disabled = true;
-			document.getElementById("c2").disabled = true;
-			document.getElementById("d2").disabled = true;
-			document.getElementById("submit2").disabled = true;
-	} else if(vaarin5) {
+		document.getElementById("a2").disabled = true;
+		document.getElementById("b2").disabled = true;
+		document.getElementById("c2").disabled = true;
+		document.getElementById("d2").disabled = true;
+		document.getElementById("submit2").disabled = true;
+	} else if (vaarin5) {
 		left--;
 		document.getElementById('demo2').innerHTML =
 			'Voi että väärin meni. Oikea vastaus on Roomalaiset. Vielä ' + left + ' kysymystä jäljellä ';
-			document.getElementById("a2").disabled = true;
-			document.getElementById("b2").disabled = true;
-			document.getElementById("c2").disabled = true;
-			document.getElementById("d2").disabled = true;
-			document.getElementById("submit2").disabled = true;
-	} else if(vaarin6) {
+		document.getElementById("a2").disabled = true;
+		document.getElementById("b2").disabled = true;
+		document.getElementById("c2").disabled = true;
+		document.getElementById("d2").disabled = true;
+		document.getElementById("submit2").disabled = true;
+	} else if (vaarin6) {
 		left--;
 		document.getElementById('demo2').innerHTML =
 			'Voi että väärin meni. Oikea vastaus on Roomalaiset. Vielä ' + left + ' kysymystä jäljellä ';
-			document.getElementById("a2").disabled = true;
-			document.getElementById("b2").disabled = true;
-			document.getElementById("c2").disabled = true;
-			document.getElementById("d2").disabled = true;
-			document.getElementById("submit2").disabled = true;
-	} else{
+		document.getElementById("a2").disabled = true;
+		document.getElementById("b2").disabled = true;
+		document.getElementById("c2").disabled = true;
+		document.getElementById("d2").disabled = true;
+		document.getElementById("submit2").disabled = true;
+	} else {
 		document.getElementById('demo2').innerHTML =
-		'Valitse vastaus ensin';
+			'Valitse vastaus ensin';
 	}
-		
-	
-	
+
+
+
 }
 
 function vastaus3() {
@@ -129,45 +116,45 @@ function vastaus3() {
 		left--;
 		correct++;
 		document.getElementById('demo3').innerHTML =
-		'Oikein meni! Rauhanopimus sai nimensä solmimispaikastaan, Pähkinälinnan linnoituksesta,joka sijaitsee Laatokan Pähkinäsaaressa. Sinulla on nyt kasassa ' + correct + ' pistettä. Vielä ' + left + ' kysymystä jäljellä ';
+			'Oikein meni! Rauhanopimus sai nimensä solmimispaikastaan, Pähkinälinnan linnoituksesta,joka sijaitsee Laatokan Pähkinäsaaressa. Sinulla on nyt kasassa ' + correct + ' pistettä. Vielä ' + left + ' kysymystä jäljellä ';
 		document.getElementById("a3").disabled = true;
-			document.getElementById("b3").disabled = true;
-			document.getElementById("c3").disabled = true;
-			document.getElementById("d3").disabled = true;
-			document.getElementById("submit3").disabled = true;
-	} else if(vaarin7) {
+		document.getElementById("b3").disabled = true;
+		document.getElementById("c3").disabled = true;
+		document.getElementById("d3").disabled = true;
+		document.getElementById("submit3").disabled = true;
+	} else if (vaarin7) {
 		left--;
 		document.getElementById('demo3').innerHTML =
 			'Väärin meni. Oikea vastaus on 12.8.1323. Vielä ' + left + ' kysymystä jäljellä ';
-			document.getElementById("a3").disabled = true;
-			document.getElementById("b3").disabled = true;
-			document.getElementById("c3").disabled = true;
-			document.getElementById("d3").disabled = true;
-			document.getElementById("submit3").disabled = true;
-	} else if(vaarin8) {
+		document.getElementById("a3").disabled = true;
+		document.getElementById("b3").disabled = true;
+		document.getElementById("c3").disabled = true;
+		document.getElementById("d3").disabled = true;
+		document.getElementById("submit3").disabled = true;
+	} else if (vaarin8) {
 		left--;
 		document.getElementById('demo3').innerHTML =
 			'Väärin meni. Oikea vastaus on 12.8.1323. Vielä ' + left + ' kysymystä jäljellä ';
-			document.getElementById("a3").disabled = true;
-			document.getElementById("b3").disabled = true;
-			document.getElementById("c3").disabled = true;
-			document.getElementById("d3").disabled = true;
-			document.getElementById("submit3").disabled = true;
-	} else if(vaarin9) {
+		document.getElementById("a3").disabled = true;
+		document.getElementById("b3").disabled = true;
+		document.getElementById("c3").disabled = true;
+		document.getElementById("d3").disabled = true;
+		document.getElementById("submit3").disabled = true;
+	} else if (vaarin9) {
 		left--;
 		document.getElementById('demo3').innerHTML =
 			'Väärin meni. Oikea vastaus on 12.8.1323. Vielä ' + left + ' kysymystä jäljellä ';
-			document.getElementById("a3").disabled = true;
-			document.getElementById("b3").disabled = true;
-			document.getElementById("c3").disabled = true;
-			document.getElementById("d3").disabled = true;
-			document.getElementById("submit3").disabled = true;
-	}else{
-				document.getElementById('demo3').innerHTML =
-				'Valitse vastaus ensin';
-			}
-	
-	
+		document.getElementById("a3").disabled = true;
+		document.getElementById("b3").disabled = true;
+		document.getElementById("c3").disabled = true;
+		document.getElementById("d3").disabled = true;
+		document.getElementById("submit3").disabled = true;
+	} else {
+		document.getElementById('demo3').innerHTML =
+			'Valitse vastaus ensin';
+	}
+
+
 }
 
 function vastaus4() {
@@ -180,42 +167,42 @@ function vastaus4() {
 		correct++;
 		document.getElementById('demo4').innerHTML =
 			'Oikea vastaus! Colosseum oli Rooman merkittävin gladiaattorinäytäntöjen tapahtumapaikka. Sinulla on nyt kasassa ' + correct + ' pistettä. Vielä ' + left + ' kysymystä jäljellä ';
-			document.getElementById("a4").disabled = true;
-			document.getElementById("b4").disabled = true;
-			document.getElementById("c4").disabled = true;
-			document.getElementById("d4").disabled = true;
-			document.getElementById("submit4").disabled = true;
-	} else if(vaarin10) {
+		document.getElementById("a4").disabled = true;
+		document.getElementById("b4").disabled = true;
+		document.getElementById("c4").disabled = true;
+		document.getElementById("d4").disabled = true;
+		document.getElementById("submit4").disabled = true;
+	} else if (vaarin10) {
 		left--;
 		document.getElementById('demo4').innerHTML =
 			'Väärin meni. Oikea vastaus on Gladiaattorinäytöksistä. Vielä ' + left + ' kysymystä jäljellä ';
-			document.getElementById("a4").disabled = true;
-			document.getElementById("b4").disabled = true;
-			document.getElementById("c4").disabled = true;
-			document.getElementById("d4").disabled = true;
-			document.getElementById("submit4").disabled = true;
-	} else if(vaarin11) {
+		document.getElementById("a4").disabled = true;
+		document.getElementById("b4").disabled = true;
+		document.getElementById("c4").disabled = true;
+		document.getElementById("d4").disabled = true;
+		document.getElementById("submit4").disabled = true;
+	} else if (vaarin11) {
 		left--;
 		document.getElementById('demo4').innerHTML =
 			'Väärin meni. Oikea vastaus on Gladiaattorinäytöksistä. Vielä ' + left + ' kysymystä jäljellä ';
-			document.getElementById("a4").disabled = true;
-			document.getElementById("b4").disabled = true;
-			document.getElementById("c4").disabled = true;
-			document.getElementById("d4").disabled = true;
-			document.getElementById("submit4").disabled = true;
-	} else if(vaarin12) {
+		document.getElementById("a4").disabled = true;
+		document.getElementById("b4").disabled = true;
+		document.getElementById("c4").disabled = true;
+		document.getElementById("d4").disabled = true;
+		document.getElementById("submit4").disabled = true;
+	} else if (vaarin12) {
 		left--;
 		document.getElementById('demo4').innerHTML =
 			'Väärin meni. Oikea vastaus on Gladiaattorinäytöksistä. Vielä ' + left + ' kysymystä jäljellä ';
-			document.getElementById("a4").disabled = true;
-			document.getElementById("b4").disabled = true;
-			document.getElementById("c4").disabled = true;
-			document.getElementById("d4").disabled = true;
-			document.getElementById("submit4").disabled = true;
-	}else{
-				document.getElementById('demo4').innerHTML =
-				'Valitse vastaus ensin';
-			}
+		document.getElementById("a4").disabled = true;
+		document.getElementById("b4").disabled = true;
+		document.getElementById("c4").disabled = true;
+		document.getElementById("d4").disabled = true;
+		document.getElementById("submit4").disabled = true;
+	} else {
+		document.getElementById('demo4').innerHTML =
+			'Valitse vastaus ensin';
+	}
 }
 
 function vastaus5() {
@@ -228,52 +215,41 @@ function vastaus5() {
 		correct++;
 		document.getElementById('demo5').innerHTML =
 			'Oikea vastaus! Antiikin Ateenaa on pidetty länsimaisen kulttuurin kehtona. Sinulla on nyt kasassa ' + correct + ' pistettä. Vielä ' + left + ' kysymystä jäljellä ';
-			document.getElementById("a5").disabled = true;
-			document.getElementById("b5").disabled = true;
-			document.getElementById("c5").disabled = true;
-			document.getElementById("d5").disabled = true;
-			document.getElementById("submit5").disabled = true;
-	} else if(vaarin13) {
+		document.getElementById("a5").disabled = true;
+		document.getElementById("b5").disabled = true;
+		document.getElementById("c5").disabled = true;
+		document.getElementById("d5").disabled = true;
+		document.getElementById("submit5").disabled = true;
+	} else if (vaarin13) {
 		left--;
 		document.getElementById('demo5').innerHTML =
 			'Väärin meni. Oikea vastaus on Ateena. Vielä ' + left + ' kysymystä jäljellä ';
-			document.getElementById("a5").disabled = true;
-			document.getElementById("b5").disabled = true;
-			document.getElementById("c5").disabled = true;
-			document.getElementById("d5").disabled = true;
-			document.getElementById("submit5").disabled = true;
-	} else if(vaarin14) {
+		document.getElementById("a5").disabled = true;
+		document.getElementById("b5").disabled = true;
+		document.getElementById("c5").disabled = true;
+		document.getElementById("d5").disabled = true;
+		document.getElementById("submit5").disabled = true;
+	} else if (vaarin14) {
 		left--;
 		document.getElementById('demo5').innerHTML =
 			'Väärin meni. Oikea vastaus on Ateena. Vielä ' + left + ' kysymystä jäljellä ';
-			document.getElementById("a5").disabled = true;
-			document.getElementById("b5").disabled = true;
-			document.getElementById("c5").disabled = true;
-			document.getElementById("d5").disabled = true;
-			document.getElementById("submit5").disabled = true;
-	} else if(vaarin15) {
+		document.getElementById("a5").disabled = true;
+		document.getElementById("b5").disabled = true;
+		document.getElementById("c5").disabled = true;
+		document.getElementById("d5").disabled = true;
+		document.getElementById("submit5").disabled = true;
+	} else if (vaarin15) {
 		left--;
 		document.getElementById('demo5').innerHTML =
 			'Väärin meni. Oikea vastaus on Ateena. Vielä ' + left + ' kysymystä jäljellä ';
-			document.getElementById("a5").disabled = true;
-			document.getElementById("b5").disabled = true;
-			document.getElementById("c5").disabled = true;
-			document.getElementById("d5").disabled = true;
-			document.getElementById("submit5").disabled = true;
-	}else{
+		document.getElementById("a5").disabled = true;
+		document.getElementById("b5").disabled = true;
+		document.getElementById("c5").disabled = true;
+		document.getElementById("d5").disabled = true;
+		document.getElementById("submit5").disabled = true;
+	} else {
 		document.getElementById('demo5').innerHTML =
-		'Valitse vastaus ensin';
+			'Valitse vastaus ensin';
 	}
-	
+
 }
-
-
-
-
-
-
-
-	
-
-
-
