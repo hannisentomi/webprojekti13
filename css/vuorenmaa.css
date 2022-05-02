@@ -1,3 +1,34 @@
+
+.progress {
+    background-color: #ffffff;
+    height: 1.8rem;
+    border-radius: 3rem;
+    padding: 0 0.5rem;
+  }
+  .progress-meter {
+    background-color: #689F38;
+    border-radius: 3rem;
+  }
+  .progress-meter-text {
+    color: #000000;
+    text-align: center;
+  }    
+
+.button {
+    --hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100% , 50% );
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 10px;
+    margin: 20px 0;
+
+}    
+
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
@@ -85,6 +116,7 @@ p {
 	color: #000;
 }
 
+
 .header {
 	text-align: left;
 	background-color: grey;
@@ -108,7 +140,7 @@ div img #kuvat {
 }
 
 .footer {
-	text-align: left;
+	text-align: center;
 	background-color: #77d169;
 	border-width: 1px;
 	border: black;

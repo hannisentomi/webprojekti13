@@ -1,28 +1,63 @@
-const startButton = document.getElementById('start-btn')
-const nextButton = document.getElementById('next-btn')
-const questionContainerElement = document.getElementById('question-kontainer')
-const questionElement = document.getElementById('question')
-const answerButtonsElement = document.getElementById('answer-buttons')
+const startButton = document.getElementById('start-btn');
+const nextButton = document.getElementById('next-btn');
+const questionContainerElement = document.getElementById('question-kontainer');
+const questionElement = document.getElementById('question');
+const answerButtonsElement = document.getElementById('answer-buttons');
 
-let shuffledQuestions, currentQuestionIndex
+let progressBar = document.getElementById("progressBar");
+let progressMeter = document.getElementById("progressMeter");
+let progressMeterText = document.getElementById("progressMeterText");
+let shuffledQuestions, currentQuestionIndex;
 
-startButton.addEventListener('click', startGame)
+
+    quizLength = 0,
+    index = 0,
+
+startButton.addEventListener('click', startGame);
+progressBar.classList.add("hide");
+progressBar.setAttribute("aria-valuemax", quizLength);
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++
   setNextQuestion()
 })
 
 function startGame() {
+  index = 0;  
   startButton.classList.add('hide')
   shuffledQuestions = questions.sort(() => Math.random() - .5)
   currentQuestionIndex = 0
-  questionContainerElement.classList.remove('hide')
+  questionContainerElement.classList.remove('hide');
   setNextQuestion()
+  progressBar.classList.remove("hide");  
+   
+  quizLength = questions.length;
+  showProgress(index);
+
 }
 
+function showProgress(index) {
+    ///update progress bar
+  let increment = Math.ceil((index) / (quizLength) * 100);
+   // let increment = index;
+   progressMeter.style.width = (increment) + '%';
+   progressMeterText.innerHTML = (index) + ' out of ' + quizLength;
+   if (index === 0) {
+       progressMeter.style.width = (20) + '%';
+       progressMeter.style.background = "#ffffff";
+      
+   }
+   else {
+       progressMeter.style.background = "#689F38";
+   }
+}
+
+
 function setNextQuestion() {
+  index++;
   resetState()
-  showQuestion(shuffledQuestions[currentQuestionIndex])
+  showQuestion(shuffledQuestions[currentQuestionIndex]);
+  showProgress(index);
+  
 }
 
 function showQuestion(question) {
@@ -57,7 +92,7 @@ function selectAnswer(e) {
   if (shuffledQuestions.length > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide')
   } else {
-    startButton.innerText = 'Restart'
+    startButton.innerText = 'Uudestaan'
     startButton.classList.remove('hide')
   }
 }
@@ -78,7 +113,7 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What is 2 + 2?',
+    question: 'Paljonko on 2 + 2?',
     answers: [
       { text: '4', correct: true },
       { text: '22', correct: false },
@@ -87,7 +122,7 @@ const questions = [
     ]
   },
   {
-    question: '4 + 4?',
+    question: 'Paljonko on 4 + 4?',
     answers: [
       { text: '8', correct: true },
       { text: '6', correct: false },
@@ -96,16 +131,16 @@ const questions = [
     ]
   },
   {
-    question: '3 + 2?',
+    question: 'Paljonko on 3 + 2?',
     answers: [
       { text: '2', correct: false },
-      { text: '5', correct: true },
       { text: '3', correct: false },
+      { text: '5', correct: true },
       { text: '7', correct: false }
     ]
   },
   {
-    question: 'What is 4 * 2?',
+    question: 'Paljonko on 4 * 2?',
     answers: [
       { text: '6', correct: false },
       { text: '8', correct: true },
@@ -114,12 +149,12 @@ const questions = [
     ]
   },
   {
-    question: 'What is 3 * 2?',
+    question: 'Paljonko on 3 * 2?',
     answers: [
       { text: '4', correct: false },
-      { text: '6', correct: true },
+      { text: '10', correct: false },
       { text: '2', correct: false },
-      { text: '10', correct: false }
+      { text: '6', correct: true }
     ]
   },
 ]
