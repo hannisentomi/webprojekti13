@@ -6,7 +6,7 @@ p{
 .header {
     color: #000000;
     text-align: left;
-    background-color: #f8fbf7;
+    background-color: #198754;
     margin: auto;
     padding: 1px;
 	border-width: 1px;
@@ -22,6 +22,12 @@ p{
 
 }
 
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
 
 
 h1, h2 {
@@ -33,6 +39,9 @@ max-width: 250px;
 max-height: 250px;
 float: right;
 margin-right: 600px;
+border-style: solid;
+border-color: black;
+border-width: 4px;
 }
 
 .quiz-header2 img {
@@ -40,12 +49,18 @@ margin-right: 600px;
     max-height: 250px;
     float: right;
     margin-right: 600px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
     }
     .quiz-header3 img {
         max-width: 250px;
         max-height: 250px;
         float: right;
         margin-right: 600px;
+        border-style: solid;
+        border-color: black;
+        border-width: 4px;
         
         
         }
@@ -56,12 +71,18 @@ margin-right: 600px;
             float: right;
             margin-right: 600px;
             background-color: #f8fbf7;
+            border-style: solid;
+            border-color: black;
+            border-width: 4px;
             }
             .quiz-header5 img {
                 max-width: 250px;
                 max-height: 250px;
                 float: right;
                 margin-right: 600px;
+                border-style: solid;
+                border-color: black;
+                border-width: 4px;
                 }
 
     .quiz-header1, .quiz-header2, .quiz-header3, .quiz-header4, .quiz-header5 {
