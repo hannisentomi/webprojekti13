@@ -146,8 +146,8 @@ h1 {
 }
 
 .guestion {
-    border-style: double;
-    border-color: black;
+    border: solid 4px;
+    border-color: rgb(48, 102, 48);
     border-radius: 5px;
     padding-inline: 50px;
     padding-top: 50px;
