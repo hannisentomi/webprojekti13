@@ -132,9 +132,7 @@ a :hover {
 }
 
 @media screen and (min-width:575px) and (max-width:990px){
-	#carousel-example-2 {
-		display: none;
-	}
+
 	.header{
 		display: none;
 	}
@@ -159,9 +157,7 @@ a :hover {
 	#koti {
 		font-size: 1em;
 	}
-	#carousel-example-2 {
-		display: none;
-	}
+
 	
 	.header{
 		display: none;
@@ -192,9 +188,7 @@ a :hover {
         
         
     }
-	#carousel-example-2 {
-		display: none;
-	}
+
 	
 	.header{
 		display: none;
@@ -263,9 +257,7 @@ a :hover {
 	font-size: 25px;
 	
 }
-#carousel-example-2 {
-	display: none;
-}
+
 
 .header{
 	display: none;
