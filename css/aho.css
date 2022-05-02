@@ -39,6 +39,9 @@ max-width: 250px;
 max-height: 250px;
 float: right;
 margin-right: 600px;
+border-style: solid;
+border-color: black;
+border-width: 4px;
 }
 
 .quiz-header2 img {
@@ -46,12 +49,18 @@ margin-right: 600px;
     max-height: 250px;
     float: right;
     margin-right: 600px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
     }
     .quiz-header3 img {
         max-width: 250px;
         max-height: 250px;
         float: right;
         margin-right: 600px;
+        border-style: solid;
+        border-color: black;
+        border-width: 4px;
         
         
         }
@@ -62,12 +71,18 @@ margin-right: 600px;
             float: right;
             margin-right: 600px;
             background-color: #f8fbf7;
+            border-style: solid;
+            border-color: black;
+            border-width: 4px;
             }
             .quiz-header5 img {
                 max-width: 250px;
                 max-height: 250px;
                 float: right;
                 margin-right: 600px;
+                border-style: solid;
+                border-color: black;
+                border-width: 4px;
                 }
 
     .quiz-header1, .quiz-header2, .quiz-header3, .quiz-header4, .quiz-header5 {
