@@ -1,5 +1,6 @@
 let correct = 0
 
+
 function vastaus1() {
 	let oikein = document.getElementById('b1').checked;
 	if (oikein) {
@@ -89,5 +90,29 @@ function vastaus5() {
 	document.getElementById("b5").disabled = true;
 	document.getElementById("c5").disabled = true;
 	document.getElementById("d5").disabled = true;
-	document.getElementById("submit").disabled = true;
+	
 }
+
+function checker(){
+	let counter = 0;
+	if{(document.getElementById("b1").checked === true) counter += 1;}
+	else{
+		counter = 0;
+	}
+	if(document.getElementById("c2").checked === true) counter += 1;else{
+		counter = 0;
+	}
+	if(document.getElementById("a3").checked === true) counter += 1;else{
+		counter = 0;
+	}
+	if(document.getElementById("a4").checked === true) counter += 1;else{
+		counter = 0;
+	}
+	if(document.getElementById("c5").checked === true) counter += 1;else{
+		counter = 0;
+	}
+	document.getElementById('loppupisteet') =
+	'Sinä sait' + counter + 'pistettä viidestä';
+	}
+
+
