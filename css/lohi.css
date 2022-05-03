@@ -2,26 +2,26 @@
 
 
 .header {
-
-    background-color: green;
+    text-align: center;
     margin: auto;
     padding: 1px;
     border-width: 1px;
     border: black;
     border-style: solid;
     border-radius: 5px;
-    margin-top: 5px;
-    height: 8rem;
-    margin-bottom: 20px;
-
-
+    margin-top: 2px;
+    background-image: linear-gradient(to left, #13790c, #5af75a);
+  }
+.dropdown{
+    text-align: left;
 }
-
 .sivu {
     font-weight: bold;
     font-size: 1.5em;
     text-align: left;
     line-height: 200%;
+    color:bisque;
+    position:fixed;
     }
     
 p {
@@ -35,32 +35,38 @@ li span {
 }
 
 li i {
-    color: whitesmoke;
+    color:bisque;
 
 }
 
 a :hover {
-    color: rgba(220, 0, 0, 1);
+    color:bisque;
 }
 
 h1 {
     text-align: center;
 }
 
-.footer {
-    text-align: left;
-    background-color: green;
-    border-width: 1px;
+  /*Footteri*/
+  .footer {
+    text-align: center;
+    background-color: #77d169;
     border: black;
     border-style: solid;
-    border-radius: 5px;
-    margin-top: 30px;
-
-}
+    margin-top: none;
+    width: auto;
+    bottom: 0;
+    border-radius: 30px;
+    background-image: linear-gradient(to left, #13790c, #5af75a);
+  }
+  
 
 .container-fluid {
     background-color: lightgray;
 
+}
+.guestion{
+    margin:20px;
 }
 
 .girl {
