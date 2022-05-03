@@ -11,7 +11,7 @@ p {
 /* Määritellään muotoilua headerille */
 .header {
 	text-align: left;
-	background-color: #77d169;
+	background-image: linear-gradient(to left, #13790c, #5af75a);
 	margin: auto;
 	padding: 1px;
 	border-width: 1px;
@@ -19,7 +19,7 @@ p {
 	border-style: solid;
 	border-radius: 5px;
 	margin-top: 5px;
-	height: 10rem;
+	height: 12rem;
 }
 /* Määritellään muotoilua container */
 .container {
@@ -60,7 +60,7 @@ div img {
 /* Määritellään muotoilua, taustaväriä footerille */
 .footer {
 	text-align: left;
-	background-color: #77d169;
+	background-image: linear-gradient(to left, #13790c, #5af75a);
 	border-width: 1px;
 	border: black;
 	border-style: solid;
