@@ -11,19 +11,22 @@
     border-radius: 5px;
     margin-top: 2px;
     background-image: linear-gradient(to left, #13790c, #5af75a);
-  }
-.dropdown{
+}
+
+.dropdown {
     text-align: left;
 }
+
 .sivu {
+
     font-weight: bold;
     font-size: 1.5em;
     text-align: left;
     line-height: 200%;
-    color:bisque;
-    position:fixed;
-    }
-    
+    position: fixed;
+
+}
+
 p {
     text-align: center;
     color: #000;
@@ -35,20 +38,20 @@ li span {
 }
 
 li i {
-    color:bisque;
+    color: bisque;
 
 }
 
 a :hover {
-    color:bisque;
+    color: bisque;
 }
 
 h1 {
     text-align: center;
 }
 
-  /*Footteri*/
-  .footer {
+/*Footteri*/
+.footer {
     text-align: center;
     background-color: #77d169;
     border: black;
@@ -58,15 +61,16 @@ h1 {
     bottom: 0;
     border-radius: 30px;
     background-image: linear-gradient(to left, #13790c, #5af75a);
-  }
-  
+}
+
 
 .container-fluid {
     background-color: lightgray;
 
 }
-.guestion{
-    margin:20px;
+
+.guestion {
+    margin: 20px;
 }
 
 .girl {
@@ -165,18 +169,22 @@ h1 {
 }
 
 #koti {
-	color: black;
-	font-weight: bold;
-	font-size: 200%;
-  
-}
-#koti2 {
+    color: black;
+    font-weight: bold;
+    font-size: 200%;
+    position:fixed;
+    margin-left: 170px;
 
-	font-weight: bold;
-	font-size: 250%;
-	padding-right: 1rem;
-      
-  
+}
+
+#koti2 {
+color: bisque;
+    font-weight: bold;
+    font-size: 250%;
+    padding-right: 1rem;
+    position: fixed;
+
+
 }
 
 
@@ -274,139 +282,157 @@ h1 {
 }
 
 
-@media screen and (min-width:575px) and (max-width:990px){
-#carousel-example-2 {
-	display: none;
-}
-.header{
-	display: none;
-}
+@media screen and (min-width:575px) and (max-width:990px) {
+    #carousel-example-2 {
+        display: none;
+    }
+
+    .header {
+        display: none;
+    }
 
 }
+
 /* Media puhelin **/
 @media only screen and (max-width: 575px) {
-.sivu {
-	font-size: 1.5em;
+    .sivu {
+        font-size: 1.5em;
 
-}
+    }
 
-#carousel-example-2 {
-	display: none;
-}
-.header{
-	display: none;
-}
+    #carousel-example-2 {
+        display: none;
+    }
+
+    .header {
+        display: none;
+    }
 }
 
 @media screen and (min-width:1300px) and (max-width:1800px) {
-#koti {
-	font-size: 1em;
-}
-#carousel-example-2 {
-	display: none;
-}
+    #koti {
+        font-size: 1em;
+    }
+
+    #carousel-example-2 {
+        display: none;
+    }
 
 
 }
 
 
 @media only screen and (min-width: 992px) and (max-width:1300px) {
-.sivu {
-	font-size: 1.2em;
-}
+    .sivu {
+        font-size: 1.2em;
+    }
 
-#kolumni {
-	font-size: 1em;
-}
-li span{
-	font-size: 0.8em;
-	
-	
-	
-}
-#koti{
-	font-size: 25px;
-}
-#koti2{
- 
-	font-size: 10px;
-	
-	
-}
-#carousel-example-2 {
-	display: none;
-}
+    #kolumni {
+        font-size: 1em;
+    }
+
+    li span {
+        font-size: 0.8em;
 
 
+
+    }
+
+    #koti {
+        font-size: 25px;
+    }
+
+    #koti2 {
+
+        font-size: 10px;
+
+
+    }
+
+    #carousel-example-2 {
+        display: none;
+    }
+
+
 }
+
 @media screen and (min-width:1900px) {
-.sivu {
-	font-size: 1em;
-}
+    .sivu {
+        font-size: 1em;
+    }
 
-#kolumni {
-	font-size: 1.5em;
-}
-li span{
-	font-size: 25px;
-	
-	padding-left: 0.5em;
-	
-}
-#koti2{
-	padding: 10px;
-	
-	
-}
-#koti{
-	font-size: 35px;
-}
+    #kolumni {
+        font-size: 1.5em;
+    }
 
-.ikonit{
-font-size: 20px;
-}
-.täsmä{
-font-size: 25px;
+    li span {
+        font-size: 25px;
 
-}
+        padding-left: 0.5em;
+
+    }
+
+    #koti2 {
+        padding: 10px;
+
+
+    }
+
+    #koti {
+        font-size: 35px;
+    }
+
+    .ikonit {
+        font-size: 20px;
+    }
+
+    .täsmä {
+        font-size: 25px;
+
+    }
 
 }
 
 @media screen and (min-width: 1300px) and (max-width:1899) {
-.sivu {
-	font-size: 1em;
-}
+    .sivu {
+        font-size: 1em;
+    }
 
-#kolumni {
-	font-size: 1.5em;
-}
-li span{
-	font-size: 25px;
-	
-	padding-left: 0.5em;
-	
-}
-#koti2{
-	padding: 10px;
-	
-	
-}
-#koti{
-	font-size: 35px;
-}
+    #kolumni {
+        font-size: 1.5em;
+    }
 
-.ikonit{
-font-size: 20px;
-}
-.täsmä{
-font-size: 25px;
+    li span {
+        font-size: 25px;
 
-}
-#carousel-example-2 {
-display: none;
-}
+        padding-left: 0.5em;
 
-.header{
-display: none;
-}
+    }
+
+    #koti2 {
+        padding: 10px;
+
+
+    }
+
+    #koti {
+        font-size: 35px;
+    }
+
+    .ikonit {
+        font-size: 20px;
+    }
+
+    .täsmä {
+        font-size: 25px;
+
+    }
+
+    #carousel-example-2 {
+        display: none;
+    }
+
+    .header {
+        display: none;
+    }
 }
