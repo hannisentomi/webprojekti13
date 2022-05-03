@@ -13,7 +13,8 @@ p{
 	border-radius: 5px;
     margin-top: 5px;
     height: 12rem;
-
+     padding-left: 50px;
+    font-family: 'Press Start 2P', cursive;
 }
 
 div img{
@@ -22,6 +23,7 @@ div img{
     max-width: 200px;
   
 }
+
 
 .footer{
     text-align: left;
