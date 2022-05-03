@@ -4,7 +4,6 @@ p{
 }
 .header {
     text-align: center;
-    background-color: #77d169;
     margin: auto;
     padding: 1px;
 	border-width: 1px;
@@ -12,7 +11,7 @@ p{
 	border-style: solid;
 	border-radius: 5px;
     margin-top: 2px;
-    
+    background-image: linear-gradient(to left, #13790c, #5af75a);
     
 }
 h1{
@@ -34,8 +33,8 @@ div img #kuvat{
     margin-top: none;
     width: auto;
     bottom: 0;
-    border-radius: 40px;
-   
+    border-radius: 30px;
+    background-image: linear-gradient(to left, #13790c, #5af75a);
   
 }
 
