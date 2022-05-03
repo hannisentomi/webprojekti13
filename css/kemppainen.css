@@ -93,7 +93,7 @@ p {
   .row {
     text-align: center;
   }
-  
+  /*Korttipelin määritykset */
   .kortti {
     display: inline-block;
     width: 200px;
@@ -279,11 +279,11 @@ p {
       padding: 10px;
     }
     .kortti {
-      width: 115px;
-      height: 115px;
+      width: 100px;
+      height: 100px;
     }
     .hidden {
-      background-size: 115px 115px;
+      background-size: 100px 100px;
     }
     input[type="button"] {
       margin-top: 1px;
