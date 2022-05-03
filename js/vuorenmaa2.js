@@ -115,48 +115,48 @@ function tyhjaaStatus(element) {
 
 const kysymykset = [
   {
-    question: 'Paljonko on 2 + 2?',
+    question: 'Paljonko on 10% 90:nestä?',
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false },
+      { text: '9', correct: true },
+      { text: '10', correct: false },
       { text: '5', correct: false },
+      { text: '6', correct: false }
+    ]
+  },
+  {
+    question: 'Paljonko on 4 + 1/4?',
+    answers: [
+      { text: '4,25', correct: true },
+      { text: '6,5', correct: false },
+      { text: '4,75', correct: false },
+      { text: '5,25', correct: false }
+    ]
+  },
+  {
+    question: 'Paljonko on 1/2 + 1/2?',
+    answers: [
+      { text: '0,2', correct: false },
+      { text: '0,3', correct: false },
+      { text: '1', correct: true },
+      { text: '0,5', correct: false }
+    ]
+  },
+  {
+    question: 'Paljonko on 0,4 * 2?',
+    answers: [
+      { text: '0,6', correct: false },
+      { text: '0,8', correct: true },
+      { text: '0,2', correct: false },
       { text: '1', correct: false }
     ]
   },
   {
-    question: 'Paljonko on 4 + 4?',
+    question: 'Paljonko on 11 * 20?',
     answers: [
-      { text: '8', correct: true },
-      { text: '6', correct: false },
-      { text: '7', correct: false },
-      { text: '5', correct: false }
-    ]
-  },
-  {
-    question: 'Paljonko on 3 + 2?',
-    answers: [
-      { text: '2', correct: false },
-      { text: '3', correct: false },
-      { text: '5', correct: true },
-      { text: '7', correct: false }
-    ]
-  },
-  {
-    question: 'Paljonko on 4 * 2?',
-    answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true },
-      { text: '2', correct: false },
-      { text: '10', correct: false }
-    ]
-  },
-  {
-    question: 'Paljonko on 3 * 2?',
-    answers: [
-      { text: '4', correct: false },
-      { text: '10', correct: false },
-      { text: '2', correct: false },
-      { text: '6', correct: true }
+      { text: '110', correct: false }, 
+      { text: '210', correct: false },
+      { text: '200', correct: false },
+      { text: '220', correct: true }
     ]
   },
 ]
