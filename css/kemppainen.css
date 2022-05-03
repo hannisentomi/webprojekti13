@@ -2,8 +2,8 @@
 p{
     color: #000;
 }
-/*.header {
-    text-align: left;
+.header {
+    text-align: center;
     background-color: #77d169;
     margin: auto;
     padding: 1px;
@@ -11,10 +11,13 @@ p{
 	border: black;
 	border-style: solid;
 	border-radius: 5px;
-    margin-top: 5px;
-    height: 12rem;
-
-}*/
+    margin-top: 2px;
+    
+    
+}
+h1{
+    font-size: 30px;
+}
 
 div img #kuvat{
 	float: left;
