@@ -164,6 +164,6 @@ function vastaus5() {
 function refresh() {
 	location.reload();
 	}
-	window.scrollTo('question').innerHTML;
+	
 
 	
