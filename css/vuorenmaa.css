@@ -45,12 +45,12 @@
 
 section {
     --hue: var(--hue-neutral);
-    padding: 0;
+    padding: 0;	
     margin: 0;
     display: flex;
     width: 100vw;
     height: 100vh;
-    justify-content: center;
+    justify-content: center;	
     align-items: center;
     background-color: hsl(var(--hue),100%,20%);
     background-image: url("../images/vuorenmaa_images/tausta.png");
@@ -64,13 +64,13 @@ section.wrong {
 }
 
 .kontainer {
-    width: 800px;
+    width: 900px;
     max-width: 80%;
     background-color: #77d169;
     border-radius: 5px;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 0 10px 2px;
-	
+		
 }
 
 .btn-grid {
@@ -123,18 +123,14 @@ p {
 }
 
 
-.header {
-	text-align: left;
-	background-color: grey;
-	margin: auto;
-	padding: 1px;
-	border-width: 1px;
-	border: black;
-	border-style: solid;
-	border-radius: 5px;
-	margin-top: 5px;
-	height: 225px;
-	width: 1300px;
+.header1 {
+	width: 100%;
+	opacity:0.8;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #77d169;
+    text-align: center;
 
 }
 
@@ -154,18 +150,6 @@ div img #kuvat {
 	left: 0;
 	background: #77d169;
     text-align: center;
-	/*text-align: left;
-	background-color: #77d169;
-	border-width: 1px;
-	border: black;
-	border-style: solid;
-	border-radius: 5px;
-	margin-top: 30px;
-	width: 80%;
-	bottom: 0;
-	max-width: 100%;
-	position: fixed;*/
-
 }
 
 .container-fluid-3 {
