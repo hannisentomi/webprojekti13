@@ -115,48 +115,48 @@ function tyhjaaStatus(element) {
 
 const kysymykset = [
   {
-    question: 'Paljonko on 2 + 2?',
+    question: 'Paljonko on 8 * 8?',
     answers: [
-      { text: '4', correct: true },
+      { text: '64', correct: true },
       { text: '22', correct: false },
-      { text: '5', correct: false },
-      { text: '1', correct: false }
+      { text: '55', correct: false },
+      { text: '19', correct: false }
     ]
   },
   {
-    question: 'Paljonko on 4 + 4?',
+    question: 'Paljonko on 7 * 6?',
     answers: [
-      { text: '8', correct: true },
-      { text: '6', correct: false },
-      { text: '7', correct: false },
-      { text: '5', correct: false }
+      { text: '42', correct: true },
+      { text: '60', correct: false },
+      { text: '78', correct: false },
+      { text: '50', correct: false }
     ]
   },
   {
-    question: 'Paljonko on 3 + 2?',
+    question: 'Paljonko on 3 * 9?',
     answers: [
-      { text: '2', correct: false },
-      { text: '3', correct: false },
-      { text: '5', correct: true },
-      { text: '7', correct: false }
+      { text: '24', correct: false },
+      { text: '36', correct: false },
+      { text: '27', correct: true },
+      { text: '18', correct: false }
     ]
   },
   {
-    question: 'Paljonko on 4 * 2?',
+    question: 'Paljonko on 77 / 7?',
     answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true },
-      { text: '2', correct: false },
+      { text: '9', correct: false },
+      { text: '11', correct: true },
+      { text: '16', correct: false },
       { text: '10', correct: false }
     ]
   },
   {
-    question: 'Paljonko on 3 * 2?',
+    question: 'Paljonko on 155 / 5?',
     answers: [
-      { text: '4', correct: false },
+      { text: '50', correct: false },
       { text: '10', correct: false },
-      { text: '2', correct: false },
-      { text: '6', correct: true }
+      { text: '15', correct: false },
+      { text: '31', correct: true }
     ]
   },
 ]
