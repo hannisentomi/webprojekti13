@@ -134,4 +134,36 @@ function vastaus5() {
 			'Valitse vastaus ensin';
 	}
 
+
+
+
+	if (correct === 0){
+	document.getElementById('loppupisteet').innerHTML = 'voivoi 0 pistettä';
+	}
+	if (correct === 1){
+		document.getElementById('loppupisteet').innerHTML = 'voivoi 1 pistettä';
+	}
+	if (correct === 2){
+		document.getElementById('loppupisteet').innerHTML = 'voivoi 2 pistettä';
+	}
+	if (correct === 3){
+		document.getElementById('loppupisteet').innerHTML = 'voivoi 3 pistettä';
+	}
+	if (correct === 4){
+		document.getElementById('loppupisteet').innerHTML = 'voivoi 4 pistettä';
+	}
+	if (correct === 5){
+		document.getElementById('loppupisteet').innerHTML = 'voivoi 5 pistettä';
+	}
+
+	
+
+	
+
 }
+function refresh() {
+	location.reload();
+	}
+	window.scrollTo('question').innerHTML;
+
+	
