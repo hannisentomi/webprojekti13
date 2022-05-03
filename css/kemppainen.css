@@ -139,6 +139,8 @@ a :hover{
 }
 .kortti:hover{
     border:2px solid black;
+    transform: scale(105%);
+    
 }
 .container-fluid {
     flex-shrink: 1;
@@ -170,6 +172,7 @@ input[type=button]{
     background-color:bisque;
     color: #000;
     border-radius: 20px;
+    transform: scale(120%);
 }
 
 /* Media puhelin **/
