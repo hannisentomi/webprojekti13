@@ -5,21 +5,18 @@ p{
 }
 /* Header muotoilu*/
 .header {
-    color: #000000;
-    text-align: left;
-    background-color: #198754;
+    text-align: center;
     margin: auto;
     padding: 1px;
-	border-width: 1px;
-	border: black;
-	border-style: solid;
-	border-radius: 5px;
-    margin-top: 5px;
-    margin-bottom: 20px;
-    height: 200px;
-    width: 1280px;
-    background-image: url(/images/aho_images/linna.jpg);
-    background-size:contain;
+    border-width: 1px;
+    border: black;
+    border-style: solid;
+    border-radius: 5px;
+    margin-top: 2px;
+    background-image: linear-gradient(to left, #13790c, #5af75a);
+    height: 50px;
+    max-width: auto;
+    font-size: 30px;
 
 }
 
