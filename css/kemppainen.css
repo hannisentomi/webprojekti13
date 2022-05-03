@@ -93,7 +93,7 @@ p {
   .row {
     text-align: center;
   }
-  
+  /*Korttipelin määritykset */
   .kortti {
     display: inline-block;
     width: 200px;
