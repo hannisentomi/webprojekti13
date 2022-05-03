@@ -1,6 +1,11 @@
+.kuvia {
+	padding-right: 17em;
+	max-width: 100%;
+}
+
 
 .progress {
-    background-color: #ffffff;
+    background-color: #4890c3;
     height: 1.8rem;
     border-radius: 3rem;
     padding: 0 0.5rem;
@@ -34,6 +39,8 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
+    
+
 :root {
     --hue-neutral: 200;
     --hue-wrong: 0;
@@ -50,6 +57,7 @@ section {
     justify-content: center;
     align-items: center;
     background-color: hsl(var(--hue),100%,20%);
+    background-image: url("../images/vuorenmaa_images/tausta.png");
 }
 section.correct {
     --hue: var(--hue-correct);
@@ -62,10 +70,11 @@ section.wrong {
 .kontainer {
     width: 800px;
     max-width: 80%;
-    background-color: white;
+    background-color: #77d169;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
+	
 }
 
 .btn-grid {
@@ -106,6 +115,7 @@ section.wrong {
     display: flex;
     justify-content: center;
     align-items: center;
+	
 }
 
 .hide {
@@ -140,17 +150,25 @@ div img #kuvat {
 }
 
 .footer {
-	text-align: center;
+
+	width: 100%;
+	opacity:0.8;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #77d169;
+    text-align: center;
+	/*text-align: left;
 	background-color: #77d169;
 	border-width: 1px;
 	border: black;
 	border-style: solid;
 	border-radius: 5px;
 	margin-top: 30px;
-	width: 100%;
+	width: 80%;
 	bottom: 0;
-
-	position: fixed;
+	max-width: 100%;
+	position: fixed;*/
 
 }
 
@@ -160,11 +178,7 @@ div img #kuvat {
 }
 
 
-.hannisenkuvalinkki {
-	background-image: url('matikka.jpg');
-	background-size: cover;
 
-}
 
 .sivu {
 	font-weight: bold;
@@ -233,6 +247,11 @@ a :hover {
 	position: absolute;
 	bottom: 0%;
 	right: 40%;
+
+}
+body{
+    background-color: black;
+    background-image: url("../images/vuorenmaa_images/tausta.png");
 
 }
 
