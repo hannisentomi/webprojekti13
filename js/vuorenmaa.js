@@ -1,67 +1,67 @@
-const startButton = document.getElementById('start-btn');
-const nextButton = document.getElementById('next-btn');
-const questionContainerElement = document.getElementById('question-kontainer');
-const questionElement = document.getElementById('question');
-const answerButtonsElement = document.getElementById('answer-buttons');
+const aloitusNappi = document.getElementById('start-btn');
+const seuraavaNappi = document.getElementById('next-btn');
+const kysymysLaatikko = document.getElementById('question-kontainer');
+const kysymys = document.getElementById('question');
+const vastausNappi = document.getElementById('answer-buttons');
 
-let progressBar = document.getElementById("progressBar");
-let progressMeter = document.getElementById("progressMeter");
-let progressMeterText = document.getElementById("progressMeterText");
-let shuffledQuestions, currentQuestionIndex;
+let laskuri = document.getElementById("progressBar");
+let laskuriPalkki = document.getElementById("progressMeter");
+let laskurinTeksti = document.getElementById("progressMeterText");
+let randomKysymykset, kysymyksenIndex;
 
 
     quizLength = 0,
     index = 0,
 
-startButton.addEventListener('click', startGame);
-progressBar.classList.add("hide");
-progressBar.setAttribute("aria-valuemax", quizLength);
-nextButton.addEventListener('click', () => {
-  currentQuestionIndex++
-  setNextQuestion()
+aloitusNappi.addEventListener('click', aloitaPeli);
+laskuri.classList.add("hide");
+laskuri.setAttribute("aria-valuemax", quizLength);
+seuraavaNappi.addEventListener('click', () => {
+  kysymyksenIndex++
+  setSeuraavaKysymys()
 })
 
-function startGame() {
+function aloitaPeli() {
   index = 0;  
-  startButton.classList.add('hide')
-  shuffledQuestions = questions.sort(() => Math.random() - .5)
-  currentQuestionIndex = 0
-  questionContainerElement.classList.remove('hide');
-  setNextQuestion()
-  progressBar.classList.remove("hide");  
+  aloitusNappi.classList.add('hide')
+  randomKysymykset = kysymykset.sort(() => Math.random() - .5)
+  kysymyksenIndex = 0
+  kysymysLaatikko.classList.remove('hide');
+  setSeuraavaKysymys()
+  laskuri.classList.remove("hide");  
    
-  quizLength = questions.length;
-  showProgress(index);
+  quizLength = kysymykset.length;
+  laskeKysymykset(index);
 
 }
 
-function showProgress(index) {
+function laskeKysymykset(index) {
     ///update progress bar
   let increment = Math.ceil((index) / (quizLength) * 100);
    // let increment = index;
-   progressMeter.style.width = (increment) + '%';
-   progressMeterText.innerHTML = (index) + ' out of ' + quizLength;
+   laskuriPalkki.style.width = (increment) + '%';
+   laskurinTeksti.innerHTML = (index) + ' out of ' + quizLength;
    if (index === 0) {
-       progressMeter.style.width = (20) + '%';
-       progressMeter.style.background = "#ffffff";
+    laskuriPalkki.style.width = (20) + '%';
+    laskuriPalkki.style.background = "#ffffff";
       
    }
    else {
-       progressMeter.style.background = "#689F38";
+    laskuriPalkki.style.background = "#689F38";
    }
 }
 
 
-function setNextQuestion() {
+function setSeuraavaKysymys() {
   index++;
-  resetState()
-  showQuestion(shuffledQuestions[currentQuestionIndex]);
-  showProgress(index);
+  nollaus()
+  naytaKysymys(randomKysymykset[kysymyksenIndex]);
+  laskeKysymykset(index);
   
 }
 
-function showQuestion(question) {
-  questionElement.innerText = question.question
+function naytaKysymys(question) {
+  kysymys.innerText = question.question
   question.answers.forEach(answer => {
     const button = document.createElement('button')
     button.innerText = answer.text
@@ -69,36 +69,36 @@ function showQuestion(question) {
     if (answer.correct) {
       button.dataset.correct = answer.correct
     }
-    button.addEventListener('click', selectAnswer)
-    answerButtonsElement.appendChild(button)
+    button.addEventListener('click', vastaus)
+    vastausNappi.appendChild(button)
   })
 }
 
-function resetState() {
-  clearStatusClass(document.body)
-  nextButton.classList.add('hide')
-  while (answerButtonsElement.firstChild) {
-    answerButtonsElement.removeChild(answerButtonsElement.firstChild)
+function nollaus() {
+  tyhjaaStatus(document.body)
+  seuraavaNappi.classList.add('hide')   
+  while (vastausNappi.firstChild) {
+    vastausNappi.removeChild(vastausNappi.firstChild)
   }
 }
 
-function selectAnswer(e) {
+function vastaus(e) {
   const selectedButton = e.target
   const correct = selectedButton.dataset.correct
-  setStatusClass(document.body, correct)
-  Array.from(answerButtonsElement.children).forEach(button => {
-    setStatusClass(button, button.dataset.correct)
+  tarkistus(document.body, correct)
+  Array.from(vastausNappi.children).forEach(button => {
+    tarkistus(button, button.dataset.correct)
   })
-  if (shuffledQuestions.length > currentQuestionIndex + 1) {
-    nextButton.classList.remove('hide')
+  if (randomKysymykset.length > kysymyksenIndex + 1) {
+    seuraavaNappi.classList.remove('hide')  
   } else {
-    startButton.innerText = 'Uudestaan'
-    startButton.classList.remove('hide')
+    aloitusNappi.innerText = 'Uudestaan'
+    aloitusNappi.classList.remove('hide')
   }
 }
 
-function setStatusClass(element, correct) {
-  clearStatusClass(element)
+function tarkistus(element, correct) {
+  tyhjaaStatus(element)
   if (correct) {
     element.classList.add('correct')
   } else {
@@ -106,12 +106,12 @@ function setStatusClass(element, correct) {
   }
 }
 
-function clearStatusClass(element) {
+function tyhjaaStatus(element) {
   element.classList.remove('correct')
   element.classList.remove('wrong')
 }
 
-const questions = [
+const kysymykset = [
   {
     question: 'Paljonko on 2 + 2?',
     answers: [
