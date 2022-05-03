@@ -42,7 +42,7 @@ border-radius: 5px;
 margin-top: 30px;
 width: 100%;
 bottom: 0;
-opacity: 80%;
+
 position: fixed;
 
 }
@@ -69,7 +69,7 @@ line-height: 200%;
 
 body {
 background-color: #c5edcc;
-background-image: url("../images/vuorenmaa_images/tausta.png");
+
 }
 
 a {
@@ -131,16 +131,13 @@ right: 40%;
 
 }
 
-
-
 @media screen and (min-width:575px) and (max-width:990px){
-
-
-	.header{
-		display: none;
-	}
-	
-
+#carousel-example-2 {
+	display: none;
+}
+.header{
+	display: none;
+}
 
 }
 /* Media puhelin **/
@@ -159,48 +156,30 @@ right: 40%;
 }
 
 @media screen and (min-width:1300px) and (max-width:1800px) {
+#koti {
+	font-size: 1em;
+}
+#carousel-example-2 {
+	display: none;
+}
 
-	#koti {
-		font-size: 1em;
-	}
-
-	
-	.header{
-		display: none;
-	}
-
-
+.header{
+	display: none;
+}
 }
 
 
-
-
 @media only screen and (min-width: 992px) and (max-width:1300px) {
+.sivu {
+	font-size: 1.2em;
+}
 
-	.sivu {
-		font-size: 1.2em;
-	}
-
-	#kolumni {
-		font-size: 1em;
-	}
-    li span{
-        font-size: 0.8em;
-        
-        
-        
-    }
-	#koti{
-		font-size: 25px;
-	}
-    #koti2{
-     
-		font-size: 10px;
-        
-        
-    }
-
-
+#kolumni {
+	font-size: 1em;
+}
+li span{
+	font-size: 0.8em;
+	
 	
 	
 }
@@ -284,10 +263,9 @@ font-size: 20px;
 font-size: 25px;
 
 }
-
-
-
-
+#carousel-example-2 {
+display: none;
+}
 
 .header{
 display: none;
