@@ -1,8 +1,9 @@
-
+/* tekstin määrittely*/
 p{
     color: #000;
     float: center;
 }
+/* Header muotoilu*/
 .header {
     color: #000000;
     text-align: left;
@@ -22,18 +23,13 @@ p{
 
 }
 
-:root {
-    --hue-neutral: 200;
-    --hue-wrong: 0;
-    --hue-correct: 145;
-}
-
-
-
+/* Otsikoiden muotoilu*/
 h1, h2 {
     text-align: center;
     margin-bottom: 50px;
 }
+
+/* Kuvien muotoilu*/
 .quiz-header1 img {
 max-width: 250px;
 max-height: 250px;
@@ -85,24 +81,25 @@ border-width: 4px;
                 border-width: 4px;
                 }
 
-    .quiz-header1, .quiz-header2, .quiz-header3, .quiz-header4, .quiz-header5 {
-    margin-bottom: 30px;
-    padding: 10px;
-    font-size:medium;
-    font-weight: bold;
+                /* Visojen muotoilu*/
+.quiz-header1, .quiz-header2, .quiz-header3, .quiz-header4, .quiz-header5 {
+margin-bottom: 30px;
+padding: 10px;
+font-size:medium;
+font-weight: bold;
     
-    }
+}
 
 
 
-
+/* div kuvien muotoilu*/
 div img #kuvat{
 	float: right;
     max-height: 200px;
     max-width: 200px;
   
 }
-
+/* Footer muotoilu*/
 .footer{
     text-align: left;
     background-color: #77d169;
@@ -114,9 +111,8 @@ div img #kuvat{
     width: 100%;
     bottom: 0;
    
-    
-  
 }
+/* container muotoilu*/
 .container-fluid-3{
     text-align: center;
     
@@ -124,7 +120,7 @@ div img #kuvat{
 
 
 
-
+/* nav muotoilu*/
 .sivu{
     font-weight: bold;
     font-size: 1.5em;
@@ -134,19 +130,20 @@ div img #kuvat{
 
 
 
-
+/* Body muotoilu*/
 body{
     background-color: #8FFFA2 ;
     
     
 }
 
+/* a muotoilu*/
 a {
     text-align: center;
     
 }
 
-/* Media puhelin **/
+/* Media puhelin eri näytoille **/
 @media only screen and (max-width: 575px){
     .sivu{
         font-size: 1.5em;

@@ -1,11 +1,18 @@
+// Henrik Aho/TIK22KM
+
+//Muuttujat pistelaskuun ja kuinka monta kysymystä jäljellä
 let correct = 0;
 let left = 5;
+
+//Funktio nappuloiden disabloimiseen
+
 function disabloiIdnPerusteella(idt){
 	idt.forEach(r => document.getElementById(r).disabled = true);
 }
 
 
 
+// Funktiot kysymyksiin
 
 function vastaus1() {
 	let vaarin1 = document.getElementById('a1').checked;
