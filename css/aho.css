@@ -101,15 +101,15 @@ div img #kuvat{
 }
 /* Footer muotoilu*/
 .footer{
-    text-align: left;
+    text-align: center;
     background-color: #77d169;
-    border-width: 1px;
-	border: black;
-	border-style: solid;
-    border-radius: 5px;
-    margin-top: 30px;
-    width: 100%;
+    border: black;
+    border-style: solid;
+    margin-top: none;
+    width: auto;
     bottom: 0;
+    border-radius: 30px;
+    background-image: linear-gradient(to left, #13790c, #5af75a);
    
 }
 /* container muotoilu*/
