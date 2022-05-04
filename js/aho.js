@@ -35,6 +35,24 @@ function vastaus1() {
 			'Valitse vastaus ensin';
 
 	}
+	if (left == 0 && correct == 5) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Täydet pisteet!";
+	}
+	if (left == 0 && correct == 4) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Melkein täydet!";
+	}
+	if (left == 0 && correct == 3) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Aika hyvä suoritus!";
+	}
+	if (left == 0 && correct == 2) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä voisi vähän harjoitella, mutta hyvä alku!";
+	}
+	if (left == 0 && correct == 1) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä kannattaa harjoitella!";
+	}
+	if (left == 0 && correct == 0) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä kannattaa harjoitella!";
+	}
 
 
 
@@ -62,6 +80,24 @@ function vastaus2() {
 		document.getElementById('demo2').innerHTML =
 			'Valitse vastaus ensin';
 	}
+	if (left == 0 && correct == 5) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Täydet pisteet!";
+	}
+	if (left == 0 && correct == 4) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Melkein täydet!";
+	}
+	if (left == 0 && correct == 3) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Aika hyvä suoritus!";
+	}
+	if (left == 0 && correct == 2) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä voisi vähän harjoitella, mutta hyvä alku!";
+	}
+	if (left == 0 && correct == 1) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä kannattaa harjoitella!";
+	}
+	if (left == 0 && correct == 0) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä kannattaa harjoitella!";
+	}
 
 
 
@@ -87,6 +123,24 @@ function vastaus3() {
 		document.getElementById('demo3').innerHTML =
 			'Valitse vastaus ensin';
 	}
+	if (left == 0 && correct == 5) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Täydet pisteet!";
+	}
+	if (left == 0 && correct == 4) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Melkein täydet!";
+	}
+	if (left == 0 && correct == 3) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Aika hyvä suoritus!";
+	}
+	if (left == 0 && correct == 2) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä voisi vähän harjoitella, mutta hyvä alku!";
+	}
+	if (left == 0 && correct == 1) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä kannattaa harjoitella!";
+	}
+	if (left == 0 && correct == 0) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä kannattaa harjoitella!";
+	}
 
 
 }
@@ -102,53 +156,90 @@ function vastaus4() {
 		document.getElementById('demo4').innerHTML =
 			'Oikea vastaus! Colosseum oli Rooman merkittävin gladiaattorinäytäntöjen tapahtumapaikka. Sinulla on nyt kasassa ' + correct + ' pistettä. Vielä ' + left + ' kysymystä jäljellä ';
 			disabloiIdnPerusteella(["a4", "b4", "c4", "d4", "submit4"]);
-	} else if (vaarin10 || vaarin11 || vaarin12) {
+	}
+	else if (vaarin10 || vaarin11 || vaarin12) {
 		left--;
 		document.getElementById('demo4').innerHTML =
 			'Väärin meni. Oikea vastaus on Gladiaattorinäytöksistä. Vielä ' + left + ' kysymystä jäljellä ';
 			disabloiIdnPerusteella(["a4", "b4", "c4", "d4", "submit4"]);
-	} else {
+	}else {
 		document.getElementById('demo4').innerHTML =
 			'Valitse vastaus ensin';
+	}
+	if (left == 0 && correct == 5) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Täydet pisteet!";
+	}
+	if (left == 0 && correct == 4) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Melkein täydet!";
+	}
+	if (left == 0 && correct == 3) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Aika hyvä suoritus!";
+	}
+	if (left == 0 && correct == 2) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä voisi vähän harjoitella, mutta hyvä alku!";
+	}
+	if (left == 0 && correct == 1) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä kannattaa harjoitella!";
+	}
+	if (left == 0 && correct == 0) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä kannattaa harjoitella!";
 	}
 }
 
 function vastaus5() {
+	let img = document.createElement('img');
 	let oikein = document.getElementById('c5').checked;
 	let vaarin13 = document.getElementById('a5').checked;
 	let vaarin14 = document.getElementById('b5').checked;
 	let vaarin15 = document.getElementById('d5').checked;
+	
 	if (oikein) {
-		left--;
 		correct++;
+		left--;
 		document.getElementById('demo5').innerHTML =
 			'Oikea vastaus! Antiikin Ateenaa on pidetty länsimaisen kulttuurin kehtona. Sinulla on nyt kasassa ' + correct + ' pistettä. Vielä ' + left + ' kysymystä jäljellä ';
 			disabloiIdnPerusteella(["a5", "b5", "c5", "d5", "submit5"]);
-	} else if (vaarin13 || vaarin14 || vaarin15) {
+	} 
+	
+	else if (vaarin13 || vaarin14 || vaarin15) {
 		left--;
 		document.getElementById('demo5').innerHTML =
 			'Väärin meni. Oikea vastaus on Ateena. Vielä ' + left + ' kysymystä jäljellä ';
 			disabloiIdnPerusteella(["a5", "b5", "c5", "d5", "submit5"]);
-	} else {
+	}else{
 		document.getElementById('demo5').innerHTML =
-			'Valitse vastaus ensin';
+		'Valitse vastaus ensin';
+		
 	}
-
-	if (left == 0) {
-        document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä.";
-    }
-
-
+	if (left == 0 && correct == 5) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Täydet pisteet!";
+	}
+	if (left == 0 && correct == 4) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Melkein täydet!";
+	}
+	if (left == 0 && correct == 3) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Aika hyvä suoritus!";
+		img.src = '../images/aho_images/smiley3.jpg';
+	}
+	if (left == 0 && correct == 2) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä voisi vähän harjoitella, mutta hyvä alku!";
+	}
+	if (left == 0 && correct == 1) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä kannattaa harjoitella!";
+	}
+	if (left == 0 && correct == 0) {
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä kannattaa harjoitella!";
+	}
 	
-
-	
-
-	
-
 }
+
+
+
 function refresh() {
 	location.reload();
-	}
+}
+
+
 	
 
 	

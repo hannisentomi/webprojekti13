@@ -1,4 +1,14 @@
 /* tekstin määrittely*/
+
+#loppupisteet{
+    text-align: center;
+    font-size: 50px;
+   
+    
+    height: auto;
+    
+}
+
 p{
     color: #000;
     float: center;
@@ -24,6 +34,7 @@ p{
 h1, h2 {
     text-align: center;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 /* Kuvien muotoilu*/
