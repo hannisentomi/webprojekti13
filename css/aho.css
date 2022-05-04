@@ -1,22 +1,19 @@
 /* tekstin määrittely*/
 
-#loppupisteet{
+#loppupisteet {
     text-align: center;
     font-size: 40px;
     color: brown;
-    
-   
-    
+  
     height: auto;
-    
-}
-
-p{
+  }
+  
+  p {
     color: #000;
     float: center;
-}
-/* Header muotoilu*/
-.header {
+  }
+  /* Header muotoilu*/
+  .header {
     text-align: center;
     margin: auto;
     padding: 1px;
@@ -26,32 +23,22 @@ p{
     border-radius: 5px;
     margin-top: 2px;
     background-image: linear-gradient(to left, #13790c, #5af75a);
-    height: 50px;
+    height: 150px;
     max-width: auto;
-    font-size: 30px;
-
-}
-
-/* Otsikoiden muotoilu*/
-h1, h2 {
+    font-size: 100px;
+    font-family: "Oleo Script Swash Caps", cursive;
+  }
+  
+  /* Otsikoiden muotoilu*/
+  h1,
+  h2 {
     text-align: center;
     margin-bottom: 50px;
     margin-top: 50px;
-}
-
-/* Kuvien muotoilu*/
-.quiz-header1 img {
-max-width: 250px;
-max-height: 250px;
-float: right;
-margin-right: 600px;
-border-style: solid;
-border-color: black;
-border-width: 4px;
-position: sticky;
-}
-
-.quiz-header2 img {
+  }
+  
+  /* Kuvien muotoilu*/
+  .quiz-header1 img {
     max-width: 250px;
     max-height: 250px;
     float: right;
@@ -59,69 +46,75 @@ position: sticky;
     border-style: solid;
     border-color: black;
     border-width: 4px;
-    }
-    .quiz-header3 img {
-        max-width: 250px;
-        max-height: 250px;
-        float: right;
-        margin-right: 600px;
-        border-style: solid;
-        border-color: black;
-        border-width: 4px;
-        position: sticky;
-        
-        
-        }
-    
-        .quiz-header4 img {
-            max-width: 250px;
-            max-height: 250px;
-            float: right;
-            margin-right: 600px;
-            background-color: #f8fbf7;
-            border-style: solid;
-            border-color: black;
-            border-width: 4px;
-            }
-            .quiz-header5 img {
-                max-width: 250px;
-                max-height: 250px;
-                float: right;
-                margin-right: 600px;
-                border-style: solid;
-                border-color: black;
-                border-width: 4px;
-                }
-
-                #loppupisteet img {
-                    max-width: 140px;
-                    margin-bottom: 5px;
-                    border-style: none;
-                    
-                }
-
-                
-
-                /* Visojen muotoilu*/
-.quiz-header1, .quiz-header2, .quiz-header3, .quiz-header4, .quiz-header5 {
-margin-bottom: 30px;
-padding: 10px;
-font-size:medium;
-font-weight: bold;
-    
-}
-
-
-
-/* div kuvien muotoilu*/
-div img #kuvat{
-	float: right;
+    position: sticky;
+  }
+  
+  .quiz-header2 img {
+    max-width: 250px;
+    max-height: 250px;
+    float: right;
+    margin-right: 600px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+  }
+  .quiz-header3 img {
+    max-width: 250px;
+    max-height: 250px;
+    float: right;
+    margin-right: 600px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+    position: sticky;
+  }
+  
+  .quiz-header4 img {
+    max-width: 250px;
+    max-height: 250px;
+    float: right;
+    margin-right: 600px;
+    background-color: #f8fbf7;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+  }
+  .quiz-header5 img {
+    max-width: 250px;
+    max-height: 250px;
+    float: right;
+    margin-right: 600px;
+    border-style: solid;
+    border-color: black;
+    border-width: 4px;
+  }
+  
+  #loppupisteet img {
+    max-width: 140px;
+    margin-bottom: 5px;
+    border-style: none;
+  }
+  
+  /* Visojen muotoilu*/
+  .quiz-header1,
+  .quiz-header2,
+  .quiz-header3,
+  .quiz-header4,
+  .quiz-header5 {
+    margin-bottom: 30px;
+    padding: 10px;
+    font-size: medium;
+    font-weight: bold;
+  }
+  
+  /* div kuvien muotoilu*/
+  div img #kuvat {
+    float: right;
     max-height: 200px;
     max-width: 200px;
-  
-}
-/* Footer muotoilu*/
-.footer{
+  }
+  /* Footer muotoilu*/
+  .footer {
     text-align: center;
     background-color: #77d169;
     border: black;
@@ -131,117 +124,104 @@ div img #kuvat{
     bottom: 0;
     border-radius: 30px;
     background-image: linear-gradient(to left, #13790c, #5af75a);
-   
-}
-/* container muotoilu*/
-.container-fluid-3{
+    font-family: "Oleo Script Swash Caps", cursive;
+    font-family: "Pacifico", cursive;
+    font-size: 20px;
+  }
+  /* container muotoilu*/
+  .container-fluid-3 {
     text-align: center;
-    
-}
-
-
-
-/* nav muotoilu*/
-.sivu{
+  }
+  
+  /* nav muotoilu*/
+  .sivu {
     font-weight: bold;
     font-size: 1.5em;
     text-align: left;
-    line-height: 200%; 
-}
-
-
-
-/* Body muotoilu*/
-body{
-    background-color: #8FFFA2 ;
-    
-    
-}
-
-/* a muotoilu*/
-a {
+    line-height: 200%;
+  }
+  
+  /* Body muotoilu*/
+  body {
+    background-color: #8fffa2;
+  }
+  
+  /* a muotoilu*/
+  a {
     text-align: center;
-    
-}
-
-/* Media puhelin eri näytoille **/
-@media only screen and (max-width: 575px){
-    .sivu{
-        font-size: 1.5em;
-        
+  }
+  
+  /* Media puhelin eri näytoille **/
+  @media only screen and (max-width: 575px) {
+    .sivu {
+      font-size: 1.5em;
     }
     #carousel-example-2 {
-        display: none;
+      display: none;
     }
-
-    #loppupisteet{
-        font-size: 20px;
+  
+    #loppupisteet {
+      font-size: 20px;
     }
-    .quiz-header1 img, .quiz-header2 img, .quiz-header3 img, .quiz-header4 img, .quiz-header5 img {
-        display: none;
+    .quiz-header1 img,
+    .quiz-header2 img,
+    .quiz-header3 img,
+    .quiz-header4 img,
+    .quiz-header5 img {
+      display: none;
     }
-    
-}
-@media screen and (max-width:1200px) {
-    #koti{
-        font-size: 1em;
+  }
+  @media screen and (max-width: 1200px) {
+    #koti {
+      font-size: 1em;
     }
-    #loppupisteet img{
-        display: none;
+    #loppupisteet img {
+      display: none;
     }
-    
-}
-
-
-@media only screen and (min-width: 992px) {
-    .sivu{
-        font-size: 1.5em ;
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .sivu {
+      font-size: 1.5em;
     }
-    #kolumni{
-        font-size: 1.5em;
+    #kolumni {
+      font-size: 1.5em;
     }
-    
-
-}
-li span {
-    color:black;
-    
-}
-li i {
+  }
+  li span {
+    color: black;
+  }
+  li i {
     color: bisque;
-
-}
-
-
-div i {
+  }
+  
+  div i {
     color: bisque;
-    
-}
-
-#koti{
+  }
+  
+  #koti {
     color: black;
     font-weight: bold;
     font-size: 200%;
-    
-}
-
-#koti2{
+  }
+  
+  #koti2 {
     color: bisque;
     font-weight: bold;
     font-size: 250%;
     padding-right: 1rem;
-}
-
-a :hover{
+  }
+  
+  a :hover {
     color: cyan;
-    
-}
-#kolumni{
+  }
+  #kolumni {
     padding-top: 2%;
     padding-bottom: 4%;
-    
-}
-.container2{
-    position: absolute; bottom: 0%;  right: 40%;
-    
-}
+  }
+  .container2 {
+    position: absolute;
+    bottom: 0%;
+    right: 40%;
+  }
+  

@@ -6,7 +6,7 @@ let left = 5;
 
 //Funktio nappuloiden disabloimiseen
 
-function disabloiIdnPerusteella(idt){
+function disabloiIdnPerusteella(idt) {
 	idt.forEach(r => document.getElementById(r).disabled = true);
 }
 
@@ -25,13 +25,13 @@ function vastaus1() {
 		correct++;
 		document.getElementById('demo1').innerHTML =
 			'Hienoa! Oikein meni. Suomi täyttää vuonna 2022 106 -vuotta. Sinulla on nyt kasassa ' + correct + ' pistettä. Vielä ' + left + ' kysymystä jäljellä ';
-			disabloiIdnPerusteella(["a1", "b1", "c1", "d1", "submit"]);
-	}else if (vaarin1 || vaarin2 || vaarin3) {
+		disabloiIdnPerusteella(["a1", "b1", "c1", "d1", "submit"]);
+	} else if (vaarin1 || vaarin2 || vaarin3) {
 		left--;
 		document.getElementById('demo1').innerHTML =
 			'Voi että väärin meni. Suomi sai itsenäisyytensä 6.12.1917. Vielä ' + left + ' kysymystä jäljellä ';
-			disabloiIdnPerusteella(["a1", "b1", "c1", "d1", "submit"]);
-	}  else {
+		disabloiIdnPerusteella(["a1", "b1", "c1", "d1", "submit"]);
+	} else {
 		document.getElementById('demo1').innerHTML =
 			'Valitse vastaus ensin';
 
@@ -84,13 +84,13 @@ function vastaus2() {
 		correct++;
 		document.getElementById('demo2').innerHTML =
 			'Aivan oikein! Kaikkiaan vesijohtoja oli valtakunnassa noin 500 kilometriä. Sinulla on nyt kasassa ' + correct + ' pistettä. Vielä ' + left + ' kysymystä jäljellä ';
-			disabloiIdnPerusteella(["a2", "b2", "c2", "d2", "submit2"]);
+		disabloiIdnPerusteella(["a2", "b2", "c2", "d2", "submit2"]);
 	} else if (vaarin4 || vaarin5 || vaarin6) {
 		left--;
 		document.getElementById('demo2').innerHTML =
 			'Voi että väärin meni. Oikea vastaus on Roomalaiset. Vielä ' + left + ' kysymystä jäljellä ';
-			disabloiIdnPerusteella(["a2", "b2", "c2", "d2", "submit2"]);
-	}  else {
+		disabloiIdnPerusteella(["a2", "b2", "c2", "d2", "submit2"]);
+	} else {
 		document.getElementById('demo2').innerHTML =
 			'Valitse vastaus ensin';
 	}
@@ -140,12 +140,12 @@ function vastaus3() {
 		correct++;
 		document.getElementById('demo3').innerHTML =
 			'Oikein meni! Rauhanopimus sai nimensä solmimispaikastaan, Pähkinälinnan linnoituksesta,joka sijaitsee Laatokan Pähkinäsaaressa. Sinulla on nyt kasassa ' + correct + ' pistettä. Vielä ' + left + ' kysymystä jäljellä ';
-			disabloiIdnPerusteella(["a3", "b3", "c3", "d3", "submit3"]);
+		disabloiIdnPerusteella(["a3", "b3", "c3", "d3", "submit3"]);
 	} else if (vaarin7 || vaarin8 || vaarin9) {
 		left--;
 		document.getElementById('demo3').innerHTML =
 			'Väärin meni. Oikea vastaus on 12.8.1323. Vielä ' + left + ' kysymystä jäljellä ';
-			disabloiIdnPerusteella(["a3", "b3", "c3", "d3", "submit3"]);
+		disabloiIdnPerusteella(["a3", "b3", "c3", "d3", "submit3"]);
 	} else {
 		document.getElementById('demo3').innerHTML =
 			'Valitse vastaus ensin';
@@ -195,14 +195,13 @@ function vastaus4() {
 		correct++;
 		document.getElementById('demo4').innerHTML =
 			'Oikea vastaus! Colosseum oli Rooman merkittävin gladiaattorinäytäntöjen tapahtumapaikka. Sinulla on nyt kasassa ' + correct + ' pistettä. Vielä ' + left + ' kysymystä jäljellä ';
-			disabloiIdnPerusteella(["a4", "b4", "c4", "d4", "submit4"]);
-	}
-	else if (vaarin10 || vaarin11 || vaarin12) {
+		disabloiIdnPerusteella(["a4", "b4", "c4", "d4", "submit4"]);
+	} else if (vaarin10 || vaarin11 || vaarin12) {
 		left--;
 		document.getElementById('demo4').innerHTML =
 			'Väärin meni. Oikea vastaus on Gladiaattorinäytöksistä. Vielä ' + left + ' kysymystä jäljellä ';
-			disabloiIdnPerusteella(["a4", "b4", "c4", "d4", "submit4"]);
-	}else {
+		disabloiIdnPerusteella(["a4", "b4", "c4", "d4", "submit4"]);
+	} else {
 		document.getElementById('demo4').innerHTML =
 			'Valitse vastaus ensin';
 	}
@@ -244,24 +243,22 @@ function vastaus5() {
 	let vaarin13 = document.getElementById('a5').checked;
 	let vaarin14 = document.getElementById('b5').checked;
 	let vaarin15 = document.getElementById('d5').checked;
-	
+
 	if (oikein) {
 		correct++;
 		left--;
 		document.getElementById('demo5').innerHTML =
 			'Oikea vastaus! Antiikin Ateenaa on pidetty länsimaisen kulttuurin kehtona. Sinulla on nyt kasassa ' + correct + ' pistettä. Vielä ' + left + ' kysymystä jäljellä ';
-			disabloiIdnPerusteella(["a5", "b5", "c5", "d5", "submit5"]);
-	} 
-	
-	else if (vaarin13 || vaarin14 || vaarin15) {
+		disabloiIdnPerusteella(["a5", "b5", "c5", "d5", "submit5"]);
+	} else if (vaarin13 || vaarin14 || vaarin15) {
 		left--;
 		document.getElementById('demo5').innerHTML =
 			'Väärin meni. Oikea vastaus on Ateena. Vielä ' + left + ' kysymystä jäljellä ';
-			disabloiIdnPerusteella(["a5", "b5", "c5", "d5", "submit5"]);
-	}else{
+		disabloiIdnPerusteella(["a5", "b5", "c5", "d5", "submit5"]);
+	} else {
 		document.getElementById('demo5').innerHTML =
-		'Valitse vastaus ensin';
-		
+			'Valitse vastaus ensin';
+
 	}
 	if (left == 0 && correct == 5) {
 		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Täydet pisteet!";
@@ -293,16 +290,9 @@ function vastaus5() {
 		img.src = '../images/aho_images/smiley0.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
-	
+
 }
-
-
 
 function refresh() {
 	location.reload();
 }
-
-
-	
-
-	
