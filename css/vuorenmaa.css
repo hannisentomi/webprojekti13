@@ -1,5 +1,6 @@
 /* Marko Vuorenmaa */
 
+/* progress bar alue*/
 .progress {
     background-color: #4890c3;
     height: 1.8rem;
@@ -32,7 +33,7 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif*/
 }
 
     

@@ -32,6 +32,8 @@ p {
     bottom: 0;
     border-radius: 30px;
     background-image: linear-gradient(to left, #13790c, #5af75a);
+    font-family: 'Indie Flower', cursive;
+    font-size: 150%;
   }
   
   .container-fluid-3 {
