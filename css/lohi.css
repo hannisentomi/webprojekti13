@@ -11,8 +11,8 @@
     border-radius: 5px;
     margin-top: 2px;
     background-image: linear-gradient(to left, #13790c, #5af75a);
-    font-family: 'Indie Flower', cursive;
-    font-weight: bold;
+   
+  
 }
 
 .dropdown {
@@ -94,6 +94,8 @@ p {
 
 h1 {
     text-align: center;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
 }
 
 .guestion {
