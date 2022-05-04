@@ -292,7 +292,7 @@ function vastaus5() {
 	}
 
 }
-
+// Ja lopuksi sivun päivitys nappulalle.
 function refresh() {
 	location.reload();
 }
