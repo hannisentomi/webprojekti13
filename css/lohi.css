@@ -20,18 +20,12 @@
 }
 
 /*Sidebarin muotoilua*/
-.sivu {
 
+.sivu {
     font-weight: bold;
     font-size: 1.5em;
     text-align: left;
     line-height: 200%;
-    position: fixed;
-
-}
-
-a {
-    text-align: center;
 }
 
 
@@ -56,8 +50,6 @@ div i {
     color: black;
     font-weight: bold;
     font-size: 200%;
-    position: fixed;
-    margin-left: 170px;
 
 }
 
@@ -66,7 +58,6 @@ div i {
     font-weight: bold;
     font-size: 250%;
     padding-right: 1rem;
-    position: fixed;
 
 }
 
@@ -80,8 +71,15 @@ a :hover {
 }
 
 /*sisällön muotoilua*/
+
+body {
+    background-color: lightgray;
+
+}
+
 .container-fluid {
     background-color: lightgray;
+    content: normal;
 
 }
 
@@ -300,6 +298,10 @@ img {
     }
 }
 
+
+
+
+
 @media screen and (min-width:1300px) and (max-width:1800px) {
     #koti {
         font-size: 1em;
@@ -308,24 +310,20 @@ img {
 
 }
 
-@media screen and (min-width:575px) and (max-width:990px) {
-    .sivu {
-        font-size: 1em;
-    }
-
-    #koti2 {
-        font-size: 1em;
-    }
-}
 
 @media only screen and (min-width: 992px) and (max-width:1300px) {
     .sivu {
         font-size: 1.2em;
     }
 
+    #kolumni {
+        font-size: 1em;
+    }
 
     li span {
         font-size: 0.8em;
+
+
 
     }
 
@@ -348,6 +346,10 @@ img {
         font-size: 1em;
     }
 
+    #kolumni {
+        font-size: 1.5em;
+    }
+
     li span {
         font-size: 25px;
 
@@ -368,6 +370,7 @@ img {
     .ikonit {
         font-size: 20px;
     }
+
 
 
 }
@@ -377,6 +380,9 @@ img {
         font-size: 1em;
     }
 
+    #kolumni {
+        font-size: 1.5em;
+    }
 
     li span {
         font-size: 25px;
@@ -394,9 +400,4 @@ img {
     #koti {
         font-size: 35px;
     }
-
-    .ikonit {
-        font-size: 20px;
-    }
-
 }
