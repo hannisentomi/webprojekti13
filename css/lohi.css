@@ -1,6 +1,6 @@
 /* Minna Lohi TIK22KM */
 
-
+/*Headerin muotoilua*/
 .header {
     text-align: center;
     margin: auto;
@@ -11,12 +11,15 @@
     border-radius: 5px;
     margin-top: 2px;
     background-image: linear-gradient(to left, #13790c, #5af75a);
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
 }
 
 .dropdown {
     text-align: left;
 }
 
+/*Sidebarin muotoilua*/
 .sivu {
 
     font-weight: bold;
@@ -27,13 +30,14 @@
 
 }
 
-p {
+a {
     text-align: center;
-    color: #000;
 }
+
 
 li span {
     color: black;
+
 
 }
 
@@ -42,34 +46,66 @@ li i {
 
 }
 
+
+div i {
+    color: bisque;
+
+}
+
+#koti {
+    color: black;
+    font-weight: bold;
+    font-size: 200%;
+    position: fixed;
+    margin-left: 170px;
+
+}
+
+#koti2 {
+    color: bisque;
+    font-weight: bold;
+    font-size: 250%;
+    padding-right: 1rem;
+    position: fixed;
+
+}
+
+#koti2:hover {
+    color: bisque;
+}
+
 a :hover {
     color: bisque;
+
+}
+
+/*sisällön muotoilua*/
+.container-fluid {
+    background-color: lightgray;
+
+}
+
+.aloitus-box {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: #000;
 }
 
 h1 {
     text-align: center;
 }
 
-/*Footteri*/
-.footer {
-    text-align: center;
-    background-color: #77d169;
-    border: black;
-    border-style: solid;
-    margin-top: none;
-    width: auto;
-    bottom: 0;
-    border-radius: 30px;
-    background-image: linear-gradient(to left, #13790c, #5af75a);
-}
-
-
-.container-fluid {
-    background-color: lightgray;
-
-}
-
 .guestion {
+    border: solid 4px;
+    border-color: rgb(48, 102, 48);
+    border-radius: 5px;
+    padding-inline: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: whitesmoke;
     margin: 20px;
 }
 
@@ -78,6 +114,11 @@ h1 {
     margin-bottom: 50px;
 }
 
+.img {
+    border-radius: 5px;
+    border-color: black solid 2px;
+}
+/*vastausbuttonien muotoilua*/
 .styled {
     border: 0;
     line-height: 2.5;
@@ -153,49 +194,7 @@ h1 {
     background-color: #4CAF50;
 }
 
-.guestion {
-    border: solid 4px;
-    border-color: rgb(48, 102, 48);
-    border-radius: 5px;
-    padding-inline: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: whitesmoke;
-}
-
-.img {
-    border-radius: 5px;
-    border-color: black solid 2px;
-}
-
-#koti {
-    color: black;
-    font-weight: bold;
-    font-size: 200%;
-    position:fixed;
-    margin-left: 170px;
-
-}
-
-#koti2 {
-color: bisque;
-    font-weight: bold;
-    font-size: 250%;
-    padding-right: 1rem;
-    position: fixed;
-
-
-}
-
-
-#koti2:hover {
-    color: red;
-}
-
-
-.aloitus-box {
-    text-align: center;
-}
+/*Kokonaispisteiden animaatiot*/
 
 #onnittelut1,
 #onnittelut2,
@@ -272,167 +271,138 @@ color: bisque;
     }
 }
 
-@media screen and (min-width:575px) and (max-width:990px) {
-    #carousel-example-2 {
-        display: none;
-    }
-
-
-
-}
-
-
-@media screen and (min-width:575px) and (max-width:990px) {
-    #carousel-example-2 {
-        display: none;
-    }
-
-    .header {
-        display: none;
-    }
+/*Footeri*/
+.footer {
+    text-align: center;
+    background-color: #77d169;
+    border: black;
+    border-style: solid;
+    margin-top: none;
+    width: auto;
+    bottom: 0;
+    border-radius: 30px;
+    background-image: linear-gradient(to left, #13790c, #5af75a);
 
 }
 
-/* Media puhelin **/
-@media only screen and (max-width: 575px) {
-    .sivu {
-        font-size: 1.5em;
+/*Media Queryt eri näyttökokoja varten*/
 
+    /* Media puhelin **/
+    @media only screen and (max-width: 575px) {
+        .sivu {
+            font-size: 1.5em;
+
+        }
     }
 
-    #carousel-example-2 {
-        display: none;
-    }
-
-    .header {
-        display: none;
-    }
-}
-
-@media screen and (min-width:1300px) and (max-width:1800px) {
-    #koti {
-        font-size: 1em;
-    }
-
-    #carousel-example-2 {
-        display: none;
-    }
-
-
-}
-
-
-@media only screen and (min-width: 992px) and (max-width:1300px) {
-    .sivu {
-        font-size: 1.2em;
-    }
-
-    #kolumni {
-        font-size: 1em;
-    }
-
-    li span {
-        font-size: 0.8em;
-
+    @media screen and (min-width:1300px) and (max-width:1800px) {
+        #koti {
+            font-size: 1em;
+        }
 
 
     }
+    @media screen and (min-width:575px) and (max-width:990px) {
+        .sivu {
+            font-size: 1em;
+        }
+    
+        #koti2 {
+            font-size: 0.8em;
+        }
 
-    #koti {
-        font-size: 25px;
-    }
-
-    #koti2 {
-
-        font-size: 10px;
-
-
-    }
-
-    #carousel-example-2 {
-        display: none;
-    }
-
-
-}
-
-@media screen and (min-width:1900px) {
-    .sivu {
-        font-size: 1em;
-    }
-
-    #kolumni {
-        font-size: 1.5em;
-    }
-
-    li span {
-        font-size: 25px;
-
-        padding-left: 0.5em;
+        #koti {
+            font-size: 0.8em;
+        }
 
     }
 
-    #koti2 {
-        padding: 10px;
+    @media only screen and (min-width: 992px) and (max-width:1300px) {
+        .sivu {
+            font-size: 1.2em;
+        }
+
+
+        li span {
+            font-size: 0.8em;
+
+        }
+
+        #koti {
+            font-size: 25px;
+        }
+
+        #koti2 {
+
+            font-size: 10px;
+
+
+        }
 
 
     }
 
-    #koti {
-        font-size: 35px;
-    }
+    @media screen and (min-width:1900px) {
+        .sivu {
+            font-size: 1em;
+        }
 
-    .ikonit {
-        font-size: 20px;
-    }
+        #kolumni {
+            font-size: 1.5em;
+        }
 
-    .täsmä {
-        font-size: 25px;
+        li span {
+            font-size: 25px;
 
-    }
+            padding-left: 0.5em;
 
-}
+        }
 
-@media screen and (min-width: 1300px) and (max-width:1899) {
-    .sivu {
-        font-size: 1em;
-    }
+        #koti2 {
+            padding: 10px;
 
-    #kolumni {
-        font-size: 1.5em;
-    }
 
-    li span {
-        font-size: 25px;
+        }
 
-        padding-left: 0.5em;
+        #koti {
+            font-size: 35px;
+        }
 
-    }
-
-    #koti2 {
-        padding: 10px;
+        .ikonit {
+            font-size: 20px;
+        }
 
 
     }
 
-    #koti {
-        font-size: 35px;
-    }
+    @media screen and (min-width: 1300px) and (max-width:1899) {
+        .sivu {
+            font-size: 1em;
+        }
 
-    .ikonit {
-        font-size: 20px;
-    }
+        #kolumni {
+            font-size: 1.5em;
+        }
 
-    .täsmä {
-        font-size: 25px;
+        li span {
+            font-size: 25px;
+
+            padding-left: 0.5em;
+
+        }
+
+        #koti2 {
+            padding: 10px;
+
+
+        }
+
+        #koti {
+            font-size: 35px;
+        }
+
+        .ikonit {
+            font-size: 20px;
+        }
 
     }
-
-    #carousel-example-2 {
-        display: none;
-    }
-
-    .header {
-        display: none;
-    }
-}
