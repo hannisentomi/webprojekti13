@@ -37,32 +37,32 @@ function vastaus1() {
 
 	}
 	if (left == 0 && correct == 5) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Täydet pisteet!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Täydet pisteet!";
 		img.src = '../images/aho_images/smiley5.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 4) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Melkein täydet!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Melkein täydet!";
 		img.src = '../images/aho_images/smiley4.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 3) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Aika hyvä suoritus!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Aika hyvä suoritus!";
 		img.src = '../images/aho_images/smiley3.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 2) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä voisi vähän harjoitella, mutta hyvä alku!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Vielä voisi vähän harjoitella, mutta hyvä alku!";
 		img.src = '../images/aho_images/smiley12.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 1) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä kannattaa harjoitella!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Vielä kannattaa harjoitella!";
 		img.src = '../images/aho_images/smiley12.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 0) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä kannattaa harjoitella!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Vielä kannattaa harjoitella!";
 		img.src = '../images/aho_images/smiley0.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
@@ -95,27 +95,27 @@ function vastaus2() {
 			'Valitse vastaus ensin';
 	}
 	if (left == 0 && correct == 5) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Täydet pisteet!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Täydet pisteet!";
 		img.src = '../images/aho_images/smiley5.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 4) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Melkein täydet!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Melkein täydet!";
 		img.src = '../images/aho_images/smiley4.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 3) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Aika hyvä suoritus!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Aika hyvä suoritus!";
 		img.src = '../images/aho_images/smiley3.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 2) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä voisi vähän harjoitella, mutta hyvä alku!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Vielä voisi vähän harjoitella, mutta hyvä alku!";
 		img.src = '../images/aho_images/smiley12.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 1) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä kannattaa harjoitella!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Vielä kannattaa harjoitella!";
 		img.src = '../images/aho_images/smiley12.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
@@ -151,32 +151,32 @@ function vastaus3() {
 			'Valitse vastaus ensin';
 	}
 	if (left == 0 && correct == 5) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Täydet pisteet!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Täydet pisteet!";
 		img.src = '../images/aho_images/smiley5.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 4) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Melkein täydet!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Melkein täydet!";
 		img.src = '../images/aho_images/smiley4.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 3) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Aika hyvä suoritus!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Aika hyvä suoritus!";
 		img.src = '../images/aho_images/smiley3.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 2) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä voisi vähän harjoitella, mutta hyvä alku!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Vielä voisi vähän harjoitella, mutta hyvä alku!";
 		img.src = '../images/aho_images/smiley12.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 1) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä kannattaa harjoitella!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Vielä kannattaa harjoitella!";
 		img.src = '../images/aho_images/smiley12.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 0) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä kannattaa harjoitella!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Vielä kannattaa harjoitella!";
 		img.src = '../images/aho_images/smiley0.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
@@ -206,32 +206,32 @@ function vastaus4() {
 			'Valitse vastaus ensin';
 	}
 	if (left == 0 && correct == 5) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Täydet pisteet!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Täydet pisteet!";
 		img.src = '../images/aho_images/smiley5.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 4) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Melkein täydet!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Melkein täydet!";
 		img.src = '../images/aho_images/smiley4.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 3) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Aika hyvä suoritus!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Aika hyvä suoritus!";
 		img.src = '../images/aho_images/smiley3.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 2) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä voisi vähän harjoitella, mutta hyvä alku!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Vielä voisi vähän harjoitella, mutta hyvä alku!";
 		img.src = '../images/aho_images/smiley12.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 1) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä kannattaa harjoitella!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Vielä kannattaa harjoitella!";
 		img.src = '../images/aho_images/smiley12.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 0) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä kannattaa harjoitella!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Vielä kannattaa harjoitella!";
 		img.src = '../images/aho_images/smiley0.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
@@ -261,32 +261,32 @@ function vastaus5() {
 
 	}
 	if (left == 0 && correct == 5) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Täydet pisteet!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Täydet pisteet!";
 		img.src = '../images/aho_images/smiley5.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 4) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Melkein täydet!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Melkein täydet!";
 		img.src = '../images/aho_images/smiley4.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 3) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Aika hyvä suoritus!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Aika hyvä suoritus!";
 		img.src = '../images/aho_images/smiley3.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 2) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä voisi vähän harjoitella, mutta hyvä alku!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Vielä voisi vähän harjoitella, mutta hyvä alku!";
 		img.src = '../images/aho_images/smiley12.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 1) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä kannattaa harjoitella!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Vielä kannattaa harjoitella!";
 		img.src = '../images/aho_images/smiley12.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
 	if (left == 0 && correct == 0) {
-		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä. Vielä kannattaa harjoitella!";
+		document.getElementById("loppupisteet").innerHTML = " Tulos = " + correct + " pistettä viidestä. Vielä kannattaa harjoitella!";
 		img.src = '../images/aho_images/smiley0.jpg';
 		document.getElementById("loppupisteet").appendChild(img);
 	}
