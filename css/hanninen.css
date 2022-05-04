@@ -25,7 +25,19 @@ div img{
 }
 
 
-.footer{
+.hero {
+    position:relative;
+  }
+  
+.hero  input:checked ~ i {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+footer{
     text-align: left;
     background-color: #77d169;
     border-width: 1px;
@@ -46,7 +58,6 @@ div img{
 
 
 .hanninen{
-    /*background-image: url(/images/hanninen_images/qrcode.png) ;*/
     background-size: cover;
 }
 
