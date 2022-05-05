@@ -11,8 +11,8 @@
     border-radius: 5px;
     margin-top: 2px;
     background-image: linear-gradient(to left, #13790c, #5af75a);
-   
-  
+
+
 }
 
 .dropdown {
@@ -298,14 +298,17 @@ img {
     img {
         width: 100%;
     }
+
     a :hover {
         color: bisque;
-        
-        }
+
+    }
+
+    .container {
+        overflow: hidden;
+    }
+
 }
-
-
-
 
 
 @media screen and (min-width:1300px) and (max-width:1800px) {
