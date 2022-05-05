@@ -298,6 +298,10 @@ img {
     img {
         width: 100%;
     }
+    a :hover {
+        color: bisque;
+        
+        }
 }
 
 
