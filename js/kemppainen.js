@@ -21,8 +21,8 @@ function korttiPainallus(kohde) {
         //Tarkistetaan osuuko oikeaan pariin. Jos ei osu niin vaihtaa kysymysmerkki kuvan takaisin korttiin.
     } else {
         if (avatut[0].style.backgroundImage !== avatut[1].style.backgroundImage) {
-            avatut[0].style.backgroundImage = "url('../images/kemppainen_images/kymysys.jpg')";
-            avatut[1].style.backgroundImage = "url('../images/kemppainen_images/kymysys.jpg')";
+            avatut[0].style.backgroundImage = "url('../images/kemppainen_images/kymysys.jpg')"; //https://pixabay.com/service/license/ Pixabay License
+            avatut[1].style.backgroundImage = "url('../images/kemppainen_images/kymysys.jpg')"; //https://pixabay.com/service/license/ Pixabay License
             //Poistetaan onclick attribuutti.
         } else {
             avatut[0].removeAttribute("onclick");
@@ -45,11 +45,11 @@ function korttiPainallus(kohde) {
 window.onload = function() {
     //Kysymysmerkki backgroundimage asetetaan jokaiselle kortille
     for (let i = 1; i < 17; i++) {
-        document.getElementById("k" + i).style.backgroundImage = "url('../images/kemppainen_images/kymysys.jpg')";
+        document.getElementById("k" + i).style.backgroundImage = "url('../images/kemppainen_images/kymysys.jpg')"; //https://pixabay.com/service/license/ Pixabay License
         
     }
     //kuvat listassa
-    let lista = ["url('../images/kemppainen_images/zebra.jpg')", "url('../images/kemppainen_images/pupu.jpg')", "url('../images/kemppainen_images/pingu.jpg')", "url('../images/kemppainen_images/norsu.jpg')", "url('../images/kemppainen_images/koira.jpg')", "url('../images/kemppainen_images/apina.jpg')", "url('../images/kemppainen_images/hai.jpg')", "url('../images/kemppainen_images/heppa.jpg')"];
+    let lista = ["url('../images/kemppainen_images/zebra.jpg')", "url('../images/kemppainen_images/pupu.jpg')", "url('../images/kemppainen_images/pingu.jpg')", "url('../images/kemppainen_images/norsu.jpg')", "url('../images/kemppainen_images/koira.jpg')", "url('../images/kemppainen_images/apina.jpg')", "url('../images/kemppainen_images/hai.jpg')", "url('../images/kemppainen_images/heppa.jpg')"]; //https://pixabay.com/service/license/ Pixabay License
     var i = 0;
     //Kortit mitkä pelissä on, kaksi jokaista
     var elukat = [lista[0], lista[1], lista[2], lista[3], lista[4], lista[5], lista[6], lista[7], lista[0], lista[1], lista[2], lista[3], lista[4], lista[5], lista[6], lista[7]];

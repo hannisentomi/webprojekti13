@@ -178,6 +178,7 @@ function tarkista() {
     if (tehtava1AnnettuVastaus == tehtava1Vastaus) {
         pisteet++
     }
+    
     if (tehtava2AnnettuVastaus == tehtava2Vastaus) {
         pisteet++
     }
@@ -191,7 +192,7 @@ function tarkista() {
         pisteet++
     }
 
-    document.getElementById("pisteet").innerHTML = "Olet saanut " + pisteet + " pistettä :)";
+    document.getElementById("pisteet").innerHTML = "Olet kerännyt " + pisteet + "/5 pistettä  :)";
 
     
   
@@ -223,21 +224,37 @@ function tarkista() {
 function asetaVastaus(tehtävä, vastaus) {
     if (tehtävä == 1) {
         tehtava1AnnettuVastaus = vastaus;
+         document.getElementById("teht1a").disabled=true;
+            document.getElementById("teht1b").disabled=true;
+            document.getElementById("teht1c").disabled=true;
+         
+  
     }
     if (tehtävä == 2) {
         tehtava2AnnettuVastaus = vastaus;
+        document.getElementById("teht2a").disabled=true;
+        document.getElementById("teht2b").disabled=true;
+        document.getElementById("teht2c").disabled=true;
     }
     if (tehtävä == 3) {
         tehtava3AnnettuVastaus = vastaus;
+        document.getElementById("teht3a").disabled=true;
+        document.getElementById("teht3b").disabled=true;
+        document.getElementById("teht3c").disabled=true;
     }
     if (tehtävä == 4) {
         tehtava4AnnettuVastaus = vastaus;
+        document.getElementById("teht4a").disabled=true;
+        document.getElementById("teht4b").disabled=true;
+        document.getElementById("teht4c").disabled=true;
     }
     if (tehtävä == 5) {
         tehtava5AnnettuVastaus = vastaus;
+        document.getElementById("teht5a").disabled=true;
+        document.getElementById("teht5b").disabled=true;
+        document.getElementById("teht5c").disabled=true;
     }
-    if (tehtävä == 6) {
-        tehtava6AnnettuVastaus = vastaus;
-    }
-
+ 
+    tarkista()
+    
 }

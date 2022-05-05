@@ -5,11 +5,17 @@
 }
 /* Määritellään muotoilua tekstikentille */
 p {
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Radio Canada', sans-serif;
+	font-family: 'Rubik', sans-serif;
 	color: #000;
 	font-size: medium;
 }
 /* Määritellään muotoilua headerille */
 .header {
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Radio Canada', sans-serif;
+	font-family: 'Rubik', sans-serif;
 	text-align: left;
 	background-image: linear-gradient(to left, #13790c, #5af75a);
 	margin: auto;
@@ -32,6 +38,9 @@ p {
 }
 /* Määritellään muotoilua vastausbuttoneille */
 .btn {
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Radio Canada', sans-serif;
+	font-family: 'Rubik', sans-serif;
 	background-color: rgb(87, 185, 111);
 	border: 3px black solid;
 	border-radius: 5px;
@@ -44,6 +53,9 @@ p {
 }
 /* Määritellään muotoilua visan lopputulokselle */
 #finalscore {
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Radio Canada', sans-serif;
+	font-family: 'Rubik', sans-serif;
 	font-size: large;
 	font-weight: bold;
 }
@@ -59,6 +71,9 @@ div img {
 }
 /* Määritellään muotoilua, taustaväriä footerille */
 .footer {
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Radio Canada', sans-serif;
+	font-family: 'Rubik', sans-serif;
 	text-align: left;
 	background-image: linear-gradient(to left, #13790c, #5af75a);
 	border-width: 1px;
