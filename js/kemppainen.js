@@ -29,7 +29,8 @@ function korttiPainallus(kohde) {
             avatut[1].removeAttribute("onclick");
             pisteet++;
             if(pisteet >= 8){
-                alert('Voitit pelin! Voit aloittaa uudelleen painamalla Aloita uudelleen- näppäintä');
+                document.getElementById("voitto").hidden = false;
+
             }
         }
         //tyhjennetään taulukko

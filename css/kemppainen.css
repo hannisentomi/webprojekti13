@@ -1,6 +1,34 @@
 p {
     color: #000;
   }
+#voitto{
+  font-size: 150%;
+  padding: 2px;
+  background-color: #06f2bb;
+  margin-top: 5px;
+  outline: solid 2px #000;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+  border-radius: 20px;
+
+}  
+@keyframes pulse {
+	0% {
+		transform: scale(0.92);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.92);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
   .header {
     text-align: center;
     margin: auto;
@@ -33,7 +61,8 @@ p {
     border-radius: 30px;
     background-image: linear-gradient(to left, #13790c, #5af75a);
     font-family: 'Indie Flower', cursive;
-    font-size: 150%;
+    font-size: 120%;
+    height: min-content;
   }
   
   .container-fluid-3 {
