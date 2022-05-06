@@ -56,13 +56,6 @@ section {
     background-color: hsl(var(--hue),100%,20%);
     background-image: url("../images/vuorenmaa_images/tausta.png");
 }
-section.correct {
-    --hue: var(--hue-correct);
-}
-
-section.wrong {
-    --hue: var(--hue-wrong);
-}
 
 .kontainer {
     width: 900px;
@@ -135,12 +128,6 @@ p {
 
 }
 
-div img #kuvat {
-	float: left;
-	max-height: 200px;
-	max-width: 200px;
-
-}
 
 .footer {
 
@@ -158,9 +145,6 @@ div img #kuvat {
 
 }
 
-
-
-
 .sivu {
 	font-weight: bold;
 	font-size: 1.5em;
@@ -168,13 +152,8 @@ div img #kuvat {
 	line-height: 200%;
 }
 
-
-
-
-
 a {
 	text-align: center;
-
 }
 
 
