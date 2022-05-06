@@ -24,6 +24,7 @@
                <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-5 text-white min-vh-100">
                   <a href="../index.html" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none" ><span  class="fs-1 d-none d-sm-inline" id="koti2"> Etusivu </span> <i id="koti" class="fa-solid fa-house-chimney fa-beat-fade"></i>
                   </a>
+                  <!-- sivupalkki jossa linkit jokaisen omaan sivuun -->
                   <div class="sivu">
                      <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-left align-items-sm-start" id="menu">
                         <li class="nav-item">
@@ -58,7 +59,7 @@
                </div>
               
             </div>
-             
+             <!-- Jos jotain olisin vielä toteuttanut tähän niin olisin parannellut headeria. Nyt tässä on vain isolla näytöllä elefantti eikä se vaihdu mihinkään. Pienellä näytöllä ei näy mitään. -->
             <div class="col py-12">
                <div class="header">
                   <h1>Matikka visa</h1>
@@ -103,6 +104,7 @@
                   </div>
                  
                </div>
+               <!-- Tässä tehtävä alue jossa tehtävät sekä uusien kysymyksien asetus painike. -->
                <div class="container" >
                    <div class="row gx-5 gy-5">
                        <div id="kolumni" class="col-12" onload="asetaKysymykset()">
@@ -151,6 +153,7 @@
                         <input type="radio" name="teht5" id="teht5c"  onclick="asetaVastaus('5', 'c')"> <label for="teht5c" id="vastaus5c"> </label>
                          
                      </div>
+                     <!-- tästä voi palauttaa vastaukset manuaalisesti, mutta näiden palautus on tehty myös automaattiseksi -->
                      <div class=" col-md-4 col-sm-6 col-xs-12">
                         <button onclick="tarkista()">Palauta vastaukset</button>
                         <p id="pisteet"></p>
