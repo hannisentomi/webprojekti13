@@ -1,11 +1,13 @@
 //Marko Vuorenmaa Tik22km
 
+// vakiot
 const aloitusNappi = document.getElementById("start-btn");
 const seuraavaNappi = document.getElementById("next-btn");
 const kysymysLaatikko = document.getElementById("question-kontainer");
 const kysymys = document.getElementById("question");
 const vastausNappi = document.getElementById("answer-buttons");
 
+// muuttujat
 let laskuri = document.getElementById("progressBar");
 let laskuriPalkki = document.getElementById("progressMeter");
 let laskurinTeksti = document.getElementById("progressMeterText");
@@ -14,7 +16,7 @@ let piste = 0;
 
     quizLength = 0,
     index = 0,
-
+// napin painallus kutsuu funkiota, piiloon laskuri palkki
 aloitusNappi.addEventListener("click", aloitaPeli);
 laskuri.classList.add("hide");
 laskuri.setAttribute("aria-valuemax", quizLength);
@@ -22,7 +24,7 @@ seuraavaNappi.addEventListener("click", () => {
   kysymyksenIndex++
   setSeuraavaKysymys()
 })
-
+// aloita napin jälkeen kysymys randomisti, start nappi piiloon ja kysymys esiin
 function aloitaPeli() {
   index = 0;  
   aloitusNappi.classList.add("hide")
@@ -36,7 +38,7 @@ function aloitaPeli() {
   laskeKysymykset(index);
 
 }
-
+// palkin liike
 function laskeKysymykset(index) {
     ///update progress bar
   let increment = Math.ceil((index) / (quizLength) * 100);
@@ -53,7 +55,7 @@ function laskeKysymykset(index) {
    }
 }
 
-
+// seuraava napin funktio
 function setSeuraavaKysymys() {
   index++;
   nollaus()
@@ -61,7 +63,7 @@ function setSeuraavaKysymys() {
   laskeKysymykset(index);
   
 }
-
+// näyttää kysymyksen arraysta, tekee vastaus napit ja tekstit arraysta
 function naytaKysymys(question) {
 
   kysymys.innerText = question.question
@@ -76,7 +78,7 @@ function naytaKysymys(question) {
     vastausNappi.appendChild(button)
   })
 }
-
+// piilottaa seuraava/vanhat vastaus napit ja tyhjentää rungon
 function nollaus() {
   tyhjaaStatus(document.body)
   seuraavaNappi.classList.add("hide")   
@@ -84,36 +86,36 @@ function nollaus() {
     vastausNappi.removeChild(vastausNappi.firstChild)
   }
 }
-
+// katsotaan vastaus ja seuraava nappi esiin, jos ei kysymyksiä tekstiksi uudestaan
 function vastaus(e) {
   const selectedButton = e.target
   const correct = selectedButton.dataset.correct
   tarkistus(document.body, correct)
   Array.from(vastausNappi.children).forEach(button => {
-    tarkistus(button, button.dataset.correct)
+    tarkistus(button, button.dataset.correct);
   })
   if (randomKysymykset.length > kysymyksenIndex + 1) {
-    seuraavaNappi.classList.remove("hide")  
+    seuraavaNappi.classList.remove("hide");  
   } else {
-    aloitusNappi.innerText = "Uudestaan"
-    aloitusNappi.classList.remove("hide")
+    aloitusNappi.innerText = "Uudestaan";
+    aloitusNappi.classList.remove("hide");
   }
 }
-
+// nappien värit
 function tarkistus(element, correct) {
-  tyhjaaStatus(element)
+  tyhjaaStatus(element);
   if (correct) {
-    element.classList.add("correct")
+    element.classList.add("correct");
   } else {
-    element.classList.add("wrong")
+    element.classList.add("wrong");
   }
 }
-
+// poistaa nappien värit
 function tyhjaaStatus(element) {
-  element.classList.remove("correct")
-  element.classList.remove("wrong")
+  element.classList.remove("correct");
+  element.classList.remove("wrong");
 }
-
+// kysymykset ja vastaukset arrayssa sekä oikea ja väärät arvot
 const kysymykset = [
   {
     question: "Paljonko on 2 + 2?",
