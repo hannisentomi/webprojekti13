@@ -88,11 +88,20 @@ function nollaus() {
 }
 // katsotaan vastaus ja seuraava nappi esiin, jos ei kysymyksiä tekstiksi uudestaan
 function vastaus(e) {
-  const selectedButton = e.target
-  const correct = selectedButton.dataset.correct
-  tarkistus(document.body, correct)
+  const selectedButton = e.target;
+  const correct = selectedButton.dataset.correct;
+  if (correct){
+    piste++;
+    document.getElementById("piste").innerHTML = piste;
+  }
+  else {
+    piste=piste;
+  }
+  tarkistus(document.body, correct);
+  
   Array.from(vastausNappi.children).forEach(button => {
     tarkistus(button, button.dataset.correct);
+    
   })
   if (randomKysymykset.length > kysymyksenIndex + 1) {
     seuraavaNappi.classList.remove("hide");  
@@ -106,6 +115,8 @@ function tarkistus(element, correct) {
   tyhjaaStatus(element);
   if (correct) {
     element.classList.add("correct");
+
+    document.getElementById("piste").innerHTML = piste;
   } else {
     element.classList.add("wrong");
   }
