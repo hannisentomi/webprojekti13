@@ -57,6 +57,7 @@ section {
     background-image: url("../images/vuorenmaa_images/tausta.png");
 }
 
+
 .kontainer {
     width: 900px;
     max-width: 80%;
@@ -128,6 +129,12 @@ p {
 
 }
 
+div img #kuvat {
+	float: left;
+	max-height: 200px;
+	max-width: 200px;
+
+}
 
 .footer {
 
@@ -145,6 +152,9 @@ p {
 
 }
 
+
+
+
 .sivu {
 	font-weight: bold;
 	font-size: 1.5em;
@@ -152,8 +162,13 @@ p {
 	line-height: 200%;
 }
 
+
+
+
+
 a {
 	text-align: center;
+
 }
 
 
