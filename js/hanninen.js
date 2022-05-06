@@ -1,4 +1,5 @@
 //Tomi Hänninen Tik22km
+//funktio on peräisin https://www.w3schools.com/js/js_random.asp
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -18,7 +19,7 @@ let tehtava4AnnettuVastaus = "";
 let tehtava5AnnettuVastaus = "";
 let tehtava6AnnettuVastaus = "";
 
-
+//Tällä functiolla lisätään kysymykset. Laskutoimituksien luvut arvotaan ja näin saadaan eri kysymykset joka yrityksellä.
 function asetaKysymykset() {
     pisteet = 0;
 
@@ -165,6 +166,8 @@ function asetaKysymykset() {
     }
 }
 
+
+//Tässä funktiossa vertaillaan annettua vastausta ja tehtävää. Jos on samat arvot niin lisätään käyttäjälle yksi piste.
 function tarkista() {
 
     let img = document.createElement("img");
@@ -196,31 +199,37 @@ function tarkista() {
 
     
   
-
     if(pisteet == 5 ){
         document.getElementById("pisteet").innerHTML = "Sait täydet pisteet! Hyvää työtä :)";
+        //www.google.com kuvat otettu googlen kuvahausta
         img.src = '../images/hanninen_images/6.gif'
         document.getElementById("pisteet").appendChild(img);
 
     }
     if(pisteet == 1){
+        //www.google.com kuvat otettu googlen kuvahausta
         img.src = '../images/hanninen_images/1.gif'
         document.getElementById("pisteet").appendChild(img);
     }
     if(pisteet == 2){
+        //www.google.com kuvat otettu googlen kuvahausta
         img.src = '../images/hanninen_images/3.gif'
         document.getElementById("pisteet").appendChild(img);
     }
     if(pisteet == 3){
+        //www.google.com kuvat otettu googlen kuvahausta
         img.src = '../images/hanninen_images/4.gif'
         document.getElementById("pisteet").appendChild(img);
     }
     if(pisteet == 4){
+        //www.google.com kuvat otettu googlen kuvahausta
         img.src = '../images/hanninen_images/5.gif'
         document.getElementById("pisteet").appendChild(img);
     }
 }
 
+
+//funktiossa asetetaan käyttäjän annettu vastaus muuttujaan ja samalla suljetaan muut vaihtoehdot. Lopuksi ajetaan tarkistus funktio.
 function asetaVastaus(tehtävä, vastaus) {
     if (tehtävä == 1) {
         tehtava1AnnettuVastaus = vastaus;

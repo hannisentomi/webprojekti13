@@ -7,15 +7,18 @@
     border-radius: 3rem;
     padding: 0 0.5rem;
   }
+
   .progress-meter {
     background-color: #689F38;
     border-radius: 3rem;
   }
+
   .progress-meter-text {
     color: #000000;
     text-align: center;
-  }    
+  }  
 
+/* vaikeustaso nappi */
 .button {
     --hue: var(--hue-neutral);
     border: 1px solid hsl(var(--hue), 100%, 30%);
@@ -28,15 +31,12 @@
     grid-template-columns: repeat(1, auto);
     gap: 10px;
     margin: 20px 0;
-
 }    
+/* kysymys vastaus alue alkaa tästä */
 
 *, *::before, *::after {
-    box-sizing: border-box;
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif*/
+    box-sizing: border-box;    
 }
-
-    
 
 :root {
     --hue-neutral: 200;
@@ -56,13 +56,6 @@ section {
     background-color: hsl(var(--hue),100%,20%);
     background-image: url("../images/vuorenmaa_images/tausta.png");
 }
-section.correct {
-    --hue: var(--hue-correct);
-}
-
-section.wrong {
-    --hue: var(--hue-wrong);
-}
 
 .kontainer {
     width: 900px;
@@ -70,8 +63,7 @@ section.wrong {
     background-color: #77d169;
     border-radius: 5px;
     padding: 20px;
-    box-shadow: 0 0 10px 2px;
-		
+    box-shadow: 0 0 10px 2px;		
 }
 
 .btn-grid {
@@ -90,6 +82,7 @@ section.wrong {
     color: white;
     outline: none;
 }
+
 .btn:hover {
     border-color: #000;
 }
@@ -102,6 +95,7 @@ section.wrong {
 .btn.wrong {
     --hue: var(--hue-wrong);
 } 
+
 .start-btn, .next-btn {
     font-size: 1.5rem;
     font-weight: bold;
@@ -111,8 +105,7 @@ section.wrong {
 .controls {
     display: flex;
     justify-content: center;
-    align-items: center;
-	
+    align-items: center;	
 }
 
 .hide {
@@ -123,7 +116,7 @@ p {
 	color: #000;
 }
 
-
+/* ylätunniste */
 .header1 {
 	width: 100%;
 	opacity:0.8;
@@ -132,18 +125,10 @@ p {
 	left: 0;
 	background: #77d169;
     text-align: center;
-
 }
 
-div img #kuvat {
-	float: left;
-	max-height: 200px;
-	max-width: 200px;
-
-}
-
+ /* alatunniste */
 .footer {
-
 	width: 100%;
 	opacity:0.8;
 	position: fixed;
@@ -151,16 +136,10 @@ div img #kuvat {
 	left: 0;
 	background: #77d169;
     text-align: center;
+	font-family: "Oleo Script Swash Caps", cursive;
 }
 
-.container-fluid-3 {
-	text-align: center;
-
-}
-
-
-
-
+/* sidebar alkaa tästä */
 .sivu {
 	font-weight: bold;
 	font-size: 1.5em;
@@ -168,83 +147,59 @@ div img #kuvat {
 	line-height: 200%;
 }
 
-
-
-
-
 a {
 	text-align: center;
-
 }
-
 
 li span {
 	color: black;
-
-
 }
 
 li i {
 	color: bisque;
-
 }
-
 
 div i {
 	color: bisque;
-
 }
 
 #koti {
 	color: black;
 	font-weight: bold;
 	font-size: 200%;
-
 }
 
 #koti2 {
 	color: bisque;
 	font-weight: bold;
 	font-size: 250%;
-	padding-right: 1rem;
-    
+	padding-right: 1rem;    
 }
+
 #koti2:hover{
     color: cyan;
 }
 
 a :hover {
 	color: cyan;
-
 }
 
-#kolumni {
-	padding-top: 2%;
-	padding-bottom: 4%;
-
-}
-
-.container2 {
-	position: absolute;
-	bottom: 0%;
-	right: 40%;
-
-}
+/* taustakuva  */
 body{
     background-color: black;
     background-image: url("../images/vuorenmaa_images/tausta.png");
-
 }
 
+/* responsiivisuus */
 @media screen and (min-width:575px) and (max-width:990px){
 	#carousel-example-2 {
 		display: none;
 	}
 	.header{
 		display: none;
-	}
-	
+	}	
 }
+
 /* Media puhelin **/
 @media only screen and (max-width: 575px) {
 	.sivu {
@@ -255,9 +210,7 @@ body{
 	#carousel-example-2 {
 		display: none;
 	}
-	.header{
-		display: none;
-	}
+
 }
 
 @media screen and (min-width:1300px) and (max-width:1800px) {
