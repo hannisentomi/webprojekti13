@@ -7,14 +7,17 @@
     border-radius: 3rem;
     padding: 0 0.5rem;
   }
+
   .progress-meter {
     background-color: #689F38;
     border-radius: 3rem;
   }
+
   .progress-meter-text {
     color: #000000;
     text-align: center;
-  }    
+  }  
+
 /* vaikeustaso nappi */
 .button {
     --hue: var(--hue-neutral);
@@ -28,13 +31,11 @@
     grid-template-columns: repeat(1, auto);
     gap: 10px;
     margin: 20px 0;
-
 }    
 /* kysymys vastaus alue alkaa tästä */
 
 *, *::before, *::after {
-    box-sizing: border-box;
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif*/
+    box-sizing: border-box;    
 }
 
 :root {
@@ -56,15 +57,13 @@ section {
     background-image: url("../images/vuorenmaa_images/tausta.png");
 }
 
-
 .kontainer {
     width: 900px;
     max-width: 80%;
     background-color: #77d169;
     border-radius: 5px;
     padding: 20px;
-    box-shadow: 0 0 10px 2px;
-		
+    box-shadow: 0 0 10px 2px;		
 }
 
 .btn-grid {
@@ -83,6 +82,7 @@ section {
     color: white;
     outline: none;
 }
+
 .btn:hover {
     border-color: #000;
 }
@@ -95,6 +95,7 @@ section {
 .btn.wrong {
     --hue: var(--hue-wrong);
 } 
+
 .start-btn, .next-btn {
     font-size: 1.5rem;
     font-weight: bold;
@@ -104,8 +105,7 @@ section {
 .controls {
     display: flex;
     justify-content: center;
-    align-items: center;
-	
+    align-items: center;	
 }
 
 .hide {
@@ -125,11 +125,10 @@ p {
 	left: 0;
 	background: #77d169;
     text-align: center;
-
 }
+
  /* alatunniste */
 .footer {
-
 	width: 100%;
 	opacity:0.8;
 	position: fixed;
@@ -148,61 +147,47 @@ p {
 	line-height: 200%;
 }
 
-
-
-
-
 a {
 	text-align: center;
-
 }
-
 
 li span {
 	color: black;
-
-
 }
 
 li i {
 	color: bisque;
-
 }
-
 
 div i {
 	color: bisque;
-
 }
 
 #koti {
 	color: black;
 	font-weight: bold;
 	font-size: 200%;
-
 }
 
 #koti2 {
 	color: bisque;
 	font-weight: bold;
 	font-size: 250%;
-	padding-right: 1rem;
-    
+	padding-right: 1rem;    
 }
+
 #koti2:hover{
     color: cyan;
 }
 
 a :hover {
 	color: cyan;
-
 }
 
 /* taustakuva  */
 body{
     background-color: black;
     background-image: url("../images/vuorenmaa_images/tausta.png");
-
 }
 
 /* responsiivisuus */
@@ -212,9 +197,9 @@ body{
 	}
 	.header{
 		display: none;
-	}
-	
+	}	
 }
+
 /* Media puhelin **/
 @media only screen and (max-width: 575px) {
 	.sivu {
