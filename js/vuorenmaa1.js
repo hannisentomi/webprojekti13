@@ -10,7 +10,7 @@ let laskuri = document.getElementById("progressBar");
 let laskuriPalkki = document.getElementById("progressMeter");
 let laskurinTeksti = document.getElementById("progressMeterText");
 let randomKysymykset, kysymyksenIndex;
-
+let piste = 0;
 
     quizLength = 0,
     index = 0,
@@ -87,6 +87,13 @@ function nollaus() {
 function vastaus(e) {
   const selectedButton = e.target
   const correct = selectedButton.dataset.correct
+  if (correct){
+    piste++;
+    document.getElementById("piste").innerHTML = piste;
+  }
+  else {
+    piste=piste;
+  }
   tarkistus(document.body, correct)
   Array.from(vastausNappi.children).forEach(button => {
     tarkistus(button, button.dataset.correct)
