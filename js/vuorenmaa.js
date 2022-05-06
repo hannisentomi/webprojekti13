@@ -16,6 +16,7 @@ let piste = 0;
 
     quizLength = 0,
     index = 0,
+    
 // napin painallus kutsuu funkiota, piiloon laskuri palkki
 aloitusNappi.addEventListener("click", aloitaPeli);
 laskuri.classList.add("hide");
@@ -24,6 +25,7 @@ seuraavaNappi.addEventListener("click", () => {
   kysymyksenIndex++
   setSeuraavaKysymys()
 })
+
 // aloita napin jälkeen kysymys randomisti, start nappi piiloon ja kysymys esiin
 function aloitaPeli() {
   index = 0;  
@@ -36,8 +38,8 @@ function aloitaPeli() {
    
   quizLength = kysymykset.length;
   laskeKysymykset(index);
-
 }
+
 // palkin liike
 function laskeKysymykset(index) {
     ///update progress bar
@@ -60,9 +62,9 @@ function setSeuraavaKysymys() {
   index++;
   nollaus()
   naytaKysymys(randomKysymykset[kysymyksenIndex]);
-  laskeKysymykset(index);
-  
+  laskeKysymykset(index);  
 }
+
 // näyttää kysymyksen arraysta, tekee vastaus napit ja tekstit arraysta
 function naytaKysymys(question) {
 
