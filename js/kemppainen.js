@@ -19,10 +19,15 @@ function korttiPainallus(kohde) {
             return
         }
         //Tarkistetaan osuuko oikeaan pariin. Jos ei osu niin vaihtaa kysymysmerkki kuvan takaisin korttiin.
-    } else {
+    } if (avatut.length >=2) {
         if (avatut[0].style.backgroundImage !== avatut[1].style.backgroundImage) {
-            avatut[0].style.backgroundImage = "url('../images/kemppainen_images/kymysys.jpg')"; //https://pixabay.com/service/license/ Pixabay License
-            avatut[1].style.backgroundImage = "url('../images/kemppainen_images/kymysys.jpg')"; //https://pixabay.com/service/license/ Pixabay License
+            setTimeout(function(){
+                avatut[0].style.backgroundImage = "url('../images/kemppainen_images/kymysys.jpg')"; //https://pixabay.com/service/license/ Pixabay License
+                avatut[1].style.backgroundImage = "url('../images/kemppainen_images/kymysys.jpg')"; //https://pixabay.com/service/license/ Pixabay License
+                avatut = [];
+            
+            }, 1000);
+        
             //Poistetaan onclick attribuutti.
         } else {
             avatut[0].removeAttribute("onclick");
@@ -32,10 +37,11 @@ function korttiPainallus(kohde) {
                 document.getElementById("voitto").hidden = false;
 
             }
+            avatut = [];
         }
         //tyhjennetään taulukko
         
-        avatut = [];
+        
        
     }
 
