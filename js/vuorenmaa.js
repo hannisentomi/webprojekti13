@@ -16,6 +16,7 @@ let piste = 0;
 
     quizLength = 0,
     index = 0,
+    
 // napin painallus kutsuu funkiota, piiloon laskuri palkki
 aloitusNappi.addEventListener("click", aloitaPeli);
 laskuri.classList.add("hide");
@@ -24,6 +25,7 @@ seuraavaNappi.addEventListener("click", () => {
   kysymyksenIndex++
   setSeuraavaKysymys()
 })
+
 // aloita napin jälkeen kysymys randomisti, start nappi piiloon ja kysymys esiin
 function aloitaPeli() {
   index = 0;  
@@ -36,8 +38,8 @@ function aloitaPeli() {
    
   quizLength = kysymykset.length;
   laskeKysymykset(index);
-
 }
+
 // palkin liike
 function laskeKysymykset(index) {
     ///update progress bar
@@ -60,9 +62,9 @@ function setSeuraavaKysymys() {
   index++;
   nollaus()
   naytaKysymys(randomKysymykset[kysymyksenIndex]);
-  laskeKysymykset(index);
-  
+  laskeKysymykset(index);  
 }
+
 // näyttää kysymyksen arraysta, tekee vastaus napit ja tekstit arraysta
 function naytaKysymys(question) {
 
@@ -88,11 +90,20 @@ function nollaus() {
 }
 // katsotaan vastaus ja seuraava nappi esiin, jos ei kysymyksiä tekstiksi uudestaan
 function vastaus(e) {
-  const selectedButton = e.target
-  const correct = selectedButton.dataset.correct
-  tarkistus(document.body, correct)
+  const selectedButton = e.target;
+  const correct = selectedButton.dataset.correct;
+  if (correct){
+    piste++;
+    document.getElementById("piste").innerHTML = piste;
+  }
+  else {
+    piste=piste;
+  }
+  tarkistus(document.body, correct);
+  
   Array.from(vastausNappi.children).forEach(button => {
     tarkistus(button, button.dataset.correct);
+    
   })
   if (randomKysymykset.length > kysymyksenIndex + 1) {
     seuraavaNappi.classList.remove("hide");  
@@ -106,6 +117,8 @@ function tarkistus(element, correct) {
   tyhjaaStatus(element);
   if (correct) {
     element.classList.add("correct");
+
+    document.getElementById("piste").innerHTML = piste;
   } else {
     element.classList.add("wrong");
   }
