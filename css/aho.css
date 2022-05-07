@@ -170,6 +170,9 @@
     .quiz-header5 img {
       display: none;
     }
+    .header{
+      font-size: 50px;
+    }
   }
   @media screen and (max-width: 1200px) {
     #koti {
