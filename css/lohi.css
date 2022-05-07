@@ -309,10 +309,12 @@ img {
     }
 
     .h3{
-        font-size: 0.8em;
+        font-size: 1em;
     }
     .guestion{
-        margin: 5px;
+        padding: 15px;
+        margin: auto;
+        margin-top: 5px;
     }
 }
 
