@@ -106,7 +106,7 @@ h1 {
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: whitesmoke;
-    margin: 20px;
+    margin: 10px;
 }
 
 .girl {
@@ -308,6 +308,12 @@ img {
         overflow: hidden;
     }
 
+    .h3{
+        font-size: 0.8em;
+    }
+    .guestion{
+        margin: 5px;
+    }
 }
 
 
