@@ -184,6 +184,7 @@
   }
   
   @media only screen and (min-width: 992px) {
+    
     .sivu {
       font-size: 1.5em;
     }
@@ -227,4 +228,24 @@
     bottom: 0%;
     right: 40%;
   }
+  .header{
+    font-size: 50px;
+  }
+  @media only screen and (min-width: 576px) and (max-width: 991px) {
+    .quiz-header1 img {
+      position: absolute;
+  }
+  .quiz-header2 img {
+    position: absolute;
+  }
+  .quiz-header3 img {
+    position: absolute;
+  }
+  .quiz-header4 img {
+    position: absolute;
+}
+  .quiz-header5 img {
+  position: absolute;
+}
+}
   
