@@ -316,8 +316,9 @@ img {
         margin: auto;
         margin-top: 5px;
         margin-bottom: 5px;
+        font-size: 1em;
     }
-}
+ }
 
 
 @media screen and (min-width:1300px) and (max-width:1800px) {
